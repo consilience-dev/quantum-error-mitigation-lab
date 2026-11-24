@@ -20,3 +20,4 @@ jobs:
             "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/paper_figures/ML-QEM%20Source%20data.xlsx"
           python scripts/verify_figure4.py --check --workbook "$RUNNER_TEMP/ml-qem-source.xlsx"
           python scripts/simulation_fig3_verify.py --check --workbook "$RUNNER_TEMP/ml-qem-source.xlsx"
+          python scripts/simulation_depth_transfer.py verify --workbook "$RUNNER_TEMP/ml-qem-source.xlsx"

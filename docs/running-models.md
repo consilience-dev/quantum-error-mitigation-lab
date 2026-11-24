@@ -66,3 +66,11 @@ python scripts/simulation_verify.py
 ```
 
 The [Figure 3 reproduction](../reports/simulation/fig3/README.md#reproduction) reuses the tutorial’s training rows and adds the archived test circuits and six reference predictions.
+
+The four-input depth-transfer comparison uses the same training rows, the archived Figure 3 measurements, and the same TabPFN v2 checkpoint. In the Python 3.9 circuit environment with pandas 1.5.3, export the archived test vectors. In the TabPFN environment, fit all three estimators. The score check works in the audit environment.
+
+```sh
+python scripts/simulation_depth_transfer.py prepare
+python scripts/simulation_depth_transfer.py fit weights --device mps
+python scripts/simulation_depth_transfer.py verify
+```

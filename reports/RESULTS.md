@@ -1,6 +1,8 @@
 # What the ML-QEM comparisons establish
 
-Several frozen tabular checkpoints reduced four-observable error relative to the published random forest on IBM Algiers. Performance varied substantially by checkpoint. A separate, problem-specific control predicted the ideal observables more accurately using **only the known circuit parameters and calibration labels**. This four-qubit Ising task can measure predictive accuracy and the incremental value of noisy inputs. Establishing transferable error mitigation requires a further experiment that changes the hardware or circuit family.
+With 18 unique calibration circuits on IBM Algiers, a per-observable affine correction had lower mean error than frozen Nori 1.5 and TabPFN v2. At 90 and 500, both pretrained models had lower error on every calibration draw. Nori also beat the authors’ forest on their original 500-row split. A control using only known Ising parameters and calibration labels performed better still. This hardware experiment measures predictive accuracy and how much noisy measurements add to circuit descriptors.
+
+On the authors’ FakeLima simulation, full-feature TabPFN v2 improved on the archived forest at familiar depths. When restricted to the four noisy measurements, TabPFN beat affine across the 15 deeper test depths and trailed the circuit-aware forest overall. These experiments cover one tractable four-qubit circuit family. Transfer across devices and circuit families remains open.
 
 ## Reproducing the published experiment
 
@@ -119,6 +121,22 @@ The paper also releases test predictions for FakeLima Ising circuits. We matched
 | Frozen TabPFN v2, our run | **0.028171** | **0.011863** | **0.012114** |
 
 TabPFN reduced MAE by 23.5% relative to the archived forest on the 4,500 test rows. On the 4,200 unique nonzero-depth circuits, the paired MAE difference was −0.00392 (nominal 95% interval −0.00417 to −0.00367, resampling circuits within depth). TabPFN had lower MAE at each of depths 1–14 and the forest had lower MAE at depth 0. This interval conditions on the training set and simulated noise setting. The same six training identities cover all 300 depth-zero test rows. The 4,200 remaining circuits are unique and absent from both training and the OLS tutorial validation set under compiled circuit identity. This covers interpolation over held-out circuits at familiar depths, one simulated noise condition and one fixed training set. The archive also has predictions for depths 15–29, but its corresponding `val_extra` circuit files for that condition end at depth 14 in the pinned release. A full-feature comparison at those extrapolation depths requires the missing circuit descriptors. [Matched sources and row predictions](simulation/fig3/reference.json) · [Checkpoint and per-depth results](simulation/fig3/tabpfn_v2.json) · [Paired uncertainty](simulation/fig3/paired_rf.json)
+
+## Do measurement corrections transfer to deeper circuits?
+
+The Figure 3 archive retains the four noisy observables, ideal targets and predictions for 4,500 circuits at depths 15–29. We fit each new estimator **once** on the four measurements from all 4,500 training rows at depths 0–14, then used the fitted model on both test populations. At each depth, 300 rows were scored. All rows use the same four observable targets. The archived RF and OLS had access to additional circuit features.
+
+| Method | MAE at depths 0–14 | MAE at depths 15–29 | Mean circuit L2 at depths 15–29 |
+|---|---:|---:|---:|
+| Unmitigated | 0.060945 | 0.125889 | 0.300644 |
+| ZNE | 0.041865 | 0.113853 | 0.274634 |
+| Diagonal affine on measurements | 0.054484 | 0.120780 | 0.288966 |
+| Four-input affine | 0.047202 | 0.116706 | 0.281253 |
+| Frozen TabPFN v2, same four inputs | 0.018126 | 0.100010 | 0.238595 |
+| Authors’ full-feature OLS | 0.046249 | 0.120944 | 0.292724 |
+| Authors’ circuit-aware RF | 0.015510 | 0.093013 | 0.222042 |
+
+Four-input TabPFN had lower MAE than both affine corrections and ZNE at all 15 deeper depths. The authors’ forest had lower MAE than four-input TabPFN at 13 of those depths and lower overall error. At depths 0–14, supplying all 58 features to TabPFN reduced MAE from 0.018126 to 0.011863. The corresponding full-feature TabPFN score and compiled-circuit identity audit at depths 15–29 remain unavailable because the circuit objects are missing. These are results for extrapolation in depth on the same simulator and circuit family. [Scores, coefficients, checkpoint and source hashes](simulation/depth_transfer/scores.json) · [Row-level predictions](simulation/depth_transfer/predictions.csv.gz)
 
 ## Limits and next independent test
 
