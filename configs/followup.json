@@ -1,0 +1,17 @@
+{
+  "status": "planned_not_run",
+  "clean_curve": {
+    "depths": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "budgets": [18, 45, 90, 180, 270, 450, 500],
+    "seeds": [0, 1, 2, 3, 4],
+    "budget_500_requires": "At least 56 unique eligible circuits per depth; existing test set untouched"
+  },
+  "published_reference": {
+    "status": "requires_circuit_identity_audit",
+    "depths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "calibration_per_depth": 50,
+    "total_calibration_rows": 500,
+    "test_per_depth": 250,
+    "independent_unique_circuits": "not_yet_verified"
+  }
+}
