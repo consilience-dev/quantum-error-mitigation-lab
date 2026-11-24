@@ -1,0 +1,211 @@
+{
+  "release": "https://doi.org/10.5281/zenodo.6472281",
+  "paper": "https://quantum-journal.org/papers/q-2023-07-13-1059/",
+  "files": {
+    "circuits.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/circuits.csv/content",
+      "md5": "bdb5df44879a8e27b6361705729dfbb3",
+      "sha256": "4555cfbd11a66f6de78e3c7d09c22b30f8c9212d13c2fceb74dbb85045f78f42"
+    },
+    "circuits.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/circuits.zip/content",
+      "md5": "633aab94b407c93bb4674bf24b5b727f",
+      "sha256": "3860b1441eb4f7bfdd0cf5b8afdcbfda943eeef83c3b2167591467c081fe6914"
+    },
+    "device_experiments.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/device_experiments.csv/content",
+      "md5": "0bb58916894410280ce32c53a3e9d513",
+      "sha256": "22303262fe5b72eee3a11b808e05b56a7494808997075498e00ef72267b0798f"
+    },
+    "experiments.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/experiments.csv/content",
+      "md5": "a34aca2f21d196ffca1e0aa4392e2a81",
+      "sha256": "6a223bfa9c927a178abb718ec89ef928966ac19daa9501c303b73115d3442faf"
+    },
+    "observables.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/observables.zip/content",
+      "md5": "982459a252630dff94527214bebdf44a",
+      "sha256": "a9513c0cd1466ee39a8909a93f1b4b51b2fbef8f2dcc277fd4f07ddaf568e97f"
+    },
+    "results.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/results.csv/content",
+      "md5": "427fc66a8caa305c9c1ef4e9ed6cbcf8",
+      "sha256": "7ce5de11d49e5bc2848eccfd9e5f437e6bb9d9169e56fcea6bac76be4785712a"
+    },
+    "results.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/results.zip/content",
+      "md5": "b3c392d25bae0597f0e7aed489799480",
+      "sha256": "c99eb711981dfd7781c30908d8b2479ef067860111355c2f4ebee31018d330bb"
+    }
+  },
+  "scope": "Availability and reaggregation of authors’ completed runs. No pretrained model was evaluated.",
+  "pairing": "Join the experiment ID, circuit ID and observable ID, then the released method result ID by backend. ZNE uses routed node-labelled Pauli terms; its association to a logical observable relies on the authors’ experiment ID.",
+  "archived_methods": [
+    "NOISY",
+    "ZNE",
+    "CDR"
+  ],
+  "complete_backend_experiment_pairs": 3520,
+  "total_method_results": 10560,
+  "unique_device_experiment_ids": 160,
+  "devices": {
+    "ibmq_casablanca": {
+      "unmirrored": {
+        "complete_circuit_observable_ids": 100,
+        "circuit_families": {
+          "Pauli-gadget": 50,
+          "Random": 50
+        },
+        "ideal_range": [
+          -0.5900425090120264,
+          0.5982161645932521
+        ],
+        "ideal_values_within_1e-12_of_one": 0,
+        "archived_mean_absolute_error": {
+          "NOISY": 0.156723793,
+          "ZNE": 0.212022967,
+          "CDR": 0.138214002
+        }
+      },
+      "mirrored": {
+        "complete_circuit_observable_ids": 60,
+        "circuit_families": {
+          "Random": 30,
+          "Pauli-gadget": 30
+        },
+        "ideal_range": [
+          0.9999999999999984,
+          1.000000000000001
+        ],
+        "ideal_values_within_1e-12_of_one": 60,
+        "archived_mean_absolute_error": {
+          "NOISY": 0.190359375,
+          "ZNE": 0.185520956,
+          "CDR": 0.082463
+        }
+      }
+    },
+    "ibm_lagos": {
+      "unmirrored": {
+        "complete_circuit_observable_ids": 100,
+        "circuit_families": {
+          "Pauli-gadget": 50,
+          "Random": 50
+        },
+        "ideal_range": [
+          -0.5900425090120264,
+          0.5982161645932521
+        ],
+        "ideal_values_within_1e-12_of_one": 0,
+        "archived_mean_absolute_error": {
+          "NOISY": 0.166458107,
+          "ZNE": 0.491731127,
+          "CDR": 0.143129833
+        }
+      },
+      "mirrored": {
+        "complete_circuit_observable_ids": 60,
+        "circuit_families": {
+          "Random": 30,
+          "Pauli-gadget": 30
+        },
+        "ideal_range": [
+          0.9999999999999984,
+          1.000000000000001
+        ],
+        "ideal_values_within_1e-12_of_one": 60,
+        "archived_mean_absolute_error": {
+          "NOISY": 0.253790625,
+          "ZNE": 0.250604699,
+          "CDR": 0.081317779
+        }
+      }
+    },
+    "depolarising simulator": {
+      "unmirrored": {
+        "complete_circuit_observable_ids": 680,
+        "circuit_families": {
+          "Pauli-gadget": 340,
+          "Random": 340
+        },
+        "ideal_range": [
+          -0.5989491560971228,
+          0.5982161645932521
+        ],
+        "ideal_values_within_1e-12_of_one": 0
+      },
+      "mirrored": {
+        "complete_circuit_observable_ids": 940,
+        "circuit_families": {
+          "Pauli-gadget": 470,
+          "Random": 470
+        },
+        "ideal_range": [
+          0.9999999999999802,
+          1.0000000000000124
+        ],
+        "ideal_values_within_1e-12_of_one": 940
+      }
+    },
+    "ibm_lagos emulator": {
+      "unmirrored": {
+        "complete_circuit_observable_ids": 680,
+        "circuit_families": {
+          "Pauli-gadget": 340,
+          "Random": 340
+        },
+        "ideal_range": [
+          -0.5989491560971228,
+          0.5982161645932521
+        ],
+        "ideal_values_within_1e-12_of_one": 0
+      },
+      "mirrored": {
+        "complete_circuit_observable_ids": 900,
+        "circuit_families": {
+          "Pauli-gadget": 450,
+          "Random": 450
+        },
+        "ideal_range": [
+          0.9999999999999848,
+          1.0000000000000115
+        ],
+        "ideal_values_within_1e-12_of_one": 900
+      }
+    }
+  },
+  "proposed_sim_to_hardware": {
+    "common_hardware_test_population": {
+      "circuit_ids": 100,
+      "distinct_structural_hashes": 100,
+      "circuit_families": {
+        "Pauli-gadget": 50,
+        "Random": 50
+      },
+      "sorted_circuit_ids_sha256": "6124af6dbbfbc493c01afa547e7aece49f804d381e85ab6f15a67e9ae1b21128"
+    },
+    "available_calibration_population_in_either_simulator": {
+      "circuit_ids": 580,
+      "distinct_structural_hashes": 580,
+      "circuit_families": {
+        "Random": 290,
+        "Pauli-gadget": 290
+      },
+      "sorted_circuit_ids_sha256": "7ff60bfe843000753bb28d57a34d91aecaddd0161bc390f0a3ca7fe8b68580da"
+    },
+    "overlapping_structural_hashes": 0,
+    "scope": "Unmirrored circuits only. Both physical devices have identical test identities. The two simulators share the same calibration IDs. Hardware-only calibration and simulation-trained transfer use different resources.",
+    "fingerprint": "SHA-256 of the sorted-key circuit JSON after omitting per-box UUIDs. This checks identical circuit structure. Functional equivalence is untested."
+  },
+  "paper_protocol": {
+    "per_target_hardware_shots": {
+      "NOISY": 32000,
+      "ZNE": 160000,
+      "CDR": 160000
+    },
+    "zne": "Exponential fit at folding factors 1, 3, 5, 7 and 9.",
+    "cdr": "20 near-Clifford auxiliary circuits and the unaltered target circuit.",
+    "native_metric": "Relative error of mitigation, absolute mitigated error divided by absolute raw error. The paper displays median and worst-case values within width/depth cells for each circuit class.",
+    "interpretation": "The pooled MAEs in this audit are new arithmetic summaries of the published scalar outputs. Shot budgets are taken from the paper. Counts, PEC signed runs and auxiliary target-level samples are absent from these audited result tables."
+  }
+}

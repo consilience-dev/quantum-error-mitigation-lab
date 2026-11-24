@@ -2,7 +2,7 @@
 
 Can pretrained regressors improve noisy quantum observable estimates when every method gets the same calibration circuits? This repository reproduces the four-qubit IBM Algiers experiment from ML-QEM, compares estimators on the authors' inputs, and checks whether hardware measurements contribute beyond knowing which circuit was run.
 
-**[Read the results](reports/RESULTS.md)** · [per-run scores](reports/scores.csv) · [paired comparisons](reports/clean_paired_summary.json) · [model coverage](docs/model-coverage.md)
+**[Read the results](reports/RESULTS.md)** · [per-run scores](reports/scores.csv) · [paired comparisons](reports/clean_paired_summary.json) · [model coverage](docs/model-coverage.md) · [QEM method coverage and next benchmarks](docs/mitigation-benchmarks.md)
 
 ## Hardware and simulator benchmarks
 
