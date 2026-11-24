@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+data/upstream/*.pk
+data/upstream/*.ipynb
+data/upstream/mlp.py
+splits.json

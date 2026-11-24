@@ -1,0 +1,20 @@
+# Follow-up evaluation protocol
+
+Status: proposed; real split manifest and prior experiment artifacts are missing.
+
+## Two distinct comparisons
+
+1. **Nonzero-depth learning curve:** depths 1–9, budgets 18, 45, 90, 180, 270, 450, then 500 only if the verified calibration pool supports it. The first six allocate 2, 5, 10, 20, 30, and 50 unique circuits per depth. Budget 500 allocates 55 or 56 per depth, rotating which five depths receive the extra circuit across seeds. It is a new 500-circuit comparison, not the published 50-per-depth protocol.
+2. **Published-budget reference:** 50 training rows at each depth 0–9, 500 total, and the published 250 test rows per depth. Reconstruct the original ordering from the pinned notebook and shuffling map. Audit circuit identity first; explicitly report depth-0 duplicate counts, cross-partition overlaps, and both row count and unique circuit count. If duplicates remain, label the run as a row-level protocol reproduction and report a separate clean nonzero-depth analysis. Never describe it as 500 independent unique calibration circuits without evidence.
+
+The original first-50-per-depth training pool has only 450 nonzero-depth rows. A clean 500 run therefore requires an expanded calibration pool. Do not borrow from the fixed test set, relabel 450 as 500, or pad with depth-0 duplicates. If the recovered 180-circuit test set can be kept fixed while sourcing additional eligible calibration circuits, freeze and hash a new manifest and report the changed calibration pool. Otherwise mark that condition unavailable. The split planner fails on shortages; run the compatible curve through 450 separately with `--budgets 18 45 90 180 270 450` when necessary.
+
+## Leakage controls and comparisons
+
+- Recover original test IDs before claiming continuity with the reported 180 held-out circuits. Use a separate experiment version if they cannot be recovered. Never select splits or model settings based on test accuracy.
+- Group all four observables and all repeated executions of a canonical circuit. Circuit hashing must be derived from canonicalized operations, parameters, qubit mapping, and relevant observable context; audit global-phase and circuit-equivalence conventions. Do not hash noisy or ideal output values to establish circuit identity.
+- Use fixed test circuits across budgets/models. Within each seed, calibration subsets are nested. Seeds 0–4 are a minimum follow-up, not independent hardware replications.
+- Keep the former feature extraction frozen if recovered. Otherwise version the new extractor and do not assume 169 features reproduces the old one. Fit preprocessing and hyperparameter selection using calibration data only, with grouped internal validation; report if a small budget cannot support tuning.
+- Compare unmitigated, ZNE where available, affine/noisy-only regression, random forest, and available pretrained tabular models on identical splits. Include descriptor-only and measurement-only controls. Report weights/checkpoint revision, context limits, settings, runtime, failures, and whether pretrained weights were updated. A model unable to handle 500 circuits is unavailable at that budget; do not silently reduce its context.
+- Primary endpoint: mean per-circuit L2 distance over the four ideal observables. Also report pooled RMSE, per-depth errors, and paired differences from each baseline. Bootstrap paired circuits within depth, keeping four observables together. Separate test sampling uncertainty from calibration-seed variation.
+- Save circuit IDs/hashes, source checksums, predictions, configuration, environment versions, split seed, model seed, and code commit. No superiority, novelty, or replication claim is established by adding these budgets.

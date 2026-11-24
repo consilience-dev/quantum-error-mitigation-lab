@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/qiskit-community/ml-qem",
+  "commit": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "retrieved_on": "2026-11-24",
+  "files": [
+    {
+      "upstream_path": "docs/demos/demo2_ising_4q_hardware_plot.ipynb",
+      "local_path": "data/upstream/demo2_ising_4q_hardware_plot.ipynb",
+      "url": "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/demos/demo2_ising_4q_hardware_plot.ipynb",
+      "bytes": 788348,
+      "sha256": "41ea77b4e08ea87a76f2834c61fc4a21a6b2bae11d918b824cfbd7e74342a1f2"
+    },
+    {
+      "upstream_path": "docs/tutorials/data/ising_init_from_qasm_hardware/shuffled/results.pk",
+      "local_path": "data/upstream/results.pk",
+      "url": "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/tutorials/data/ising_init_from_qasm_hardware/shuffled/results.pk",
+      "bytes": 327136,
+      "sha256": "68fe36c7717f77cf456f777ea3f92bd5f337ddb152665b46d98b4f047386594c"
+    },
+    {
+      "upstream_path": "docs/tutorials/data/ising_init_from_qasm_hardware/shuffled/index_order.json",
+      "local_path": "data/upstream/index_order.json",
+      "url": "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/tutorials/data/ising_init_from_qasm_hardware/shuffled/index_order.json",
+      "bytes": 16890,
+      "sha256": "c4e5d3c2802f7e095e1a02b9928574def3aa0f5078c37309874995af102b5021"
+    },
+    {
+      "upstream_path": "docs/tutorials/mlp.py",
+      "local_path": "data/upstream/mlp.py",
+      "url": "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/tutorials/mlp.py",
+      "bytes": 17376,
+      "sha256": "6d621283927baa80d6ec8377b5bc8c55cb297512deb7e501bc131d5c427d04fe"
+    }
+  ]
+}
