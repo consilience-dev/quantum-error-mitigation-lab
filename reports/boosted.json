@@ -1,0 +1,52 @@
+{
+  "catboost": "1.2.10",
+  "parameters": {
+    "iterations": 300,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "loss_function": "RMSE",
+    "random_seed": 0,
+    "thread_count": 2,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "runs": [
+    {
+      "split": "published",
+      "seed": null,
+      "mean_circuit_l2": 0.10429329767042889,
+      "pooled_rmse": 0.07139049527826756
+    },
+    {
+      "split": "clean",
+      "seed": 0,
+      "mean_circuit_l2": 0.10969458937188414,
+      "pooled_rmse": 0.07004742980727532
+    },
+    {
+      "split": "clean",
+      "seed": 1,
+      "mean_circuit_l2": 0.11151239865410396,
+      "pooled_rmse": 0.07176840736612185
+    },
+    {
+      "split": "clean",
+      "seed": 2,
+      "mean_circuit_l2": 0.11157105475300215,
+      "pooled_rmse": 0.07272652333698632
+    },
+    {
+      "split": "clean",
+      "seed": 3,
+      "mean_circuit_l2": 0.1127213964382721,
+      "pooled_rmse": 0.07154605446632417
+    },
+    {
+      "split": "clean",
+      "seed": 4,
+      "mean_circuit_l2": 0.10749294502953309,
+      "pooled_rmse": 0.06900637051453383
+    }
+  ],
+  "clean_split_sha256": "40b5f0fd91940ed1a58b7ff3bbe6fe246b2a38e27eae93b962135561d5bebea1"
+}

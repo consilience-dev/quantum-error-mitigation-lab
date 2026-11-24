@@ -1,0 +1,110 @@
+{
+  "method": "RBF kernel ridge, five depth-stratified calibration folds grouped by compiled circuit",
+  "grid_width_alpha": [
+    [
+      0.25,
+      0.0001
+    ],
+    [
+      0.25,
+      0.001
+    ],
+    [
+      0.25,
+      0.01
+    ],
+    [
+      0.25,
+      0.1
+    ],
+    [
+      1.0,
+      0.0001
+    ],
+    [
+      1.0,
+      0.001
+    ],
+    [
+      1.0,
+      0.01
+    ],
+    [
+      1.0,
+      0.1
+    ],
+    [
+      4.0,
+      0.0001
+    ],
+    [
+      4.0,
+      0.001
+    ],
+    [
+      4.0,
+      0.01
+    ],
+    [
+      4.0,
+      0.1
+    ]
+  ],
+  "calibration_rows": 500,
+  "runs": [
+    {
+      "split": "published",
+      "seed": null,
+      "width": 0.25,
+      "alpha": 0.01,
+      "calibration_cv_l2": 0.10713290546083276,
+      "mean_circuit_l2": 0.09557873445949688,
+      "pooled_rmse": 0.06596933552447658
+    },
+    {
+      "split": "clean",
+      "seed": 0,
+      "width": 1.0,
+      "alpha": 0.1,
+      "calibration_cv_l2": 0.10095846385554655,
+      "mean_circuit_l2": 0.09255529496520067,
+      "pooled_rmse": 0.061811256467673326
+    },
+    {
+      "split": "clean",
+      "seed": 1,
+      "width": 1.0,
+      "alpha": 0.01,
+      "calibration_cv_l2": 0.09663691157681988,
+      "mean_circuit_l2": 0.09767895717918448,
+      "pooled_rmse": 0.06750113479545845
+    },
+    {
+      "split": "clean",
+      "seed": 2,
+      "width": 1.0,
+      "alpha": 0.01,
+      "calibration_cv_l2": 0.1003178737934128,
+      "mean_circuit_l2": 0.09019781977686915,
+      "pooled_rmse": 0.0627975773929919
+    },
+    {
+      "split": "clean",
+      "seed": 3,
+      "width": 1.0,
+      "alpha": 0.01,
+      "calibration_cv_l2": 0.10036955641653994,
+      "mean_circuit_l2": 0.08996786039904459,
+      "pooled_rmse": 0.061383458152468415
+    },
+    {
+      "split": "clean",
+      "seed": 4,
+      "width": 1.0,
+      "alpha": 0.01,
+      "calibration_cv_l2": 0.09086797715611836,
+      "mean_circuit_l2": 0.08997646706654526,
+      "pooled_rmse": 0.06253128870436699
+    }
+  ]
+}

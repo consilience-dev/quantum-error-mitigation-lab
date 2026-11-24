@@ -1,0 +1,54 @@
+{
+  "method": "Linear interpolation in J within each (Trotter depth, Pauli basis), constant endpoints",
+  "inputs": [
+    "Trotter depth",
+    "Pauli measurement basis",
+    "Ising coupling J"
+  ],
+  "calibration_rows": 500,
+  "upstream_revision": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "runs": [
+    {
+      "split": "published",
+      "seed": null,
+      "endpoint_clamped_rows": 304,
+      "mean_circuit_l2": 0.021614380967073854,
+      "pooled_rmse": 0.0333240214213883
+    },
+    {
+      "split": "clean",
+      "seed": 0,
+      "endpoint_clamped_rows": 91,
+      "mean_circuit_l2": 0.012885529228190902,
+      "pooled_rmse": 0.016602594171892558
+    },
+    {
+      "split": "clean",
+      "seed": 1,
+      "endpoint_clamped_rows": 115,
+      "mean_circuit_l2": 0.01933037098102566,
+      "pooled_rmse": 0.03288208960009591
+    },
+    {
+      "split": "clean",
+      "seed": 2,
+      "endpoint_clamped_rows": 97,
+      "mean_circuit_l2": 0.015151832161793777,
+      "pooled_rmse": 0.022227646292740027
+    },
+    {
+      "split": "clean",
+      "seed": 3,
+      "endpoint_clamped_rows": 81,
+      "mean_circuit_l2": 0.011890815929369336,
+      "pooled_rmse": 0.02043642451949871
+    },
+    {
+      "split": "clean",
+      "seed": 4,
+      "endpoint_clamped_rows": 89,
+      "mean_circuit_l2": 0.013103309084460956,
+      "pooled_rmse": 0.016606061508002666
+    }
+  ]
+}

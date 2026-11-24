@@ -1,0 +1,11 @@
+{
+  "upstream_revision": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "encoder_sha256": "6d621283927baa80d6ec8377b5bc8c55cb297512deb7e501bc131d5c427d04fe",
+  "torch": "2.5.1",
+  "circuit_rows": 3000,
+  "feature_columns": 169,
+  "targets": 4,
+  "agreement": "Identical float32 bytes for every feature and target",
+  "features_sha256": "e083aedf10054297b98dd8c6bd05fa47bde6da288381687477abe505269a8bee",
+  "targets_sha256": "8d8e041f103583e32fb646ea251028020b7fc79d69e20e4566cf450098a84997"
+}
