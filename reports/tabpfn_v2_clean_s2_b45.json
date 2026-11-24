@@ -1,0 +1,40 @@
+{
+  "model": "tabpfn_v2_clean_s2_b45",
+  "weights_updated": false,
+  "device": "mps",
+  "checkpoint_url": "https://huggingface.co/Prior-Labs/TabPFN-v2-reg/resolve/02a44705ff7790b50cded404bc59adb94da456a1/tabpfn-v2-regressor-v2_default.ckpt",
+  "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+  "feature_archive_sha256": "e05721e57becfb3895957bc30ce58b93a4427a78deea302e09c4341ea9bba5c1",
+  "split": "clean",
+  "clean_manifest_sha256": "40b5f0fd91940ed1a58b7ff3bbe6fe246b2a38e27eae93b962135561d5bebea1",
+  "inputs": "all",
+  "training_noise_donors_sha256": null,
+  "split_seed": 2,
+  "calibration_rows": 45,
+  "test_rows": 900,
+  "features": 169,
+  "ensemble_members": 1,
+  "seed": 0,
+  "seconds": 23.849074041005224,
+  "pooled_rmse": 0.09657761898218935,
+  "mean_circuit_l2": 0.15682268573660738,
+  "mean_circuit_l2_by_depth": {
+    "1": 0.102922559957778,
+    "2": 0.10587139567208,
+    "3": 0.1398229763891037,
+    "4": 0.1390874341937906,
+    "5": 0.16043137795675066,
+    "6": 0.1959476600292048,
+    "7": 0.17669919447423005,
+    "8": 0.170775470325191,
+    "9": 0.21984610263133775
+  },
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.15.0",
+    "tabpfn": "6.4.1",
+    "tabdpt": "1.3.2",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1"
+  }
+}

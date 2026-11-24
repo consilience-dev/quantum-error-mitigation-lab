@@ -1,0 +1,28 @@
+{
+  "model": "ILTM",
+  "checkpoint": "r128bn.pth",
+  "revision": "ef783ec2a246686ad4bd43f35b590c196e70a1ba",
+  "weights_sha256": "9e24c80ee0de16b658344eb8f61ff308205619c219b6de6e5fbd79c6914731a5",
+  "tabtune": "0.2.2",
+  "torch": "2.15.0",
+  "device": "cpu",
+  "settings": {
+    "checkpoint": "r128bn",
+    "n_ensemble": 1,
+    "random_state": 0
+  },
+  "split": "clean 500/900",
+  "calibration_seed": 2,
+  "inputs": "full",
+  "input_columns": 169,
+  "calibration_rows": 500,
+  "test_rows": 900,
+  "clean_split_manifest_sha256": "40b5f0fd91940ed1a58b7ff3bbe6fe246b2a38e27eae93b962135561d5bebea1",
+  "weights_updated": false,
+  "feature_matrix_sha256": "e083aedf10054297b98dd8c6bd05fa47bde6da288381687477abe505269a8bee",
+  "split_sha256": "564ae4215bf382844906ed747b0f43089ce2ca8c0d79744d40807c9e9df65543",
+  "seed": 0,
+  "seconds": 18.074637833051383,
+  "mean_circuit_l2": 0.6453329058301986,
+  "pooled_rmse": 0.37781275198161973
+}

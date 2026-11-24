@@ -62,6 +62,7 @@ def main():
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--clean-seed", type=int, choices=range(5), help="Use the frozen unique nonzero-depth split at 500")
     parser.add_argument("--clean-budget", type=int, default=500, choices=(18, 45, 90, 180, 270, 450, 500))
+    parser.add_argument("--initialization-seed", type=int, choices=(0, 1, 2), help="Use the official freshly initialized TabPFN v2 architecture")
     parser.add_argument("--inputs", choices=("all", "descriptors", "noisy", "shuffle_train_noisy"), default="all")
     parser.add_argument("--fine-tune", action="store_true", help="Three fixed TabPFN fine-tuning epochs")
     parser.add_argument("--features", type=Path, default=ROOT / "data/upstream/rf_features.npz")
@@ -77,6 +78,11 @@ def main():
     if args.fine_tune and args.model != "tabpfn_v2":
         parser.error("--fine-tune requires tabpfn_v2")
     name = args.model + ("_tuned" if args.fine_tune else "")
+    initialization_audit = None
+    if args.initialization_seed is not None:
+        if args.model != "tabpfn_v2" or args.clean_seed != 0 or args.fine_tune or args.clean_budget != 500 or args.inputs != "all":
+            parser.error("The weight ablation uses clean split 0 at 500 and full inputs")
+        name += f"_init{args.initialization_seed}"
     initial_tensor = None
     deltas = []
     if args.fine_tune:
@@ -158,7 +164,14 @@ def main():
             preds[:, q] = np.concatenate([model.predict(X[ids]) for ids in np.array_split(test, 5)])
         else:
             from tabpfn import TabPFNRegressor
-            model = TabPFNRegressor(model_path=weights, device=args.device, random_state=0,
+            model_input = weights
+            if args.initialization_seed is not None:
+                from tabpfn_initialization import initialized_spec
+                model_input, audit = initialized_spec(weights, args.initialization_seed)
+                if initialization_audit is not None and initialization_audit != audit:
+                    raise ValueError("Target-specific models must share the same initial parameters")
+                initialization_audit = audit
+            model = TabPFNRegressor(model_path=model_input, device=args.device, random_state=0,
                                     n_estimators=1, fit_mode="fit_with_cache",
                                     inference_precision=torch.float32)
             model.fit(X[train], y[train, q])
@@ -183,6 +196,13 @@ def main():
         "python": platform.python_version(),
         "versions": {p: version(p) for p in ["torch", "tabpfn", "tabdpt", "numpy", "scikit-learn"]},
     }
+    if initialization_audit is not None:
+        report["initialization_control"] = {
+            **initialization_audit,
+            "per_target_prediction_sd": np.std(preds, axis=0).tolist(),
+            "calibration_target_mean_reference_l2": float(np.linalg.norm(
+                y[test] - y[train].mean(axis=0), axis=1).mean()),
+        }
     if args.fine_tune:
         report["tuning"] = {"epochs": 3, "learning_rate": 1e-5, "training_rows": 450, "validation_rows": 50, "final_context_rows": 500, "episode_size": 128, "fixed_schedule": True, "decoder_max_abs_updates": deltas}
     with (ROOT / f"reports/{name}_predictions.csv").open("w", newline="") as f:

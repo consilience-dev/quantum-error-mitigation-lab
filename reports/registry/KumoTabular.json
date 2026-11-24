@@ -1,0 +1,22 @@
+{
+  "model": "KumoTabular",
+  "checkpoint": "small/regressor.pt",
+  "revision": "c5893d418e162b9f841ae179dc767afefff73831",
+  "weights_sha256": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+  "tabtune": "0.2.2",
+  "torch": "2.15.0",
+  "device": "cpu",
+  "settings": {
+    "size": "small",
+    "num_estimators": 1,
+    "query_batch_size": 64,
+    "max_context_size": 500
+  },
+  "split": "published 500/2500",
+  "feature_matrix_sha256": "e083aedf10054297b98dd8c6bd05fa47bde6da288381687477abe505269a8bee",
+  "split_sha256": "80a2c7d61620465e697aa2ef5c5d14c8cf53a35c95884771b6de8a049e578f1b",
+  "seed": 0,
+  "seconds": 866.7198786251247,
+  "mean_circuit_l2": 0.05500516951854182,
+  "pooled_rmse": 0.048324584177263874
+}

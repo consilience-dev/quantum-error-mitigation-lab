@@ -1,0 +1,52 @@
+{
+  "applies_to": "All ILTM published and clean prediction reports for r128bn, including both seed-0 ablations.",
+  "interpretation": "Transductive sensitivity arm. With normalize_predictions_ enabled, the upstream engine standardizes each observable across the complete unlabeled query batch, clips in calibration-standardized units, and then restores calibration mean and standard deviation. Each fit uses the whole fixed test split in one predict call. Predictions can differ if query batch composition changes.",
+  "checkpoint": "r128bn.pth",
+  "weight_sha256": "9e24c80ee0de16b658344eb8f61ff308205619c219b6de6e5fbd79c6914731a5",
+  "state_dict_entries": 30,
+  "calibration_rows": 500,
+  "internal_batch_size": 4096,
+  "projection_dimension": 512,
+  "pca_sampling": "zeropad",
+  "weight_finetuning": false,
+  "normalize_query_predictions": true,
+  "clip_to_calibration_range": true,
+  "test_rows": 2500,
+  "per_target_range": [
+    [
+      -0.279114603996,
+      0.282294422388
+    ],
+    [
+      -0.989567577839,
+      1.0
+    ],
+    [
+      -0.479177474976,
+      0.460665345192
+    ],
+    [
+      -0.725163698196,
+      0.670180082321
+    ]
+  ],
+  "per_target_correlation": [
+    0.01392786418130903,
+    0.007894128373354537,
+    -0.15094141320454368,
+    -0.22746893349851174
+  ],
+  "n_observables_outside_unit_bounds": 0,
+  "max_abs_error_refit_vs_saved_target_zero": 4.996836278081673e-13,
+  "max_abs_error_restored_query_order": 0.0,
+  "saved_mean_circuit_l2": 0.6491643324864206,
+  "constant_training_target_mean_l2": 0.41090020537376404,
+  "known_answer_check": {
+    "design": "seed=17341, 750 four-feature iid Uniform(-1,1) rows; y=0.7*x0-0.3*x1; first 500 calibration, last 250 test",
+    "pearson_r": -0.2964473370255539,
+    "model_rmse": 0.6999683759608867,
+    "constant_training_mean_rmse": 0.44453534483909607,
+    "beats_constant_on_noiseless_linear_regression": false,
+    "scope": "The frozen r128bn single-member wrapper also fails on this independent simple task. Hardware scores are diagnostic and cannot support conclusions about the general iLTM method."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "model": "causilo",
+  "split": "clean",
+  "clean_split_sha256": "40b5f0fd91940ed1a58b7ff3bbe6fe246b2a38e27eae93b962135561d5bebea1",
+  "calibration_seed": 4,
+  "n_train": 500,
+  "n_test": 900,
+  "inputs": "full",
+  "input_columns": 169,
+  "checkpoint": {
+    "repo": "nums-ai/causilo",
+    "revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "files": {
+      "regressor/config.json": "af78b2d23ac28534ab6c16f75d8d2d2f4dc38ca45c643d70a6324320847480a7",
+      "regressor/model.safetensors": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d"
+    }
+  },
+  "weights_updated": false,
+  "device": "cpu",
+  "mitra_mps_autocast_fp16": false,
+  "query_batch_size": 300,
+  "ensemble_members": 1,
+  "seconds": 35.18053425010294,
+  "tabtune_version": "0.2.2",
+  "torch_version": "2.15.0",
+  "numpy_version": "2.5.5",
+  "scikit_learn_version": "1.9.1",
+  "script_sha256": "e6e37ca380446d96cbc37bf851b43b3f905533d66ae45ade879caa5db4ee0759",
+  "mean_circuit_l2": 0.056806418031087526,
+  "pooled_rmse": 0.04589502280092297,
+  "mean_circuit_l2_by_depth": {
+    "1": 0.017389692843843462,
+    "2": 0.03435076820796609,
+    "3": 0.04768675420610476,
+    "4": 0.06247575748455984,
+    "5": 0.05695537436741409,
+    "6": 0.06960072647268921,
+    "7": 0.07509899667871628,
+    "8": 0.0637171256788056,
+    "9": 0.08398256633968842
+  }
+}
