@@ -1,7 +1,7 @@
 {
   "dataset": "New depolarising simulation on original Qermit targets. No hardware was run.",
   "source": "https://doi.org/10.5281/zenodo.6472281",
-  "historical_code": "https://github.com/Quantinuum/Qermit/tree/b89b20cc236bac25b6fe3e18dcd5234f3a212879/qermit/clifford_noise_characterisation",
+  "historical_code": "https://github.com/Quantinuum/Qermit/tree/aa25c21a9a17aa5b46d03c4152d2d61387356d21/qermit/clifford_noise_characterisation",
   "generator_code": "https://github.com/Quantinuum/Qermit/blob/fba795b895d109b844583d0749334c4951e10ddf/qermit/clifford_noise_characterisation/ccl.py",
   "notebook_sha256": "dbd91fa4a506bae5ca648b215dfe37511506620580c7e89a28d35f36b0ac517c",
   "source_digests": {
@@ -100,5 +100,7 @@
     "20": 340
   },
   "seconds": 216.387,
-  "contexts_sha256": "76cadbe2f84e30b39a30e3c3ee7ac1f0a6affac39b6efa0f42384d75a52edee1"
+  "contexts_sha256": "76cadbe2f84e30b39a30e3c3ee7ac1f0a6affac39b6efa0f42384d75a52edee1",
+  "released_example": "https://zenodo.org/records/6472281/files/example_experiment.ipynb",
+  "chronology": "Deposited CDR timestamps span 2022-02-03 through 2022-02-06 for the depolarising simulator. The February source is contemporaneous. The later example notebook documents the setup, and the exact acquisition environment is unavailable."
 }

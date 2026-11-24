@@ -202,7 +202,9 @@ def generate(args):
     metadata = dict(
         dataset='New depolarising simulation on original Qermit targets. No hardware was run.',
         source='https://doi.org/10.5281/zenodo.6472281',
-        historical_code='https://github.com/Quantinuum/Qermit/tree/b89b20cc236bac25b6fe3e18dcd5234f3a212879/qermit/clifford_noise_characterisation',
+        historical_code='https://github.com/Quantinuum/Qermit/tree/aa25c21a9a17aa5b46d03c4152d2d61387356d21/qermit/clifford_noise_characterisation',
+        released_example='https://zenodo.org/records/6472281/files/example_experiment.ipynb',
+        chronology='Deposited CDR timestamps span 2022-02-03 through 2022-02-06 for the depolarising simulator. The February source is contemporaneous. The later example notebook documents the setup, and the exact acquisition environment is unavailable.',
         generator_code='https://github.com/Quantinuum/Qermit/blob/fba795b895d109b844583d0749334c4951e10ddf/qermit/clifford_noise_characterisation/ccl.py',
         notebook_sha256=hashlib.sha256(notebook.read_bytes()).hexdigest(), source_digests=verified,
         input='One noisy all-Z estimate per target-local surrogate; one independently sampled label from its noiseless simulator.',

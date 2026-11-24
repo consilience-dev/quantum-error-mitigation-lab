@@ -66,6 +66,12 @@ def fit_one(example, *, name, path, device):
     pred = np.asarray(fitted.predict(np.asarray(test_x).reshape(1, 1))).reshape(-1)
     if pred.size != 1 or not np.isfinite(pred[0]):
         raise ValueError(f'Invalid prediction for {ident}')
+    # TabPFN's fit detects a constant label vector before building its
+    # inference engine. Preserve and verify its ordinary public prediction.
+    if name == 'tabpfn_v2' and fitted.is_constant_target_:
+        if np.any(train_y != train_y[0]) or pred[0] != train_y[0]:
+            raise ValueError(f'Unexpected TabPFN constant prediction for {ident}')
+        return float(pred[0]), 0
     return float(pred[0]), check_full_context(name, fitted, 20)
 
 
@@ -105,7 +111,7 @@ def digest(path):
 
 
 def verify(path, model):
-    ids, _, _, _, ideal, raw, cdr, cells = read_contexts(path)
+    ids, _, train_y, _, ideal, raw, cdr, cells = read_contexts(path)
     pred_path = path.parent / f'{model}.csv'
     report = json.loads(pred_path.with_suffix('.json').read_bytes())
     if (report['model'] != model or report['contexts_sha256'] != digest(path)
@@ -117,8 +123,13 @@ def verify(path, model):
     if [r['experiment_id'] for r in rows] != list(ids):
         raise ValueError('Predictions and contexts have different target IDs')
     a = np.asarray([float(r['prediction']) for r in rows])
-    sizes = sorted({int(r['ensemble_members']) for r in rows})
-    if sizes != report['effective_ensemble_sizes'] or not all(0 < n <= report['requested_ensemble_members'] for n in sizes):
+    members = np.array([int(r['ensemble_members']) for r in rows])
+    sizes = sorted(set(members.tolist()))
+    shortcut = (np.ptp(train_y, axis=1) == 0) & (model == 'tabpfn_v2')
+    if (sizes != report['effective_ensemble_sizes'] or np.any(members < 0)
+            or np.any(members > report['requested_ensemble_members'])
+            or not np.array_equal(members == 0, shortcut)
+            or not np.array_equal(a[shortcut], train_y[shortcut, 0])):
         raise ValueError('Invalid ensemble sizes')
     if not np.isfinite(a).all():
         raise ValueError('Nonfinite predictions')

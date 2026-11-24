@@ -60,12 +60,56 @@ def check_source(z, protocol):
     return mirrored
 
 
+def channel_diagnostic(z, indices):
+    """Remove noisy and noiseless shot sampling while holding the generated contexts fixed."""
+    threshold = 1e-12
+    by_cell = defaultdict(list)
+    inside = 0
+    for i in indices:
+        x = z['context_channel'][i].tolist()
+        y = z['context_exact'][i].tolist()
+        query = float(z['query_channel'][i])
+        inside += min(x) <= query <= max(x)
+        cell = int(z['widths'][i]), int(z['depths'][i])
+        if max(x) - min(x) <= threshold:
+            by_cell[cell].append(None)
+            continue
+        x_mean, y_mean = mean(x), mean(y)
+        slope = (math.fsum((v-x_mean)*(label-y_mean) for v,label in zip(x,y))
+                 / math.fsum((v-x_mean)**2 for v in x))
+        estimate = y_mean + slope * (query - x_mean)
+        # The archived CDR comes from a different realization on the same target.
+        ideal = float(z['target_ideal'][i])
+        predictions = (estimate, z['cdr_prediction'][i], z['archived_cdr'][i])
+        by_cell[cell].append(tuple(abs(float(p) - ideal) for p in predictions))
+    identified = [loss for losses in by_cell.values() for loss in losses if loss is not None]
+    complete = [losses for losses in by_cell.values() if None not in losses]
+
+    def paired_maes(losses):
+        fields = ('channel_mean_cdr', 'sampled_cdr', 'archived_cdr')
+        return {field: mean(row[j] for row in losses) if losses else None
+                for j,field in enumerate(fields)}
+
+    return dict(query_within_auxiliary_channel_range=inside,
+                range_rule='Inclusive minimum and maximum of the 20 auxiliary channel means, before shot sampling.',
+                fit='Affine fit of exact ideal labels to noisy channel means, evaluated at the target channel mean.',
+                excluded_channel_range_at_most=threshold,
+                rank_degenerate_targets=len(indices)-len(identified),
+                defined_targets=len(identified), paired_mae_defined_targets=paired_maes(identified),
+                complete_volume_cells=len(complete),
+                incomplete_cells=[dict(width=w, depth=d) for (w,d),losses in sorted(by_cell.items()) if None in losses],
+                paired_mae_complete_volume_cells=paired_maes([row for losses in complete for row in losses]))
+
+
 def check_contexts(z, protocol):
     if protocol['shots_per_context_or_cdr_target'] != 500000 // 21 or protocol['shots_per_fresh_raw'] != 100000:
         raise ValueError('The simulator shot allocation differs from the published notebook')
     for k in ('context_noisy', 'context_ideal', 'context_channel', 'context_exact', 'surrogate_hashes'):
         if z[k].shape != (len(z['experiment_ids']), 20):
             raise ValueError(f'Expected twenty observations per target in {k}')
+    for k in ('context_channel', 'context_exact', 'query_channel', 'raw_channel'):
+        if not np.isfinite(z[k]).all() or np.any(np.abs(z[k]) > 1 + 1e-9):
+            raise ValueError(f'Invalid pre-sampling Pauli expectation values in {k}')
     for k in ('context_noisy', 'context_ideal', 'query_noisy', 'raw_noisy'):
         values = z[k]
         if not np.isfinite(values).all() or np.any(np.abs(values) > 1 + 1e-12):
@@ -91,7 +135,8 @@ def check_contexts(z, protocol):
                                 low_ideal_spread_at_retry_limit=int(low[ix].sum()),
                                 contexts_with_quality_warning=int(warn[ix].sum()),
                                 any_surrogate_ideal_equal_target_ideal=int(matches_target.any(axis=1).sum()),
-                                all_20_surrogate_ideals_equal_target_ideal=int(matches_target.all(axis=1).sum()))
+                                all_20_surrogate_ideals_equal_target_ideal=int(matches_target.all(axis=1).sum()),
+                                channel_mean_diagnostic=channel_diagnostic(z, ix))
     return by_family
 
 

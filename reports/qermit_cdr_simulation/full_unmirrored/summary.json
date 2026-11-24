@@ -6,7 +6,7 @@
   "source_reference_cells_sha256": "d51dd3963b0db559715b5e01f0bfe01edcefb541fb728cf699bf8baf8cffc86f",
   "contexts_sha256": "76cadbe2f84e30b39a30e3c3ee7ac1f0a6affac39b6efa0f42384d75a52edee1",
   "linked_input_sha256": {
-    "protocol.json": "254eb32499d4020737e40f991c95182b0a94b098f014d44945d9bb116178e1ff",
+    "protocol.json": "624ca6afe31bb0ca220513f6fc7ecd8e722b7d7b0763afbba24c4ffa6a9a8463",
     "nori.json": "4b109a117b388041459fb769c0b5081a5461f93b8295c32b54806eea388c4c1d",
     "nori.csv": "ef405e0853e13535fe4efea1b5d4e663a3ad769a87b12b7e88826a05fe370967",
     "tabicl.json": "0475c547e5e30a2cd107a12fddd085e243c2739fb2f16c1f8175c026cdcd7af4",
@@ -34,7 +34,48 @@
       "low_ideal_spread_at_retry_limit": 7,
       "contexts_with_quality_warning": 65,
       "any_surrogate_ideal_equal_target_ideal": 232,
-      "all_20_surrogate_ideals_equal_target_ideal": 6
+      "all_20_surrogate_ideals_equal_target_ideal": 6,
+      "channel_mean_diagnostic": {
+        "query_within_auxiliary_channel_range": 263,
+        "range_rule": "Inclusive minimum and maximum of the 20 auxiliary channel means, before shot sampling.",
+        "fit": "Affine fit of exact ideal labels to noisy channel means, evaluated at the target channel mean.",
+        "excluded_channel_range_at_most": 1e-12,
+        "rank_degenerate_targets": 7,
+        "defined_targets": 333,
+        "paired_mae_defined_targets": {
+          "channel_mean_cdr": 0.009075886924463107,
+          "sampled_cdr": 0.010772962832471701,
+          "archived_cdr": 0.011483011990436495
+        },
+        "complete_volume_cells": 29,
+        "incomplete_cells": [
+          {
+            "width": 2,
+            "depth": 2
+          },
+          {
+            "width": 3,
+            "depth": 2
+          },
+          {
+            "width": 5,
+            "depth": 2
+          },
+          {
+            "width": 6,
+            "depth": 2
+          },
+          {
+            "width": 7,
+            "depth": 2
+          }
+        ],
+        "paired_mae_complete_volume_cells": {
+          "channel_mean_cdr": 0.009746231305796126,
+          "sampled_cdr": 0.011417849186786526,
+          "archived_cdr": 0.01228770607147146
+        }
+      }
     },
     "Random": {
       "targets": 340,
@@ -45,7 +86,27 @@
       "low_ideal_spread_at_retry_limit": 0,
       "contexts_with_quality_warning": 330,
       "any_surrogate_ideal_equal_target_ideal": 0,
-      "all_20_surrogate_ideals_equal_target_ideal": 0
+      "all_20_surrogate_ideals_equal_target_ideal": 0,
+      "channel_mean_diagnostic": {
+        "query_within_auxiliary_channel_range": 132,
+        "range_rule": "Inclusive minimum and maximum of the 20 auxiliary channel means, before shot sampling.",
+        "fit": "Affine fit of exact ideal labels to noisy channel means, evaluated at the target channel mean.",
+        "excluded_channel_range_at_most": 1e-12,
+        "rank_degenerate_targets": 0,
+        "defined_targets": 340,
+        "paired_mae_defined_targets": {
+          "channel_mean_cdr": 0.11274832820354451,
+          "sampled_cdr": 0.11669816113575131,
+          "archived_cdr": 0.06001083334066235
+        },
+        "complete_volume_cells": 34,
+        "incomplete_cells": [],
+        "paired_mae_complete_volume_cells": {
+          "channel_mean_cdr": 0.11274832820354451,
+          "sampled_cdr": 0.11669816113575131,
+          "archived_cdr": 0.06001083334066235
+        }
+      }
     }
   },
   "summary": {
