@@ -1,0 +1,39 @@
+{
+  "contrast": "Frozen TabPFN v2 minus original archived random forest; lower favors TabPFN",
+  "population": "4,200 distinct test circuit fingerprints unseen in training, depths 1 to 14",
+  "procedure": "Paired circuit bootstrap within each depth, conditioned on training data, model and simulated noise setting",
+  "bootstrap_seed": 0,
+  "draws": 10000,
+  "mean_circuit_mae": {
+    "estimate": -0.003916812667950314,
+    "ci95": [
+      -0.004165302585628761,
+      -0.0036727071061470455
+    ]
+  },
+  "mean_circuit_l2": {
+    "estimate": -0.009781118375940817,
+    "ci95": [
+      -0.010406600782650677,
+      -0.009161394515390872
+    ]
+  },
+  "official_mae_difference": -0.003647008405558569,
+  "official_relative_mae_reduction_vs_rf": 0.2351432008973664,
+  "official_depths_lower_mae_than_rf": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ]
+}

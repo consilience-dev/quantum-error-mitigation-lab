@@ -1,4 +1,4 @@
-# What the ML-QEM hardware experiment establishes
+# What the ML-QEM comparisons establish
 
 Several frozen tabular checkpoints reduced four-observable error relative to the published random forest on IBM Algiers. Performance varied substantially by checkpoint. A separate, problem-specific control predicted the ideal observables more accurately using **only the known circuit parameters and calibration labels**. This four-qubit Ising task can measure predictive accuracy and the incremental value of noisy inputs. Establishing transferable error mitigation requires a further experiment that changes the hardware or circuit family.
 
@@ -91,8 +91,37 @@ For each observable we compared in-context inference from a frozen checkpoint wi
 
 **Does the checkpoint matter?** We also ran the official TabPFN v2 architecture with newly initialized neural weights on the same 500 calibration and 900 test circuits as frozen draw 0. All 900 predictions were constant within each observable for each newly initialized network. Three initialization seeds gave mean errors of 0.4054, 0.4075, 0.4072, versus 0.0668 with the pretrained weights. The official constructor initialized all 11,081,864 neural parameters and sets the residual outputs to zero at initialization. The architecture, target-bin distribution, inference preprocessing and calibration labels were retained. This isolates the contribution of the stored neural weights for this frozen configuration. A network trained from scratch under a matched optimization budget is a separate comparison. [Initialization audit](tabpfn_v2_init0_clean_s0.json)
 
+## Comparison with the authors’ simulated OLS tutorial
+
+The ML-QEM `h12_ols` notebook uses 4,500 training and 1,500 validation rows from a four-qubit Ising simulation on FakeLima with readout noise disabled. Its OLS model uses all 58 encoded inputs. We evaluated a frozen, single-member TabPFN v2 with those same inputs, training labels and validation circuits. The notebook prints pooled RMSE over all four observables. Depth files were loaded in numeric order for our replay and refit because the notebook uses an unspecified filesystem order. [Authors’ notebook](https://github.com/qiskit-community/ml-qem/blob/faf3e44ac686d62b2184a983d89e655084759a26/docs/tutorials/h12_ols.ipynb) · [Pinned source files](../data/simulation_h12_sources.json)
+
+| Model | Notebook RMSE | Our RMSE, 1,500 validation rows | Our RMSE, 1,400 circuits absent from training |
+|---|---:|---:|---:|
+| Unmitigated | 0.097725 | 0.097725 | 0.101085 |
+| Authors’ released OLS model | 0.074108 | 0.074104 | 0.073694 |
+| Fresh OLS refit | — | 0.074052 | 0.073605 |
+| Frozen TabPFN v2 | — | 0.016764 | 0.017149 |
+
+Six compiled circuit identities shared with training account for all 100 depth-zero validation rows. Removing them leaves 1,400 unique validation circuits. TabPFN’s improvement over OLS persists in that subset. These are the notebook’s validation rows, and the experiment uses the same tractable Ising family as the hardware test. [Targets and OLS scores](simulation/reference.json) · [TabPFN checkpoint and scores](simulation/tabpfn_v2.json)
+
+## Comparison with the published Figure 3 predictions
+
+The paper also releases test predictions for FakeLima Ising circuits. We matched the four noisy and four ideal values for **every row** in the Figure 3 no-readout-error condition at depths 0–14. We used the same 4,500 training rows as the OLS tutorial, and scored the 4,500 `val_extra` test rows. Frozen TabPFN v2 received the 58 tabular features, with one regressor per observable. The published model predictions below were rescored from the archive. The forest, MLP, OLS and GNN retain their original model-specific representations. QEMScore separately reports a mean absolute error (MAE) on this subset. We reproduced all six of its reference values to six decimal places. [ML-QEM, Figure 3](https://arxiv.org/html/2309.17368v2#S2.F3) · [QEMScore reanalysis](https://github.com/yzhao062/QEMScore/blob/4b95b3e91b44bbfa75d70279ac5d68f05d148ce2/reanalysis/mlqem/README.md)
+
+| Method | Mean circuit L2, 4,500 rows | MAE, 4,500 rows | MAE, 4,200 unique circuits absent from training |
+|---|---:|---:|---:|
+| Unmitigated | 0.150454 | 0.060945 | 0.064487 |
+| ZNE | 0.104831 | 0.041865 | 0.043861 |
+| OLS | 0.115497 | 0.046249 | 0.045677 |
+| Random forest | 0.037336 | 0.015510 | 0.016031 |
+| MLP | 0.052709 | 0.022274 | 0.023061 |
+| GNN | 0.126836 | 0.051041 | 0.051403 |
+| Frozen TabPFN v2, our run | **0.028171** | **0.011863** | **0.012114** |
+
+TabPFN reduced MAE by 23.5% relative to the archived forest on the 4,500 test rows. On the 4,200 unique nonzero-depth circuits, the paired MAE difference was −0.00392 (nominal 95% interval −0.00417 to −0.00367, resampling circuits within depth). TabPFN had lower MAE at each of depths 1–14 and the forest had lower MAE at depth 0. This interval conditions on the training set and simulated noise setting. The same six training identities cover all 300 depth-zero test rows. The 4,200 remaining circuits are unique and absent from both training and the OLS tutorial validation set under compiled circuit identity. This covers interpolation over held-out circuits at familiar depths, one simulated noise condition and one fixed training set. The archive also has predictions for depths 15–29, but its corresponding `val_extra` circuit files for that condition end at depth 14 in the pinned release. A full-feature comparison at those extrapolation depths requires the missing circuit descriptors. [Matched sources and row predictions](simulation/fig3/reference.json) · [Checkpoint and per-depth results](simulation/fig3/tabpfn_v2.json) · [Paired uncertainty](simulation/fig3/paired_rf.json)
+
 ## Limits and next independent test
 
-This is one four-qubit Ising family, measured in one campaign on one processor. The original and fresh split overlap across experiments. Repeated calibration draws quantify sensitivity to label choice within the same device and circuit family. Checkpoint provenance, including possible overlap of undisclosed real-table pretraining corpora with released benchmarks, matters for interpreting the model comparison.
+The hardware results cover one four-qubit Ising family measured in one campaign on one processor. The FakeLima simulations add measurements under simulated noise for that same circuit family. The original and fresh split overlap across experiments. Repeated calibration draws quantify sensitivity to label choice within the same device and circuit family. Checkpoint provenance, including possible overlap of undisclosed real-table pretraining corpora with released benchmarks, matters for interpreting the model comparison.
 
-The next confirmatory experiment should freeze a model, conventional baseline, parameter-only control, calibration budget and endpoint before examining independent test labels. A concrete candidate is the Placidi et al. random-circuit release with separate Algiers training and Hanoi test archives and full output distributions. Derive fixed single-qubit Z expectations with a verified bit order, audit logical circuit overlap, and evaluate measurement-only, circuit-only and combined inputs. The Qermit experimental archive supplies a further circuit-family/device check. Both are prospective. [External protocol](../docs/model-comparison.md) · [Placidi et al. archive](https://zenodo.org/records/18541433) · [Qermit archive](https://doi.org/10.5281/zenodo.6472281)
+The next confirmatory experiment should freeze a model, conventional baseline, parameter-only control, calibration budget and endpoint before examining independent test labels. A concrete candidate is the Placidi et al. random-circuit release with separate Algiers training and Hanoi test archives and full output distributions. Derive fixed single-qubit Z expectations with a verified bit order, audit logical circuit overlap, and evaluate measurement-only, circuit-only and combined inputs. The Qermit experimental archive supplies a further circuit-family/device check. QEM-Bench also provides existing OLS, forest and QEMFormer scores for 50-qubit Kyiv hardware. The filtered rows and splits needed for a direct evaluation were unavailable in its official repository. These independent hardware evaluations remain prospective. [QEM-Bench reference scores](../docs/qembench-reference.md) · [External protocol](../docs/model-comparison.md) · [Placidi et al. archive](https://zenodo.org/records/18541433) · [Qermit archive](https://doi.org/10.5281/zenodo.6472281)

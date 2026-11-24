@@ -1,0 +1,43 @@
+{
+  "model": "TabPFN v2, one frozen ensemble member",
+  "seed": 0,
+  "device": "mps",
+  "checkpoint_url": "https://huggingface.co/Prior-Labs/TabPFN-v2-reg/resolve/02a44705ff7790b50cded404bc59adb94da456a1/tabpfn-v2-regressor-v2_default.ckpt",
+  "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+  "reference_artifact_sha256": "ae87dc3198509659626a87acdbba9cada63d8fe4170ca3d6af740c7a6d8b0066",
+  "predictions_sha256": "27b38a5951fc77c2d14f16f94dfa72e4f096abf9a68a9b204d37b5054e289fa4",
+  "train_rows": 4500,
+  "test_rows": 1500,
+  "inputs": 58,
+  "one_scalar_regressor_per_observable": true,
+  "query_chunk_rows": 100,
+  "seconds": 18.231938667129725,
+  "fit_mode": "fit_with_cache",
+  "versions": {
+    "tabpfn": "6.4.1",
+    "torch": "2.15.0",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1"
+  },
+  "official_split": {
+    "pooled_rmse": 0.016763537530633147,
+    "mean_circuit_l2": 0.028587243838233415,
+    "per_observable_rmse": [
+      0.01658407667770716,
+      0.014715126016052236,
+      0.02118413066599397,
+      0.013554734861645532
+    ]
+  },
+  "rows_without_training_identity": 1400,
+  "subset_without_training_identity": {
+    "pooled_rmse": 0.017148663490757554,
+    "mean_circuit_l2": 0.029305490980133794,
+    "per_observable_rmse": [
+      0.016978533085108598,
+      0.015022681370382429,
+      0.021757714553943465,
+      0.013746161434666655
+    ]
+  }
+}

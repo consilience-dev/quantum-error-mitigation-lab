@@ -1,0 +1,109 @@
+{
+  "upstream_revision": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "source_manifest_sha256": "0266dd0d6560114310bd6772f20367b0ebd9e3abf2c2e49c70af8903c847f488",
+  "tutorial": "docs/tutorials/h12_ols.ipynb",
+  "dataset": "FakeLima simulation, Ising, no readout noise",
+  "train_rows": 4500,
+  "test_rows": 1500,
+  "feature_count": 58,
+  "target_count": 4,
+  "row_order": "Depths 0 through 14 in numerical order, within-file order preserved, exactly the upstream train and val populations. Notebook os.listdir ordering was unspecified.",
+  "n_unique_train": 4206,
+  "n_unique_test": 1406,
+  "shared_compiled_circuit_hashes": 6,
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.6.1",
+    "qiskit-terra": "0.24.1",
+    "torch": "2.5.1"
+  },
+  "original_notebook_rmse": {
+    "RMSE_noisy_0": 0.06337334955349146,
+    "RMSE_mitigated_0": 0.04678163067370942,
+    "RMSE_noisy_1": 0.05800889740821431,
+    "RMSE_mitigated_1": 0.047881910793331636,
+    "RMSE_noisy_2": 0.16465283838945421,
+    "RMSE_mitigated_2": 0.12634440860824359,
+    "RMSE_noisy_3": 0.06089994041581833,
+    "RMSE_mitigated_3": 0.03903615889218669,
+    "RMSE_noisy": 0.09772483505294303,
+    "RMSE_mitigated": 0.07410791057190652
+  },
+  "rows_without_training_identity": 1400,
+  "subset_without_training_identity": {
+    "raw": {
+      "pooled_rmse": 0.101084832544792,
+      "per_observable_rmse": [
+        0.06550247099813067,
+        0.059919425357951965,
+        0.17039692440300186,
+        0.062901116002374
+      ],
+      "mean_circuit_l2": 0.1556132720196017
+    },
+    "ols_refit": {
+      "pooled_rmse": 0.07360495139168083,
+      "per_observable_rmse": [
+        0.04819088346639237,
+        0.04742079307052975,
+        0.12465216147462685,
+        0.03951583546479704
+      ],
+      "mean_circuit_l2": 0.11291943883034172
+    },
+    "ols_saved": {
+      "pooled_rmse": 0.07369440871440168,
+      "per_observable_rmse": [
+        0.04817917690276486,
+        0.04746502799408006,
+        0.12483920745989749,
+        0.039553429868205724
+      ],
+      "mean_circuit_l2": 0.11329716015604731
+    }
+  },
+  "feature_digests": {
+    "train_X": "7bf83c051fc7bf5f7d489a1e44a816b7ee91321d625a5903f522ecb0b15ab459",
+    "train_y": "5e12b0f1d29a3d9ea65ad8c4d060d68876907346f0c979e43986dd6bd0a1c1ba",
+    "train_id": "ee5ce416c1a8fc8e35cb2ab92a54880779f2fee166b4813eece925c064f08dde",
+    "train_hash": "4fce09b317d5fd704c8133e4c71ed8d124382b3012dd7b7dda8b4bd9cd8d53af",
+    "val_X": "d693cb12798d7a227a0e8be8bf4951a3df3328a6f9efa70ba1d3e57eb2d33b79",
+    "val_y": "69b4ebd280b0a11a788f14f2e5fb5c1914fa067bbc0df67bc9af23c7559ead10",
+    "val_id": "5c4c3dd526990084ba5ae39f091721abd191a38819d5424cbe6004b4315c0db0",
+    "val_hash": "f6e3f80cd6d0e0c9dc9ac2e4f9153e156cbb09b5a850bbb3992c8971ec4f18cd"
+  },
+  "metrics": {
+    "raw": {
+      "pooled_rmse": 0.09772483505294303,
+      "per_observable_rmse": [
+        0.06337334955349148,
+        0.0580088974082143,
+        0.16465283838945421,
+        0.06089994041581836
+      ],
+      "mean_circuit_l2": 0.1469907469418122
+    },
+    "ols_refit": {
+      "pooled_rmse": 0.07405229161591403,
+      "per_observable_rmse": [
+        0.04679189074404601,
+        0.047862159682732115,
+        0.12622104654843078,
+        0.03902496141694786
+      ],
+      "mean_circuit_l2": 0.11468401428164501
+    },
+    "ols_saved": {
+      "pooled_rmse": 0.07410417876364474,
+      "per_observable_rmse": [
+        0.04678178513966198,
+        0.04787837666561712,
+        0.12633283124957304,
+        0.039049438106271595
+      ],
+      "mean_circuit_l2": 0.11510561571398606
+    }
+  },
+  "predictions_sha256": "b385519d08d984c679718e0525c67870bc8c758e3b0205f1fc05204da012c17d"
+}

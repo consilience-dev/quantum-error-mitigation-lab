@@ -7,6 +7,7 @@ data/upstream/*.ipynb
 data/upstream/mlp.py
 data/upstream/*.npz
 data/upstream/rf_batches/
+data/upstream/simulation/
 .venv-models/
 .model-cache/
 splits.json

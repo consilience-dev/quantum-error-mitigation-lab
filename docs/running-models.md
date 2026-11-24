@@ -53,3 +53,16 @@ The iLTM engine imports XGBoost. On macOS it requires a compatible OpenMP runtim
 The TabPFN initialization control uses `--clean-seed 0 --initialization-seed 0` (repeat with 1 and 2) on the v2 runner and package version 6.4.1. Its audit records the parameter digest and the checkpoint-derived criterion state retained for this comparison.
 
 For the linear controls run `python scripts/run_affine_baseline.py` and `python scripts/run_linear_comparators.py` after preparing the Algiers feature archive. The second script evaluates four-input multivariate OLS and a calibration-cross-validated linear ridge model on all 169 features. For the frozen Nori few-shot runs use `--clean-seed S --clean-budget B --chunk 450` with S from 0 through 4 and B equal to 18 or 90. Use `--inputs measurements_only` to give Nori the same four noisy observables as the multivariate affine comparator. All model settings otherwise match the clean 500-circuit runs.
+
+## Reproduce the FakeLima simulation comparisons
+
+The OLS tutorial uses the immutable sources listed in [the h12 manifest](../data/simulation_h12_sources.json). In the Python 3.9 circuit environment, install the reproduction requirements and `torch==2.5.1`, then run the first two commands below. Run the model in the TabPFN v2 environment described above with its pinned checkpoint in the weights directory. The final score check only needs the audit requirements and committed prediction files.
+
+```sh
+python scripts/simulation_fetch.py
+python scripts/simulation_h12.py
+python scripts/simulation_tabpfn.py weights --device mps
+python scripts/simulation_verify.py
+```
+
+The [Figure 3 reproduction](../reports/simulation/fig3/README.md#reproduction) reuses the tutorial’s training rows and adds the archived test circuits and six reference predictions.

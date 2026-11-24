@@ -11,5 +11,12 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: pip install -r requirements-audit.txt
       - run: python scripts/fetch_upstream.py
-      - run: python scripts/verify_figure4.py --check
       - run: python scripts/summarize_paired.py --check
+      - run: python scripts/simulation_verify.py
+      - name: Verify scores against the ML-QEM source workbook
+        run: |
+          curl --fail --location --silent --show-error --retry 3 \
+            --output "$RUNNER_TEMP/ml-qem-source.xlsx" \
+            "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/paper_figures/ML-QEM%20Source%20data.xlsx"
+          python scripts/verify_figure4.py --check --workbook "$RUNNER_TEMP/ml-qem-source.xlsx"
+          python scripts/simulation_fig3_verify.py --check --workbook "$RUNNER_TEMP/ml-qem-source.xlsx"

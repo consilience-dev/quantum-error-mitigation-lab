@@ -1,0 +1,176 @@
+{
+  "repository": "https://github.com/qiskit-community/ml-qem",
+  "revision": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "files": [
+    {
+      "path": "blackwater/data/utils.py",
+      "size": 15336,
+      "git_blob_sha1": "f2d3f44213c54a6cd291e9bfa33aee6892c4b2e2"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_0.pk",
+      "size": 3347197,
+      "git_blob_sha1": "78b34ae52773afa591aa2330971cea9430d36038"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_1.pk",
+      "size": 7789271,
+      "git_blob_sha1": "d728119db716f6b9ae418a07320f42cd68c25d9e"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_10.pk",
+      "size": 43403685,
+      "git_blob_sha1": "21110f1930576304a22373a3dfbb2c23e00accb3"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_11.pk",
+      "size": 47366139,
+      "git_blob_sha1": "61a771d0090617f713668fe151815bff448fefde"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_12.pk",
+      "size": 51215268,
+      "git_blob_sha1": "e330d97bb1537f576e2b63dc0bb0212dcf30427e"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_13.pk",
+      "size": 55141160,
+      "git_blob_sha1": "40faac0d85750a38e4ed3574f2c613ee3394347c"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_14.pk",
+      "size": 59042964,
+      "git_blob_sha1": "5ad456daa62e5f076c1b636dfa60fd6d9afad810"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_2.pk",
+      "size": 12353733,
+      "git_blob_sha1": "cdd54bb751178c24b6f3f3578953adc2115983f7"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_3.pk",
+      "size": 16249498,
+      "git_blob_sha1": "02eec79082f555105b37c8f6c4e010cc0d47b4ae"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_4.pk",
+      "size": 20061623,
+      "git_blob_sha1": "fb1d4a20d92b4ae21e43766b14620d96214c0f24"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_5.pk",
+      "size": 23993429,
+      "git_blob_sha1": "ae43a7ca4ed0f76f0a8f18501a391943a119b701"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_6.pk",
+      "size": 27901878,
+      "git_blob_sha1": "14daa02a0d7ab1bb5d80d0810e76e378879d8b63"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_7.pk",
+      "size": 31760092,
+      "git_blob_sha1": "e21a58a6e75e72211c3b2c10580cb1c7bd1af138"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_8.pk",
+      "size": 35613232,
+      "git_blob_sha1": "0ccce069288887118dcf46dbe08bfd12f848a188"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/train/step_9.pk",
+      "size": 39539639,
+      "git_blob_sha1": "4ebe385281457beff607e128530e493251cd0f34"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_0.pk",
+      "size": 1132331,
+      "git_blob_sha1": "caa7cc6485ff6841e04aadd9650a3d26913b4209"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_1.pk",
+      "size": 2446905,
+      "git_blob_sha1": "405205855a5d39948f8c208329793f429300733a"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_10.pk",
+      "size": 14474394,
+      "git_blob_sha1": "1ef42792f25a37b6676867bbd2d56e4ef1d51a50"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_11.pk",
+      "size": 15750038,
+      "git_blob_sha1": "9b7425ebdca79137db1d5dd2278b6009d50e9002"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_12.pk",
+      "size": 17104007,
+      "git_blob_sha1": "b7808ddfed9f8944b861d2ec8f0042876bb56796"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_13.pk",
+      "size": 18383999,
+      "git_blob_sha1": "d7661555f4b827cab2bf64cb1ec84886a19c962f"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_14.pk",
+      "size": 19662924,
+      "git_blob_sha1": "17453fc4a136ff9d7d6abf0bf91b36ba5e69cf24"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_2.pk",
+      "size": 4157121,
+      "git_blob_sha1": "b30c62382e413a807b9189b58fe61899c618978e"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_3.pk",
+      "size": 5459850,
+      "git_blob_sha1": "2511684380a3f97db5fab3a7322e1d3ef3c018c4"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_4.pk",
+      "size": 6699898,
+      "git_blob_sha1": "1bead8f8ee1b85bba33609a3574386a2075fec2b"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_5.pk",
+      "size": 7955967,
+      "git_blob_sha1": "6425a2bf119928e4f834daa52685f816d435700a"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_6.pk",
+      "size": 9269409,
+      "git_blob_sha1": "cc2c9a3b2aeec148ddba3a9cf2bfc959ceca01c5"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_7.pk",
+      "size": 10554751,
+      "git_blob_sha1": "9d41e2c60da26069f6e9ddff668f8a47c0832ba0"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_8.pk",
+      "size": 11901534,
+      "git_blob_sha1": "0610c8d5bb71c36dea93efc23bbe1c6b1865318f"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val/step_9.pk",
+      "size": 13214323,
+      "git_blob_sha1": "391d7fcf628d816bfc7efa0db963f6278affb02d"
+    },
+    {
+      "path": "docs/tutorials/h12_ols.ipynb",
+      "size": 378896,
+      "git_blob_sha1": "0296bf2de7fb4b6a51931352e6dce4e2577cd491"
+    },
+    {
+      "path": "docs/tutorials/mlp.py",
+      "size": 17376,
+      "git_blob_sha1": "d4daebe159fd2d354f5ff5b4d702b5556e40feee"
+    },
+    {
+      "path": "docs/tutorials/model/ising_init_from_qasm_no_readout/ols_full.pk",
+      "size": 1584,
+      "git_blob_sha1": "799b7532f9d8d4aa8d6b036b362b114d278dc44b"
+    }
+  ]
+}

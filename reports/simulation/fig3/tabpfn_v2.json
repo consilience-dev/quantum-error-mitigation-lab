@@ -1,0 +1,113 @@
+{
+  "model": "Frozen TabPFN v2, one ensemble member per observable",
+  "device": "mps",
+  "seed": 0,
+  "checkpoint_url": "https://huggingface.co/Prior-Labs/TabPFN-v2-reg/resolve/02a44705ff7790b50cded404bc59adb94da456a1/tabpfn-v2-regressor-v2_default.ckpt",
+  "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+  "reference_artifact_sha256": "279787d00b3caa6bc0046d80039d820b65e512b36ce5d97ee5e49f3e25837790",
+  "predictions_sha256": "eb7ca25d184de34964c91aec44f66af4685dc1316a88aed891dc4221522be985",
+  "train_rows": 4500,
+  "test_rows": 4500,
+  "n_test_without_training_identity": 4200,
+  "inputs": 58,
+  "fit_mode": "fit_with_cache",
+  "query_chunk_rows": 100,
+  "inference_precision": "torch.float32",
+  "one_scalar_regressor_per_observable": true,
+  "versions": {
+    "tabpfn": "6.4.1",
+    "torch": "2.15.0",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1"
+  },
+  "seconds": 30.77663266705349,
+  "scores": {
+    "official": {
+      "mean_circuit_mae": 0.011862725202050135,
+      "mean_circuit_l2": 0.028170693948611825,
+      "pooled_rmse": 0.016387289954929656
+    },
+    "without_train_identity": {
+      "mean_circuit_mae": 0.012113703698106425,
+      "mean_circuit_l2": 0.028809808052031646,
+      "pooled_rmse": 0.016740687937855762
+    },
+    "by_depth": {
+      "0": {
+        "mean_circuit_mae": 0.0083490262572621,
+        "mean_circuit_l2": 0.019223096500734373,
+        "pooled_rmse": 0.010229380438066786
+      },
+      "1": {
+        "mean_circuit_mae": 0.008497217871173905,
+        "mean_circuit_l2": 0.02008449870340866,
+        "pooled_rmse": 0.010750371509346116
+      },
+      "2": {
+        "mean_circuit_mae": 0.008881022377037133,
+        "mean_circuit_l2": 0.020981949573020433,
+        "pooled_rmse": 0.011372759120510478
+      },
+      "3": {
+        "mean_circuit_mae": 0.008873304610496076,
+        "mean_circuit_l2": 0.021320727705595455,
+        "pooled_rmse": 0.011529117327269411
+      },
+      "4": {
+        "mean_circuit_mae": 0.010204831820889998,
+        "mean_circuit_l2": 0.023772797100637615,
+        "pooled_rmse": 0.012878034314590985
+      },
+      "5": {
+        "mean_circuit_mae": 0.010630489380598223,
+        "mean_circuit_l2": 0.025040502545603992,
+        "pooled_rmse": 0.013565801232584905
+      },
+      "6": {
+        "mean_circuit_mae": 0.010492740761013237,
+        "mean_circuit_l2": 0.024698367752206973,
+        "pooled_rmse": 0.013446649190989184
+      },
+      "7": {
+        "mean_circuit_mae": 0.010805115071617999,
+        "mean_circuit_l2": 0.025332107674481463,
+        "pooled_rmse": 0.013667656284237524
+      },
+      "8": {
+        "mean_circuit_mae": 0.012285400080346504,
+        "mean_circuit_l2": 0.029185203978376286,
+        "pooled_rmse": 0.016165066622060287
+      },
+      "9": {
+        "mean_circuit_mae": 0.013223038410632871,
+        "mean_circuit_l2": 0.031518887510155816,
+        "pooled_rmse": 0.017742481814745945
+      },
+      "10": {
+        "mean_circuit_mae": 0.01308654533778426,
+        "mean_circuit_l2": 0.031101174189353802,
+        "pooled_rmse": 0.017422246268403434
+      },
+      "11": {
+        "mean_circuit_mae": 0.014222628455520298,
+        "mean_circuit_l2": 0.03429513985951493,
+        "pooled_rmse": 0.020213303896315458
+      },
+      "12": {
+        "mean_circuit_mae": 0.015447646373636709,
+        "mean_circuit_l2": 0.03692405179219481,
+        "pooled_rmse": 0.021370784288001193
+      },
+      "13": {
+        "mean_circuit_mae": 0.015249063003709384,
+        "mean_circuit_l2": 0.03632673421186266,
+        "pooled_rmse": 0.020995675120907865
+      },
+      "14": {
+        "mean_circuit_mae": 0.01769280821903333,
+        "mean_circuit_l2": 0.04275517013203013,
+        "pooled_rmse": 0.02534640181759563
+      }
+    }
+  }
+}

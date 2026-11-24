@@ -1,0 +1,93 @@
+{
+  "repository": "https://github.com/qiskit-community/ml-qem",
+  "revision": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "qemscore_reference_repository": "https://github.com/yzhao062/QEMScore",
+  "qemscore_reference_revision": "4b95b3e91b44bbfa75d70279ac5d68f05d148ce2",
+  "files": [
+    {
+      "path": "docs/paper_figures/no_readout_over_depths.pk",
+      "size": 3452656,
+      "git_blob_sha1": "c4e5391e11a8031fbc4924435432c97fcbf4b059"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_0.pk",
+      "size": 3368533,
+      "git_blob_sha1": "660323c847562a0baa09860ac1012e87469cde2f"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_1.pk",
+      "size": 7845912,
+      "git_blob_sha1": "431346fd31d9623e198d207b6daebf531285723c"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_10.pk",
+      "size": 43480885,
+      "git_blob_sha1": "c0cf13faa51fa1e311c8b3091de8722131e533cf"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_11.pk",
+      "size": 47336995,
+      "git_blob_sha1": "50197e07cce2289f5d3a912ea57d175819457c3c"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_12.pk",
+      "size": 51244334,
+      "git_blob_sha1": "1bfcc970637824e60b2ef90811befb26c38fd3c4"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_13.pk",
+      "size": 55162221,
+      "git_blob_sha1": "68e87262cd9c345a873f8a5495a856b9dcf7a644"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_14.pk",
+      "size": 59032394,
+      "git_blob_sha1": "2e344acf8250c509cf08c0963bdd846f142385bf"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_2.pk",
+      "size": 12401781,
+      "git_blob_sha1": "185e60041789c0fb5ffd44c7ccc9608daa83306c"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_3.pk",
+      "size": 16227316,
+      "git_blob_sha1": "afc73d804e965745c63071a61ffb41765de0af46"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_4.pk",
+      "size": 20124762,
+      "git_blob_sha1": "f334cae1e213e1ea4977408084dbb9fff77b69e6"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_5.pk",
+      "size": 24010295,
+      "git_blob_sha1": "a11ffea89dab1cce009b44dea55ebd631364cd5f"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_6.pk",
+      "size": 27865493,
+      "git_blob_sha1": "3a7c61f93f6ae6233cef84b01b1a69e9e9e33e89"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_7.pk",
+      "size": 31725289,
+      "git_blob_sha1": "f45f109e2141b5fa44192326b86c2e98d51f35dc"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_8.pk",
+      "size": 35681948,
+      "git_blob_sha1": "c54ff33673e25ebb5945c559ebd2597b6c9ea231"
+    },
+    {
+      "path": "docs/tutorials/data/ising_init_from_qasm_no_readout/val_extra/step_9.pk",
+      "size": 39529866,
+      "git_blob_sha1": "7f93d3e45879d8e24537f30c5387ccfebfba4070"
+    },
+    {
+      "path": "docs/tutorials/h17_compare_over_steps.ipynb",
+      "size": 153158,
+      "git_blob_sha1": "fc57e17f541df4ea5ec8790c56469b2db8178e43"
+    }
+  ]
+}

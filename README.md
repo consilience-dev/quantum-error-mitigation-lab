@@ -4,12 +4,13 @@ Can pretrained regressors improve noisy quantum observable estimates when every 
 
 **[Read the results](reports/RESULTS.md)** · [per-run scores](reports/scores.csv) · [paired comparisons](reports/clean_paired_summary.json) · [model coverage](docs/model-coverage.md)
 
-## Two experiments
+## Hardware and simulator benchmarks
 
 - **Published reference.** The released hardware notebook uses 500 calibration rows and 2,500 test rows from ten Trotter depths. Each circuit has 169 input features and four ideal target observables. Five new random-forest fits reproduce the published mean circuit error of approximately 0.1000. Running the authors' encoder on the source circuits produced identical bytes for all 3,000 feature and target rows. [Notebook](https://github.com/qiskit-community/ml-qem/blob/faf3e44ac686d62b2184a983d89e655084759a26/docs/demos/demo2_ising_4q_hardware_plot.ipynb) · [Reproduction](reports/rf_reproduction.json) · [Encoder audit](reports/original_encoder_check.json)
 - **Unique held-out circuits.** The 300 depth-zero rows represent three distinct circuits. The earlier 18- and 90-circuit budgets intentionally used two or ten circuits at each of nine nonzero depths. The expanded study evaluates 18, 45, 90, 180, 270, 450 and 500. Five nested calibration draws share a 900-circuit holdout. At 500, each depth receives 55 or 56 unique calibration circuits. [Split and identity audit](data/clean_split.json) · [Evaluation protocol](docs/evaluation.md)
+- **Published simulator comparisons.** On the authors’ four-qubit FakeLima OLS tutorial, the released OLS model reproduced their 0.07411 validation RMSE. Frozen TabPFN v2 scored 0.01676 on the same 1,500 rows. On 4,500 held-out Figure 3 rows at training depths, TabPFN v2 achieved 0.01186 MAE and the authors’ forest achieved 0.01551 MAE. [Figure 3 comparison](reports/RESULTS.md#comparison-with-the-published-figure-3-predictions) · [Tutorial comparison](reports/RESULTS.md#comparison-with-the-authors-simulated-ols-tutorial)
 
-The scorecard includes per-observable affine, four-input affine and a linear ridge model on the full 169 inputs. The [few-shot comparison](reports/RESULTS.md#how-far-do-the-few-shot-budgets-go) shows how their ranking changes with the label budget. The original local package and its 180 test IDs could not be recovered. This repository reconstructs the experiments from pinned upstream measurements. All reported scores come from new runs. [Provenance](docs/provenance.md)
+The scorecard includes per-observable affine, four-input affine and a linear ridge model on the full 169 inputs. The [few-shot comparison](reports/RESULTS.md#how-far-do-the-few-shot-budgets-go) shows how their ranking changes with the label budget. The original local package and its 180 test IDs could not be recovered. This repository reconstructs the experiments from pinned upstream measurements. The reports distinguish new runs from scores printed by the authors and scores recovered from archived predictions. [Provenance](docs/provenance.md)
 
 ## Reproduce the data and baseline
 
