@@ -1,0 +1,33 @@
+{
+  "mitra": {
+    "repo": "autogluon/mitra-regressor",
+    "revision": "5f277aa8f69042d39d6ac3612aed18bb9279bd95",
+    "files": {
+      "config.json": "2bc1ed5047f7c25368245e8ad32540a5fa28940b1ec05d3f1f454a09ff5384c1",
+      "model.safetensors": "d8e75c62af0bec2fd404b0ad20a442d951d43ca6d331315cfcc0509b54f2c642"
+    }
+  },
+  "mitra_v2": {
+    "repo": "autogluon/mitra-regressor-2",
+    "revision": "246c7d310fff04296a2388df5f448e3ffe809283",
+    "files": {
+      "config.json": "f760c38c8884757f6141c1fd2e841e93a470be052dc5a4b489790097a002f0e6",
+      "model.safetensors": "8c90b8f281a793f9feb19f8fc3c5529c58ac844dd7ffc690a0fdbb96fae0967c"
+    }
+  },
+  "causilo": {
+    "repo": "nums-ai/causilo",
+    "revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "files": {
+      "regressor/config.json": "af78b2d23ac28534ab6c16f75d8d2d2f4dc38ca45c643d70a6324320847480a7",
+      "regressor/model.safetensors": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d"
+    }
+  },
+  "tababax": {
+    "repo": "tababax-ai/TabAbax",
+    "revision": "6ce3f6350d67f5f3584df2e612666373c27e29f5",
+    "files": {
+      "tababax-regressor.ckpt": "a5575a96f863235ce5d185c1a17824c86ec9bf7ca2e901fb080e64e9cbf3aecc"
+    }
+  }
+}

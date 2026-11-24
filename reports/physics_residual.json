@@ -1,0 +1,138 @@
+{
+  "status": "exploratory_post_hoc_control",
+  "method": "Within each (depth,basis) linearly interpolate in J, with constant endpoints. For the calibration set, leave each circuit out of interpolation when computing its residual. Fit one global slope and intercept per observable by OLS. Test correction uses all 500 calibration rows for interpolation plus intercept + slope*(noisy - interpolated).",
+  "intercept_only_control": "Add the mean leave-one-out target residual per observable without reading hardware outputs",
+  "test_circuits": 900,
+  "calibration_draws": 5,
+  "upstream_revision": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "split_sha256": "40b5f0fd91940ed1a58b7ff3bbe6fe246b2a38e27eae93b962135561d5bebea1",
+  "seeds": [
+    {
+      "seed": 0,
+      "calibration_rows": 500,
+      "affine_intercept": [
+        0.00030814579532857027,
+        0.0004786738863964264,
+        -0.0008405515103679564,
+        -0.0013560231774978142
+      ],
+      "affine_slope": [
+        -0.00013265615842110936,
+        -0.002875223951329419,
+        -0.013916372505967842,
+        0.0025274452927354614
+      ],
+      "mean_circuit_l2": {
+        "parameter_interpolation": 0.012885529228190902,
+        "intercept_only": 0.013436904208506127,
+        "affine_measurement_residual": 0.013552558770916096
+      }
+    },
+    {
+      "seed": 1,
+      "calibration_rows": 500,
+      "affine_intercept": [
+        -8.50115559196911e-05,
+        -0.0001767872989692466,
+        0.0003267088602570422,
+        -0.004401371348016699
+      ],
+      "affine_slope": [
+        -0.002692270533683018,
+        0.009043036849528606,
+        0.004461612539355095,
+        0.05336034029459175
+      ],
+      "mean_circuit_l2": {
+        "parameter_interpolation": 0.01933037098102566,
+        "intercept_only": 0.019609913231164375,
+        "affine_measurement_residual": 0.022474087370977065
+      }
+    },
+    {
+      "seed": 2,
+      "calibration_rows": 500,
+      "affine_intercept": [
+        -0.0001077284293971083,
+        0.00018933615424297833,
+        -0.00023350435767827062,
+        -0.0005017609224562649
+      ],
+      "affine_slope": [
+        -0.00295145027245945,
+        -0.008375521181865535,
+        -0.0336388339066132,
+        0.010428056312191068
+      ],
+      "mean_circuit_l2": {
+        "parameter_interpolation": 0.015151832161793777,
+        "intercept_only": 0.015403605539110868,
+        "affine_measurement_residual": 0.016371418547000388
+      }
+    },
+    {
+      "seed": 3,
+      "calibration_rows": 500,
+      "affine_intercept": [
+        0.00020608055836332436,
+        0.0007362636611453447,
+        -0.0007985183623035746,
+        -0.003077722809084212
+      ],
+      "affine_slope": [
+        0.0003689001810013983,
+        -0.00922955795957748,
+        -0.008984961533384092,
+        0.021297705247144267
+      ],
+      "mean_circuit_l2": {
+        "parameter_interpolation": 0.011890815929369336,
+        "intercept_only": 0.012474958105842919,
+        "affine_measurement_residual": 0.01320232170709768
+      }
+    },
+    {
+      "seed": 4,
+      "calibration_rows": 500,
+      "affine_intercept": [
+        2.0110738594410196e-05,
+        0.00016111857729034587,
+        0.0002596650788801123,
+        -0.0011852602937870316
+      ],
+      "affine_slope": [
+        -0.005980925755780163,
+        0.0062889746468542335,
+        -0.011820582155849704,
+        0.018050069272743895
+      ],
+      "mean_circuit_l2": {
+        "parameter_interpolation": 0.013103309084460956,
+        "intercept_only": 0.013504494705333613,
+        "affine_measurement_residual": 0.014483786050538608
+      }
+    }
+  ],
+  "mean_circuit_l2_across_draws": {
+    "parameter_interpolation": 0.014472371476968122,
+    "intercept_only": 0.014885975157991583,
+    "affine_measurement_residual": 0.016016834489305968
+  },
+  "contrasts": {
+    "parameter_interpolation": {
+      "mean_corrected_minus_reference": 0.0015444630123378428,
+      "paired_acquisition_batch_bootstrap_95pct": [
+        0.0014021991724334267,
+        0.0016822485053001831
+      ]
+    },
+    "intercept_only": {
+      "mean_corrected_minus_reference": 0.001130859331314387,
+      "paired_acquisition_batch_bootstrap_95pct": [
+        0.0009941726827251281,
+        0.0012666224137251477
+      ]
+    }
+  },
+  "uncertainty": "Nominal percentile intervals resample the observed acquisition batches 10,000 times together across methods and seeds, conditional on these calibration draws. Negative differences favor using the measurement."
+}

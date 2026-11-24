@@ -1,0 +1,41 @@
+{
+  "model": "causilo",
+  "split": "published",
+  "clean_split_sha256": null,
+  "calibration_seed": null,
+  "n_train": 500,
+  "n_test": 2500,
+  "input_columns": 169,
+  "checkpoint": {
+    "repo": "nums-ai/causilo",
+    "revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "files": {
+      "regressor/config.json": "af78b2d23ac28534ab6c16f75d8d2d2f4dc38ca45c643d70a6324320847480a7",
+      "regressor/model.safetensors": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d"
+    }
+  },
+  "weights_updated": false,
+  "device": "cpu",
+  "query_batch_size": 500,
+  "ensemble_members": 1,
+  "seconds": 101.46723016630858,
+  "tabtune_version": "0.2.2",
+  "torch_version": "2.15.0",
+  "numpy_version": "2.5.5",
+  "scikit_learn_version": "1.9.1",
+  "script_sha256": "efe2163318cf40b5fa3c902d374d35fe0b6c8626bb7e42e2606afba980df5232",
+  "mean_circuit_l2": 0.05559451806008192,
+  "pooled_rmse": 0.04857285839981365,
+  "mean_circuit_l2_by_depth": {
+    "0": 0.00019830692603837595,
+    "1": 0.022148419195641415,
+    "2": 0.03381525458507754,
+    "3": 0.045444481272773604,
+    "4": 0.054096505160733256,
+    "5": 0.06419425586740583,
+    "6": 0.0756771654673497,
+    "7": 0.08990003418378145,
+    "8": 0.0768151637841772,
+    "9": 0.09365559415784085
+  }
+}

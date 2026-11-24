@@ -1,0 +1,38 @@
+{
+  "upstream_revision": "faf3e44ac686d62b2184a983d89e655084759a26",
+  "source": "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/paper_figures/ML-QEM%20Source%20data.xlsx",
+  "sha256": "b42607140bfc732c73957a81f35a0bd4c0a21f78b9713a4b9207a107181eb71f",
+  "git_blob_sha1": "d2dafa3c421b8b3e4c8d6c1e9c18919a1cda715e",
+  "bytes": 18127,
+  "sheet": "Figure 4",
+  "header": "A13",
+  "range": "A14:A23",
+  "series_label": "Name: L2_rfr_list, dtype: float64",
+  "series_label_cell": "A24",
+  "depths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "mean_circuit_l2_per_depth_6dp": [
+    0.008884,
+    0.053985,
+    0.080179,
+    0.09181,
+    0.1146,
+    0.119991,
+    0.125018,
+    0.137034,
+    0.117355,
+    0.151538
+  ],
+  "equal_depth_mean_of_printed_values": 0.1000394,
+  "matches_committed_rf_reference": true
+}

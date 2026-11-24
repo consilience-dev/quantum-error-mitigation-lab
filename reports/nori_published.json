@@ -1,0 +1,43 @@
+{
+  "protocol": "published_4q_hardware_500_2500",
+  "model": "nori",
+  "frozen": true,
+  "context_rows_per_target": 500,
+  "test_rows": 2500,
+  "features": 169,
+  "target_fits": 4,
+  "features_npz_sha256": "e05721e57becfb3895957bc30ce58b93a4427a78deea302e09c4341ea9bba5c1",
+  "predictions_sha256": "7f21729ba302e2ab14ab19ff090bfdbcc052c3bead895773bd248a546c8ab8dd",
+  "checkpoint_url": "https://huggingface.co/Synthefy/Nori-1-5/resolve/79afc5a65b2775d0c62977211a63620ce87846c7/nori.pt",
+  "checkpoint_sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+  "device": "mps",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.13.0",
+    "synthefy-nori": "0.22.0",
+    "tabicl": "2.2.0",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "seed": 0,
+  "prediction_chunk_rows": 250,
+  "ensemble_members": 4,
+  "settings": "numeric columns, checkpoint preprocessing",
+  "pooled_rmse": 0.04563326074909878,
+  "mean_circuit_l2": 0.05317714136493146,
+  "mean_circuit_l2_by_depth": {
+    "0": 0.0003847673907050379,
+    "1": 0.01987308959802658,
+    "2": 0.03056042580165303,
+    "3": 0.04077812126193669,
+    "4": 0.050903729072001185,
+    "5": 0.06328397687128157,
+    "6": 0.07396006180534423,
+    "7": 0.08426626142329309,
+    "8": 0.07275347995618942,
+    "9": 0.0950075004688837
+  },
+  "runtime_seconds": 340.29555379087105
+}
