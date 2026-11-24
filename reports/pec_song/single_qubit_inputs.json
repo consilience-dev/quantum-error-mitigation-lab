@@ -1,0 +1,428 @@
+{
+  "paper": "https://doi.org/10.1126/sciadv.aaw5686",
+  "source": "https://arxiv.org/src/1812.10903v1",
+  "source_sha256": "ebd54f0b6f2de5661bb2e7bb16e08d1ef9cf44da2a20196a92367116f5eb3f38",
+  "figure_sha256": {
+    "fig3_supp.pdf": "2459bb44ee5acb25c1040c53b12c69defbdaf0bccaa9fab40ec0271928e6b540",
+    "figure2.pdf": "be9c9ff88813dee716529cc895ce6eb6b5aae22a8f5370762b78e1f2243fc9b1"
+  },
+  "shots_per_block": 3000,
+  "blocks_per_histogram": 100,
+  "histogram_axis_tolerance": 1e-05,
+  "qubits": {
+    "Q1": {
+      "gram": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          -0.0189845,
+          -0.0146787,
+          0.8938905,
+          -0.0128105
+        ],
+        [
+          0.0180415,
+          0.0071081,
+          0.0277562,
+          -0.895305
+        ],
+        [
+          0.9287903,
+          -0.8961858,
+          0.020488,
+          0.0231301
+        ]
+      ],
+      "q_from_figure_gram": [
+        -0.0180552,
+        -0.0051735,
+        0.0082185,
+        1.0958433
+      ],
+      "reported": {
+        "q": [
+          -0.0181,
+          -0.005,
+          0.0085,
+          1.0959
+        ],
+        "raw": {
+          "mean": 0.027,
+          "sd": 0.016
+        },
+        "pec": {
+          "mean": 0.003,
+          "sd": 0.022
+        }
+      },
+      "raw_bins": [
+        {
+          "lower": -0.01266778,
+          "upper": -0.00173437,
+          "blocks": 4,
+          "raw_plus_count_min": 1481,
+          "raw_plus_count_max": 1497
+        },
+        {
+          "lower": -0.00173573,
+          "upper": 0.00919767,
+          "blocks": 10,
+          "raw_plus_count_min": 1498,
+          "raw_plus_count_max": 1513
+        },
+        {
+          "lower": 0.00919631,
+          "upper": 0.02012971,
+          "blocks": 20,
+          "raw_plus_count_min": 1514,
+          "raw_plus_count_max": 1530
+        },
+        {
+          "lower": 0.02013516,
+          "upper": 0.03106856,
+          "blocks": 26,
+          "raw_plus_count_min": 1531,
+          "raw_plus_count_max": 1546
+        },
+        {
+          "lower": 0.0310672,
+          "upper": 0.0420006,
+          "blocks": 26,
+          "raw_plus_count_min": 1547,
+          "raw_plus_count_max": 1563
+        },
+        {
+          "lower": 0.04199924,
+          "upper": 0.05293265,
+          "blocks": 12,
+          "raw_plus_count_min": 1563,
+          "raw_plus_count_max": 1579
+        },
+        {
+          "lower": 0.05293129,
+          "upper": 0.06386469,
+          "blocks": 1,
+          "raw_plus_count_min": 1580,
+          "raw_plus_count_max": 1595
+        },
+        {
+          "lower": 0.08573422,
+          "upper": 0.09666762,
+          "blocks": 1,
+          "raw_plus_count_min": 1629,
+          "raw_plus_count_max": 1645
+        }
+      ],
+      "raw_histogram_check": {
+        "mean_bounds": [
+          0.02118,
+          0.0316
+        ],
+        "sd_bounds": [
+          0.01194527,
+          0.02091941
+        ]
+      },
+      "pec_bins": [
+        {
+          "lower": -0.05487213,
+          "upper": -0.04389791,
+          "blocks": 1
+        },
+        {
+          "lower": -0.04389927,
+          "upper": -0.03292505,
+          "blocks": 5
+        },
+        {
+          "lower": -0.03292641,
+          "upper": -0.02195219,
+          "blocks": 10
+        },
+        {
+          "lower": -0.02194675,
+          "upper": -0.01097253,
+          "blocks": 14
+        },
+        {
+          "lower": -0.01097389,
+          "upper": 3.3e-07,
+          "blocks": 16
+        },
+        {
+          "lower": -1.03e-06,
+          "upper": 0.01097319,
+          "blocks": 13
+        },
+        {
+          "lower": 0.01097183,
+          "upper": 0.02194605,
+          "blocks": 23
+        },
+        {
+          "lower": 0.02194469,
+          "upper": 0.03291891,
+          "blocks": 13
+        },
+        {
+          "lower": 0.03292435,
+          "upper": 0.04389857,
+          "blocks": 3
+        },
+        {
+          "lower": 0.04389721,
+          "upper": 0.05487143,
+          "blocks": 2
+        }
+      ],
+      "pec_histogram_check": {
+        "mean_bounds": [
+          -0.00363282,
+          0.0073614
+        ],
+        "sd_bounds": [
+          0.0169086,
+          0.02709177
+        ]
+      }
+    },
+    "Q2": {
+      "gram": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          -0.0243489,
+          0.0493739,
+          0.8746747,
+          0.0082735
+        ],
+        [
+          0.0233258,
+          0.0049908,
+          0.0622734,
+          -0.87705
+        ],
+        [
+          0.9267531,
+          -0.8751996,
+          0.0220715,
+          0.0319374
+        ]
+      ],
+      "q_from_figure_gram": [
+        -0.0287751,
+        0.0043434,
+        0.0076524,
+        1.1100069
+      ],
+      "reported": {
+        "q": [
+          -0.0288,
+          0.0043,
+          0.0078,
+          1.1101
+        ],
+        "raw": {
+          "mean": 0.034,
+          "sd": 0.019
+        },
+        "pec": {
+          "mean": 0.007,
+          "sd": 0.024
+        }
+      },
+      "raw_bins": [
+        {
+          "lower": -0.01000109,
+          "upper": -0.00060103,
+          "blocks": 6,
+          "raw_plus_count_min": 1485,
+          "raw_plus_count_max": 1499
+        },
+        {
+          "lower": -0.00059967,
+          "upper": 0.00880039,
+          "blocks": 4,
+          "raw_plus_count_min": 1500,
+          "raw_plus_count_max": 1513
+        },
+        {
+          "lower": 0.00880175,
+          "upper": 0.01820181,
+          "blocks": 5,
+          "raw_plus_count_min": 1514,
+          "raw_plus_count_max": 1527
+        },
+        {
+          "lower": 0.01819637,
+          "upper": 0.02759643,
+          "blocks": 19,
+          "raw_plus_count_min": 1528,
+          "raw_plus_count_max": 1541
+        },
+        {
+          "lower": 0.02759779,
+          "upper": 0.03699785,
+          "blocks": 29,
+          "raw_plus_count_min": 1542,
+          "raw_plus_count_max": 1555
+        },
+        {
+          "lower": 0.03699921,
+          "upper": 0.04639927,
+          "blocks": 15,
+          "raw_plus_count_min": 1556,
+          "raw_plus_count_max": 1569
+        },
+        {
+          "lower": 0.04640063,
+          "upper": 0.05580069,
+          "blocks": 8,
+          "raw_plus_count_min": 1570,
+          "raw_plus_count_max": 1583
+        },
+        {
+          "lower": 0.05580205,
+          "upper": 0.06520211,
+          "blocks": 8,
+          "raw_plus_count_min": 1584,
+          "raw_plus_count_max": 1597
+        },
+        {
+          "lower": 0.06519667,
+          "upper": 0.07459673,
+          "blocks": 3,
+          "raw_plus_count_min": 1598,
+          "raw_plus_count_max": 1611
+        },
+        {
+          "lower": 0.07459809,
+          "upper": 0.08399815,
+          "blocks": 3,
+          "raw_plus_count_min": 1612,
+          "raw_plus_count_max": 1626
+        }
+      ],
+      "raw_histogram_check": {
+        "mean_bounds": [
+          0.02954667,
+          0.03827333
+        ],
+        "sd_bounds": [
+          0.0155208,
+          0.02298384
+        ]
+      },
+      "pec_bins": [
+        {
+          "lower": -0.05447757,
+          "upper": -0.04197068,
+          "blocks": 1
+        },
+        {
+          "lower": -0.04197408,
+          "upper": -0.0294672,
+          "blocks": 6
+        },
+        {
+          "lower": -0.0294638,
+          "upper": -0.01695692,
+          "blocks": 6
+        },
+        {
+          "lower": -0.01696032,
+          "upper": -0.00445344,
+          "blocks": 21
+        },
+        {
+          "lower": -0.00445003,
+          "upper": 0.00805685,
+          "blocks": 15
+        },
+        {
+          "lower": 0.00805345,
+          "upper": 0.02056033,
+          "blocks": 22
+        },
+        {
+          "lower": 0.02056373,
+          "upper": 0.03307061,
+          "blocks": 17
+        },
+        {
+          "lower": 0.03306721,
+          "upper": 0.0455741,
+          "blocks": 6
+        },
+        {
+          "lower": 0.0455775,
+          "upper": 0.05808438,
+          "blocks": 3
+        },
+        {
+          "lower": 0.05808098,
+          "upper": 0.07058786,
+          "blocks": 3
+        }
+      ],
+      "pec_histogram_check": {
+        "mean_bounds": [
+          0.00129116,
+          0.01381804
+        ],
+        "sd_bounds": [
+          0.01864442,
+          0.02969553
+        ]
+      }
+    }
+  },
+  "ideal_gram": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      1,
+      -1,
+      0,
+      0
+    ]
+  ],
+  "gram_rows": [
+    "I",
+    "X",
+    "Y",
+    "Z"
+  ],
+  "gram_columns": [
+    "|0>",
+    "|1>",
+    "|+X>",
+    "|-Y>"
+  ],
+  "q1_max_gram_difference_between_main_and_supplement": 0.00025235,
+  "provenance": "Gram entries are reconstructed from vector bar geometry in supplementary figure S3a. The Q1 matrix is cross-checked against the independently rendered main figure 2b. Histogram bin counts are exact integers recovered from S3c. The printed means, standard deviations and measurement decomposition weights come from S3b/c. Per-block values and their ordering are unavailable. The single-qubit test state is also present as the fourth GST calibration state; repeated blocks are not distinct targets."
+}

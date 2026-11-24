@@ -1,0 +1,44 @@
+{
+  "published_supplement": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6731091.1/aaw5686_SM.pdf",
+  "published_supplement_sha256": "0c766a315bb3cd1e3d48b87b5aabeb597c61a4ac8167ad5ef8e22522c65fc3cd",
+  "figure_page": 3,
+  "figure": "S3",
+  "arxiv_source": "https://arxiv.org/src/1812.10903v1",
+  "shared_drawing_stream_bytes": 10523,
+  "shared_drawing_stream_sha256": "dd9fcbc397e13f1fef73557e4553628a5c0272be3f0d46feaa47603b989ed69f",
+  "shared_graphic_streams_sha256": {
+    "/Meta12": "71ccf7f4ca59699b6e745a1db47f68e55516760d16d437d305a2b86d041c41f9",
+    "/Meta12/Image13": "67df2f102f0a415573a8c99bbcba5aff7299290ac72e83c97da5e377b770e8c2",
+    "/Meta14": "eee0b647111f384e08287c1cc6d41fffea6bf16f31a5a86b9114c691b1fb9e8c",
+    "/Meta16": "fe4e883d29d35655985eb58f5b758d46aacea068f4a078ba62ae9ee22e97e16c",
+    "/Meta7": "9a8a97fa158a8b3e650ed81b60af45c12116a5900d7b80b21d5fcdd93793d272",
+    "/Meta7/Image11": "67df2f102f0a415573a8c99bbcba5aff7299290ac72e83c97da5e377b770e8c2"
+  },
+  "interpretation": "The source and published supplements contain identical S3 drawing instructions and identical nested graphic streams for the Gram bars, histogram bins, axes and plotted PEC coefficients. The main figure 2b independently renders Q1.",
+  "q1_gram_from_main_figure": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      -0.0189924,
+      -0.0146958,
+      0.8938616,
+      -0.0128277
+    ],
+    [
+      0.0180139,
+      0.0070632,
+      0.0277814,
+      -0.8951515
+    ],
+    [
+      0.9287551,
+      -0.8961033,
+      0.0203979,
+      0.0233824
+    ]
+  ]
+}

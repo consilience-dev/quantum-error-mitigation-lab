@@ -1,0 +1,66 @@
+{
+  "paper_doi": "10.1126/sciadv.aaw5686",
+  "journal_figure": "3G",
+  "journal_pdf_page": 3,
+  "journal_pdf_url": "https://rcastoragev2.blob.core.windows.net/579b2353fdfbedf6bf0f02e0777ca90c/aaw5686.PMC6731091.pdf",
+  "journal_pdf_sha256": "8c2c522803fdba4fa13bc2c27203217633a7b1f69eb60845679f4612ac0b79a3",
+  "validation_source_url": "https://arxiv.org/src/1812.10903v1",
+  "source_tar_sha256": "ebd54f0b6f2de5661bb2e7bb16e08d1ef9cf44da2a20196a92367116f5eb3f38",
+  "figure3_pdf_sha256": "dbcf769ef6ffa591a4bc6b20d1c235ae860d32a2b482e89d4390ef58380cb20f",
+  "observable": "Pauli X on Q1 following a controlled phase on |++>. The ideal is (1 + cos(phi))/2.",
+  "data_basis": "The center of each journal vector error bar gives the aggregate hardware mean. The 0 and +0.5 horizontal grid lines calibrate its vertical scale. The phase is an identification key and the ideal value is reserved for scoring.",
+  "error_bars": "The vertical half-range is the paper's SD across 100 batch averages of 10,000 instances. Each plotted mean aggregates 1,000,000 instances; the bars are not its standard error.",
+  "digitization_stress_step": 0.0001,
+  "digitization_interpretation": "An analyst-chosen perturbation of each raw input, in expectation units. It covers the observed cross-version mean differences and printed-anchor discrepancies; it is separate from the finite-shot SD.",
+  "max_journal_preprint_mean_difference": 1.524e-05,
+  "max_journal_preprint_sd_difference": 8.27e-06,
+  "max_black_curve_difference_at_33_vertices": 0.00064335,
+  "pi_over_two_anchor": {
+    "printed_absolute_errors": {
+      "raw": 0.169,
+      "pec": 0.0102
+    },
+    "extracted_absolute_errors": {
+      "raw": 0.16894317,
+      "pec": 0.01022911
+    }
+  },
+  "mean_absolute_error_over_four_phases": {
+    "raw": 0.13411993,
+    "pec": 0.01812132
+  },
+  "targets": [
+    {
+      "phase_over_pi": 0.25,
+      "ideal": 0.8535533905932737,
+      "raw": 0.78172827,
+      "raw_sd": 0.01157692,
+      "pec": 0.85296122,
+      "pec_sd": 0.03548768
+    },
+    {
+      "phase_over_pi": 0.5,
+      "ideal": 0.5,
+      "raw": 0.33105683,
+      "raw_sd": 0.01721762,
+      "pec": 0.51022911,
+      "pec_sd": 0.0565062
+    },
+    {
+      "phase_over_pi": 0.75,
+      "ideal": 0.14644660940672627,
+      "raw": -0.04153732,
+      "raw_sd": 0.01889092,
+      "pec": 0.18709208,
+      "pec_sd": 0.07416297
+    },
+    {
+      "phase_over_pi": 1.0,
+      "ideal": 0.0,
+      "raw": -0.10772749,
+      "raw_sd": 0.01933007,
+      "pec": -0.02101852,
+      "pec_sd": 0.06045853
+    }
+  ]
+}
