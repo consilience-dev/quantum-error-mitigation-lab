@@ -1,0 +1,166 @@
+{
+  "paper_doi": "10.1038/s41467-025-66775-9",
+  "release_doi": "10.5281/zenodo.17291855",
+  "archive_md5": "2e2347270d203632f015557808c25807",
+  "archive_sha256": "a850fd80ea06e8e240d03fe751706f20f318ba086a8c1ed46f4bf5d81bb1d3da",
+  "figure2_TFI_open_z": {
+    "reconstructed_fidelity": {
+      "raw": 0.88128638,
+      "mitigated": 0.96146628
+    },
+    "negative_mitigated_entries_before_clipping": 12,
+    "central_charge": [
+      {
+        "n": 1,
+        "central_charge": 0.59297728,
+        "standard_error": 0.10746229,
+        "notebook_central_charge": 0.5929772799901616,
+        "notebook_standard_error": 0.1074622858661855
+      },
+      {
+        "n": 2,
+        "central_charge": 0.53769774,
+        "standard_error": 0.13812818,
+        "notebook_central_charge": 0.5376977333282558,
+        "notebook_standard_error": 0.1381281747715934
+      },
+      {
+        "n": 3,
+        "central_charge": 0.49999529,
+        "standard_error": 0.13171445,
+        "notebook_central_charge": 0.49999528498210544,
+        "notebook_standard_error": 0.13171444892569825
+      },
+      {
+        "n": 4,
+        "central_charge": 0.47871687,
+        "standard_error": 0.12657921,
+        "notebook_central_charge": 0.4787168595090284,
+        "notebook_standard_error": 0.12657921068976832
+      },
+      {
+        "n": 5,
+        "central_charge": 0.4679812,
+        "standard_error": 0.12380745,
+        "notebook_central_charge": 0.4679811858009888,
+        "notebook_standard_error": 0.12380744954763086
+      },
+      {
+        "n": 6,
+        "central_charge": 0.46214982,
+        "standard_error": 0.12227388,
+        "notebook_central_charge": 0.46214981849176506,
+        "notebook_standard_error": 0.12227388022657593
+      },
+      {
+        "n": 7,
+        "central_charge": 0.45867866,
+        "standard_error": 0.12135672,
+        "notebook_central_charge": 0.45867865508384,
+        "notebook_standard_error": 0.12135671815485383
+      },
+      {
+        "n": 8,
+        "central_charge": 0.45645053,
+        "standard_error": 0.12076736,
+        "notebook_central_charge": 0.45645052597116476,
+        "notebook_standard_error": 0.1207673613476961
+      },
+      {
+        "n": 9,
+        "central_charge": 0.45493504,
+        "standard_error": 0.12036642,
+        "notebook_central_charge": 0.45493504121713385,
+        "notebook_standard_error": 0.12036641488677337
+      },
+      {
+        "n": 10,
+        "central_charge": 0.45385714,
+        "standard_error": 0.12008123,
+        "notebook_central_charge": 0.4538571438593771,
+        "notebook_standard_error": 0.12008123028914874
+      }
+    ]
+  },
+  "figure3_TFI_periodic_x": {
+    "bootstrap_replicates": 20,
+    "cutoff": 0.21571867,
+    "central_charge": [
+      {
+        "n": 2,
+        "central_charge": 0.38629641,
+        "standard_error": 0.08284255,
+        "notebook_central_charge": 0.38629641332536824,
+        "notebook_standard_error": 0.08284254968010436
+      },
+      {
+        "n": 4,
+        "central_charge": 0.39425628,
+        "standard_error": 0.08408399,
+        "notebook_central_charge": 0.3942562820749781,
+        "notebook_standard_error": 0.0840839907852081
+      },
+      {
+        "n": 6,
+        "central_charge": 0.39472511,
+        "standard_error": 0.08411187,
+        "notebook_central_charge": 0.3947251057298978,
+        "notebook_standard_error": 0.08411187086821381
+      }
+    ]
+  },
+  "figure4_XXZ_periodic_x": {
+    "bootstrap_replicates": 20,
+    "cutoff": 0.05607411,
+    "central_charge": [
+      {
+        "n": 4,
+        "central_charge": 0.86186505,
+        "standard_error": 0.05208827,
+        "notebook_central_charge": 0.86186504551074,
+        "notebook_standard_error": 0.05208827255338458
+      },
+      {
+        "n": 4.5,
+        "central_charge": 0.86237522,
+        "standard_error": 0.05165239,
+        "notebook_central_charge": 0.862375218334779,
+        "notebook_standard_error": 0.051652392863805616
+      },
+      {
+        "n": 6,
+        "central_charge": 0.86231971,
+        "standard_error": 0.05117108,
+        "notebook_central_charge": 0.8623197062532281,
+        "notebook_standard_error": 0.051171077247734675
+      }
+    ]
+  },
+  "figure4_XXZ_periodic_z": {
+    "bootstrap_replicates": 20,
+    "cutoff": 0.04089588,
+    "central_charge": [
+      {
+        "n": 4,
+        "central_charge": 0.96401096,
+        "standard_error": 0.06553743,
+        "notebook_central_charge": 0.9640109637250946,
+        "notebook_standard_error": 0.06553742786583078
+      },
+      {
+        "n": 4.5,
+        "central_charge": 1.01109577,
+        "standard_error": 0.07104103,
+        "notebook_central_charge": 1.0110957679407635,
+        "notebook_standard_error": 0.071041034199771
+      },
+      {
+        "n": 6,
+        "central_charge": 1.07826902,
+        "standard_error": 0.08019083,
+        "notebook_central_charge": 1.078269020236522,
+        "notebook_standard_error": 0.08019082858235567
+      }
+    ]
+  }
+}

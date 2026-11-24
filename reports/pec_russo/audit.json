@@ -1,0 +1,124 @@
+{
+  "paper": "https://doi.org/10.1109/TQE.2023.3305232",
+  "repository_revision": "e0457555978bf3125b3338e48f93dbfc50efd9fd",
+  "sources": {
+    "data.tar.gz": {
+      "url": "https://codeload.github.com/unitaryfoundation/research/tar.gz/e0457555978bf3125b3338e48f93dbfc50efd9fd",
+      "sha256": "431d33029d1689f1dc26c751fd88010dbc0c80dd29cca299ab3b7c214e820387"
+    },
+    "figures.tar": {
+      "url": "https://arxiv.org/src/2210.07194v2",
+      "sha256": "02355c96586fe071e709fad2f6fbaf568d7465157a394c4a93dc8b546e1262c1"
+    }
+  },
+  "experiment": "One trial per circuit, four circuits at each plotted depth, one projector each. Equation 6 is the square root of the ratio of summed squared errors, with equal shot counts in both arms.",
+  "raw_shots_per_circuit": 10000,
+  "pec_sampled_variants_per_circuit": 100,
+  "shots_per_pec_variant": 100,
+  "source_figures": [
+    3,
+    4
+  ],
+  "archive_nonduplicate_circuit_observations": 180,
+  "plotted_circuit_observations": 100,
+  "plotted_points": 25,
+  "factors_above_one": 19,
+  "max_absolute_source_figure_difference": 3.23e-08,
+  "tolerance": 2e-07,
+  "native_supervised_training_rows": 0,
+  "ideal_target_values": [
+    1.0
+  ],
+  "groups": [
+    {
+      "device": "IBMQ Lima",
+      "qubits": 3,
+      "family": "mirror",
+      "archived_depth_rows": 20,
+      "plotted_depths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "device": "IBMQ Lima",
+      "qubits": 3,
+      "family": "rb",
+      "archived_depth_rows": 10,
+      "plotted_depths": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "device": "IBMQ Lima",
+      "qubits": 5,
+      "family": "mirror",
+      "archived_depth_rows": 3,
+      "plotted_depths": [
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "device": "IBMQ Lima",
+      "qubits": 5,
+      "family": "rb",
+      "archived_depth_rows": 3,
+      "plotted_depths": [
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "device": "IonQ Harmony",
+      "qubits": 3,
+      "family": "mirror",
+      "archived_depth_rows": 3,
+      "plotted_depths": [
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "device": "IonQ Harmony",
+      "qubits": 3,
+      "family": "rb",
+      "archived_depth_rows": 3,
+      "plotted_depths": [
+        1,
+        5,
+        9
+      ]
+    },
+    {
+      "device": "Rigetti Aspen-M2",
+      "qubits": 3,
+      "family": "rb",
+      "archived_depth_rows": 3,
+      "plotted_depths": [
+        1,
+        5,
+        9
+      ]
+    }
+  ],
+  "duplicate_exports": [
+    {
+      "device": "IonQ Harmony",
+      "family": "mirror",
+      "qubits": 3,
+      "retained": "Wed_Dec_14_19:07:49_2022",
+      "byte_identical_export": "Wed_Dec_14_19:12:41_2022"
+    }
+  ]
+}
