@@ -20,3 +20,7 @@ Read-only conversation evidence: “Quantum Error Mitigation Data Sets”, conve
 The downloaded notebook unshuffles measurements using `index_order`, combines 200+100 circuits at each step 0–9, then selects the first 50 per step for training and last 250 for testing. Thus it explicitly specifies 500 training and 2,500 testing rows. It encodes four observables and fits four 100-tree random forests. The notebook alone does not establish canonical circuit disjointness or validate the former local 169-feature extraction.
 
 Upstream files retain their upstream license; ML-QEM identifies Apache-2.0. Record original paths, URLs, byte counts, and SHA-256 in the retrieval manifest. Do not modify upstream files in place. No secrets, user conversation exports, or model credentials are committed.
+
+## Executed measurement checks
+
+`scripts/audit_measurements.py` verified all four retrieved file checksums, the 3,000-element shuffle permutation, expected array dimensions, finite measurements, and ideal/noisy observable bounds (allowing floating-point roundoff). It reconstructed the notebook's row ordering and 50/250 split per depth. The committed JSON report records baseline errors, NumPy version, and the measurement checksum. ZNE estimates outside [-1, 1] are counted and retained. These checks do not establish canonical circuit uniqueness, recover the old local test split, or run a learned model.
