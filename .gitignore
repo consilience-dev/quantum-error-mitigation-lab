@@ -5,4 +5,8 @@ __pycache__/
 data/upstream/*.pk
 data/upstream/*.ipynb
 data/upstream/mlp.py
+data/upstream/*.npz
+data/upstream/rf_batches/
+.venv-models/
+.model-cache/
 splits.json

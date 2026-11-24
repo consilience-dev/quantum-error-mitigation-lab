@@ -1,0 +1,102 @@
+[
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_00.pk",
+    "blob": "fc7d6633ba72578e3a3e4d50c95918dd0ff8e007",
+    "bytes": 2001122
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_01.pk",
+    "blob": "b5e3154938efcf680d1623e4eedb2dbd960395ae",
+    "bytes": 2771292
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_02.pk",
+    "blob": "cfcf1c3f3d9832a2e2c9c9dd48a23a8fa27bb841",
+    "bytes": 3300304
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_03.pk",
+    "blob": "51fdcaee1f49aa710dadb16a25d8ea925edb3ee4",
+    "bytes": 3849887
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_04.pk",
+    "blob": "9d71b911ded8428d26681ea8e418730f14de48a5",
+    "bytes": 4497783
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_05.pk",
+    "blob": "4ac39cfe289c62666cfdc1f578f6584071c4eccf",
+    "bytes": 5147839
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_06.pk",
+    "blob": "ffc353bbed87c078a6039d828f3bfcad6e759a73",
+    "bytes": 5785833
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_07.pk",
+    "blob": "609ce52833634c045a46bbfe36815a9924bae35f",
+    "bytes": 6427559
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_08.pk",
+    "blob": "0d97333f949bc2a64a29797145c4a434e817a935",
+    "bytes": 7034924
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/train/step_09.pk",
+    "blob": "d51a65a7befe6755b59a25822620e20965782188",
+    "bytes": 7670654
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_00.pk",
+    "blob": "38f6e4dbc41ee92079612f64230e8649548162f7",
+    "bytes": 1001588
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_01.pk",
+    "blob": "9da78af07246d2f55ba8c0ef1402ffef2e65ef67",
+    "bytes": 1367707
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_02.pk",
+    "blob": "288762c8ec1be489bc1f2e759a61b15e3d46b4c3",
+    "bytes": 1647317
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_03.pk",
+    "blob": "c5a153b24d6d1ac120df8420c55a457eaa3a1cb0",
+    "bytes": 1935931
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_04.pk",
+    "blob": "17bc37c9cb3ea3797631c8fbfa067d7b1793d710",
+    "bytes": 2241129
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_05.pk",
+    "blob": "c1401833e08f5b59a617886ab75f7a6c4151af8e",
+    "bytes": 2560968
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_06.pk",
+    "blob": "f4f99f9a1785cee0a81ee98577bd143d5aa25588",
+    "bytes": 2874266
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_07.pk",
+    "blob": "25f1a35fc2a57814df89d6fe4e27682947cdf067",
+    "bytes": 3194810
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_08.pk",
+    "blob": "b38a0ed682ef37f447b0d1e8ca1600bc6cf06c3d",
+    "bytes": 3530351
+  },
+  {
+    "path": "docs/tutorials/data/ising_init_from_qasm_hardware/val/step_09.pk",
+    "blob": "f9dd15f12eda08f21ee76691a6853dad6425a34a",
+    "bytes": 3838368
+  }
+]
