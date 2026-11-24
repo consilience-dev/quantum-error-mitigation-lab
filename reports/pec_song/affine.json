@@ -1,0 +1,71 @@
+{
+  "configuration": {
+    "model": "affine",
+    "estimator": "OLS with slope and intercept"
+  },
+  "calibration_states_per_fit": 4,
+  "one_qubit_input_sha256": "993427d4db59df5ea639eaefed615805d2dc9eaf5c46a6471f554aa0e89b8f11",
+  "two_qubit_input_sha256": "2ca8a1f22cd7653dc423f78ecbafefa0ea436a3d030ffc6758dced3a9e40a726",
+  "publication_check_sha256": "374567e948ea4a562dfc515b40a46c99615ddfa139e6247426d00f9b91fefc18",
+  "digitization_predictions_sha256": "fddbc2a3430d515c0eddce67596683644f466be20b6819b996cf13aa8343a780",
+  "predictions_sha256": "0e95df721e6de561eac1a3ff6f2959245af4ef47837ac86621a33d643ae7346d",
+  "scores": {
+    "Q1": {
+      "mean_prediction_bounds": {
+        "histogram_only": [
+          0.002328038009,
+          0.01374713376
+        ],
+        "including_rounded_raw_mean": [
+          0.008158132961,
+          0.00925401547
+        ]
+      },
+      "blocks": 100,
+      "shots_per_block": 3000
+    },
+    "Q2": {
+      "mean_prediction_bounds": {
+        "histogram_only": [
+          0.003502832378,
+          0.013188321875
+        ],
+        "including_rounded_raw_mean": [
+          0.007890529301,
+          0.009000402047
+        ]
+      },
+      "blocks": 100,
+      "shots_per_block": 3000
+    },
+    "two_qubit": {
+      "settings": [
+        {
+          "phase_over_pi": 0.25,
+          "prediction": 0.876640747325,
+          "absolute_error": 0.023087356732
+        },
+        {
+          "phase_over_pi": 0.5,
+          "prediction": 0.381076722172,
+          "absolute_error": 0.118923277828
+        },
+        {
+          "phase_over_pi": 0.75,
+          "prediction": -0.028632525706,
+          "absolute_error": 0.175079135113
+        },
+        {
+          "phase_over_pi": 1.0,
+          "prediction": -0.101416075227,
+          "absolute_error": 0.101416075227
+        }
+      ],
+      "four_setting_mae": 0.104626461225,
+      "six_digitization_variants_mae_range": [
+        0.104566325972,
+        0.104681441858
+      ]
+    }
+  }
+}

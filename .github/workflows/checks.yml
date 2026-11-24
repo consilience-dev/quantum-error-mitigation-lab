@@ -8,8 +8,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m unittest discover -s tests -v
       - run: pip install -r requirements-audit.txt
+      - run: python -m unittest discover -s tests -v
+      - name: Verify hardware PEC comparison from committed predictions
+        run: |
+          for model in affine nori tabicl tabpfn_v2; do
+            python scripts/song_readout_models.py "$model" --check
+          done
       - run: python scripts/fetch_upstream.py
       - run: python scripts/summarize_paired.py --check
       - run: python scripts/simulation_verify.py

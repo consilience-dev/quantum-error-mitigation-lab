@@ -1,0 +1,82 @@
+{
+  "configuration": {
+    "model": "tabpfn_v2",
+    "seed": 0,
+    "frozen": true,
+    "device": "cpu",
+    "requested_ensemble_members": 1,
+    "checkpoint_url": "https://huggingface.co/Prior-Labs/TabPFN-v2-reg/resolve/02a44705ff7790b50cded404bc59adb94da456a1/tabpfn-v2-regressor-v2_default.ckpt",
+    "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+    "versions": {
+      "tabpfn": "6.4.1",
+      "torch": "2.15.0",
+      "numpy": "2.5.5",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "calibration_states_per_fit": 4,
+  "one_qubit_input_sha256": "993427d4db59df5ea639eaefed615805d2dc9eaf5c46a6471f554aa0e89b8f11",
+  "two_qubit_input_sha256": "2ca8a1f22cd7653dc423f78ecbafefa0ea436a3d030ffc6758dced3a9e40a726",
+  "publication_check_sha256": "374567e948ea4a562dfc515b40a46c99615ddfa139e6247426d00f9b91fefc18",
+  "digitization_predictions_sha256": "9ebfae30fad101b98e4657e77ec45c55de3a8a5eb258875707fee79926beffcd",
+  "predictions_sha256": "75e364c32d638cf4becd27ffe1f422927ebebe9cde869c6ed18d0fedc7c45407",
+  "scores": {
+    "Q1": {
+      "mean_prediction_bounds": {
+        "histogram_only": [
+          -0.001122112125,
+          0.001629690556
+        ],
+        "including_rounded_raw_mean": [
+          -0.000641221988,
+          0.001430353849
+        ]
+      },
+      "blocks": 100,
+      "shots_per_block": 3000
+    },
+    "Q2": {
+      "mean_prediction_bounds": {
+        "histogram_only": [
+          -0.004957470431,
+          0.029543103697
+        ],
+        "including_rounded_raw_mean": [
+          -0.004951657874,
+          0.029477116585
+        ]
+      },
+      "blocks": 100,
+      "shots_per_block": 3000
+    },
+    "two_qubit": {
+      "settings": [
+        {
+          "phase_over_pi": 0.25,
+          "prediction": 0.770115017891,
+          "absolute_error": 0.083438372702
+        },
+        {
+          "phase_over_pi": 0.5,
+          "prediction": 0.359741747379,
+          "absolute_error": 0.140258252621
+        },
+        {
+          "phase_over_pi": 0.75,
+          "prediction": -5.5626428e-05,
+          "absolute_error": 0.146502235834
+        },
+        {
+          "phase_over_pi": 1.0,
+          "prediction": 0.010559568182,
+          "absolute_error": 0.010559568182
+        }
+      ],
+      "four_setting_mae": 0.095189607335,
+      "six_digitization_variants_mae_range": [
+        0.074672972823,
+        0.183187686642
+      ]
+    }
+  }
+}

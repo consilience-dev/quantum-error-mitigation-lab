@@ -1,0 +1,82 @@
+{
+  "configuration": {
+    "model": "nori",
+    "seed": 0,
+    "frozen": true,
+    "device": "cpu",
+    "requested_ensemble_members": 4,
+    "checkpoint_url": "https://huggingface.co/Synthefy/Nori-1-5/resolve/79afc5a65b2775d0c62977211a63620ce87846c7/nori.pt",
+    "checkpoint_sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+    "versions": {
+      "synthefy-nori": "0.22.0",
+      "torch": "2.13.0",
+      "numpy": "2.5.5",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "calibration_states_per_fit": 4,
+  "one_qubit_input_sha256": "993427d4db59df5ea639eaefed615805d2dc9eaf5c46a6471f554aa0e89b8f11",
+  "two_qubit_input_sha256": "2ca8a1f22cd7653dc423f78ecbafefa0ea436a3d030ffc6758dced3a9e40a726",
+  "publication_check_sha256": "374567e948ea4a562dfc515b40a46c99615ddfa139e6247426d00f9b91fefc18",
+  "digitization_predictions_sha256": "6eb03a757fc924201feccd75a431d702b0b189a529def4c87892a9fba0f8e1ba",
+  "predictions_sha256": "1f02e9d046c0846dd1427b6f68a3510bf6f1c734a6a4a2a05c05877eb4d6d5c8",
+  "scores": {
+    "Q1": {
+      "mean_prediction_bounds": {
+        "histogram_only": [
+          -0.044732649547,
+          0.020165512703
+        ],
+        "including_rounded_raw_mean": [
+          -0.043037686069,
+          0.020165512703
+        ]
+      },
+      "blocks": 100,
+      "shots_per_block": 3000
+    },
+    "Q2": {
+      "mean_prediction_bounds": {
+        "histogram_only": [
+          -0.031862875644,
+          0.000924854364
+        ],
+        "including_rounded_raw_mean": [
+          -0.031862875644,
+          0.000581983727
+        ]
+      },
+      "blocks": 100,
+      "shots_per_block": 3000
+    },
+    "two_qubit": {
+      "settings": [
+        {
+          "phase_over_pi": 0.25,
+          "prediction": 0.758728219208,
+          "absolute_error": 0.094825171386
+        },
+        {
+          "phase_over_pi": 0.5,
+          "prediction": 0.306297198238,
+          "absolute_error": 0.193702801762
+        },
+        {
+          "phase_over_pi": 0.75,
+          "prediction": 0.060686390812,
+          "absolute_error": 0.085760218595
+        },
+        {
+          "phase_over_pi": 1.0,
+          "prediction": 0.067027440404,
+          "absolute_error": 0.067027440404
+        }
+      ],
+      "four_setting_mae": 0.110328908037,
+      "six_digitization_variants_mae_range": [
+        0.094313866056,
+        0.115965952455
+      ]
+    }
+  }
+}
