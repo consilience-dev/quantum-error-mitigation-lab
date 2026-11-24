@@ -1,0 +1,361 @@
+{
+  "source_data": "https://doi.org/10.5281/zenodo.6472281",
+  "release_files_sha256": {
+    "circuits.csv": "4555cfbd11a66f6de78e3c7d09c22b30f8c9212d13c2fceb74dbb85045f78f42",
+    "circuits.zip": "3860b1441eb4f7bfdd0cf5b8afdcbfda943eeef83c3b2167591467c081fe6914",
+    "device_experiments.csv": "22303262fe5b72eee3a11b808e05b56a7494808997075498e00ef72267b0798f",
+    "experiments.csv": "6a223bfa9c927a178abb718ec89ef928966ac19daa9501c303b73115d3442faf",
+    "observables.zip": "a9513c0cd1466ee39a8909a93f1b4b51b2fbef8f2dcc277fd4f07ddaf568e97f",
+    "results.csv": "7ce5de11d49e5bc2848eccfd9e5f437e6bb9d9169e56fcea6bac76be4785712a",
+    "results.zip": "c99eb711981dfd7781c30908d8b2479ef067860111355c2f4ebee31018d330bb"
+  },
+  "paper": "https://doi.org/10.22331/q-2023-07-13-1059",
+  "source_figure_and_table_archive": "https://arxiv.org/src/2204.09725v3",
+  "source_sha256": "33edc49e1d9efb7f10e871e3ad30cfa2395f310de5044f0c67f2e61a973ceb82",
+  "baseline_methods": [
+    "NOISY",
+    "ZNE",
+    "CDR"
+  ],
+  "device_backends": [
+    "ibmq_casablanca",
+    "ibm_lagos"
+  ],
+  "simulated_backends": [
+    "depolarising simulator",
+    "ibm_lagos emulator"
+  ],
+  "estimand": "Absolute error against archived ideal, divided by absolute error of the raw estimate for the same experiment ID and backend. Aggregate the ratios over circuits within circuit family, mirror status, width and depth, using median and maximum.",
+  "circuits_per_cell": {
+    "hardware": 5,
+    "simulators": 10
+  },
+  "hardware_target_ids": 160,
+  "training_protocol": "CDR constructs 20 near-Clifford training circuits separately for each target. Figures 7 and 8 specify no global supervised calibration subset. Re-score the archived final outputs.",
+  "hardware_shots_per_target": {
+    "raw": 32000,
+    "zne_five_noise_scales": 160000,
+    "cdr_nominal": 160000,
+    "cdr_per_program": 7619,
+    "cdr_total_from_notebook_integer_division": 159999
+  },
+  "shot_source": "Section 4.6 and the Zenodo example_experiment.ipynb give the protocol and allocation. These are planned executions. The release provides aggregate results and does not expose actual job-level usage or each near-Clifford measurement.",
+  "hardware_cell_method_rows": 192,
+  "total_cell_method_rows": 1152,
+  "smallest_raw_absolute_error": {
+    "depolarising simulator": 0.0017063185816427184,
+    "ibmq_casablanca": 0.0006951143747595534,
+    "ibm_lagos": 2.028527827935278e-07,
+    "ibm_lagos emulator": 0.015818005181106543
+  },
+  "undefined_relative_errors": 0,
+  "zero_policy": "Exact zero raw error makes the paper ratio undefined. Fail if any occurs in this pinned archive. Keep every finite ratio and every released mitigation result, including worsened estimates.",
+  "hardware_cell_improvements": [
+    {
+      "backend": "ibmq_casablanca",
+      "mirrored": false,
+      "method": "CDR",
+      "cells": 20,
+      "median_below_one": 16,
+      "median_equal_one": 0,
+      "worst_below_one": 4
+    },
+    {
+      "backend": "ibmq_casablanca",
+      "mirrored": false,
+      "method": "ZNE",
+      "cells": 20,
+      "median_below_one": 18,
+      "median_equal_one": 0,
+      "worst_below_one": 7
+    },
+    {
+      "backend": "ibmq_casablanca",
+      "mirrored": true,
+      "method": "CDR",
+      "cells": 12,
+      "median_below_one": 12,
+      "median_equal_one": 0,
+      "worst_below_one": 6
+    },
+    {
+      "backend": "ibmq_casablanca",
+      "mirrored": true,
+      "method": "ZNE",
+      "cells": 12,
+      "median_below_one": 10,
+      "median_equal_one": 0,
+      "worst_below_one": 7
+    },
+    {
+      "backend": "ibm_lagos",
+      "mirrored": false,
+      "method": "CDR",
+      "cells": 20,
+      "median_below_one": 11,
+      "median_equal_one": 0,
+      "worst_below_one": 3
+    },
+    {
+      "backend": "ibm_lagos",
+      "mirrored": false,
+      "method": "ZNE",
+      "cells": 20,
+      "median_below_one": 6,
+      "median_equal_one": 0,
+      "worst_below_one": 0
+    },
+    {
+      "backend": "ibm_lagos",
+      "mirrored": true,
+      "method": "CDR",
+      "cells": 12,
+      "median_below_one": 11,
+      "median_equal_one": 0,
+      "worst_below_one": 7
+    },
+    {
+      "backend": "ibm_lagos",
+      "mirrored": true,
+      "method": "ZNE",
+      "cells": 12,
+      "median_below_one": 8,
+      "median_equal_one": 0,
+      "worst_below_one": 5
+    }
+  ],
+  "figures": {
+    "figure_numbers": [
+      7,
+      8,
+      11,
+      12,
+      13,
+      14
+    ],
+    "panels": [
+      {
+        "source_panel": "deep_depolarising_simulator_False_CDR",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00619978
+      },
+      {
+        "source_panel": "deep_depolarising_simulator_False_ZNE",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00626306
+      },
+      {
+        "source_panel": "deep_depolarising_simulator_True_CDR",
+        "cells": 47,
+        "color_samples": 94,
+        "max_colorbar_difference": 0.00646264
+      },
+      {
+        "source_panel": "deep_depolarising_simulator_True_ZNE",
+        "cells": 47,
+        "color_samples": 94,
+        "max_colorbar_difference": 0.00653451
+      },
+      {
+        "source_panel": "square_depolarising_simulator_False_CDR",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00558768
+      },
+      {
+        "source_panel": "square_depolarising_simulator_False_ZNE",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00665242
+      },
+      {
+        "source_panel": "square_depolarising_simulator_True_CDR",
+        "cells": 47,
+        "color_samples": 94,
+        "max_colorbar_difference": 0.00521408
+      },
+      {
+        "source_panel": "square_depolarising_simulator_True_ZNE",
+        "cells": 47,
+        "color_samples": 94,
+        "max_colorbar_difference": 0.00648907
+      },
+      {
+        "source_panel": "deep_ibm_lagos_False_CDR",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.00409056
+      },
+      {
+        "source_panel": "deep_ibm_lagos_False_ZNE",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.00220964
+      },
+      {
+        "source_panel": "deep_ibm_lagos_True_CDR",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00501436
+      },
+      {
+        "source_panel": "deep_ibm_lagos_True_ZNE",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00231441
+      },
+      {
+        "source_panel": "square_ibm_lagos_False_CDR",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.00217987
+      },
+      {
+        "source_panel": "square_ibm_lagos_False_ZNE",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.00319337
+      },
+      {
+        "source_panel": "square_ibm_lagos_True_CDR",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00450216
+      },
+      {
+        "source_panel": "square_ibm_lagos_True_ZNE",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00509382
+      },
+      {
+        "source_panel": "deep_ibm_lagos_emulator_False_CDR",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00604515
+      },
+      {
+        "source_panel": "deep_ibm_lagos_emulator_False_ZNE",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00538095
+      },
+      {
+        "source_panel": "deep_ibm_lagos_emulator_True_CDR",
+        "cells": 45,
+        "color_samples": 90,
+        "max_colorbar_difference": 0.00620666
+      },
+      {
+        "source_panel": "deep_ibm_lagos_emulator_True_ZNE",
+        "cells": 45,
+        "color_samples": 90,
+        "max_colorbar_difference": 0.00595107
+      },
+      {
+        "source_panel": "square_ibm_lagos_emulator_False_CDR",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00538038
+      },
+      {
+        "source_panel": "square_ibm_lagos_emulator_False_ZNE",
+        "cells": 34,
+        "color_samples": 68,
+        "max_colorbar_difference": 0.00534677
+      },
+      {
+        "source_panel": "square_ibm_lagos_emulator_True_CDR",
+        "cells": 45,
+        "color_samples": 90,
+        "max_colorbar_difference": 0.00583572
+      },
+      {
+        "source_panel": "square_ibm_lagos_emulator_True_ZNE",
+        "cells": 45,
+        "color_samples": 90,
+        "max_colorbar_difference": 0.00576792
+      },
+      {
+        "source_panel": "deep_ibmq_casablanca_False_CDR",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.0048722
+      },
+      {
+        "source_panel": "deep_ibmq_casablanca_False_ZNE",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.00464301
+      },
+      {
+        "source_panel": "deep_ibmq_casablanca_True_CDR",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00479056
+      },
+      {
+        "source_panel": "deep_ibmq_casablanca_True_ZNE",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00190831
+      },
+      {
+        "source_panel": "square_ibmq_casablanca_False_CDR",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.00157289
+      },
+      {
+        "source_panel": "square_ibmq_casablanca_False_ZNE",
+        "cells": 10,
+        "color_samples": 20,
+        "max_colorbar_difference": 0.0032356
+      },
+      {
+        "source_panel": "square_ibmq_casablanca_True_CDR",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00473088
+      },
+      {
+        "source_panel": "square_ibmq_casablanca_True_ZNE",
+        "cells": 6,
+        "color_samples": 12,
+        "max_colorbar_difference": 0.00333644
+      }
+    ],
+    "colored_values_checked": 1536,
+    "range": [
+      0,
+      1
+    ],
+    "absolute_colorbar_tolerance": 0.012,
+    "interpretation": "Native publication PNGs encode median on the outer square and worst case at center. Ratios at or above one saturate in red. The CSV preserves uncapped values. Color lookup checks the displayed precision and cannot recover precise ratios above one."
+  },
+  "absolute_error_tables": {
+    "checked": {
+      "cells": 192,
+      "averages": 24
+    },
+    "absolute_tolerance": 0.001,
+    "outside_tolerance": [
+      {
+        "table": 4,
+        "row": [
+          "Average",
+          ""
+        ],
+        "backend": "ibm_lagos",
+        "family": "Random",
+        "mirrored": false,
+        "method": "NOISY",
+        "printed": 0.199,
+        "recomputed": 0.1487713812314538
+      }
+    ]
+  },
+  "cells_file_sha256": "d51dd3963b0db559715b5e01f0bfe01edcefb541fb728cf699bf8baf8cffc86f"
+}

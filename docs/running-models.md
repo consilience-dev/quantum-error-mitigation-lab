@@ -74,3 +74,7 @@ python scripts/simulation_depth_transfer.py prepare
 python scripts/simulation_depth_transfer.py fit weights --device mps
 python scripts/simulation_depth_transfer.py verify
 ```
+
+## Reproduce Qermit’s published comparisons
+
+Install Pillow and run `python scripts/reproduce_qermit.py /tmp/qermit --download --check`. This verifies the pinned Zenodo files and the arXiv v3 source before checking all hardware and simulator figure cells and the printed hardware tables. The [Qermit protocol](mitigation-benchmarks.md#qermit-benchmark-reproduction) identifies the calibration records needed for a matched pretrained hardware fit.

@@ -1,0 +1,1153 @@
+backend,family,mirrored,method,width,depth,n,mean_absolute_error,median_relative_error,worst_relative_error
+depolarising simulator,Pauli-gadget,False,CDR,2,2,10,0.00402970197594,0.364533951879,0.788503674291
+depolarising simulator,Pauli-gadget,False,CDR,2,3,10,0.00559258266366,0.345638196137,2.16328877172
+depolarising simulator,Pauli-gadget,False,CDR,2,4,10,0.00524174626068,0.116046713955,2.94163746474
+depolarising simulator,Pauli-gadget,False,CDR,2,5,10,0.0054837259779,0.0898631920976,2.24546416139
+depolarising simulator,Pauli-gadget,False,CDR,2,6,10,0.0079828743037,0.227879654019,0.565419004717
+depolarising simulator,Pauli-gadget,False,CDR,2,7,10,0.0096932527145,0.222011135692,0.918721535714
+depolarising simulator,Pauli-gadget,False,CDR,3,2,10,0.00422087397161,0.173822000991,0.638676556128
+depolarising simulator,Pauli-gadget,False,CDR,3,3,10,0.0120022684038,0.229603090384,1.1020572809
+depolarising simulator,Pauli-gadget,False,CDR,3,4,10,0.00881947952499,0.167500348675,0.307619040959
+depolarising simulator,Pauli-gadget,False,CDR,3,5,10,0.00617466442896,0.0678991895307,0.277375675552
+depolarising simulator,Pauli-gadget,False,CDR,3,6,10,0.0123766234236,0.160818463509,0.370592626854
+depolarising simulator,Pauli-gadget,False,CDR,3,7,10,0.0105065316536,0.138050718082,0.251377134674
+depolarising simulator,Pauli-gadget,False,CDR,4,2,10,0.0114182477713,0.247465535638,0.532488327865
+depolarising simulator,Pauli-gadget,False,CDR,4,3,10,0.00809522754756,0.0882905112212,0.278502013913
+depolarising simulator,Pauli-gadget,False,CDR,4,4,10,0.0159486771386,0.12700797888,0.524122355038
+depolarising simulator,Pauli-gadget,False,CDR,4,5,10,0.0131629073125,0.129867902199,0.242561318442
+depolarising simulator,Pauli-gadget,False,CDR,4,6,10,0.0130306459859,0.155899510823,0.210891225112
+depolarising simulator,Pauli-gadget,False,CDR,4,7,10,0.0122071128783,0.0803581625737,0.168213028833
+depolarising simulator,Pauli-gadget,False,CDR,5,2,10,0.0359527411765,0.139604257325,6.49132453453
+depolarising simulator,Pauli-gadget,False,CDR,5,3,10,0.00749322598135,0.0671231105275,0.286586516144
+depolarising simulator,Pauli-gadget,False,CDR,5,4,10,0.0115667507084,0.112665413876,0.199422273331
+depolarising simulator,Pauli-gadget,False,CDR,5,5,10,0.0214737683299,0.155513093623,0.378843469203
+depolarising simulator,Pauli-gadget,False,CDR,5,6,10,0.0186490367531,0.102890365872,0.306003157458
+depolarising simulator,Pauli-gadget,False,CDR,5,7,10,0.0197945131174,0.130147053146,0.226878095504
+depolarising simulator,Pauli-gadget,False,CDR,6,2,10,0.00473620836604,0.0500586527386,0.161453916787
+depolarising simulator,Pauli-gadget,False,CDR,6,3,10,0.00942516218229,0.0761160613189,0.357999333095
+depolarising simulator,Pauli-gadget,False,CDR,6,4,10,0.0108123050311,0.060088687937,0.257910617995
+depolarising simulator,Pauli-gadget,False,CDR,6,5,10,0.0146828014636,0.0874387311509,0.193626445568
+depolarising simulator,Pauli-gadget,False,CDR,6,6,10,0.0227046176994,0.140219181117,0.188075937563
+depolarising simulator,Pauli-gadget,False,CDR,6,7,10,0.0204354731187,0.120242512822,0.217832090718
+depolarising simulator,Pauli-gadget,False,CDR,7,2,10,0.00871783714262,0.0869812421077,0.332193522719
+depolarising simulator,Pauli-gadget,False,CDR,7,3,10,0.00995159203266,0.0778729772911,0.193398344796
+depolarising simulator,Pauli-gadget,False,CDR,7,4,10,0.0125912424677,0.082919733359,0.117931447274
+depolarising simulator,Pauli-gadget,False,CDR,7,5,10,0.0190264191974,0.105298875938,0.238809769722
+depolarising simulator,Pauli-gadget,False,NOISY,2,2,10,0.0111551956353,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,2,3,10,0.0147834893686,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,2,4,10,0.0179382626988,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,2,5,10,0.0260782330138,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,2,6,10,0.0321200498601,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,2,7,10,0.0398239217654,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,3,2,10,0.0271442246472,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,3,3,10,0.0419611152549,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,3,4,10,0.0577397861477,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,3,5,10,0.0679486791881,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,3,6,10,0.0743149697773,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,3,7,10,0.0875129879565,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,4,2,10,0.0483080507902,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,4,3,10,0.0697787253127,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,4,4,10,0.0848866023476,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,4,5,10,0.0995243906343,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,4,6,10,0.10544961622,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,4,7,10,0.134273389115,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,5,2,10,0.050278003486,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,5,3,10,0.0826384470472,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,5,4,10,0.103985603045,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,5,5,10,0.138052695823,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,5,6,10,0.148726512028,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,5,7,10,0.171354410305,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,6,2,10,0.0733349051856,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,6,3,10,0.0872558847922,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,6,4,10,0.127190175727,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,6,5,10,0.157479027348,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,6,6,10,0.171302333509,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,6,7,10,0.184246373741,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,7,2,10,0.0889186387366,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,7,3,10,0.114668648917,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,7,4,10,0.158243278399,1,1
+depolarising simulator,Pauli-gadget,False,NOISY,7,5,10,0.183253278422,1,1
+depolarising simulator,Pauli-gadget,False,ZNE,2,2,10,0.00246361632547,0.213615768284,3.40252921778
+depolarising simulator,Pauli-gadget,False,ZNE,2,3,10,0.00342040230094,0.204958130137,0.742857787088
+depolarising simulator,Pauli-gadget,False,ZNE,2,4,10,0.00451245864619,0.251836775734,1.35825679292
+depolarising simulator,Pauli-gadget,False,ZNE,2,5,10,0.00412881828989,0.103465404777,1.16693426748
+depolarising simulator,Pauli-gadget,False,ZNE,2,6,10,0.00330631054965,0.0948769908852,0.915849661881
+depolarising simulator,Pauli-gadget,False,ZNE,2,7,10,0.00511578857765,0.109623372042,0.465728213032
+depolarising simulator,Pauli-gadget,False,ZNE,3,2,10,0.00260761071404,0.0744452732156,1.31999844554
+depolarising simulator,Pauli-gadget,False,ZNE,3,3,10,0.0031223142899,0.0640742929197,0.399851816043
+depolarising simulator,Pauli-gadget,False,ZNE,3,4,10,0.00477523910959,0.106004133283,0.202100460761
+depolarising simulator,Pauli-gadget,False,ZNE,3,5,10,0.00319176807836,0.044840391762,0.0933501488664
+depolarising simulator,Pauli-gadget,False,ZNE,3,6,10,0.00457572608239,0.053283308511,0.224871706516
+depolarising simulator,Pauli-gadget,False,ZNE,3,7,10,0.00584579511981,0.0534510396665,0.209400344628
+depolarising simulator,Pauli-gadget,False,ZNE,4,2,10,0.00329628881862,0.0448799748904,0.222636796272
+depolarising simulator,Pauli-gadget,False,ZNE,4,3,10,0.00334530340496,0.0408774114466,0.13314732553
+depolarising simulator,Pauli-gadget,False,ZNE,4,4,10,0.00219775949881,0.0144360760554,0.0880343820176
+depolarising simulator,Pauli-gadget,False,ZNE,4,5,10,0.00524918545008,0.0451445067711,0.11415737038
+depolarising simulator,Pauli-gadget,False,ZNE,4,6,10,0.00603218560826,0.0618919899445,0.0857244638783
+depolarising simulator,Pauli-gadget,False,ZNE,4,7,10,0.00561975633581,0.0293492651953,0.116326784009
+depolarising simulator,Pauli-gadget,False,ZNE,5,2,10,0.00341475040843,0.0556094603277,0.127141932151
+depolarising simulator,Pauli-gadget,False,ZNE,5,3,10,0.00471824573848,0.0521664389216,0.133130546706
+depolarising simulator,Pauli-gadget,False,ZNE,5,4,10,0.00422871305606,0.0401666181309,0.0733446146173
+depolarising simulator,Pauli-gadget,False,ZNE,5,5,10,0.00521111733293,0.0375444744099,0.0848770359213
+depolarising simulator,Pauli-gadget,False,ZNE,5,6,10,0.00751839297848,0.0372037019583,0.140955274611
+depolarising simulator,Pauli-gadget,False,ZNE,5,7,10,0.00724361173955,0.0436062620327,0.0859374186675
+depolarising simulator,Pauli-gadget,False,ZNE,6,2,10,0.00513129616921,0.0795350923732,0.149947650415
+depolarising simulator,Pauli-gadget,False,ZNE,6,3,10,0.00676329069981,0.0784057151094,0.117187244617
+depolarising simulator,Pauli-gadget,False,ZNE,6,4,10,0.00453539008423,0.0317627661678,0.0739302349169
+depolarising simulator,Pauli-gadget,False,ZNE,6,5,10,0.00550713639181,0.0233920338142,0.104821874015
+depolarising simulator,Pauli-gadget,False,ZNE,6,6,10,0.006046769176,0.0250944739445,0.139241965587
+depolarising simulator,Pauli-gadget,False,ZNE,6,7,10,0.00990411331212,0.0421154041847,0.153375474029
+depolarising simulator,Pauli-gadget,False,ZNE,7,2,10,0.00319917743704,0.02445278885,0.0838816246266
+depolarising simulator,Pauli-gadget,False,ZNE,7,3,10,0.00600369477367,0.0348153445939,0.114499126046
+depolarising simulator,Pauli-gadget,False,ZNE,7,4,10,0.00472659713863,0.0246116994661,0.0803667575374
+depolarising simulator,Pauli-gadget,False,ZNE,7,5,10,0.00620727964946,0.0333145714665,0.0796882937802
+depolarising simulator,Pauli-gadget,True,CDR,2,2,10,0.00156193925644,1.05366439333e-14,4.20516054255
+depolarising simulator,Pauli-gadget,True,CDR,2,4,10,0.00571298170163,0.080432583203,2.25011932523
+depolarising simulator,Pauli-gadget,True,CDR,2,6,10,0.00590557013154,0.0856912443716,2.10514254708
+depolarising simulator,Pauli-gadget,True,CDR,2,8,10,0.014094922056,0.18135911281,0.633374695097
+depolarising simulator,Pauli-gadget,True,CDR,2,16,10,0.0415318952782,0.210832981557,0.479080166813
+depolarising simulator,Pauli-gadget,True,CDR,2,32,10,0.0665546145077,0.180402317366,0.38284155695
+depolarising simulator,Pauli-gadget,True,CDR,2,64,10,0.102795325766,0.17481854397,0.286964195837
+depolarising simulator,Pauli-gadget,True,CDR,2,128,10,0.193944216548,0.25171804872,0.31140250611
+depolarising simulator,Pauli-gadget,True,CDR,3,2,10,0.0127179949202,0.0232608152624,1.03973071987
+depolarising simulator,Pauli-gadget,True,CDR,3,4,10,0.0217087232577,0.0801171371668,44.4087799063
+depolarising simulator,Pauli-gadget,True,CDR,3,6,10,0.0171290598984,0.101521192682,0.237702820363
+depolarising simulator,Pauli-gadget,True,CDR,3,8,10,0.0199214695303,0.0753325338384,0.211201806591
+depolarising simulator,Pauli-gadget,True,CDR,3,16,10,0.0662467525975,0.167168341783,0.346287963384
+depolarising simulator,Pauli-gadget,True,CDR,3,32,10,0.0448464089478,0.0744152823593,0.1224387107
+depolarising simulator,Pauli-gadget,True,CDR,3,64,10,0.0730028948352,0.0837598758244,0.177862986697
+depolarising simulator,Pauli-gadget,True,CDR,3,128,10,0.493348423606,0.508009294684,1.02579948877
+depolarising simulator,Pauli-gadget,True,CDR,4,2,10,0.00340540746987,6.11246761345e-15,1.24753570176
+depolarising simulator,Pauli-gadget,True,CDR,4,4,10,0.0181815768527,0.0826657446994,0.255610561351
+depolarising simulator,Pauli-gadget,True,CDR,4,6,10,0.0160236303086,0.0618941222916,0.162642389405
+depolarising simulator,Pauli-gadget,True,CDR,4,8,10,0.0322161346878,0.110823688854,0.23925264874
+depolarising simulator,Pauli-gadget,True,CDR,4,16,10,0.0533579387796,0.0764023380718,0.250904846412
+depolarising simulator,Pauli-gadget,True,CDR,4,32,10,0.186474087718,0.0985748618282,1.24501189085
+depolarising simulator,Pauli-gadget,True,CDR,4,64,10,0.330675155498,0.241875775264,1.01271418974
+depolarising simulator,Pauli-gadget,True,CDR,4,128,10,0.996926221772,0.997117475567,1.12496410033
+depolarising simulator,Pauli-gadget,True,CDR,5,2,10,0.00528409019053,0.00605213083014,0.176004887417
+depolarising simulator,Pauli-gadget,True,CDR,5,4,10,0.0229083652304,0.093549730876,0.253720986605
+depolarising simulator,Pauli-gadget,True,CDR,5,6,10,0.0300834537752,0.101131483729,0.197431455176
+depolarising simulator,Pauli-gadget,True,CDR,5,8,10,0.0459914823328,0.121450842727,0.180675599257
+depolarising simulator,Pauli-gadget,True,CDR,5,16,10,0.0844969252883,0.13403268165,0.212283918304
+depolarising simulator,Pauli-gadget,True,CDR,5,32,10,0.153149847331,0.170695017924,0.336670940696
+depolarising simulator,Pauli-gadget,True,CDR,5,64,10,0.764762778918,0.856014809086,1.01414734044
+depolarising simulator,Pauli-gadget,True,CDR,5,128,10,0.994084213327,0.997292686447,1.15514637932
+depolarising simulator,Pauli-gadget,True,CDR,6,2,10,0.0114933969902,0.0418076917219,19.4452390815
+depolarising simulator,Pauli-gadget,True,CDR,6,4,10,0.0234794566613,0.0970310760915,0.217931338106
+depolarising simulator,Pauli-gadget,True,CDR,6,6,10,0.0382376127171,0.102618212063,0.161124079745
+depolarising simulator,Pauli-gadget,True,CDR,6,8,10,0.0451711346455,0.0973387782145,0.168261937713
+depolarising simulator,Pauli-gadget,True,CDR,6,16,10,0.108293074471,0.16563863431,0.260595027731
+depolarising simulator,Pauli-gadget,True,CDR,6,32,10,0.416966354018,0.257797920647,1.14563207246
+depolarising simulator,Pauli-gadget,True,CDR,6,64,10,0.982627287915,1.0056763424,1.0634765679
+depolarising simulator,Pauli-gadget,True,CDR,6,128,10,0.997633091275,1.00180907588,1.03283624709
+depolarising simulator,Pauli-gadget,True,CDR,7,2,10,0.0102516798575,0.00297614325027,0.185241060098
+depolarising simulator,Pauli-gadget,True,CDR,7,4,10,0.0187439024238,0.0740108927831,0.150160292371
+depolarising simulator,Pauli-gadget,True,CDR,7,6,10,0.0358354110238,0.0773764781377,0.192138842975
+depolarising simulator,Pauli-gadget,True,CDR,7,8,10,0.0508577818417,0.0869955841512,0.171164360631
+depolarising simulator,Pauli-gadget,True,CDR,7,16,10,0.126489060735,0.175772863415,0.298573317127
+depolarising simulator,Pauli-gadget,True,CDR,7,32,10,0.506199277049,0.546307101525,1.01559759952
+depolarising simulator,Pauli-gadget,True,CDR,7,64,10,1.01963780923,1.00991574922,1.20481619602
+depolarising simulator,Pauli-gadget,True,NOISY,2,2,10,0.029096,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,2,4,10,0.051736,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,2,6,10,0.087082,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,2,8,10,0.090854,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,2,16,10,0.199508,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,2,32,10,0.34601,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,2,64,10,0.561886,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,2,128,10,0.792096,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,2,10,0.06374,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,4,10,0.126398,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,6,10,0.164478,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,8,10,0.195116,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,16,10,0.378252,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,32,10,0.622546,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,64,10,0.830148,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,3,128,10,0.975358,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,2,10,0.082746,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,4,10,0.17529,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,6,10,0.229624,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,8,10,0.311106,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,16,10,0.511456,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,32,10,0.78227,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,64,10,0.943702,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,4,128,10,0.995388,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,2,10,0.108234,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,4,10,0.21705,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,6,10,0.291352,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,8,10,0.384084,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,16,10,0.62651,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,32,10,0.8607,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,64,10,0.97596,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,5,128,10,0.999974,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,2,10,0.129746,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,4,10,0.252948,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,6,10,0.35879,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,8,10,0.46432,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,16,10,0.704228,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,32,10,0.909836,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,64,10,0.99016,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,6,128,10,1.000814,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,7,2,10,0.189394,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,7,4,10,0.29314,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,7,6,10,0.439746,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,7,8,10,0.531858,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,7,16,10,0.782876,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,7,32,10,0.947104,1,1
+depolarising simulator,Pauli-gadget,True,NOISY,7,64,10,0.996266,1,1
+depolarising simulator,Pauli-gadget,True,ZNE,2,2,10,0.00119222677972,0.0434043456306,0.0811723345356
+depolarising simulator,Pauli-gadget,True,ZNE,2,4,10,0.00145712257341,0.0286808718476,0.157170054195
+depolarising simulator,Pauli-gadget,True,ZNE,2,6,10,0.00154021586557,0.0161095764995,0.108656908218
+depolarising simulator,Pauli-gadget,True,ZNE,2,8,10,0.00133033718371,0.0144063220293,0.0481457372768
+depolarising simulator,Pauli-gadget,True,ZNE,2,16,10,0.00375118844787,0.0189603427947,0.086967389919
+depolarising simulator,Pauli-gadget,True,ZNE,2,32,10,0.00512678812667,0.0107752456021,0.035037833381
+depolarising simulator,Pauli-gadget,True,ZNE,2,64,10,0.0202923586007,0.0367844392204,0.0811694192489
+depolarising simulator,Pauli-gadget,True,ZNE,2,128,10,0.293347312432,0.246539168096,1.24169859431
+depolarising simulator,Pauli-gadget,True,ZNE,3,2,10,0.00209780645229,0.0397239454239,0.0821050963013
+depolarising simulator,Pauli-gadget,True,ZNE,3,4,10,0.00147593066161,0.0121855098237,0.272744038628
+depolarising simulator,Pauli-gadget,True,ZNE,3,6,10,0.00206852820421,0.00792369149858,0.0386737552233
+depolarising simulator,Pauli-gadget,True,ZNE,3,8,10,0.00311697481735,0.0149204328469,0.0368201650777
+depolarising simulator,Pauli-gadget,True,ZNE,3,16,10,0.0078009480788,0.020234475405,0.0494272247624
+depolarising simulator,Pauli-gadget,True,ZNE,3,32,10,0.0187263512469,0.0216373280318,0.0817674850844
+depolarising simulator,Pauli-gadget,True,ZNE,3,64,10,0.33290342242,0.213051099059,1.19989230025
+depolarising simulator,Pauli-gadget,True,ZNE,3,128,10,0.925689857628,0.979000539497,1.04063687934
+depolarising simulator,Pauli-gadget,True,ZNE,4,2,10,0.00195156285822,0.0249711478178,0.309427375056
+depolarising simulator,Pauli-gadget,True,ZNE,4,4,10,0.00385083356998,0.0194749143331,0.0519142180674
+depolarising simulator,Pauli-gadget,True,ZNE,4,6,10,0.00437179313596,0.0150404651997,0.0515424373983
+depolarising simulator,Pauli-gadget,True,ZNE,4,8,10,0.00400111549305,0.00703776778955,0.0473334108082
+depolarising simulator,Pauli-gadget,True,ZNE,4,16,10,0.0129855169346,0.0155435171716,0.0955389496516
+depolarising simulator,Pauli-gadget,True,ZNE,4,32,10,0.183579871756,0.13346812014,1.18265020307
+depolarising simulator,Pauli-gadget,True,ZNE,4,64,10,0.773660526317,0.874714778099,1.0617902889
+depolarising simulator,Pauli-gadget,True,ZNE,4,128,10,1.06770626783,0.997417151508,1.93022469435
+depolarising simulator,Pauli-gadget,True,ZNE,5,2,10,0.00160562847381,0.010479794689,0.0488357390979
+depolarising simulator,Pauli-gadget,True,ZNE,5,4,10,0.00418422502175,0.0156899195481,0.0506392369566
+depolarising simulator,Pauli-gadget,True,ZNE,5,6,10,0.00287210838878,0.00727800309608,0.0271944697682
+depolarising simulator,Pauli-gadget,True,ZNE,5,8,10,0.00670768103763,0.0139196471269,0.0306809875902
+depolarising simulator,Pauli-gadget,True,ZNE,5,16,10,0.0311140554635,0.0459286004984,0.117470669438
+depolarising simulator,Pauli-gadget,True,ZNE,5,32,10,0.515902529746,0.452078022856,1.18068779019
+depolarising simulator,Pauli-gadget,True,ZNE,5,64,10,0.937359530326,0.954431286816,1.02897848061
+depolarising simulator,Pauli-gadget,True,ZNE,5,128,10,0.995095900489,0.997040314666,1.01036944678
+depolarising simulator,Pauli-gadget,True,ZNE,6,2,10,0.00336637716269,0.0255047468234,0.240640920796
+depolarising simulator,Pauli-gadget,True,ZNE,6,4,10,0.00387103949061,0.00687237084668,0.0473082256237
+depolarising simulator,Pauli-gadget,True,ZNE,6,6,10,0.00481571197648,0.0108800612964,0.0265063492017
+depolarising simulator,Pauli-gadget,True,ZNE,6,8,10,0.013060447303,0.0309148898667,0.0537496320457
+depolarising simulator,Pauli-gadget,True,ZNE,6,16,10,0.0931793119889,0.0563006401305,0.412617567048
+depolarising simulator,Pauli-gadget,True,ZNE,6,32,10,0.685735042168,0.737306695238,1.12552996786
+depolarising simulator,Pauli-gadget,True,ZNE,6,64,10,0.857194761198,0.962205336754,1.00229082129
+depolarising simulator,Pauli-gadget,True,ZNE,6,128,10,1.23154044602,1.00017992994,2.88265755243
+depolarising simulator,Pauli-gadget,True,ZNE,7,2,10,0.00508745016443,0.0271877319085,0.0422129705984
+depolarising simulator,Pauli-gadget,True,ZNE,7,4,10,0.00270340312173,0.00853475171934,0.0206841137979
+depolarising simulator,Pauli-gadget,True,ZNE,7,6,10,0.010144458863,0.0172674143411,0.0637333774013
+depolarising simulator,Pauli-gadget,True,ZNE,7,8,10,0.0137421911445,0.0171006997337,0.0770854511651
+depolarising simulator,Pauli-gadget,True,ZNE,7,16,10,0.11882398006,0.125022834191,0.414880030987
+depolarising simulator,Pauli-gadget,True,ZNE,7,32,10,0.838311313133,0.902160828393,1.05759334678
+depolarising simulator,Pauli-gadget,True,ZNE,7,64,10,1.27730668921,1.00274289632,2.88224386164
+depolarising simulator,Random,False,CDR,2,2,10,0.00733127535214,0.212680591779,0.431114703417
+depolarising simulator,Random,False,CDR,2,3,10,0.0156129403279,0.372353568797,0.505014524996
+depolarising simulator,Random,False,CDR,2,4,10,0.022878041247,0.32550007917,0.580256620924
+depolarising simulator,Random,False,CDR,2,5,10,0.0268829927861,0.324142431392,0.471047393523
+depolarising simulator,Random,False,CDR,2,6,10,0.0333141506627,0.371138605698,0.536846850156
+depolarising simulator,Random,False,CDR,2,7,10,0.0416508535559,0.388938501603,0.508769780749
+depolarising simulator,Random,False,CDR,3,2,10,0.0131141419611,0.468473582421,0.756816792332
+depolarising simulator,Random,False,CDR,3,3,10,0.0133949866939,0.260404844031,0.413769982664
+depolarising simulator,Random,False,CDR,3,4,10,0.0210151908859,0.318619841779,0.761076528901
+depolarising simulator,Random,False,CDR,3,5,10,0.0319361785943,0.441201675906,0.611088753873
+depolarising simulator,Random,False,CDR,3,6,10,0.0379780979438,0.462791107723,0.549970128142
+depolarising simulator,Random,False,CDR,3,7,10,0.0351737665555,0.319800531322,0.705865365704
+depolarising simulator,Random,False,CDR,4,2,10,0.0586223955014,0.229792947653,6.64345303165
+depolarising simulator,Random,False,CDR,4,3,10,0.0394115808721,0.397227334558,1.34743228539
+depolarising simulator,Random,False,CDR,4,4,10,0.0449487933712,0.363025872853,0.654154357744
+depolarising simulator,Random,False,CDR,4,5,10,0.0594593075471,0.356140236916,0.821982750276
+depolarising simulator,Random,False,CDR,4,6,10,0.0573447179415,0.380147043514,0.612120146997
+depolarising simulator,Random,False,CDR,4,7,10,0.0822635761274,0.585731846486,0.722758263187
+depolarising simulator,Random,False,CDR,5,2,10,0.0234493978441,0.355053582199,0.64064387743
+depolarising simulator,Random,False,CDR,5,3,10,0.0583997280606,0.531062271992,1.8056941362
+depolarising simulator,Random,False,CDR,5,4,10,0.103964595103,0.278893482803,3.86967375059
+depolarising simulator,Random,False,CDR,5,5,10,0.0329983988155,0.217957939509,0.802476693246
+depolarising simulator,Random,False,CDR,5,6,10,0.0384977478688,0.197572483588,0.827206531895
+depolarising simulator,Random,False,CDR,5,7,10,0.0622435679415,0.206788882823,1.99562774064
+depolarising simulator,Random,False,CDR,6,2,10,0.119990906441,0.780183571667,4.71349468041
+depolarising simulator,Random,False,CDR,6,3,10,0.0348159084002,0.253184580124,1.13513268114
+depolarising simulator,Random,False,CDR,6,4,10,0.0720444097399,0.577669491763,1.44853596235
+depolarising simulator,Random,False,CDR,6,5,10,0.0829218577349,0.26566306957,1.9945523325
+depolarising simulator,Random,False,CDR,6,6,10,0.143237061228,0.54373045472,1.95344416289
+depolarising simulator,Random,False,CDR,6,7,10,0.126052848641,0.392182703897,2.03480243619
+depolarising simulator,Random,False,CDR,7,2,10,0.0863763027789,0.539893537304,4.31886834059
+depolarising simulator,Random,False,CDR,7,3,10,0.232444986121,1.81942133725,4.25395800846
+depolarising simulator,Random,False,CDR,7,4,10,0.0921991209888,0.491480554537,2.3009314827
+depolarising simulator,Random,False,CDR,7,5,10,0.08839850795,0.40779796347,1.76028214414
+depolarising simulator,Random,False,NOISY,2,2,10,0.0339969086582,1,1
+depolarising simulator,Random,False,NOISY,2,3,10,0.0478505957361,1,1
+depolarising simulator,Random,False,NOISY,2,4,10,0.0647550962245,1,1
+depolarising simulator,Random,False,NOISY,2,5,10,0.0828249272712,1,1
+depolarising simulator,Random,False,NOISY,2,6,10,0.0933954544064,1,1
+depolarising simulator,Random,False,NOISY,2,7,10,0.104179965503,1,1
+depolarising simulator,Random,False,NOISY,3,2,10,0.0312783622193,1,1
+depolarising simulator,Random,False,NOISY,3,3,10,0.0510063905247,1,1
+depolarising simulator,Random,False,NOISY,3,4,10,0.0594697126005,1,1
+depolarising simulator,Random,False,NOISY,3,5,10,0.0783086337276,1,1
+depolarising simulator,Random,False,NOISY,3,6,10,0.0918569599366,1,1
+depolarising simulator,Random,False,NOISY,3,7,10,0.101706546307,1,1
+depolarising simulator,Random,False,NOISY,4,2,10,0.0637321343461,1,1
+depolarising simulator,Random,False,NOISY,4,3,10,0.080673923974,1,1
+depolarising simulator,Random,False,NOISY,4,4,10,0.113071770246,1,1
+depolarising simulator,Random,False,NOISY,4,5,10,0.137578729276,1,1
+depolarising simulator,Random,False,NOISY,4,6,10,0.153189320945,1,1
+depolarising simulator,Random,False,NOISY,4,7,10,0.179064606752,1,1
+depolarising simulator,Random,False,NOISY,5,2,10,0.0643542726629,1,1
+depolarising simulator,Random,False,NOISY,5,3,10,0.0905556508509,1,1
+depolarising simulator,Random,False,NOISY,5,4,10,0.106698988476,1,1
+depolarising simulator,Random,False,NOISY,5,5,10,0.120388686448,1,1
+depolarising simulator,Random,False,NOISY,5,6,10,0.146833831232,1,1
+depolarising simulator,Random,False,NOISY,5,7,10,0.159952866545,1,1
+depolarising simulator,Random,False,NOISY,6,2,10,0.0855514012207,1,1
+depolarising simulator,Random,False,NOISY,6,3,10,0.111834432667,1,1
+depolarising simulator,Random,False,NOISY,6,4,10,0.132074155954,1,1
+depolarising simulator,Random,False,NOISY,6,5,10,0.171997049667,1,1
+depolarising simulator,Random,False,NOISY,6,6,10,0.186068009398,1,1
+depolarising simulator,Random,False,NOISY,6,7,10,0.20399689276,1,1
+depolarising simulator,Random,False,NOISY,7,2,10,0.085819863878,1,1
+depolarising simulator,Random,False,NOISY,7,3,10,0.1143712732,1,1
+depolarising simulator,Random,False,NOISY,7,4,10,0.14424023329,1,1
+depolarising simulator,Random,False,NOISY,7,5,10,0.158565442877,1,1
+depolarising simulator,Random,False,ZNE,2,2,10,0.00221719182373,0.0607458555202,0.173010464429
+depolarising simulator,Random,False,ZNE,2,3,10,0.00451244135836,0.0651701504691,0.242738288365
+depolarising simulator,Random,False,ZNE,2,4,10,0.00426207885094,0.0670876688024,0.175560047211
+depolarising simulator,Random,False,ZNE,2,5,10,0.0051048565701,0.0569193172019,0.11002814679
+depolarising simulator,Random,False,ZNE,2,6,10,0.00615819473312,0.0610910526426,0.134951235975
+depolarising simulator,Random,False,ZNE,2,7,10,0.00424793045976,0.0342286629167,0.134855826647
+depolarising simulator,Random,False,ZNE,3,2,10,0.00403831628203,0.0701296685923,0.358782403722
+depolarising simulator,Random,False,ZNE,3,3,10,0.00253549332533,0.0240280233524,0.196012376176
+depolarising simulator,Random,False,ZNE,3,4,10,0.00281875331061,0.034529993988,0.126750781912
+depolarising simulator,Random,False,ZNE,3,5,10,0.00377519455898,0.0382133426876,0.0832681872624
+depolarising simulator,Random,False,ZNE,3,6,10,0.00541260687088,0.0590335299654,0.124035985621
+depolarising simulator,Random,False,ZNE,3,7,10,0.00560040770506,0.0490739178913,0.134103591243
+depolarising simulator,Random,False,ZNE,4,2,10,0.00377106771352,0.0484243294624,0.179988746845
+depolarising simulator,Random,False,ZNE,4,3,10,0.00463018145527,0.0530063997316,0.125345709679
+depolarising simulator,Random,False,ZNE,4,4,10,0.00511749983314,0.0248440459925,0.196994683457
+depolarising simulator,Random,False,ZNE,4,5,10,0.00709249592676,0.0426884590286,0.115868429401
+depolarising simulator,Random,False,ZNE,4,6,10,0.00510621575358,0.0301411303268,0.0663221956454
+depolarising simulator,Random,False,ZNE,4,7,10,0.00944669198602,0.0396730072663,0.145418759683
+depolarising simulator,Random,False,ZNE,5,2,10,0.00562121890309,0.0980854883361,0.164573760774
+depolarising simulator,Random,False,ZNE,5,3,10,0.00372697596612,0.0368688593226,0.0750903609842
+depolarising simulator,Random,False,ZNE,5,4,10,0.004130517529,0.0436711906267,0.0767851297751
+depolarising simulator,Random,False,ZNE,5,5,10,0.00566689717005,0.0314159994,0.121614493394
+depolarising simulator,Random,False,ZNE,5,6,10,0.00833682385372,0.0430512843052,0.145352466454
+depolarising simulator,Random,False,ZNE,5,7,10,0.00469458994523,0.0258853244529,0.0619148049373
+depolarising simulator,Random,False,ZNE,6,2,10,0.00556724565143,0.0667637958597,0.156232386295
+depolarising simulator,Random,False,ZNE,6,3,10,0.00750111007403,0.0565836131102,0.15605272379
+depolarising simulator,Random,False,ZNE,6,4,10,0.00639751893653,0.0306571763351,0.160224545446
+depolarising simulator,Random,False,ZNE,6,5,10,0.00954737428575,0.0490042759417,0.132218574122
+depolarising simulator,Random,False,ZNE,6,6,10,0.0101577919494,0.0630977112087,0.112574303355
+depolarising simulator,Random,False,ZNE,6,7,10,0.0140621311855,0.0626544566833,0.159829559572
+depolarising simulator,Random,False,ZNE,7,2,10,0.00662564175367,0.0639064441782,0.16701835199
+depolarising simulator,Random,False,ZNE,7,3,10,0.00747875275775,0.0521614306418,0.138547593578
+depolarising simulator,Random,False,ZNE,7,4,10,0.00765782571806,0.039724503625,0.152007336086
+depolarising simulator,Random,False,ZNE,7,5,10,0.00542470119057,0.0363851366584,0.0821530883977
+depolarising simulator,Random,True,CDR,2,2,10,0.0227764644489,0.306149900174,0.433218144065
+depolarising simulator,Random,True,CDR,2,4,10,0.0433032827048,0.3394678503,0.39983084405
+depolarising simulator,Random,True,CDR,2,6,10,0.059838288398,0.302256318846,0.422520044627
+depolarising simulator,Random,True,CDR,2,8,10,0.0830007111836,0.344061062691,0.395819797105
+depolarising simulator,Random,True,CDR,2,16,10,0.166399754049,0.366488569955,0.490291089236
+depolarising simulator,Random,True,CDR,2,32,10,0.337191039015,0.498834842989,0.627754249988
+depolarising simulator,Random,True,CDR,2,64,10,0.643585592691,0.664288601865,0.978227598222
+depolarising simulator,Random,True,CDR,2,128,10,0.986099589499,1.00624765666,1.27082802301
+depolarising simulator,Random,True,CDR,3,2,10,0.0236074772072,0.301603539772,0.51350844988
+depolarising simulator,Random,True,CDR,3,4,10,0.0372231204259,0.283484343148,0.364292782697
+depolarising simulator,Random,True,CDR,3,6,10,0.0697972055579,0.369919811093,0.43679197336
+depolarising simulator,Random,True,CDR,3,8,10,0.0706063474406,0.327709426366,0.405469115556
+depolarising simulator,Random,True,CDR,3,16,10,0.122867201025,0.257466329513,0.437540115955
+depolarising simulator,Random,True,CDR,3,32,10,0.257401269436,0.397078457908,0.472235924601
+depolarising simulator,Random,True,CDR,3,64,10,0.311360622522,0.352221263984,0.564871944778
+depolarising simulator,Random,True,CDR,3,128,10,1.00137206872,0.992138988711,1.41332292479
+depolarising simulator,Random,True,CDR,4,2,10,0.056213007643,0.205602529853,2.35458033648
+depolarising simulator,Random,True,CDR,4,4,10,0.0582497818385,0.234168351098,0.431625159605
+depolarising simulator,Random,True,CDR,4,6,10,0.0821937928472,0.217886685285,0.379740696007
+depolarising simulator,Random,True,CDR,4,8,10,0.114299808387,0.250781781844,0.407160199436
+depolarising simulator,Random,True,CDR,4,16,10,0.213684791673,0.289139145688,0.585436539492
+depolarising simulator,Random,True,CDR,4,32,10,0.325384569518,0.31045021099,0.823291429963
+depolarising simulator,Random,True,CDR,4,64,10,0.906510024337,0.9417407225,1.07211998725
+depolarising simulator,Random,True,CDR,4,128,10,1.05367257361,1.05033857297,1.13568622431
+depolarising simulator,Random,True,CDR,5,2,10,0.0444957504629,0.357866155107,0.415981594063
+depolarising simulator,Random,True,CDR,5,4,10,0.248064456679,0.370299383303,2.69067147751
+depolarising simulator,Random,True,CDR,5,6,10,0.116263745018,0.327324431873,0.495662951096
+depolarising simulator,Random,True,CDR,5,8,10,0.11150808778,0.211873311259,0.839049171001
+depolarising simulator,Random,True,CDR,5,16,10,0.144663094758,0.185720559309,0.461179885682
+depolarising simulator,Random,True,CDR,5,32,10,0.240656894143,0.250345812026,0.792526703134
+depolarising simulator,Random,True,CDR,5,64,10,0.972952438538,1.01585047494,1.1721229308
+depolarising simulator,Random,True,CDR,5,128,10,0.981043111889,0.981003889669,1.00179369892
+depolarising simulator,Random,True,CDR,6,2,10,0.141772017142,0.355067753722,4.00952875098
+depolarising simulator,Random,True,CDR,6,4,10,0.320557649108,0.433477168099,2.28101988221
+depolarising simulator,Random,True,CDR,6,6,10,0.126843075863,0.244354358658,0.628694348687
+depolarising simulator,Random,True,CDR,6,8,10,0.332920706802,0.328950814812,1.72054839954
+depolarising simulator,Random,True,CDR,6,16,10,0.373422135549,0.290317504326,1.0280650166
+depolarising simulator,Random,True,CDR,6,32,10,0.896206885703,0.994589074325,1.0660960466
+depolarising simulator,Random,True,CDR,6,64,10,1.00435863372,1.00710758647,1.09302000791
+depolarising simulator,Random,True,CDR,6,128,10,1.01042059066,1.01034069413,1.08035426376
+depolarising simulator,Random,True,CDR,7,2,10,0.112034298639,0.279966407028,3.41003380085
+depolarising simulator,Random,True,CDR,7,4,10,0.188487009229,0.273034807415,1.9249717035
+depolarising simulator,Random,True,CDR,7,6,10,0.488905734543,0.379931408775,2.67361599749
+depolarising simulator,Random,True,CDR,7,8,10,0.326779134643,0.381619216793,1.55311349047
+depolarising simulator,Random,True,CDR,7,16,10,0.609028386307,0.908329221327,1.19919866491
+depolarising simulator,Random,True,CDR,7,32,10,0.978079182032,1.02798589887,1.08232964577
+depolarising simulator,Random,True,CDR,7,64,10,0.992839275782,0.997555725185,1.01220471779
+depolarising simulator,Random,True,NOISY,2,2,10,0.071086,1,1
+depolarising simulator,Random,True,NOISY,2,4,10,0.134614,1,1
+depolarising simulator,Random,True,NOISY,2,6,10,0.195332,1,1
+depolarising simulator,Random,True,NOISY,2,8,10,0.250892,1,1
+depolarising simulator,Random,True,NOISY,2,16,10,0.437538,1,1
+depolarising simulator,Random,True,NOISY,2,32,10,0.683202,1,1
+depolarising simulator,Random,True,NOISY,2,64,10,0.899698,1,1
+depolarising simulator,Random,True,NOISY,2,128,10,0.989966,1,1
+depolarising simulator,Random,True,NOISY,3,2,10,0.07125,1,1
+depolarising simulator,Random,True,NOISY,3,4,10,0.135124,1,1
+depolarising simulator,Random,True,NOISY,3,6,10,0.195408,1,1
+depolarising simulator,Random,True,NOISY,3,8,10,0.252294,1,1
+depolarising simulator,Random,True,NOISY,3,16,10,0.437068,1,1
+depolarising simulator,Random,True,NOISY,3,32,10,0.684438,1,1
+depolarising simulator,Random,True,NOISY,3,64,10,0.899664,1,1
+depolarising simulator,Random,True,NOISY,3,128,10,0.988724,1,1
+depolarising simulator,Random,True,NOISY,4,2,10,0.137086,1,1
+depolarising simulator,Random,True,NOISY,4,4,10,0.253496,1,1
+depolarising simulator,Random,True,NOISY,4,6,10,0.351624,1,1
+depolarising simulator,Random,True,NOISY,4,8,10,0.439292,1,1
+depolarising simulator,Random,True,NOISY,4,16,10,0.683586,1,1
+depolarising simulator,Random,True,NOISY,4,32,10,0.902826,1,1
+depolarising simulator,Random,True,NOISY,4,64,10,0.989848,1,1
+depolarising simulator,Random,True,NOISY,4,128,10,1.001378,1,1
+depolarising simulator,Random,True,NOISY,5,2,10,0.136922,1,1
+depolarising simulator,Random,True,NOISY,5,4,10,0.254102,1,1
+depolarising simulator,Random,True,NOISY,5,6,10,0.35376,1,1
+depolarising simulator,Random,True,NOISY,5,8,10,0.439212,1,1
+depolarising simulator,Random,True,NOISY,5,16,10,0.68404,1,1
+depolarising simulator,Random,True,NOISY,5,32,10,0.899968,1,1
+depolarising simulator,Random,True,NOISY,5,64,10,0.989394,1,1
+depolarising simulator,Random,True,NOISY,5,128,10,1.000222,1,1
+depolarising simulator,Random,True,NOISY,6,2,10,0.198532,1,1
+depolarising simulator,Random,True,NOISY,6,4,10,0.353642,1,1
+depolarising simulator,Random,True,NOISY,6,6,10,0.476776,1,1
+depolarising simulator,Random,True,NOISY,6,8,10,0.580716,1,1
+depolarising simulator,Random,True,NOISY,6,16,10,0.821404,1,1
+depolarising simulator,Random,True,NOISY,6,32,10,0.968734,1,1
+depolarising simulator,Random,True,NOISY,6,64,10,0.996866,1,1
+depolarising simulator,Random,True,NOISY,6,128,10,1.00018,1,1
+depolarising simulator,Random,True,NOISY,7,2,10,0.198366,1,1
+depolarising simulator,Random,True,NOISY,7,4,10,0.353764,1,1
+depolarising simulator,Random,True,NOISY,7,6,10,0.479098,1,1
+depolarising simulator,Random,True,NOISY,7,8,10,0.580214,1,1
+depolarising simulator,Random,True,NOISY,7,16,10,0.82278,1,1
+depolarising simulator,Random,True,NOISY,7,32,10,0.9704,1,1
+depolarising simulator,Random,True,NOISY,7,64,10,0.999562,1,1
+depolarising simulator,Random,True,ZNE,2,2,10,0.00201652720592,0.0236402657911,0.0616456115797
+depolarising simulator,Random,True,ZNE,2,4,10,0.00281424306851,0.0190796278935,0.0401531614772
+depolarising simulator,Random,True,ZNE,2,6,10,0.00273773213257,0.0136712683555,0.0265709412383
+depolarising simulator,Random,True,ZNE,2,8,10,0.00771406348029,0.0288092712715,0.054743562422
+depolarising simulator,Random,True,ZNE,2,16,10,0.0097610699087,0.0237298046322,0.0587624067877
+depolarising simulator,Random,True,ZNE,2,32,10,0.0269721692334,0.0323635602101,0.082929091801
+depolarising simulator,Random,True,ZNE,2,64,10,0.863878655674,1.11024964814,1.12424035204
+depolarising simulator,Random,True,ZNE,2,128,10,0.96899734544,0.983850142292,1.00230155762
+depolarising simulator,Random,True,ZNE,3,2,10,0.00237614120122,0.0246511961391,0.0837770386125
+depolarising simulator,Random,True,ZNE,3,4,10,0.00174577627218,0.0102908999976,0.0261149350936
+depolarising simulator,Random,True,ZNE,3,6,10,0.00467735404977,0.0253140073628,0.0356312857792
+depolarising simulator,Random,True,ZNE,3,8,10,0.00541703331414,0.0185948795803,0.0496178902223
+depolarising simulator,Random,True,ZNE,3,16,10,0.00732630094478,0.0175350442527,0.0354539704947
+depolarising simulator,Random,True,ZNE,3,32,10,0.0468671996882,0.0750710595957,0.146970679474
+depolarising simulator,Random,True,ZNE,3,64,10,0.705995721987,0.656111573078,1.11394259464
+depolarising simulator,Random,True,ZNE,3,128,10,0.951612944756,0.988736285235,0.999610476494
+depolarising simulator,Random,True,ZNE,4,2,10,0.00313686266966,0.018087775731,0.0652677141746
+depolarising simulator,Random,True,ZNE,4,4,10,0.00434836356504,0.0137061828003,0.0472202862828
+depolarising simulator,Random,True,ZNE,4,6,10,0.00592970084699,0.0150437303945,0.0424724286955
+depolarising simulator,Random,True,ZNE,4,8,10,0.0109609492574,0.0208147407719,0.0515141206868
+depolarising simulator,Random,True,ZNE,4,16,10,0.0397190602017,0.0415469765621,0.137032153907
+depolarising simulator,Random,True,ZNE,4,32,10,0.736052869232,0.883664633691,1.11509036853
+depolarising simulator,Random,True,ZNE,4,64,10,0.868590163811,0.957473396021,1.0055906043
+depolarising simulator,Random,True,ZNE,4,128,10,1.02348871452,0.99349214011,2.9428462637
+depolarising simulator,Random,True,ZNE,5,2,10,0.00368414846736,0.0250004615319,0.0531542123261
+depolarising simulator,Random,True,ZNE,5,4,10,0.00307711181944,0.00915750331293,0.0378422492425
+depolarising simulator,Random,True,ZNE,5,6,10,0.00504036726592,0.00928841593692,0.0505869434009
+depolarising simulator,Random,True,ZNE,5,8,10,0.00901620461517,0.0175816712343,0.0400387491145
+depolarising simulator,Random,True,ZNE,5,16,10,0.0687265906471,0.0882544656794,0.255486763973
+depolarising simulator,Random,True,ZNE,5,32,10,0.793431610244,1.1049834668,1.12512641031
+depolarising simulator,Random,True,ZNE,5,64,10,0.879550239341,0.972166739237,1.01618462129
+depolarising simulator,Random,True,ZNE,5,128,10,1.27985297553,1.00041742693,2.92209622855
+depolarising simulator,Random,True,ZNE,6,2,10,0.00277430386115,0.00896186655287,0.0419478871769
+depolarising simulator,Random,True,ZNE,6,4,10,0.00757101123343,0.0141598996883,0.0556698222874
+depolarising simulator,Random,True,ZNE,6,6,10,0.0104232346,0.0154980799783,0.0544442407772
+depolarising simulator,Random,True,ZNE,6,8,10,0.0167238699141,0.0254759696692,0.0679135288167
+depolarising simulator,Random,True,ZNE,6,16,10,0.331397713588,0.247802395022,1.22139498199
+depolarising simulator,Random,True,ZNE,6,32,10,0.956877487996,0.995839906684,1.03715576388
+depolarising simulator,Random,True,ZNE,6,64,10,1.01341011519,1.00284510164,1.2785357449
+depolarising simulator,Random,True,ZNE,6,128,10,1.03827789705,0.996837620437,2.51055634183
+depolarising simulator,Random,True,ZNE,7,2,10,0.00583544370968,0.0271701442921,0.0576969732172
+depolarising simulator,Random,True,ZNE,7,4,10,0.00544609656741,0.0103550417293,0.0419331667679
+depolarising simulator,Random,True,ZNE,7,6,10,0.0166002574273,0.0382666971363,0.0649845321639
+depolarising simulator,Random,True,ZNE,7,8,10,0.011070202083,0.0121941944138,0.0468065207873
+depolarising simulator,Random,True,ZNE,7,16,10,0.373925241148,0.267399546747,1.21011801084
+depolarising simulator,Random,True,ZNE,7,32,10,0.915222704187,0.956737019967,1.03329766835
+depolarising simulator,Random,True,ZNE,7,64,10,1.41274805098,1.00926812069,2.91008171792
+ibm_lagos,Pauli-gadget,False,CDR,2,2,5,0.11868438976,1.41140503187,71.399602547
+ibm_lagos,Pauli-gadget,False,CDR,2,3,5,0.0201555541456,1.29828801433,8.0277754899
+ibm_lagos,Pauli-gadget,False,CDR,2,4,5,0.0977579883196,1.31381700588,2.73902268593
+ibm_lagos,Pauli-gadget,False,CDR,2,5,5,0.023249686911,0.395731446244,1.78663694226
+ibm_lagos,Pauli-gadget,False,CDR,3,2,5,0.0184989234771,0.274701568567,0.646540691345
+ibm_lagos,Pauli-gadget,False,CDR,3,3,5,0.0505490931656,0.256342812002,0.938495423822
+ibm_lagos,Pauli-gadget,False,CDR,3,4,5,0.042923404206,0.118643759404,249983.148235
+ibm_lagos,Pauli-gadget,False,CDR,4,2,5,0.256292728203,0.661974642986,2.79773397724
+ibm_lagos,Pauli-gadget,False,CDR,4,3,5,0.179678110372,0.354603144194,0.708854982174
+ibm_lagos,Pauli-gadget,False,CDR,5,2,5,0.282023991633,0.515456791723,2.441457649
+ibm_lagos,Pauli-gadget,False,NOISY,2,2,5,0.0258777520529,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,2,3,5,0.026826646787,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,2,4,5,0.0704715800214,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,2,5,5,0.0476372580215,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,3,2,5,0.0736752021642,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,3,3,5,0.227866600782,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,3,4,5,0.254962455217,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,4,2,5,0.253448741096,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,4,3,5,0.495317464776,1,1
+ibm_lagos,Pauli-gadget,False,NOISY,5,2,5,0.36536462103,1,1
+ibm_lagos,Pauli-gadget,False,ZNE,2,2,5,0.425682479611,1.64381528508,146.382504876
+ibm_lagos,Pauli-gadget,False,ZNE,2,3,5,0.0343056169295,2.50323875639,6.16407678772
+ibm_lagos,Pauli-gadget,False,ZNE,2,4,5,0.110422383579,1.5589160406,2.97518442447
+ibm_lagos,Pauli-gadget,False,ZNE,2,5,5,0.0490727066233,0.883676250387,2.9976335463
+ibm_lagos,Pauli-gadget,False,ZNE,3,2,5,0.50925399743,4.10389069648,22.685670501
+ibm_lagos,Pauli-gadget,False,ZNE,3,3,5,1.15164455414,4.9995765712,18.7709373786
+ibm_lagos,Pauli-gadget,False,ZNE,3,4,5,1.01664694907,4.16647046331,937932.138181
+ibm_lagos,Pauli-gadget,False,ZNE,4,2,5,0.898440572484,3.2048543419,7.88630623966
+ibm_lagos,Pauli-gadget,False,ZNE,4,3,5,1.36710670105,2.73247123035,4.31061378003
+ibm_lagos,Pauli-gadget,False,ZNE,5,2,5,1.20898798909,4.34821108292,5.28016504909
+ibm_lagos,Pauli-gadget,True,CDR,2,2,5,0.015616566478,9.72204681454e-15,2.17984992359
+ibm_lagos,Pauli-gadget,True,CDR,2,4,5,0.00498676800372,0.0565876696497,0.287880784291
+ibm_lagos,Pauli-gadget,True,CDR,3,2,5,0.0702586278813,0.0620714173231,0.89013356404
+ibm_lagos,Pauli-gadget,True,CDR,3,4,5,0.0593219631323,0.0509341071355,4.25725729437
+ibm_lagos,Pauli-gadget,True,CDR,4,2,5,0.0514949709497,1.16865581539e-15,0.350458657833
+ibm_lagos,Pauli-gadget,True,CDR,5,2,5,0.0167047150319,6.53613039978e-16,0.201839178757
+ibm_lagos,Pauli-gadget,True,NOISY,2,2,5,0.0531,1,1
+ibm_lagos,Pauli-gadget,True,NOISY,2,4,5,0.0788125,1,1
+ibm_lagos,Pauli-gadget,True,NOISY,3,2,5,0.1894625,1,1
+ibm_lagos,Pauli-gadget,True,NOISY,3,4,5,0.5627375,1,1
+ibm_lagos,Pauli-gadget,True,NOISY,4,2,5,0.5082,1,1
+ibm_lagos,Pauli-gadget,True,NOISY,5,2,5,0.5626375,1,1
+ibm_lagos,Pauli-gadget,True,ZNE,2,2,5,0.0460163447753,0.774949343672,2.08391607049
+ibm_lagos,Pauli-gadget,True,ZNE,2,4,5,0.10435030635,0.914874115344,2.43884128645
+ibm_lagos,Pauli-gadget,True,ZNE,3,2,5,0.321124054806,1.09601291774,2.74809651564
+ibm_lagos,Pauli-gadget,True,ZNE,3,4,5,0.720735155117,0.997685592986,2.61963729657
+ibm_lagos,Pauli-gadget,True,ZNE,4,2,5,0.64162310518,1.13330168409,2.57723724915
+ibm_lagos,Pauli-gadget,True,ZNE,5,2,5,0.594883882134,1.28681469809,2.20560217047
+ibm_lagos,Random,False,CDR,2,2,5,0.0362496231673,1.26931239814,1.61579038596
+ibm_lagos,Random,False,CDR,2,3,5,0.0902738792933,1.88417474578,4.05361540665
+ibm_lagos,Random,False,CDR,2,4,5,0.0674819341346,1.97006849595,8.09101409736
+ibm_lagos,Random,False,CDR,2,5,5,0.0951685869084,1.62527003462,4.99120665334
+ibm_lagos,Random,False,CDR,3,2,5,0.136230243953,0.577254947743,4.38133213985
+ibm_lagos,Random,False,CDR,3,3,5,0.20298796652,0.785404118255,1.73418844845
+ibm_lagos,Random,False,CDR,3,4,5,0.232978684401,1.35071305904,2.22627486628
+ibm_lagos,Random,False,CDR,4,2,5,0.284817658249,0.9148231139,2.12607086991
+ibm_lagos,Random,False,CDR,4,3,5,0.367607932531,1.09632253772,3.64358601424
+ibm_lagos,Random,False,CDR,5,2,5,0.258986279895,0.816580695258,3.34371859133
+ibm_lagos,Random,False,NOISY,2,2,5,0.0483904154144,1,1
+ibm_lagos,Random,False,NOISY,2,3,5,0.0707838528782,1,1
+ibm_lagos,Random,False,NOISY,2,4,5,0.0397770095032,1,1
+ibm_lagos,Random,False,NOISY,2,5,5,0.0626710243618,1,1
+ibm_lagos,Random,False,NOISY,3,2,5,0.119075806175,1,1
+ibm_lagos,Random,False,NOISY,3,3,5,0.208060937739,1,1
+ibm_lagos,Random,False,NOISY,3,4,5,0.182903094094,1,1
+ibm_lagos,Random,False,NOISY,4,2,5,0.245535144689,1,1
+ibm_lagos,Random,False,NOISY,4,3,5,0.287902876165,1,1
+ibm_lagos,Random,False,NOISY,5,2,5,0.222613651295,1,1
+ibm_lagos,Random,False,ZNE,2,2,5,0.048455303285,1.49173492595,3.54087237754
+ibm_lagos,Random,False,ZNE,2,3,5,0.0319444396849,0.312546478574,3.54738451642
+ibm_lagos,Random,False,ZNE,2,4,5,0.0534418941372,2.36493029805,11.2350642947
+ibm_lagos,Random,False,ZNE,2,5,5,0.0694565329118,0.4512800301,26.2059537492
+ibm_lagos,Random,False,ZNE,3,2,5,0.09458944426,0.456646822339,2.02441071751
+ibm_lagos,Random,False,ZNE,3,3,5,0.0921372899036,0.404211139697,2.33498642589
+ibm_lagos,Random,False,ZNE,3,4,5,0.321097877467,1.06523798937,6.39377357433
+ibm_lagos,Random,False,ZNE,4,2,5,0.668570026682,0.828159775852,5.70447403965
+ibm_lagos,Random,False,ZNE,4,3,5,1.09954728697,3.66632713027,5.10389456405
+ibm_lagos,Random,False,ZNE,5,2,5,0.583818492655,2.62040491629,11.0923735922
+ibm_lagos,Random,True,CDR,2,2,5,0.0189756339608,0.273270923837,0.469885959661
+ibm_lagos,Random,True,CDR,2,4,5,0.028022002922,0.236754859794,0.403630764415
+ibm_lagos,Random,True,CDR,3,2,5,0.0506537911463,0.714405618696,0.926371959249
+ibm_lagos,Random,True,CDR,3,4,5,0.212954207971,0.353050633693,1.05257430607
+ibm_lagos,Random,True,CDR,4,2,5,0.203171169195,1.0923633954,1.25397745504
+ibm_lagos,Random,True,CDR,5,2,5,0.243652925409,0.795373773517,2.18264905535
+ibm_lagos,Random,True,NOISY,2,2,5,0.0762625,1,1
+ibm_lagos,Random,True,NOISY,2,4,5,0.1209375,1,1
+ibm_lagos,Random,True,NOISY,3,2,5,0.0891625,1,1
+ibm_lagos,Random,True,NOISY,3,4,5,0.3278,1,1
+ibm_lagos,Random,True,NOISY,4,2,5,0.23195,1,1
+ibm_lagos,Random,True,NOISY,5,2,5,0.244425,1,1
+ibm_lagos,Random,True,ZNE,2,2,5,0.00901121999075,0.0524178135806,0.269358086716
+ibm_lagos,Random,True,ZNE,2,4,5,0.027859859339,0.190453587267,0.374351477401
+ibm_lagos,Random,True,ZNE,3,2,5,0.0396849252863,0.451262442104,0.623688690884
+ibm_lagos,Random,True,ZNE,3,4,5,0.404015572752,1.43147663666,2.18980227938
+ibm_lagos,Random,True,ZNE,4,2,5,0.0482459679172,0.182969927148,0.408634317183
+ibm_lagos,Random,True,ZNE,5,2,5,0.0497059969539,0.146214411646,0.512242682836
+ibm_lagos emulator,Pauli-gadget,False,CDR,2,2,10,0.0664958887019,0.249958096945,11.0476854999
+ibm_lagos emulator,Pauli-gadget,False,CDR,2,3,10,0.00677961445156,0.170263786502,0.588533013356
+ibm_lagos emulator,Pauli-gadget,False,CDR,2,4,10,0.00734254618431,0.189528621679,0.306163726612
+ibm_lagos emulator,Pauli-gadget,False,CDR,2,5,10,0.00676301981934,0.105144248656,0.335689379709
+ibm_lagos emulator,Pauli-gadget,False,CDR,2,6,10,0.00857071366358,0.20151619319,0.259176298874
+ibm_lagos emulator,Pauli-gadget,False,CDR,2,7,10,0.0112872057662,0.165648730094,0.489533991743
+ibm_lagos emulator,Pauli-gadget,False,CDR,3,2,10,0.00814129591211,0.100348537966,0.456697602836
+ibm_lagos emulator,Pauli-gadget,False,CDR,3,3,10,0.0124617889267,0.161112784236,0.394044988515
+ibm_lagos emulator,Pauli-gadget,False,CDR,3,4,10,0.0116882842418,0.108814087118,0.506782434362
+ibm_lagos emulator,Pauli-gadget,False,CDR,3,5,10,0.0100362785961,0.0686387328634,0.376421975267
+ibm_lagos emulator,Pauli-gadget,False,CDR,3,6,10,0.0110381364539,0.110389964229,0.259867723068
+ibm_lagos emulator,Pauli-gadget,False,CDR,3,7,10,0.0168186408682,0.140958200183,0.280388878945
+ibm_lagos emulator,Pauli-gadget,False,CDR,4,2,10,0.0148995342795,0.0954781782577,0.128837621297
+ibm_lagos emulator,Pauli-gadget,False,CDR,4,3,10,0.0239388128992,0.0561892096125,0.222810293186
+ibm_lagos emulator,Pauli-gadget,False,CDR,4,4,10,0.0220842815732,0.0444540820795,0.214525153665
+ibm_lagos emulator,Pauli-gadget,False,CDR,4,5,10,0.025942250909,0.0951558040574,0.145633502046
+ibm_lagos emulator,Pauli-gadget,False,CDR,4,6,10,0.0530038745379,0.176466355666,0.305819269887
+ibm_lagos emulator,Pauli-gadget,False,CDR,4,7,10,0.0416870911745,0.0944615549011,0.217874629717
+ibm_lagos emulator,Pauli-gadget,False,CDR,5,2,10,0.0185998479456,0.0709309709481,0.198211451002
+ibm_lagos emulator,Pauli-gadget,False,CDR,5,3,10,0.0474895691602,0.116923957736,0.365827744817
+ibm_lagos emulator,Pauli-gadget,False,CDR,5,4,10,0.0258050524682,0.0493077854897,0.123199718259
+ibm_lagos emulator,Pauli-gadget,False,CDR,5,5,10,0.0542828026949,0.109913383612,0.2728392997
+ibm_lagos emulator,Pauli-gadget,False,CDR,5,6,10,0.0572492121518,0.0859061934362,0.509471818169
+ibm_lagos emulator,Pauli-gadget,False,CDR,5,7,10,0.0696611921153,0.124265381617,0.42490019251
+ibm_lagos emulator,Pauli-gadget,False,CDR,6,2,10,0.10414724195,0.163147058741,1.33899631728
+ibm_lagos emulator,Pauli-gadget,False,CDR,6,3,10,0.0379469960423,0.072005132173,0.257105036607
+ibm_lagos emulator,Pauli-gadget,False,CDR,6,4,10,0.0699943986512,0.12007559902,0.483332120293
+ibm_lagos emulator,Pauli-gadget,False,CDR,6,5,10,0.153819511837,0.337194094919,0.612738392482
+ibm_lagos emulator,Pauli-gadget,False,CDR,6,6,10,0.0831394092783,0.204694620444,0.423199803604
+ibm_lagos emulator,Pauli-gadget,False,CDR,6,7,10,0.0436184766886,0.0750201638717,0.24944169505
+ibm_lagos emulator,Pauli-gadget,False,CDR,7,2,10,0.0191435132414,0.0665564593667,0.316062350986
+ibm_lagos emulator,Pauli-gadget,False,CDR,7,3,10,0.0235637315441,0.0471424326914,0.269314537343
+ibm_lagos emulator,Pauli-gadget,False,CDR,7,4,10,0.0295128648632,0.0458931321031,0.26662444468
+ibm_lagos emulator,Pauli-gadget,False,CDR,7,5,10,0.0406004526172,0.0676861021983,0.404408329878
+ibm_lagos emulator,Pauli-gadget,False,NOISY,2,2,10,0.0343517438191,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,2,3,10,0.0385068999138,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,2,4,10,0.0423592626988,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,2,5,10,0.0488919830138,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,2,6,10,0.0535762998601,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,2,7,10,0.0594409217654,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,3,2,10,0.0534682246472,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,3,3,10,0.0736911152549,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,3,4,10,0.0864905361477,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,3,5,10,0.0994754291881,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,3,6,10,0.103236469777,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,3,7,10,0.120133487956,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,4,2,10,0.20474655079,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,4,3,10,0.274849975313,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,4,4,10,0.327885352348,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,4,5,10,0.326497390634,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,4,6,10,0.30644161622,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,4,7,10,0.372205139115,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,5,2,10,0.211666753486,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,5,3,10,0.328916197047,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,5,4,10,0.387067103045,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,5,5,10,0.440726695823,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,5,6,10,0.428262262028,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,5,7,10,0.458491910305,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,6,2,10,0.304030155186,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,6,3,10,0.344532884792,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,6,4,10,0.418287175727,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,6,5,10,0.473853777348,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,6,6,10,0.456928083509,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,6,7,10,0.389869873741,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,7,2,10,0.250058138737,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,7,3,10,0.305073398917,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,7,4,10,0.375188028399,1,1
+ibm_lagos emulator,Pauli-gadget,False,NOISY,7,5,10,0.411306778422,1,1
+ibm_lagos emulator,Pauli-gadget,False,ZNE,2,2,10,0.0207346943391,0.621874757043,0.835948589651
+ibm_lagos emulator,Pauli-gadget,False,ZNE,2,3,10,0.024301852631,0.638000696222,1.45383563554
+ibm_lagos emulator,Pauli-gadget,False,ZNE,2,4,10,0.0225641773051,0.58624902062,1.50755621284
+ibm_lagos emulator,Pauli-gadget,False,ZNE,2,5,10,0.022247458505,0.476612722037,0.69234457173
+ibm_lagos emulator,Pauli-gadget,False,ZNE,2,6,10,0.026083237639,0.501871833295,0.771423152213
+ibm_lagos emulator,Pauli-gadget,False,ZNE,2,7,10,0.0240341339418,0.39342596153,0.740305592732
+ibm_lagos emulator,Pauli-gadget,False,ZNE,3,2,10,0.0317110223132,0.596146286938,1.00544324682
+ibm_lagos emulator,Pauli-gadget,False,ZNE,3,3,10,0.0321191497289,0.438483942347,0.72560674148
+ibm_lagos emulator,Pauli-gadget,False,ZNE,3,4,10,0.0288103033246,0.340055554401,0.500332854222
+ibm_lagos emulator,Pauli-gadget,False,ZNE,3,5,10,0.0287435833723,0.285597644695,0.433874964403
+ibm_lagos emulator,Pauli-gadget,False,ZNE,3,6,10,0.0278142604677,0.296881998975,0.41011613319
+ibm_lagos emulator,Pauli-gadget,False,ZNE,3,7,10,0.024158909648,0.191182615767,0.3117920495
+ibm_lagos emulator,Pauli-gadget,False,ZNE,4,2,10,0.04654936371,0.229594015958,0.635932822359
+ibm_lagos emulator,Pauli-gadget,False,ZNE,4,3,10,0.0743649344891,0.278797921367,0.433845940742
+ibm_lagos emulator,Pauli-gadget,False,ZNE,4,4,10,0.343051131686,0.16543722957,4.49819970726
+ibm_lagos emulator,Pauli-gadget,False,ZNE,4,5,10,0.247490428581,0.399792881076,3.13102202467
+ibm_lagos emulator,Pauli-gadget,False,ZNE,4,6,10,0.096262238475,0.319063888203,0.58126920759
+ibm_lagos emulator,Pauli-gadget,False,ZNE,4,7,10,0.471575310437,0.379392698765,4.57979504738
+ibm_lagos emulator,Pauli-gadget,False,ZNE,5,2,10,0.0542041976284,0.236947494917,0.425338803626
+ibm_lagos emulator,Pauli-gadget,False,ZNE,5,3,10,0.140738809589,0.229333451552,1.37497342128
+ibm_lagos emulator,Pauli-gadget,False,ZNE,5,4,10,0.250746712225,0.245621192262,4.43642141578
+ibm_lagos emulator,Pauli-gadget,False,ZNE,5,5,10,0.576058316191,0.568010050468,3.7135665066
+ibm_lagos emulator,Pauli-gadget,False,ZNE,5,6,10,0.830216784456,1.70355698547,3.77148962063
+ibm_lagos emulator,Pauli-gadget,False,ZNE,5,7,10,0.877421337734,1.7455694792,3.9314744306
+ibm_lagos emulator,Pauli-gadget,False,ZNE,6,2,10,0.0836378544376,0.223760336886,0.945962288184
+ibm_lagos emulator,Pauli-gadget,False,ZNE,6,3,10,0.389657795339,0.419179997336,4.07106248798
+ibm_lagos emulator,Pauli-gadget,False,ZNE,6,4,10,0.574841151595,0.703599767989,3.75681131134
+ibm_lagos emulator,Pauli-gadget,False,ZNE,6,5,10,0.629482878121,0.91322655093,3.75805263501
+ibm_lagos emulator,Pauli-gadget,False,ZNE,6,6,10,0.896648436149,1.68590906817,4.04222742234
+ibm_lagos emulator,Pauli-gadget,False,ZNE,6,7,10,0.668238166042,0.535097796844,4.32679725039
+ibm_lagos emulator,Pauli-gadget,False,ZNE,7,2,10,0.0713459279239,0.274429477836,0.461497679391
+ibm_lagos emulator,Pauli-gadget,False,ZNE,7,3,10,0.0671939329415,0.23122973583,0.431879442362
+ibm_lagos emulator,Pauli-gadget,False,ZNE,7,4,10,0.279946392156,0.289758906537,4.57094241676
+ibm_lagos emulator,Pauli-gadget,False,ZNE,7,5,10,0.333508508013,0.436279464988,3.3434582103
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,2,10,0.00215258656631,3.86078822137e-15,0.272691456866
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,4,10,0.000912422299551,0.00452353745405,0.0683134278791
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,6,10,0.00210370017164,0.00382314427887,0.132455137265
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,8,10,0.005593401089,0.0462984732168,0.225059105628
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,16,10,0.00906483035057,0.0319046219008,0.226544079762
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,32,10,0.0320907298,0.0571698988928,0.552526979372
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,64,10,0.0646730857258,0.0991947027553,0.300452587252
+ibm_lagos emulator,Pauli-gadget,True,CDR,2,128,10,0.072179686294,0.108410858637,0.186096875041
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,2,10,0.0231732836058,0.0118402271346,1.48913780348
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,4,10,0.019242391606,0.0272276784571,3.36954568672
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,6,10,0.00665526687599,0.0268826629041,0.058190562585
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,8,10,0.00502097855925,0.0143871738393,0.0568773309977
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,16,10,0.0341442085047,0.0779829568242,0.192625049292
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,32,10,0.0673724696841,0.0866731999631,0.157627466532
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,64,10,0.256345485343,0.206947411168,0.897054071534
+ibm_lagos emulator,Pauli-gadget,True,CDR,3,128,10,0.824306864396,0.835948328828,1.30157241786
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,2,10,0.00183175979832,2.81191800418e-15,0.0890913037227
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,4,10,0.00745207840963,0.0202201169464,0.0714224685769
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,6,10,0.0127169645062,0.0268566222038,0.087256037845
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,8,10,0.0193210348299,0.0267705816085,0.0955894268828
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,16,10,0.0492096182577,0.075710399789,0.111565716797
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,32,10,0.548771637809,0.587494417353,1.06508993165
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,64,10,0.944166126716,0.976934792676,1.072089014
+ibm_lagos emulator,Pauli-gadget,True,CDR,4,128,10,1.00831623217,0.985150036767,1.22042560877
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,2,10,0.0292616142964,0.000714409543718,0.393009798578
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,4,10,0.0217418134429,0.0381979590161,0.145868360884
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,6,10,0.0546572966832,0.0711968711964,0.188620753992
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,8,10,0.0373089138038,0.0401822296437,0.21958572384
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,16,10,0.15487603836,0.181235956025,0.294994598423
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,32,10,0.982718684044,1.00974506198,1.12187972077
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,64,10,0.987287910356,0.97540053745,1.09212542236
+ibm_lagos emulator,Pauli-gadget,True,CDR,5,128,10,0.973685240834,0.982402867941,1.04579979815
+ibm_lagos emulator,Pauli-gadget,True,CDR,6,2,10,0.0329826286288,0.0350346535512,0.712982878738
+ibm_lagos emulator,Pauli-gadget,True,CDR,6,4,10,0.022980840669,0.0212256590856,0.142850729591
+ibm_lagos emulator,Pauli-gadget,True,CDR,6,6,10,0.085113223095,0.123914136016,0.294074677403
+ibm_lagos emulator,Pauli-gadget,True,CDR,6,8,10,0.0883795893617,0.0813654746863,0.238661984828
+ibm_lagos emulator,Pauli-gadget,True,CDR,6,16,10,0.401089212722,0.222190280623,1.21755303926
+ibm_lagos emulator,Pauli-gadget,True,CDR,6,32,10,1.00318784627,0.999074801715,1.07486987184
+ibm_lagos emulator,Pauli-gadget,True,CDR,6,64,10,0.991607065893,0.991130796522,1.05978338006
+ibm_lagos emulator,Pauli-gadget,True,CDR,7,2,10,0.0432067058619,0.0151243317367,0.394470020966
+ibm_lagos emulator,Pauli-gadget,True,CDR,7,4,10,0.0173249332219,0.0132471468964,0.129144258122
+ibm_lagos emulator,Pauli-gadget,True,CDR,7,6,10,0.0283175522269,0.0296268064227,0.091499389609
+ibm_lagos emulator,Pauli-gadget,True,CDR,7,8,10,0.0480270919104,0.0552483174748,0.188387953395
+ibm_lagos emulator,Pauli-gadget,True,CDR,7,16,10,0.843923910678,0.799949501558,1.25557109671
+ibm_lagos emulator,Pauli-gadget,True,CDR,7,32,10,0.956563125844,0.998428721428,1.08323099337
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,2,10,0.04920625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,4,10,0.06743125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,6,10,0.09911875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,8,10,0.0973375,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,16,10,0.1832125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,32,10,0.300925,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,64,10,0.48941875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,2,128,10,0.72245625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,2,10,0.1168875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,4,10,0.17271875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,6,10,0.2124625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,8,10,0.2542875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,16,10,0.44465625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,32,10,0.6985875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,64,10,0.8738,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,3,128,10,0.97910625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,2,10,0.18970625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,4,10,0.32736875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,6,10,0.401,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,8,10,0.553,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,16,10,0.734,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,32,10,0.9326,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,64,10,0.9965125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,4,128,10,1.0000625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,2,10,0.25284375,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,4,10,0.45140625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,6,10,0.56859375,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,8,10,0.70714375,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,16,10,0.8959125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,32,10,0.98773125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,64,10,1.002775,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,5,128,10,0.99896875,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,6,2,10,0.2792,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,6,4,10,0.5053375,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,6,6,10,0.68663125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,6,8,10,0.8061125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,6,16,10,0.9621,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,6,32,10,0.99690625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,6,64,10,1.002325,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,7,2,10,0.41799375,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,7,4,10,0.58718125,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,7,6,10,0.7852,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,7,8,10,0.8575,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,7,16,10,0.98355625,1,1
+ibm_lagos emulator,Pauli-gadget,True,NOISY,7,32,10,0.998375,1,1
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,2,10,0.023730597967,0.499333806212,1.00896850782
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,4,10,0.0242025324507,0.352083987371,0.775913863876
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,6,10,0.0250483592153,0.150789779663,0.790900236728
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,8,10,0.023397909267,0.191866615938,0.458554474389
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,16,10,0.0087570062308,0.0432811079872,0.147009509149
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,32,10,0.0146976822704,0.0359740582337,0.126262654381
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,64,10,0.0241808053492,0.0329021909768,0.169537397772
+ibm_lagos emulator,Pauli-gadget,True,ZNE,2,128,10,0.23204040003,0.246958128226,1.15796236908
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,2,10,0.062467041201,0.571664658297,0.970525406644
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,4,10,0.0557784495184,0.313800169344,0.978782806856
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,6,10,0.0542871871296,0.277719646447,0.489335420108
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,8,10,0.0435620956542,0.198163106484,0.251517498581
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,16,10,0.0335536526787,0.0737515295977,0.127991815884
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,32,10,0.157200668127,0.158225463687,0.872695410193
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,64,10,0.615920165272,0.567010742944,1.15033367587
+ibm_lagos emulator,Pauli-gadget,True,ZNE,3,128,10,0.95214046845,0.983291149893,1.0360833943
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,2,10,0.0894559022394,0.445179262235,1.02694186165
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,4,10,0.0866906803089,0.266289479603,0.35264350385
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,6,10,0.076840838663,0.188416688227,0.321978454239
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,8,10,0.0589312020437,0.128446708276,0.208284770986
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,16,10,0.21906447779,0.20645120962,1.3308105561
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,32,10,0.831032356008,0.961164472872,1.09284071074
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,64,10,1.31646786043,0.993327009176,2.89534768705
+ibm_lagos emulator,Pauli-gadget,True,ZNE,4,128,10,1.37375401623,0.998231596593,2.92639141222
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,2,10,0.102302045698,0.400522160257,0.699182201648
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,4,10,0.0809241832204,0.177694088039,0.472996523801
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,6,10,0.117757399425,0.178303483055,0.364223105961
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,8,10,0.0903398410281,0.117062183681,0.343218746612
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,16,10,0.855231591849,0.971686204101,1.16000396102
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,32,10,1.09032870263,0.995320312069,2.93508644093
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,64,10,1.29642883707,0.99419908828,2.97473825594
+ibm_lagos emulator,Pauli-gadget,True,ZNE,5,128,10,1.57330926563,1.00489954873,2.9815953255
+ibm_lagos emulator,Pauli-gadget,True,ZNE,6,2,10,0.107537562302,0.378252251168,0.970579055816
+ibm_lagos emulator,Pauli-gadget,True,ZNE,6,4,10,0.0990350860739,0.205755696769,0.335696507794
+ibm_lagos emulator,Pauli-gadget,True,ZNE,6,6,10,0.136804872324,0.211120314457,0.412376967974
+ibm_lagos emulator,Pauli-gadget,True,ZNE,6,8,10,0.411830981535,0.38508788225,1.13587604269
+ibm_lagos emulator,Pauli-gadget,True,ZNE,6,16,10,0.914466394313,0.984283294432,1.09816779423
+ibm_lagos emulator,Pauli-gadget,True,ZNE,6,32,10,1.36930836087,1.00298670185,2.95740834894
+ibm_lagos emulator,Pauli-gadget,True,ZNE,6,64,10,1.46009702225,1.004304471,2.95817481552
+ibm_lagos emulator,Pauli-gadget,True,ZNE,7,2,10,0.117337687978,0.282634264416,0.488915429997
+ibm_lagos emulator,Pauli-gadget,True,ZNE,7,4,10,0.099934552878,0.166238836452,0.237524001324
+ibm_lagos emulator,Pauli-gadget,True,ZNE,7,6,10,0.361597529385,0.312615151227,1.23918069915
+ibm_lagos emulator,Pauli-gadget,True,ZNE,7,8,10,0.460803735368,0.53295576227,1.16368299033
+ibm_lagos emulator,Pauli-gadget,True,ZNE,7,16,10,0.964037835203,0.994681196191,1.02223629928
+ibm_lagos emulator,Pauli-gadget,True,ZNE,7,32,10,1.2891832296,0.985744240385,2.94706314089
+ibm_lagos emulator,Random,False,CDR,2,2,10,0.00997582678449,0.10994677039,0.573858998443
+ibm_lagos emulator,Random,False,CDR,2,3,10,0.00786861001953,0.110895357449,0.565823103927
+ibm_lagos emulator,Random,False,CDR,2,4,10,0.0135934311838,0.194569571652,0.3578137289
+ibm_lagos emulator,Random,False,CDR,2,5,10,0.013030818701,0.142204824568,0.292089876643
+ibm_lagos emulator,Random,False,CDR,2,6,10,0.0181026385152,0.141554952276,0.803271911892
+ibm_lagos emulator,Random,False,CDR,2,7,10,0.0135458397371,0.151877747551,0.281874381897
+ibm_lagos emulator,Random,False,CDR,3,2,10,0.00854560025628,0.136376182706,0.282484598053
+ibm_lagos emulator,Random,False,CDR,3,3,10,0.0221268663384,0.258742247117,0.497660607124
+ibm_lagos emulator,Random,False,CDR,3,4,10,0.0264126538064,0.170068742032,0.517466506457
+ibm_lagos emulator,Random,False,CDR,3,5,10,0.0184294732995,0.103677638045,0.377042670459
+ibm_lagos emulator,Random,False,CDR,3,6,10,0.0391703739015,0.150187839694,0.567800695603
+ibm_lagos emulator,Random,False,CDR,3,7,10,0.0531823127668,0.193470506778,0.578054162975
+ibm_lagos emulator,Random,False,CDR,4,2,10,0.0355740484155,0.165571106786,0.246108426062
+ibm_lagos emulator,Random,False,CDR,4,3,10,0.16535064271,0.442712403438,1.72042918101
+ibm_lagos emulator,Random,False,CDR,4,4,10,0.173472287337,0.361130107714,1.34334315957
+ibm_lagos emulator,Random,False,CDR,4,5,10,0.241381556084,0.515803872256,1.17219009307
+ibm_lagos emulator,Random,False,CDR,4,6,10,0.222934539455,0.447031101012,1.17150433818
+ibm_lagos emulator,Random,False,CDR,4,7,10,0.123166821063,0.245166551109,0.910928036081
+ibm_lagos emulator,Random,False,CDR,5,2,10,0.106610521774,0.356494462027,1.52308255199
+ibm_lagos emulator,Random,False,CDR,5,3,10,0.175213532626,0.454511588599,1.93500966143
+ibm_lagos emulator,Random,False,CDR,5,4,10,0.177620132455,0.288093324785,1.66738377927
+ibm_lagos emulator,Random,False,CDR,5,5,10,0.151605401095,0.298491199215,1.47018168386
+ibm_lagos emulator,Random,False,CDR,5,6,10,0.173109180669,0.327910318525,1.13138734856
+ibm_lagos emulator,Random,False,CDR,5,7,10,0.280197087809,0.777763702595,1.490658016
+ibm_lagos emulator,Random,False,CDR,6,2,10,0.268675513905,0.995926251208,2.17843398287
+ibm_lagos emulator,Random,False,CDR,6,3,10,0.184333043839,0.482909639485,1.6738301827
+ibm_lagos emulator,Random,False,CDR,6,4,10,0.295873178132,0.973186911398,1.46215109867
+ibm_lagos emulator,Random,False,CDR,6,5,10,0.304012014003,0.854977886111,1.17888497893
+ibm_lagos emulator,Random,False,CDR,6,6,10,0.300630427407,0.920211154981,1.16431655157
+ibm_lagos emulator,Random,False,CDR,6,7,10,0.281323221591,0.731800002955,1.17642861225
+ibm_lagos emulator,Random,False,CDR,7,2,10,0.201858545653,0.783487709614,2.68357226275
+ibm_lagos emulator,Random,False,CDR,7,3,10,0.124884764329,0.424508232361,1.57611527304
+ibm_lagos emulator,Random,False,CDR,7,4,10,0.297757275687,1.18405783914,1.73558418227
+ibm_lagos emulator,Random,False,CDR,7,5,10,0.258999729607,1.25751055984,1.83940091068
+ibm_lagos emulator,Random,False,NOISY,2,2,10,0.0528181586582,1,1
+ibm_lagos emulator,Random,False,NOISY,2,3,10,0.0574290957361,1,1
+ibm_lagos emulator,Random,False,NOISY,2,4,10,0.0691920962245,1,1
+ibm_lagos emulator,Random,False,NOISY,2,5,10,0.0820424272712,1,1
+ibm_lagos emulator,Random,False,NOISY,2,6,10,0.0896609544064,1,1
+ibm_lagos emulator,Random,False,NOISY,2,7,10,0.097614465503,1,1
+ibm_lagos emulator,Random,False,NOISY,3,2,10,0.0584973622193,1,1
+ibm_lagos emulator,Random,False,NOISY,3,3,10,0.102216640525,1,1
+ibm_lagos emulator,Random,False,NOISY,3,4,10,0.120029712601,1,1
+ibm_lagos emulator,Random,False,NOISY,3,5,10,0.155762133728,1,1
+ibm_lagos emulator,Random,False,NOISY,3,6,10,0.163737209937,1,1
+ibm_lagos emulator,Random,False,NOISY,3,7,10,0.170475546307,1,1
+ibm_lagos emulator,Random,False,NOISY,4,2,10,0.239586134346,1,1
+ibm_lagos emulator,Random,False,NOISY,4,3,10,0.294361173974,1,1
+ibm_lagos emulator,Random,False,NOISY,4,4,10,0.366487270246,1,1
+ibm_lagos emulator,Random,False,NOISY,4,5,10,0.399348979276,1,1
+ibm_lagos emulator,Random,False,NOISY,4,6,10,0.417678070945,1,1
+ibm_lagos emulator,Random,False,NOISY,4,7,10,0.432406856752,1,1
+ibm_lagos emulator,Random,False,NOISY,5,2,10,0.218236522663,1,1
+ibm_lagos emulator,Random,False,NOISY,5,3,10,0.277962650851,1,1
+ibm_lagos emulator,Random,False,NOISY,5,4,10,0.306790988476,1,1
+ibm_lagos emulator,Random,False,NOISY,5,5,10,0.331005936448,1,1
+ibm_lagos emulator,Random,False,NOISY,5,6,10,0.367533081232,1,1
+ibm_lagos emulator,Random,False,NOISY,5,7,10,0.381821866545,1,1
+ibm_lagos emulator,Random,False,NOISY,6,2,10,0.277955901221,1,1
+ibm_lagos emulator,Random,False,NOISY,6,3,10,0.306807932667,1,1
+ibm_lagos emulator,Random,False,NOISY,6,4,10,0.349268655954,1,1
+ibm_lagos emulator,Random,False,NOISY,6,5,10,0.392711049667,1,1
+ibm_lagos emulator,Random,False,NOISY,6,6,10,0.386450759398,1,1
+ibm_lagos emulator,Random,False,NOISY,6,7,10,0.39506189276,1,1
+ibm_lagos emulator,Random,False,NOISY,7,2,10,0.195360863878,1,1
+ibm_lagos emulator,Random,False,NOISY,7,3,10,0.2305427732,1,1
+ibm_lagos emulator,Random,False,NOISY,7,4,10,0.27094448329,1,1
+ibm_lagos emulator,Random,False,NOISY,7,5,10,0.259394942877,1,1
+ibm_lagos emulator,Random,False,ZNE,2,2,10,0.0249541076283,0.451620378501,0.622513878644
+ibm_lagos emulator,Random,False,ZNE,2,3,10,0.0261496223735,0.474620156357,0.76533401986
+ibm_lagos emulator,Random,False,ZNE,2,4,10,0.0262396619913,0.337727319514,0.626993681139
+ibm_lagos emulator,Random,False,ZNE,2,5,10,0.027075653735,0.35772234327,0.557951121765
+ibm_lagos emulator,Random,False,ZNE,2,6,10,0.025083665736,0.275915323295,0.454776387437
+ibm_lagos emulator,Random,False,ZNE,2,7,10,0.0254569136953,0.241534642857,0.452402290649
+ibm_lagos emulator,Random,False,ZNE,3,2,10,0.035510218653,0.628156437327,0.758183947154
+ibm_lagos emulator,Random,False,ZNE,3,3,10,0.0373394847148,0.355979427423,0.797371646539
+ibm_lagos emulator,Random,False,ZNE,3,4,10,0.0375060232535,0.377694872766,0.629774945387
+ibm_lagos emulator,Random,False,ZNE,3,5,10,0.0213377982569,0.209447643469,0.408749944065
+ibm_lagos emulator,Random,False,ZNE,3,6,10,0.0231319529249,0.173257483546,0.331192232769
+ibm_lagos emulator,Random,False,ZNE,3,7,10,0.0231834016658,0.151106428179,0.320330380199
+ibm_lagos emulator,Random,False,ZNE,4,2,10,0.0351730875194,0.140481907229,0.258723083579
+ibm_lagos emulator,Random,False,ZNE,4,3,10,0.0731904220904,0.193229362852,0.757028178119
+ibm_lagos emulator,Random,False,ZNE,4,4,10,0.281354056469,0.36009325128,4.66647415488
+ibm_lagos emulator,Random,False,ZNE,4,5,10,0.820021671139,1.92226862485,4.53722712756
+ibm_lagos emulator,Random,False,ZNE,4,6,10,0.491225907273,0.686429925418,3.4001313481
+ibm_lagos emulator,Random,False,ZNE,4,7,10,0.611460545178,0.733309772566,3.13944665208
+ibm_lagos emulator,Random,False,ZNE,5,2,10,0.0363214048643,0.197641930778,0.321429690828
+ibm_lagos emulator,Random,False,ZNE,5,3,10,0.0515427773572,0.0988818934954,0.435372183121
+ibm_lagos emulator,Random,False,ZNE,5,4,10,0.170104509502,0.250492730769,2.20727973712
+ibm_lagos emulator,Random,False,ZNE,5,5,10,0.515449367629,0.344868622219,4.72513480547
+ibm_lagos emulator,Random,False,ZNE,5,6,10,0.687830767536,0.361632040005,4.68855419675
+ibm_lagos emulator,Random,False,ZNE,5,7,10,0.891043392388,2.14795976395,4.22393980938
+ibm_lagos emulator,Random,False,ZNE,6,2,10,0.0635268257647,0.256326806398,0.456029677222
+ibm_lagos emulator,Random,False,ZNE,6,3,10,0.521988220817,0.455976195499,4.89232979257
+ibm_lagos emulator,Random,False,ZNE,6,4,10,0.476873856138,0.708648303362,4.39024668065
+ibm_lagos emulator,Random,False,ZNE,6,5,10,0.525892001723,0.787685323296,4.66903002446
+ibm_lagos emulator,Random,False,ZNE,6,6,10,0.899406222117,2.29429320508,4.62814393672
+ibm_lagos emulator,Random,False,ZNE,6,7,10,0.830770126403,0.94497687754,4.15380290698
+ibm_lagos emulator,Random,False,ZNE,7,2,10,0.0694988584217,0.364596444415,0.483461860307
+ibm_lagos emulator,Random,False,ZNE,7,3,10,0.0641198295072,0.298153556762,0.410107210783
+ibm_lagos emulator,Random,False,ZNE,7,4,10,0.060374952817,0.206075081151,0.468313518051
+ibm_lagos emulator,Random,False,ZNE,7,5,10,0.0733609677374,0.283548085221,0.547414448273
+ibm_lagos emulator,Random,True,CDR,2,2,10,0.0130504669079,0.159206604159,0.379601509683
+ibm_lagos emulator,Random,True,CDR,2,4,10,0.0260845103315,0.148866009528,0.574663509996
+ibm_lagos emulator,Random,True,CDR,2,6,10,0.0206312453097,0.102585790927,0.264781311779
+ibm_lagos emulator,Random,True,CDR,2,8,10,0.0239438454126,0.0683558237758,0.24280229431
+ibm_lagos emulator,Random,True,CDR,2,16,10,0.0426407663783,0.12771045534,0.187416127249
+ibm_lagos emulator,Random,True,CDR,2,32,10,0.115229262377,0.17905821201,0.292382155499
+ibm_lagos emulator,Random,True,CDR,2,64,10,0.174734221654,0.256696881614,0.383140502679
+ibm_lagos emulator,Random,True,CDR,2,128,10,0.542082402483,0.568169104998,0.765476479343
+ibm_lagos emulator,Random,True,CDR,3,2,10,0.0145433692377,0.148903069164,0.263634669439
+ibm_lagos emulator,Random,True,CDR,3,4,10,0.0849662297975,0.108729479449,4.12970941743
+ibm_lagos emulator,Random,True,CDR,3,6,10,0.027081260963,0.113411902192,0.240046647058
+ibm_lagos emulator,Random,True,CDR,3,8,10,0.0354114859366,0.0823841484742,0.476496375971
+ibm_lagos emulator,Random,True,CDR,3,16,10,0.0711215605216,0.101165566381,0.680486776374
+ibm_lagos emulator,Random,True,CDR,3,32,10,0.0822697550981,0.100621458468,0.292150104932
+ibm_lagos emulator,Random,True,CDR,3,64,10,0.226619079949,0.284775357612,0.474743512352
+ibm_lagos emulator,Random,True,CDR,3,128,10,0.956108239738,0.967797231857,1.0567701645
+ibm_lagos emulator,Random,True,CDR,4,2,10,0.0259214081462,0.0779077924383,0.230310230493
+ibm_lagos emulator,Random,True,CDR,4,4,10,0.0568968007739,0.142546843779,0.272901496759
+ibm_lagos emulator,Random,True,CDR,4,6,10,0.0621095481016,0.0590733047368,0.364537346689
+ibm_lagos emulator,Random,True,CDR,4,8,10,0.113748282807,0.146716849557,0.276595712245
+ibm_lagos emulator,Random,True,CDR,4,16,10,0.305833270928,0.299498790192,1.00276502873
+ibm_lagos emulator,Random,True,CDR,4,32,10,0.933136823975,0.966284848043,1.05787871188
+ibm_lagos emulator,Random,True,CDR,4,64,10,1.02131072707,1.00382233071,1.27355290014
+ibm_lagos emulator,Random,True,CDR,4,128,10,0.97932077166,0.995313422454,1.1746233844
+ibm_lagos emulator,Random,True,CDR,5,2,10,0.0599518770458,0.228314209315,0.494370390379
+ibm_lagos emulator,Random,True,CDR,5,4,10,0.280746079628,0.430731160901,1.76206120799
+ibm_lagos emulator,Random,True,CDR,5,6,10,0.201195125571,0.190011239764,1.72398099886
+ibm_lagos emulator,Random,True,CDR,5,8,10,0.146830429751,0.182707323434,0.937921323165
+ibm_lagos emulator,Random,True,CDR,5,16,10,0.462036290408,0.369797925218,1.18153210223
+ibm_lagos emulator,Random,True,CDR,5,32,10,0.94400017543,0.987665895126,1.09049748084
+ibm_lagos emulator,Random,True,CDR,5,64,10,0.993947281213,0.982417375729,1.1380409149
+ibm_lagos emulator,Random,True,CDR,5,128,10,0.984825040649,0.983755139102,1.05461131124
+ibm_lagos emulator,Random,True,CDR,6,2,10,0.357421785656,0.801320454126,2.01837251207
+ibm_lagos emulator,Random,True,CDR,6,4,10,0.218296265012,0.255429428048,1.64955895347
+ibm_lagos emulator,Random,True,CDR,6,6,10,0.424656331685,0.621422853724,1.42100942244
+ibm_lagos emulator,Random,True,CDR,6,8,10,0.462438717821,0.56653896365,1.15903207443
+ibm_lagos emulator,Random,True,CDR,6,16,10,0.84942478849,0.987636320112,1.05896904233
+ibm_lagos emulator,Random,True,CDR,6,32,10,1.00453244728,1.00000892001,1.03995668027
+ibm_lagos emulator,Random,True,CDR,6,64,10,0.983503645084,0.982642377265,1.04933340829
+ibm_lagos emulator,Random,True,CDR,7,2,10,0.249902258577,0.330723881789,3.00560245311
+ibm_lagos emulator,Random,True,CDR,7,4,10,0.480489839581,0.805411198321,2.10957811867
+ibm_lagos emulator,Random,True,CDR,7,6,10,0.546523721134,0.676761673816,1.61157832419
+ibm_lagos emulator,Random,True,CDR,7,8,10,0.622287327553,0.813432445241,1.24747562077
+ibm_lagos emulator,Random,True,CDR,7,16,10,0.90539650333,1.01790298316,1.06223427731
+ibm_lagos emulator,Random,True,CDR,7,32,10,1.00515157431,1.0006607955,1.06252603424
+ibm_lagos emulator,Random,True,NOISY,2,2,10,0.07611875,1,1
+ibm_lagos emulator,Random,True,NOISY,2,4,10,0.1315875,1,1
+ibm_lagos emulator,Random,True,NOISY,2,6,10,0.18218125,1,1
+ibm_lagos emulator,Random,True,NOISY,2,8,10,0.224775,1,1
+ibm_lagos emulator,Random,True,NOISY,2,16,10,0.37745625,1,1
+ibm_lagos emulator,Random,True,NOISY,2,32,10,0.597375,1,1
+ibm_lagos emulator,Random,True,NOISY,2,64,10,0.83823125,1,1
+ibm_lagos emulator,Random,True,NOISY,2,128,10,0.96919375,1,1
+ibm_lagos emulator,Random,True,NOISY,3,2,10,0.09433125,1,1
+ibm_lagos emulator,Random,True,NOISY,3,4,10,0.17671875,1,1
+ibm_lagos emulator,Random,True,NOISY,3,6,10,0.2465125,1,1
+ibm_lagos emulator,Random,True,NOISY,3,8,10,0.28548125,1,1
+ibm_lagos emulator,Random,True,NOISY,3,16,10,0.46523125,1,1
+ibm_lagos emulator,Random,True,NOISY,3,32,10,0.753075,1,1
+ibm_lagos emulator,Random,True,NOISY,3,64,10,0.91845625,1,1
+ibm_lagos emulator,Random,True,NOISY,3,128,10,0.9955,1,1
+ibm_lagos emulator,Random,True,NOISY,4,2,10,0.2688875,1,1
+ibm_lagos emulator,Random,True,NOISY,4,4,10,0.442575,1,1
+ibm_lagos emulator,Random,True,NOISY,4,6,10,0.55985,1,1
+ibm_lagos emulator,Random,True,NOISY,4,8,10,0.6624625,1,1
+ibm_lagos emulator,Random,True,NOISY,4,16,10,0.8820125,1,1
+ibm_lagos emulator,Random,True,NOISY,4,32,10,0.984025,1,1
+ibm_lagos emulator,Random,True,NOISY,4,64,10,1.00100625,1,1
+ibm_lagos emulator,Random,True,NOISY,4,128,10,0.99900625,1,1
+ibm_lagos emulator,Random,True,NOISY,5,2,10,0.271875,1,1
+ibm_lagos emulator,Random,True,NOISY,5,4,10,0.3911125,1,1
+ibm_lagos emulator,Random,True,NOISY,5,6,10,0.526975,1,1
+ibm_lagos emulator,Random,True,NOISY,5,8,10,0.6208625,1,1
+ibm_lagos emulator,Random,True,NOISY,5,16,10,0.875325,1,1
+ibm_lagos emulator,Random,True,NOISY,5,32,10,0.98030625,1,1
+ibm_lagos emulator,Random,True,NOISY,5,64,10,0.99954375,1,1
+ibm_lagos emulator,Random,True,NOISY,5,128,10,1.002125,1,1
+ibm_lagos emulator,Random,True,NOISY,6,2,10,0.38318125,1,1
+ibm_lagos emulator,Random,True,NOISY,6,4,10,0.57948125,1,1
+ibm_lagos emulator,Random,True,NOISY,6,6,10,0.68963125,1,1
+ibm_lagos emulator,Random,True,NOISY,6,8,10,0.794375,1,1
+ibm_lagos emulator,Random,True,NOISY,6,16,10,0.95198125,1,1
+ibm_lagos emulator,Random,True,NOISY,6,32,10,1.001,1,1
+ibm_lagos emulator,Random,True,NOISY,6,64,10,1.00101875,1,1
+ibm_lagos emulator,Random,True,NOISY,7,2,10,0.39545625,1,1
+ibm_lagos emulator,Random,True,NOISY,7,4,10,0.55390625,1,1
+ibm_lagos emulator,Random,True,NOISY,7,6,10,0.71163125,1,1
+ibm_lagos emulator,Random,True,NOISY,7,8,10,0.80770625,1,1
+ibm_lagos emulator,Random,True,NOISY,7,16,10,0.9502625,1,1
+ibm_lagos emulator,Random,True,NOISY,7,32,10,0.9984375,1,1
+ibm_lagos emulator,Random,True,ZNE,2,2,10,0.0186382963429,0.239391854919,0.347513204691
+ibm_lagos emulator,Random,True,ZNE,2,4,10,0.0184692983395,0.0860348040441,0.436668994308
+ibm_lagos emulator,Random,True,ZNE,2,6,10,0.0207629422926,0.0914474782396,0.326011442944
+ibm_lagos emulator,Random,True,ZNE,2,8,10,0.0176457641107,0.0384597800127,0.285615825661
+ibm_lagos emulator,Random,True,ZNE,2,16,10,0.0156234294839,0.019203771244,0.206897355393
+ibm_lagos emulator,Random,True,ZNE,2,32,10,0.0471501399204,0.0712286436694,0.240038216857
+ibm_lagos emulator,Random,True,ZNE,2,64,10,0.56863462717,0.465128060322,1.22116236716
+ibm_lagos emulator,Random,True,ZNE,2,128,10,0.926257616456,0.993606741469,1.03177312329
+ibm_lagos emulator,Random,True,ZNE,3,2,10,0.0377595097214,0.375165000087,0.61527382357
+ibm_lagos emulator,Random,True,ZNE,3,4,10,0.0309805667965,0.158231114728,0.288636124626
+ibm_lagos emulator,Random,True,ZNE,3,6,10,0.0270142310657,0.104867021735,0.153718184202
+ibm_lagos emulator,Random,True,ZNE,3,8,10,0.0170632998871,0.072056209741,0.0941945933768
+ibm_lagos emulator,Random,True,ZNE,3,16,10,0.0173236153314,0.0312363151159,0.0741491817356
+ibm_lagos emulator,Random,True,ZNE,3,32,10,0.327639840828,0.288934756256,1.15461921478
+ibm_lagos emulator,Random,True,ZNE,3,64,10,0.753656002346,0.849939101474,1.10458324202
+ibm_lagos emulator,Random,True,ZNE,3,128,10,0.98031449927,0.993272202575,1.01031950546
+ibm_lagos emulator,Random,True,ZNE,4,2,10,0.0968887638676,0.363182245698,0.412532830644
+ibm_lagos emulator,Random,True,ZNE,4,4,10,0.0761828673748,0.162433089744,0.242953984038
+ibm_lagos emulator,Random,True,ZNE,4,6,10,0.0684582984636,0.114561815064,0.186669452469
+ibm_lagos emulator,Random,True,ZNE,4,8,10,0.0956373864539,0.152941180184,0.255697887198
+ibm_lagos emulator,Random,True,ZNE,4,16,10,0.598803168635,0.736552244139,1.16349179479
+ibm_lagos emulator,Random,True,ZNE,4,32,10,0.960622225641,0.991591380514,1.02866317159
+ibm_lagos emulator,Random,True,ZNE,4,64,10,1.44068358663,0.994937082256,2.90010083126
+ibm_lagos emulator,Random,True,ZNE,4,128,10,1.25681596837,0.999033794055,3.01044517172
+ibm_lagos emulator,Random,True,ZNE,5,2,10,0.0828318855886,0.312133215524,0.335572451535
+ibm_lagos emulator,Random,True,ZNE,5,4,10,0.0890006697603,0.228176031459,0.27247134925
+ibm_lagos emulator,Random,True,ZNE,5,6,10,0.0732294434474,0.149500570249,0.222962938701
+ibm_lagos emulator,Random,True,ZNE,5,8,10,0.0820101178092,0.124488664257,0.178429141184
+ibm_lagos emulator,Random,True,ZNE,5,16,10,0.592683982802,0.72451618159,1.15136295077
+ibm_lagos emulator,Random,True,ZNE,5,32,10,0.969580227976,0.981712995574,1.02242763275
+ibm_lagos emulator,Random,True,ZNE,5,64,10,1.07773481396,0.988097920422,2.93299636322
+ibm_lagos emulator,Random,True,ZNE,5,128,10,1.50769725571,0.993811042756,2.9681990238
+ibm_lagos emulator,Random,True,ZNE,6,2,10,0.10399535648,0.25991664509,0.323497145457
+ibm_lagos emulator,Random,True,ZNE,6,4,10,0.0797901996181,0.134987842679,0.269862485895
+ibm_lagos emulator,Random,True,ZNE,6,6,10,0.144542058916,0.182137463947,0.448664078262
+ibm_lagos emulator,Random,True,ZNE,6,8,10,0.222363909854,0.152982957969,1.23753700232
+ibm_lagos emulator,Random,True,ZNE,6,16,10,0.887592511443,1.0249005229,1.07083839801
+ibm_lagos emulator,Random,True,ZNE,6,32,10,1.11830203896,0.990634934318,2.24835026643
+ibm_lagos emulator,Random,True,ZNE,6,64,10,2.01840154272,2.12948904936,3.00548757796
+ibm_lagos emulator,Random,True,ZNE,7,2,10,0.115850687122,0.289377568996,0.37295893918
+ibm_lagos emulator,Random,True,ZNE,7,4,10,0.12195594539,0.211464106092,0.283883130736
+ibm_lagos emulator,Random,True,ZNE,7,6,10,0.184520411013,0.237338036535,0.724845302436
+ibm_lagos emulator,Random,True,ZNE,7,8,10,0.344573726275,0.331933330155,1.15644591514
+ibm_lagos emulator,Random,True,ZNE,7,16,10,0.75875361257,0.90890592164,1.07170441028
+ibm_lagos emulator,Random,True,ZNE,7,32,10,1.12930369981,0.992354574334,2.92973228626
+ibmq_casablanca,Pauli-gadget,False,CDR,2,2,5,0.178071332278,2.13894806871,10.4684822486
+ibmq_casablanca,Pauli-gadget,False,CDR,2,3,5,0.0309891441183,0.955542802867,10.1204718024
+ibmq_casablanca,Pauli-gadget,False,CDR,2,4,5,0.0470808538066,0.308175502619,2.78445956446
+ibmq_casablanca,Pauli-gadget,False,CDR,2,5,5,0.0389402192383,0.563097096776,4.92152035681
+ibmq_casablanca,Pauli-gadget,False,CDR,3,2,5,0.00845501240973,0.202101456971,1.10354727764
+ibmq_casablanca,Pauli-gadget,False,CDR,3,3,5,0.23152170553,0.251967949617,5.6022695033
+ibmq_casablanca,Pauli-gadget,False,CDR,3,4,5,0.0295517557569,0.187005838372,0.745414019611
+ibmq_casablanca,Pauli-gadget,False,CDR,4,2,5,0.180400063237,0.494099924803,1.43951705732
+ibmq_casablanca,Pauli-gadget,False,CDR,4,3,5,0.454897694662,1.17675199911,2.07030369665
+ibmq_casablanca,Pauli-gadget,False,CDR,5,2,5,0.140825920524,0.450399272257,0.87147216005
+ibmq_casablanca,Pauli-gadget,False,NOISY,2,2,5,0.0326307978028,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,2,3,5,0.0353686117645,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,2,4,5,0.0685692920706,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,2,5,5,0.0558017242827,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,3,2,5,0.0630509866081,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,3,3,5,0.237891600782,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,3,4,5,0.211991612324,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,4,2,5,0.252336241096,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,4,3,5,0.359092464776,1,1
+ibmq_casablanca,Pauli-gadget,False,NOISY,5,2,5,0.33511462103,1,1
+ibmq_casablanca,Pauli-gadget,False,ZNE,2,2,5,0.0155735490097,0.505584768007,15.8987113836
+ibmq_casablanca,Pauli-gadget,False,ZNE,2,3,5,0.0104670318807,0.420027191596,1.31100743391
+ibmq_casablanca,Pauli-gadget,False,ZNE,2,4,5,0.0290046230313,0.497496206622,0.750761609425
+ibmq_casablanca,Pauli-gadget,False,ZNE,2,5,5,0.0490049421614,0.860548801503,1.83830946628
+ibmq_casablanca,Pauli-gadget,False,ZNE,3,2,5,0.0504751994513,0.764755400923,5.17433763419
+ibmq_casablanca,Pauli-gadget,False,ZNE,3,3,5,0.383866754494,0.410048420347,6.14725815713
+ibmq_casablanca,Pauli-gadget,False,ZNE,3,4,5,0.403250825168,0.511633374159,27.2259607779
+ibmq_casablanca,Pauli-gadget,False,ZNE,4,2,5,0.434515030371,1.68786159105,4.85742127731
+ibmq_casablanca,Pauli-gadget,False,ZNE,4,3,5,1.22176111391,3.83216306958,4.37700428747
+ibmq_casablanca,Pauli-gadget,False,ZNE,5,2,5,0.426591465114,0.714770884763,3.27700541946
+ibmq_casablanca,Pauli-gadget,True,CDR,2,2,5,0.0116788387979,6.61339106255e-15,1.65749053531
+ibmq_casablanca,Pauli-gadget,True,CDR,2,4,5,0.0518969956274,0.262610239495,5.68451282863
+ibmq_casablanca,Pauli-gadget,True,CDR,3,2,5,0.0842518674885,0.186043887511,1.20101317829
+ibmq_casablanca,Pauli-gadget,True,CDR,3,4,5,0.163345289136,0.24126635485,4.01719448586
+ibmq_casablanca,Pauli-gadget,True,CDR,4,2,5,0.0243568602367,9.20869279108e-16,0.257042812071
+ibmq_casablanca,Pauli-gadget,True,CDR,5,2,5,0.0148701572124,6.82951495348e-16,0.334442669944
+ibmq_casablanca,Pauli-gadget,True,NOISY,2,2,5,0.062325,1,1
+ibmq_casablanca,Pauli-gadget,True,NOISY,2,4,5,0.079075,1,1
+ibmq_casablanca,Pauli-gadget,True,NOISY,3,2,5,0.163375,1,1
+ibmq_casablanca,Pauli-gadget,True,NOISY,3,4,5,0.3509625,1,1
+ibmq_casablanca,Pauli-gadget,True,NOISY,4,2,5,0.307125,1,1
+ibmq_casablanca,Pauli-gadget,True,NOISY,5,2,5,0.3351125,1,1
+ibmq_casablanca,Pauli-gadget,True,ZNE,2,2,5,0.0524758325716,0.845996722922,1.66586878317
+ibmq_casablanca,Pauli-gadget,True,ZNE,2,4,5,0.032647059252,0.491262630129,0.588246709284
+ibmq_casablanca,Pauli-gadget,True,ZNE,3,2,5,0.603568612778,1.77097241764,24.0652481239
+ibmq_casablanca,Pauli-gadget,True,ZNE,3,4,5,0.286053497441,0.509415813816,1.61482757463
+ibmq_casablanca,Pauli-gadget,True,ZNE,4,2,5,0.305158608065,0.926275754884,1.84525365384
+ibmq_casablanca,Pauli-gadget,True,ZNE,5,2,5,0.603957644218,1.99498686634,2.4881236614
+ibmq_casablanca,Random,False,CDR,2,2,5,0.0314142752823,0.312552127645,2.02398196423
+ibmq_casablanca,Random,False,CDR,2,3,5,0.0368183273487,0.258021552735,0.694021494448
+ibmq_casablanca,Random,False,CDR,2,4,5,0.0653064542557,0.507889744848,2.10465417224
+ibmq_casablanca,Random,False,CDR,2,5,5,0.0674790677178,1.07997336012,1.40101768545
+ibmq_casablanca,Random,False,CDR,3,2,5,0.0570875652854,0.726850963526,1.62893903805
+ibmq_casablanca,Random,False,CDR,3,3,5,0.33886263673,0.906835517143,1.78258069905
+ibmq_casablanca,Random,False,CDR,3,4,5,0.110465271131,0.653533000183,2.56262507954
+ibmq_casablanca,Random,False,CDR,4,2,5,0.184549377657,1.38497640538,3.83686658628
+ibmq_casablanca,Random,False,CDR,4,3,5,0.179836686896,0.653441203512,0.967473346517
+ibmq_casablanca,Random,False,CDR,5,2,5,0.351726666285,0.632168184201,3.82765748769
+ibmq_casablanca,Random,False,NOISY,2,2,5,0.0619153759113,1,1
+ibmq_casablanca,Random,False,NOISY,2,3,5,0.110433852878,1,1
+ibmq_casablanca,Random,False,NOISY,2,4,5,0.0893504580629,1,1
+ibmq_casablanca,Random,False,NOISY,2,5,5,0.11226170104,1,1
+ibmq_casablanca,Random,False,NOISY,3,2,5,0.0822633061747,1,1
+ibmq_casablanca,Random,False,NOISY,3,3,5,0.302560937739,1,1
+ibmq_casablanca,Random,False,NOISY,3,4,5,0.112478094094,1,1
+ibmq_casablanca,Random,False,NOISY,4,2,5,0.144110144689,1,1
+ibmq_casablanca,Random,False,NOISY,4,3,5,0.243440376165,1,1
+ibmq_casablanca,Random,False,NOISY,5,2,5,0.223813651295,1,1
+ibmq_casablanca,Random,False,ZNE,2,2,5,0.0255558225571,0.473659467168,0.560197354013
+ibmq_casablanca,Random,False,ZNE,2,3,5,0.0455730636444,0.398626406972,0.670414422216
+ibmq_casablanca,Random,False,ZNE,2,4,5,0.0278705618778,0.332992941183,0.50686396838
+ibmq_casablanca,Random,False,ZNE,2,5,5,0.052484871179,0.339451392442,0.738109863867
+ibmq_casablanca,Random,False,ZNE,3,2,5,0.0417397781942,0.531593319219,0.772455944378
+ibmq_casablanca,Random,False,ZNE,3,3,5,0.248308632358,0.533539680963,1.41031152054
+ibmq_casablanca,Random,False,ZNE,3,4,5,0.21088431119,0.259895236742,13.6510437818
+ibmq_casablanca,Random,False,ZNE,4,2,5,0.0677998541616,0.478390948496,2.79835574229
+ibmq_casablanca,Random,False,ZNE,4,3,5,0.0795450165753,0.272004365958,0.600647340838
+ibmq_casablanca,Random,False,ZNE,5,2,5,0.416186901652,0.626515061681,5.47497960211
+ibmq_casablanca,Random,True,CDR,2,2,5,0.0183306784007,0.122052108925,0.524454489223
+ibmq_casablanca,Random,True,CDR,2,4,5,0.0292906173103,0.261964379159,0.401857552667
+ibmq_casablanca,Random,True,CDR,3,2,5,0.0352165023122,0.320046193073,0.46549581988
+ibmq_casablanca,Random,True,CDR,3,4,5,0.0933010659079,0.307870547587,0.606743323922
+ibmq_casablanca,Random,True,CDR,4,2,5,0.270493281883,0.955434119003,4.32561085859
+ibmq_casablanca,Random,True,CDR,5,2,5,0.192523844149,0.252690656401,2.6638957795
+ibmq_casablanca,Random,True,NOISY,2,2,5,0.0885875,1,1
+ibmq_casablanca,Random,True,NOISY,2,4,5,0.1252125,1,1
+ibmq_casablanca,Random,True,NOISY,3,2,5,0.1164375,1,1
+ibmq_casablanca,Random,True,NOISY,3,4,5,0.251925,1,1
+ibmq_casablanca,Random,True,NOISY,4,2,5,0.1772375,1,1
+ibmq_casablanca,Random,True,NOISY,5,2,5,0.2269375,1,1
+ibmq_casablanca,Random,True,ZNE,2,2,5,0.0108394859807,0.134328381984,0.188160427754
+ibmq_casablanca,Random,True,ZNE,2,4,5,0.0109162691263,0.0792949761715,0.145979080082
+ibmq_casablanca,Random,True,ZNE,3,2,5,0.0415808247075,0.454585400969,0.543065002388
+ibmq_casablanca,Random,True,ZNE,3,4,5,0.122416410828,0.46790366594,0.681347574925
+ibmq_casablanca,Random,True,ZNE,4,2,5,0.0547366950432,0.297670020129,0.407351899388
+ibmq_casablanca,Random,True,ZNE,5,2,5,0.101900535173,0.450545918063,0.536384902652
