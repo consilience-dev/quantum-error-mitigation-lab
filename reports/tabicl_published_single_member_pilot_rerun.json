@@ -1,0 +1,55 @@
+{
+  "protocol": "published",
+  "clean_split_sha256": null,
+  "model": "tabicl",
+  "frozen": true,
+  "input_arm": "full",
+  "context_rows_per_target": 500,
+  "test_rows": 2500,
+  "features": 169,
+  "target_fits": 4,
+  "features_npz_sha256": "e05721e57becfb3895957bc30ce58b93a4427a78deea302e09c4341ea9bba5c1",
+  "predictions_sha256": "0ffaa5762a7475da90297eea4551eb31e527380e56194bbd5117d20d7c4f45a4",
+  "checkpoint_url": "https://huggingface.co/jingang/TabICL/resolve/4dcd344ece2c00be9e831fdd35bed57b5ad83e19/tabicl-regressor-v2-20260212.ckpt",
+  "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+  "device": "mps",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.13.0",
+    "synthefy-nori": "0.22.0",
+    "tabicl": "2.2.0",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "seed": 0,
+  "prediction_chunk_rows": 250,
+  "ensemble_members": 1,
+  "settings": "one ensemble member, cached context",
+  "pooled_rmse": 0.05047136375987522,
+  "mean_circuit_l2": 0.06024923024775482,
+  "mean_circuit_l2_by_depth": {
+    "0": 0.000485371230058936,
+    "1": 0.02650284720765418,
+    "2": 0.03525612081572901,
+    "3": 0.04808938966049574,
+    "4": 0.05847932587039442,
+    "5": 0.07037323553557913,
+    "6": 0.0847581296554599,
+    "7": 0.09547377974273284,
+    "8": 0.07707532586061841,
+    "9": 0.10599877689882559
+  },
+  "runtime_seconds": 15.73983708396554,
+  "pilot_rerun": {
+    "original_score_log": "reports/tabicl_single_member_timing_pilot.json",
+    "original_score_log_sha256": "50487e7e914505cd996fdc3d011aef81c81e518c2ed5a9ba0f4d01a1807b3ca5",
+    "provenance": "Predictions newly generated for this repeat. Original pilot aggregates were retained.",
+    "repeat_minus_original": {
+      "mean_circuit_l2": 0.0,
+      "pooled_rmse": 0.0
+    },
+    "max_absolute_depth_mean_l2_difference": 0.0
+  }
+}

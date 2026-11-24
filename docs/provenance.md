@@ -24,3 +24,9 @@ Upstream files retain their upstream license; ML-QEM identifies Apache-2.0. Reco
 ## Executed measurement checks
 
 `scripts/audit_measurements.py` verified all four retrieved file checksums, the 3,000-element shuffle permutation, expected array dimensions, finite measurements, and ideal/noisy observable bounds (allowing floating-point roundoff). It reconstructed the notebook's row ordering and 50/250 split per depth. The committed JSON report records baseline errors, NumPy version, and the measurement checksum. ZNE estimates outside [-1, 1] are counted and retained. These checks do not establish canonical circuit uniqueness, recover the old local test split, or run a learned model.
+
+## Circuit, encoder and figure checks
+
+Subsequent code validates 60 hardware batches and 20 logical source files by immutable Git blob IDs. It checks circuit operations against the source order and audits duplicates under both compiled and logical identities. At depths 1–9, all 2,700 rows survive deduplication. Three identities account for all 300 rows at depth 0. The original train/test split shares those three identities. [Source manifests](../data/rf_logical_sources.json) · [Split audit](../data/clean_split.json)
+
+We independently ran the unmodified upstream encoder functions from the checksum-verified source on all recovered circuits, using the original measurement arrays. All 507,000 float32 feature entries and 12,000 target entries match byte-for-byte. The Figure 4 workbook also agrees with the ten stored reference values at the precision published. [Encoder check](../reports/original_encoder_check.json) · [Workbook check](../reports/figure4_reference_check.json)

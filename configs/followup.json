@@ -1,5 +1,5 @@
 {
-  "status": "splits_verified_rf_completed",
+  "status": "splits_verified_evaluations_in_reports",
   "clean_curve": {
     "depths": [1, 2, 3, 4, 5, 6, 7, 8, 9],
     "budgets": [18, 45, 90, 180, 270, 450, 500],
@@ -7,7 +7,7 @@
     "budget_500_requires": "At least 56 unique eligible circuits per depth; existing test set untouched"
   },
   "published_reference": {
-    "status": "audited_rf_completed",
+    "status": "audited_forest_refit_and_model_comparisons_completed",
     "depths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     "calibration_per_depth": 50,
     "total_calibration_rows": 500,

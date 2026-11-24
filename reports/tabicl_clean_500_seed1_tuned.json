@@ -1,0 +1,187 @@
+{
+  "protocol": "clean_500_seed1",
+  "clean_split_sha256": "40b5f0fd91940ed1a58b7ff3bbe6fe246b2a38e27eae93b962135561d5bebea1",
+  "model": "tabicl",
+  "frozen": false,
+  "input_arm": "full",
+  "context_rows_per_target": 500,
+  "test_rows": 900,
+  "features": 169,
+  "target_fits": 4,
+  "features_npz_sha256": "e05721e57becfb3895957bc30ce58b93a4427a78deea302e09c4341ea9bba5c1",
+  "predictions_sha256": "483fa9c66ba1ece70ece1bfdce00f7f21cc950c3d0605b0990f093b9eecec354",
+  "checkpoint_url": "https://huggingface.co/jingang/TabICL/resolve/4dcd344ece2c00be9e831fdd35bed57b5ad83e19/tabicl-regressor-v2-20260212.ckpt",
+  "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+  "device": "mps",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.13.0",
+    "synthefy-nori": "0.22.0",
+    "tabicl": "2.2.0",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "seed": 0,
+  "prediction_chunk_rows": 450,
+  "ensemble_members": 8,
+  "settings": "eight default ensemble members, cached context",
+  "pooled_rmse": 0.0512243056281558,
+  "mean_circuit_l2": 0.06593448818985033,
+  "mean_circuit_l2_by_depth": {
+    "1": 0.025199023338616507,
+    "2": 0.03443730271283457,
+    "3": 0.04277295775553295,
+    "4": 0.07560931289811385,
+    "5": 0.07376607612420172,
+    "6": 0.08741995843007729,
+    "7": 0.07529213229419644,
+    "8": 0.07791764911158024,
+    "9": 0.10099598104349948
+  },
+  "runtime_seconds": 129.11455916706473,
+  "fine_tuning": {
+    "epochs_max": 3,
+    "fit_rows": 450,
+    "validation_rows": 50,
+    "final_context_rows": 500,
+    "lr": 1e-05,
+    "episode_cap": 96,
+    "selection": "validation MSE including frozen starting weights",
+    "targets": [
+      {
+        "target": 0,
+        "selected_parameter_change_l2": 0.0,
+        "selected_validation_mse": 0.00018321255629416555,
+        "trainable_parameters": 28544983,
+        "epochs": [
+          {
+            "optimizer_steps": 5,
+            "train/epoch": 0,
+            "val/mse": 0.0001962834649020806,
+            "train/mean_loss": 0.09361212849617004,
+            "val/mae": 0.00927557609975338,
+            "val/r2": 0.9641661643981934
+          },
+          {
+            "optimizer_steps": 10,
+            "train/epoch": 1,
+            "val/mse": 0.00020711345132440329,
+            "train/mean_loss": 0.0885971650481224,
+            "val/mae": 0.009500372223556042,
+            "val/r2": 0.9621890187263489
+          },
+          {
+            "optimizer_steps": 15,
+            "train/epoch": 2,
+            "val/mse": 0.00020571026834659278,
+            "train/mean_loss": 0.08256854265928268,
+            "val/mae": 0.009450813755393028,
+            "val/r2": 0.9624451994895935
+          }
+        ],
+        "fit_seconds": 23.70029095839709
+      },
+      {
+        "target": 1,
+        "selected_parameter_change_l2": 0.13092209519357623,
+        "selected_validation_mse": 0.0019862649496644735,
+        "trainable_parameters": 28544983,
+        "epochs": [
+          {
+            "optimizer_steps": 5,
+            "train/epoch": 0,
+            "val/mse": 0.0020689291413873434,
+            "train/mean_loss": 0.07067544311285019,
+            "val/mae": 0.02606857381761074,
+            "val/r2": 0.9770309925079346
+          },
+          {
+            "optimizer_steps": 10,
+            "train/epoch": 1,
+            "val/mse": 0.0019862649496644735,
+            "train/mean_loss": 0.04839998632669449,
+            "val/mae": 0.02521068975329399,
+            "val/r2": 0.9779487252235413
+          },
+          {
+            "optimizer_steps": 15,
+            "train/epoch": 2,
+            "val/mse": 0.0019933292642235756,
+            "train/mean_loss": 0.056937815994024275,
+            "val/mae": 0.025147804990410805,
+            "val/r2": 0.9778703451156616
+          }
+        ],
+        "fit_seconds": 23.985634500160813
+      },
+      {
+        "target": 2,
+        "selected_parameter_change_l2": 0.0,
+        "selected_validation_mse": 0.0007051927386783063,
+        "trainable_parameters": 28544983,
+        "epochs": [
+          {
+            "optimizer_steps": 5,
+            "train/epoch": 0,
+            "val/mse": 0.0007259842823259532,
+            "train/mean_loss": 0.11263138800859451,
+            "val/mae": 0.016516288742423058,
+            "val/r2": 0.9550677537918091
+          },
+          {
+            "optimizer_steps": 10,
+            "train/epoch": 1,
+            "val/mse": 0.0007540367660112679,
+            "train/mean_loss": 0.08944306224584579,
+            "val/mae": 0.016665540635585785,
+            "val/r2": 0.9533315896987915
+          },
+          {
+            "optimizer_steps": 15,
+            "train/epoch": 2,
+            "val/mse": 0.0007778645376674831,
+            "train/mean_loss": 0.09348092898726464,
+            "val/mae": 0.0168740414083004,
+            "val/r2": 0.9518568515777588
+          }
+        ],
+        "fit_seconds": 23.254260500427336
+      },
+      {
+        "target": 3,
+        "selected_parameter_change_l2": 0.12856996559847042,
+        "selected_validation_mse": 0.003996320068836212,
+        "trainable_parameters": 28544983,
+        "epochs": [
+          {
+            "optimizer_steps": 5,
+            "train/epoch": 0,
+            "val/mse": 0.004012753255665302,
+            "train/mean_loss": 0.10699014812707901,
+            "val/mae": 0.03709842637181282,
+            "val/r2": 0.9473168849945068
+          },
+          {
+            "optimizer_steps": 10,
+            "train/epoch": 1,
+            "val/mse": 0.003996320068836212,
+            "train/mean_loss": 0.0715657614171505,
+            "val/mae": 0.03660868853330612,
+            "val/r2": 0.947532594203949
+          },
+          {
+            "optimizer_steps": 15,
+            "train/epoch": 2,
+            "val/mse": 0.004015734419226646,
+            "train/mean_loss": 0.09676037579774857,
+            "val/mae": 0.03659188374876976,
+            "val/r2": 0.9472777247428894
+          }
+        ],
+        "fit_seconds": 23.067021416965872
+      }
+    ]
+  }
+}

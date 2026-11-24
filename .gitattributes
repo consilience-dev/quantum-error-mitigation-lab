@@ -1,0 +1,2 @@
+# Preserve the checksummed bytes of prediction tables written by csv.writer.
+*.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol

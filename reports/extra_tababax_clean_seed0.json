@@ -1,0 +1,41 @@
+{
+  "model": "tababax",
+  "split": "clean",
+  "clean_split_sha256": "40b5f0fd91940ed1a58b7ff3bbe6fe246b2a38e27eae93b962135561d5bebea1",
+  "calibration_seed": 0,
+  "n_train": 500,
+  "n_test": 900,
+  "inputs": "full",
+  "input_columns": 169,
+  "checkpoint": {
+    "repo": "tababax-ai/TabAbax",
+    "revision": "6ce3f6350d67f5f3584df2e612666373c27e29f5",
+    "files": {
+      "tababax-regressor.ckpt": "a5575a96f863235ce5d185c1a17824c86ec9bf7ca2e901fb080e64e9cbf3aecc"
+    }
+  },
+  "weights_updated": false,
+  "device": "cpu",
+  "mitra_mps_autocast_fp16": false,
+  "query_batch_size": 300,
+  "ensemble_members": 1,
+  "seconds": 90.78683800017461,
+  "tabtune_version": "0.2.2",
+  "torch_version": "2.15.0",
+  "numpy_version": "2.5.5",
+  "scikit_learn_version": "1.9.1",
+  "script_sha256": "e6e37ca380446d96cbc37bf851b43b3f905533d66ae45ade879caa5db4ee0759",
+  "mean_circuit_l2": 0.05613824125554776,
+  "pooled_rmse": 0.043689849072646586,
+  "mean_circuit_l2_by_depth": {
+    "1": 0.022291297406681808,
+    "2": 0.03397823081123364,
+    "3": 0.041500915726051024,
+    "4": 0.05063991883489316,
+    "5": 0.061345582568258034,
+    "6": 0.06757834476246641,
+    "7": 0.06941842388856875,
+    "8": 0.07036296590700158,
+    "9": 0.08812849139477542
+  }
+}

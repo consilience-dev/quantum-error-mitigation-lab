@@ -1,4 +1,4 @@
-name: Validate split planning
+name: Validate circuit splits and scores
 on: [push, pull_request]
 jobs:
   split-tests:
@@ -9,3 +9,13 @@ jobs:
         with:
           python-version: '3.9'
       - run: python -m unittest discover -s tests -v
+  scores:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-audit.txt
+      - run: python scripts/fetch_upstream.py
+      - run: python scripts/summarize_paired.py --check

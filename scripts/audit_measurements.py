@@ -23,7 +23,7 @@ class NumericUnpickler(pickle.Unpickler):
         return super().find_class(module, name)
 
 
-def main():
+def read_measurements():
     provenance = json.loads((ROOT / 'data/upstream/manifest.json').read_text())
     for record in provenance['files']:
         raw = (ROOT / record['local_path']).read_bytes()
@@ -49,6 +49,11 @@ def main():
     if np.abs(arrays['ideal']).max() > 1 + 1e-10 or np.abs(arrays['noisy']).max() > 1 + 1e-10:
         raise ValueError('Ideal/noisy observables outside physical bounds')
 
+    return provenance, raw, order, arrays, shapes
+
+
+def main():
+    provenance, raw, _, arrays, shapes = read_measurements()
     depth_reports = []
     test = {key: [] for key in arrays}
     for depth in range(10):

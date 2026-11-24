@@ -1,0 +1,2225 @@
+{
+  "test_circuits": 900,
+  "acquisition_batches": 60,
+  "bootstrap_draws": 10000,
+  "budget": 500,
+  "interpretation": "Candidate minus comparator mean circuit L2. Nominal exploratory 95% intervals conditional on the calibration draws. Test circuits and acquisition batches are shared across draws.",
+  "comparisons": [
+    {
+      "candidate": "Affine",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.05433541295799465,
+      "delta_each_seed": [
+        0.0527563023609039,
+        0.053244309889231796,
+        0.0524053551355014,
+        0.05465137217753117,
+        0.058619725226804996
+      ],
+      "acquisition_batch_interval": [
+        0.05029683394657566,
+        0.05834996891713257
+      ],
+      "depth_stratified_interval": [
+        0.050874514214867134,
+        0.057976987498856505
+      ]
+    },
+    {
+      "candidate": "Affine",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.07221766025563713,
+      "delta_each_seed": [
+        0.07152723284122214,
+        0.06683724277419736,
+        0.07383695973605793,
+        0.07453571480307102,
+        0.07435115112363731
+      ],
+      "acquisition_batch_interval": [
+        0.06563498061832498,
+        0.07927673820105736
+      ],
+      "depth_stratified_interval": [
+        0.06756492978976424,
+        0.07690610323985012
+      ]
+    },
+    {
+      "candidate": "Affine",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.05245428615657748,
+      "delta_each_seed": [
+        -0.05266469848316065,
+        -0.05223102633620163,
+        -0.05271244677665639,
+        -0.05224365108746787,
+        -0.0524196080994009
+      ],
+      "acquisition_batch_interval": [
+        -0.0574989289466553,
+        -0.04699309333535377
+      ],
+      "depth_stratified_interval": [
+        -0.05641783068559745,
+        -0.048491052117269694
+      ]
+    },
+    {
+      "candidate": "Affine",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.026221983105811923,
+      "delta_each_seed": [
+        -0.02643239543239509,
+        -0.025998723285436065,
+        -0.026480143725890828,
+        -0.026011348036702298,
+        -0.026187305048635333
+      ],
+      "acquisition_batch_interval": [
+        -0.032018493694051735,
+        -0.020321872791578537
+      ],
+      "depth_stratified_interval": [
+        -0.030512361444106045,
+        -0.021894220860252327
+      ]
+    },
+    {
+      "candidate": "CatBoost",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.0006409496743477672,
+      "delta_each_seed": [
+        -0.0016316360736347802,
+        0.00024050858995393955,
+        -5.836962442352655e-05,
+        0.002869193413687671,
+        0.0017850520661555314
+      ],
+      "acquisition_batch_interval": [
+        -0.0036329393715651853,
+        0.003994205184118486
+      ],
+      "depth_stratified_interval": [
+        -0.0015505309028026742,
+        0.0027483982634508605
+      ]
+    },
+    {
+      "candidate": "CatBoost",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.018523196971990265,
+      "delta_each_seed": [
+        0.017139294406683468,
+        0.013833441474919496,
+        0.021373234976132995,
+        0.02275353603922751,
+        0.017516477962987834
+      ],
+      "acquisition_batch_interval": [
+        0.014659047706556957,
+        0.022284892053714655
+      ],
+      "depth_stratified_interval": [
+        0.01563193416159187,
+        0.021399313064616603
+      ]
+    },
+    {
+      "candidate": "CatBoost",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.05369446328364689,
+      "delta_each_seed": [
+        -0.05438793843453868,
+        -0.053003801299277856,
+        -0.052463724759924925,
+        -0.051782178763843494,
+        -0.05683467316064947
+      ],
+      "acquisition_batch_interval": [
+        -0.059509938844845386,
+        -0.04828851270131679
+      ],
+      "depth_stratified_interval": [
+        -0.05742910218077199,
+        -0.049979719295095655
+      ]
+    },
+    {
+      "candidate": "CatBoost",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.10614874944022439,
+      "delta_each_seed": [
+        -0.10705263691769934,
+        -0.10523482763547948,
+        -0.10517617153658133,
+        -0.10402582985131138,
+        -0.10925428126005036
+      ],
+      "acquisition_batch_interval": [
+        -0.11166127726584128,
+        -0.10066719411111384
+      ],
+      "depth_stratified_interval": [
+        -0.11091462970488362,
+        -0.10140597043275847
+      ]
+    },
+    {
+      "candidate": "CatBoost",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.07991644638945881,
+      "delta_each_seed": [
+        -0.08082033386693376,
+        -0.07900252458471392,
+        -0.07894386848581575,
+        -0.0777935268005458,
+        -0.08302197820928481
+      ],
+      "acquisition_batch_interval": [
+        -0.08630586669406175,
+        -0.07361046728427313
+      ],
+      "depth_stratified_interval": [
+        -0.08483724368599443,
+        -0.0752113843623957
+      ]
+    },
+    {
+      "candidate": "Kernel ridge",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.017882247297642498,
+      "delta_each_seed": [
+        -0.01877093048031825,
+        -0.013592932884965558,
+        -0.021431604600556525,
+        -0.01988434262553984,
+        -0.015731425896832303
+      ],
+      "acquisition_batch_interval": [
+        -0.023883131704104964,
+        -0.012779887459899738
+      ],
+      "depth_stratified_interval": [
+        -0.021366219991645948,
+        -0.014466545396204969
+      ]
+    },
+    {
+      "candidate": "Kernel ridge",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.07221766025563713,
+      "delta_each_seed": [
+        -0.07152723284122214,
+        -0.06683724277419736,
+        -0.07383695973605793,
+        -0.07453571480307102,
+        -0.07435115112363731
+      ],
+      "acquisition_batch_interval": [
+        -0.07927673820105736,
+        -0.06563498061832498
+      ],
+      "depth_stratified_interval": [
+        -0.07690610323985012,
+        -0.06756492978976424
+      ]
+    },
+    {
+      "candidate": "Kernel ridge",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.12467194641221463,
+      "delta_each_seed": [
+        -0.12419193132438279,
+        -0.11906826911039897,
+        -0.12654940651271432,
+        -0.12677936589053884,
+        -0.1267707592230382
+      ],
+      "acquisition_batch_interval": [
+        -0.13101896032242305,
+        -0.11829424689816628
+      ],
+      "depth_stratified_interval": [
+        -0.13000282189946424,
+        -0.1193299385635218
+      ]
+    },
+    {
+      "candidate": "Kernel ridge",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.09843964336144906,
+      "delta_each_seed": [
+        -0.09795962827361725,
+        -0.09283596605963343,
+        -0.10031710346194873,
+        -0.1005470628397733,
+        -0.10053845617227264
+      ],
+      "acquisition_batch_interval": [
+        -0.10559867018346623,
+        -0.09172831324741323
+      ],
+      "depth_stratified_interval": [
+        -0.10340849368003274,
+        -0.09358176505259005
+      ]
+    },
+    {
+      "candidate": "Ising interpolation",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.09548515569804321,
+      "delta_each_seed": [
+        -0.09844069621732801,
+        -0.0919415190831244,
+        -0.0964775922156319,
+        -0.09796138709521511,
+        -0.09260458387891661
+      ],
+      "acquisition_batch_interval": [
+        -0.11385763318968513,
+        -0.08202235805426376
+      ],
+      "depth_stratified_interval": [
+        -0.10180341115605691,
+        -0.0894077635344117
+      ]
+    },
+    {
+      "candidate": "Ising interpolation",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.07760290840040071,
+      "delta_each_seed": [
+        -0.07966976573700978,
+        -0.07834858619815882,
+        -0.07504598761507537,
+        -0.07807704446967524,
+        -0.07687315798208431
+      ],
+      "acquisition_batch_interval": [
+        -0.09144404221535775,
+        -0.06744533644573959
+      ],
+      "depth_stratified_interval": [
+        -0.08245964943961143,
+        -0.07303552252640666
+      ]
+    },
+    {
+      "candidate": "Ising interpolation",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.14982056865603785,
+      "delta_each_seed": [
+        -0.1511969985782319,
+        -0.14518582897235616,
+        -0.14888294735113328,
+        -0.15261275927274628,
+        -0.15122430910572163
+      ],
+      "acquisition_batch_interval": [
+        -0.1691138315451769,
+        -0.13528780201813212
+      ],
+      "depth_stratified_interval": [
+        -0.15624420829980232,
+        -0.1435369166573698
+      ]
+    },
+    {
+      "candidate": "Ising interpolation",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.2022748548126153,
+      "delta_each_seed": [
+        -0.20386169706139254,
+        -0.1974168553085578,
+        -0.20159539412778968,
+        -0.20485641036021413,
+        -0.2036439172051225
+      ],
+      "acquisition_batch_interval": [
+        -0.2193770349366947,
+        -0.18933233632109792
+      ],
+      "depth_stratified_interval": [
+        -0.20873090727017493,
+        -0.19594102900087187
+      ]
+    },
+    {
+      "candidate": "Ising interpolation",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.17604255176184977,
+      "delta_each_seed": [
+        -0.177629394010627,
+        -0.17118455225779225,
+        -0.1753630910770241,
+        -0.17862410730944855,
+        -0.17741161415435694
+      ],
+      "acquisition_batch_interval": [
+        -0.19405038214357007,
+        -0.16238140814724583
+      ],
+      "depth_stratified_interval": [
+        -0.18239254368255692,
+        -0.17002841146552927
+      ]
+    },
+    {
+      "candidate": "Random forest",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.017882247297642498,
+      "delta_each_seed": [
+        0.01877093048031825,
+        0.013592932884965558,
+        0.021431604600556525,
+        0.01988434262553984,
+        0.015731425896832303
+      ],
+      "acquisition_batch_interval": [
+        0.012779887459899738,
+        0.023883131704104964
+      ],
+      "depth_stratified_interval": [
+        0.014466545396204965,
+        0.021366219991645948
+      ]
+    },
+    {
+      "candidate": "Random forest",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.05433541295799465,
+      "delta_each_seed": [
+        -0.0527563023609039,
+        -0.053244309889231796,
+        -0.0524053551355014,
+        -0.05465137217753117,
+        -0.058619725226804996
+      ],
+      "acquisition_batch_interval": [
+        -0.05834996891713257,
+        -0.05029683394657566
+      ],
+      "depth_stratified_interval": [
+        -0.057976987498856505,
+        -0.050874514214867134
+      ]
+    },
+    {
+      "candidate": "Random forest",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.10678969911457213,
+      "delta_each_seed": [
+        -0.10542100084406453,
+        -0.10547533622543342,
+        -0.10511780191215779,
+        -0.10689502326499903,
+        -0.1110393333262059
+      ],
+      "acquisition_batch_interval": [
+        -0.1124161882022639,
+        -0.1012314472623611
+      ],
+      "depth_stratified_interval": [
+        -0.11173740091259804,
+        -0.10185374213826585
+      ]
+    },
+    {
+      "candidate": "Random forest",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.08055739606380659,
+      "delta_each_seed": [
+        -0.07918869779329898,
+        -0.07924303317466787,
+        -0.07888549886139223,
+        -0.08066272021423346,
+        -0.08480703027544033
+      ],
+      "acquisition_batch_interval": [
+        -0.08630072913045478,
+        -0.07473246449718815
+      ],
+      "depth_stratified_interval": [
+        -0.08545365412860191,
+        -0.07579391796556885
+      ]
+    },
+    {
+      "candidate": "Random forest/descriptors_only",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.12748833710384683,
+      "delta_each_seed": [
+        0.12850285680617085,
+        0.13158011615711074,
+        0.13403707822826721,
+        0.1214864533327252,
+        0.12183518099496009
+      ],
+      "acquisition_batch_interval": [
+        0.10759816558867816,
+        0.1440399522200583
+      ],
+      "depth_stratified_interval": [
+        0.11667612901344292,
+        0.1382341341111108
+      ]
+    },
+    {
+      "candidate": "Random forest/measurements_only",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.00432146021370158,
+      "delta_each_seed": [
+        0.004646037777582022,
+        0.0018411467993564318,
+        0.005429313080910498,
+        0.005204669521056131,
+        0.00448613388960282
+      ],
+      "acquisition_batch_interval": [
+        0.0019117093059667475,
+        0.006392032169492886
+      ],
+      "depth_stratified_interval": [
+        0.0028661278171574897,
+        0.00578040738542267
+      ]
+    },
+    {
+      "candidate": "Ising interpolation/intercept_only",
+      "comparator": "Ising interpolation",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.00041360368102345585,
+      "delta_each_seed": [
+        0.0005513749803152262,
+        0.00027954225013871896,
+        0.00025177337731709326,
+        0.0005841421764735847,
+        0.0004011856208726562
+      ],
+      "acquisition_batch_interval": [
+        0.0003923618579122087,
+        0.0004346181883954909
+      ],
+      "depth_stratified_interval": [
+        0.0003971752027273824,
+        0.00043022189399820196
+      ]
+    },
+    {
+      "candidate": "Ising interpolation/affine_measurement_residual",
+      "comparator": "Ising interpolation",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.0015444630123378428,
+      "delta_each_seed": [
+        0.0006670295427251959,
+        0.0031437163899514097,
+        0.0012195863852066118,
+        0.0013115057777283465,
+        0.001380476966077651
+      ],
+      "acquisition_batch_interval": [
+        0.0014021991724334267,
+        0.0016822485053001831
+      ],
+      "depth_stratified_interval": [
+        0.0014390953943898008,
+        0.0016528204076160689
+      ]
+    },
+    {
+      "candidate": "Causilo/descriptors_only",
+      "comparator": "Causilo",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.039445047866924335,
+      "delta_each_seed": [
+        0.039445047866924335
+      ],
+      "acquisition_batch_interval": [
+        0.026548249464338758,
+        0.05051550818290523
+      ],
+      "depth_stratified_interval": [
+        0.03183499938230872,
+        0.04722629415019832
+      ]
+    },
+    {
+      "candidate": "Causilo/measurements_only",
+      "comparator": "Causilo",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.04257100212720999,
+      "delta_each_seed": [
+        0.04257100212720999
+      ],
+      "acquisition_batch_interval": [
+        0.03718577866654732,
+        0.0482870244609178
+      ],
+      "depth_stratified_interval": [
+        0.03835740596265811,
+        0.04689054030613021
+      ]
+    },
+    {
+      "candidate": "Causilo",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.054508019271749204,
+      "delta_each_seed": [
+        -0.0577992825526639,
+        -0.05304312399906479,
+        -0.056714152636320465,
+        -0.05608206214095591,
+        -0.04890147502974097
+      ],
+      "acquisition_batch_interval": [
+        -0.0627498377860302,
+        -0.04768390327709987
+      ],
+      "depth_stratified_interval": [
+        -0.05854791835504434,
+        -0.050611748214770096
+      ]
+    },
+    {
+      "candidate": "Causilo",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.03662577197410671,
+      "delta_each_seed": [
+        -0.039028352072345646,
+        -0.03945019111409923,
+        -0.035282548035763944,
+        -0.03619771951541607,
+        -0.03317004913290866
+      ],
+      "acquisition_batch_interval": [
+        -0.03994222103434089,
+        -0.03360317404146929
+      ],
+      "depth_stratified_interval": [
+        -0.03926252575363342,
+        -0.034084401110760144
+      ]
+    },
+    {
+      "candidate": "Causilo",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.10884343222974384,
+      "delta_each_seed": [
+        -0.1105555849135678,
+        -0.10628743388829659,
+        -0.10911950777182186,
+        -0.11073343431848708,
+        -0.10752120025654598
+      ],
+      "acquisition_batch_interval": [
+        -0.11828813527260809,
+        -0.1008838725415812
+      ],
+      "depth_stratified_interval": [
+        -0.11384754735565027,
+        -0.10390853432925615
+      ]
+    },
+    {
+      "candidate": "Causilo",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.16129771838632134,
+      "delta_each_seed": [
+        -0.1632202833967284,
+        -0.1585184602244982,
+        -0.16183195454847824,
+        -0.16297708540595493,
+        -0.15994080835594685
+      ],
+      "acquisition_batch_interval": [
+        -0.1693452107522442,
+        -0.15397231756926294
+      ],
+      "depth_stratified_interval": [
+        -0.16677523836096936,
+        -0.15591873236160253
+      ]
+    },
+    {
+      "candidate": "Causilo",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.13506541533555577,
+      "delta_each_seed": [
+        -0.13698798034596288,
+        -0.13228615717373263,
+        -0.1355996514977127,
+        -0.1367447823551894,
+        -0.1337085053051813
+      ],
+      "acquisition_batch_interval": [
+        -0.14385954698823353,
+        -0.12720386564755073
+      ],
+      "depth_stratified_interval": [
+        -0.14024653104347695,
+        -0.13003312062102598
+      ]
+    },
+    {
+      "candidate": "TabAbax",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.05518798364869055,
+      "delta_each_seed": [
+        -0.05518798364869055
+      ],
+      "acquisition_batch_interval": [
+        -0.06679230485456811,
+        -0.046229265366192034
+      ],
+      "depth_stratified_interval": [
+        -0.060483716024470315,
+        -0.049942119662429514
+      ]
+    },
+    {
+      "candidate": "TabAbax",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.036417053168372286,
+      "delta_each_seed": [
+        -0.036417053168372286
+      ],
+      "acquisition_batch_interval": [
+        -0.04175767738622904,
+        -0.03178979034737503
+      ],
+      "depth_stratified_interval": [
+        -0.040269331003357785,
+        -0.03268377046067067
+      ]
+    },
+    {
+      "candidate": "TabAbax",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.10794428600959445,
+      "delta_each_seed": [
+        -0.10794428600959445
+      ],
+      "acquisition_batch_interval": [
+        -0.11909207235954189,
+        -0.09895713617352155
+      ],
+      "depth_stratified_interval": [
+        -0.11345387566050576,
+        -0.1024903813215229
+      ]
+    },
+    {
+      "candidate": "TabAbax",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.16060898449275512,
+      "delta_each_seed": [
+        -0.16060898449275512
+      ],
+      "acquisition_batch_interval": [
+        -0.17012721837821596,
+        -0.15233534051891223
+      ],
+      "depth_stratified_interval": [
+        -0.16654822603115846,
+        -0.15470404589260853
+      ]
+    },
+    {
+      "candidate": "TabAbax",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.13437668144198953,
+      "delta_each_seed": [
+        -0.13437668144198953
+      ],
+      "acquisition_batch_interval": [
+        -0.14456202210586,
+        -0.12569354827648943
+      ],
+      "depth_stratified_interval": [
+        -0.14004612485076018,
+        -0.1288573476404457
+      ]
+    },
+    {
+      "candidate": "Nori 1.5/descriptors_only",
+      "comparator": "Nori 1.5",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.033316333449257565,
+      "delta_each_seed": [
+        0.033316333449257565
+      ],
+      "acquisition_batch_interval": [
+        0.021309891616045955,
+        0.04372316369633741
+      ],
+      "depth_stratified_interval": [
+        0.02614812250695231,
+        0.04069332812200481
+      ]
+    },
+    {
+      "candidate": "Nori 1.5/measurements_only",
+      "comparator": "Nori 1.5",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.04333146766919838,
+      "delta_each_seed": [
+        0.04333146766919838
+      ],
+      "acquisition_batch_interval": [
+        0.037385067927278914,
+        0.04954292256621944
+      ],
+      "depth_stratified_interval": [
+        0.039169344991646496,
+        0.04764469954848194
+      ]
+    },
+    {
+      "candidate": "Nori 1.5",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.05536414658424833,
+      "delta_each_seed": [
+        -0.05480584051019297,
+        -0.05566233380514275,
+        -0.05562426543740926
+      ],
+      "acquisition_batch_interval": [
+        -0.06622823839953865,
+        -0.047120183739032144
+      ],
+      "depth_stratified_interval": [
+        -0.06002959947818829,
+        -0.05093664111333612
+      ]
+    },
+    {
+      "candidate": "Nori 1.5",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.037432323928968225,
+      "delta_each_seed": [
+        -0.03603491002987473,
+        -0.04206940092017719,
+        -0.03419266083685275
+      ],
+      "acquisition_batch_interval": [
+        -0.04174710540275471,
+        -0.03386103089151555
+      ],
+      "depth_stratified_interval": [
+        -0.04036836509489866,
+        -0.03462014404209834
+      ]
+    },
+    {
+      "candidate": "Nori 1.5",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.10816613571279403,
+      "delta_each_seed": [
+        -0.10756214287109687,
+        -0.10890664369437454,
+        -0.10802962057291067
+      ],
+      "acquisition_batch_interval": [
+        -0.11900397283806603,
+        -0.09946118608292005
+      ],
+      "depth_stratified_interval": [
+        -0.1133207034467858,
+        -0.10310601886238759
+      ]
+    },
+    {
+      "candidate": "Nori 1.5",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.1607021929114669,
+      "delta_each_seed": [
+        -0.16022684135425752,
+        -0.16113767003057616,
+        -0.16074206734956706
+      ],
+      "acquisition_batch_interval": [
+        -0.16970039969034065,
+        -0.15279240405156724
+      ],
+      "depth_stratified_interval": [
+        -0.16629943892507415,
+        -0.15517034622088438
+      ]
+    },
+    {
+      "candidate": "Nori 1.5",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.13446988986070132,
+      "delta_each_seed": [
+        -0.13399453830349195,
+        -0.1349053669798106,
+        -0.13450976429880152
+      ],
+      "acquisition_batch_interval": [
+        -0.1443076671564955,
+        -0.12595545839661698
+      ],
+      "depth_stratified_interval": [
+        -0.13990059584694087,
+        -0.12926304128264432
+      ]
+    },
+    {
+      "candidate": "iLTM/descriptors_only",
+      "comparator": "iLTM",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.022536943143535697,
+      "delta_each_seed": [
+        -0.022536943143535697
+      ],
+      "acquisition_batch_interval": [
+        -0.05056933546199313,
+        0.006635968473715254
+      ],
+      "depth_stratified_interval": [
+        -0.049394495018346515,
+        0.003260334459839474
+      ]
+    },
+    {
+      "candidate": "iLTM/measurements_only",
+      "comparator": "iLTM",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.008695991813671299,
+      "delta_each_seed": [
+        0.008695991813671299
+      ],
+      "acquisition_batch_interval": [
+        -0.0230296609859838,
+        0.03995484528797255
+      ],
+      "depth_stratified_interval": [
+        -0.020364444570949054,
+        0.036982881429616046
+      ]
+    },
+    {
+      "candidate": "iLTM",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.5114775111436813,
+      "delta_each_seed": [
+        0.5128821423067311,
+        0.4874280868479885,
+        0.5337034817048157,
+        0.5032204577033649,
+        0.5201533871555065
+      ],
+      "acquisition_batch_interval": [
+        0.487141514020925,
+        0.5355149956698303
+      ],
+      "depth_stratified_interval": [
+        0.49281290730679156,
+        0.5302522486591834
+      ]
+    },
+    {
+      "candidate": "iLTM",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.5293597584413239,
+      "delta_each_seed": [
+        0.5316530727870493,
+        0.5010210197329541,
+        0.5551350863053722,
+        0.5231048003289046,
+        0.5358848130523389
+      ],
+      "acquisition_batch_interval": [
+        0.507856474761493,
+        0.5517406660443357
+      ],
+      "depth_stratified_interval": [
+        0.5108368849717876,
+        0.5481181125747309
+      ]
+    },
+    {
+      "candidate": "iLTM",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.45714209818568674,
+      "delta_each_seed": [
+        0.4601258399458271,
+        0.4341837769587567,
+        0.48129812656931426,
+        0.44856908552583363,
+        0.46153366192870154
+      ],
+      "acquisition_batch_interval": [
+        0.43264117133118546,
+        0.481009916108352
+      ],
+      "depth_stratified_interval": [
+        0.4389085383907003,
+        0.4753451174659204
+      ]
+    },
+    {
+      "candidate": "iLTM",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.4046878120291092,
+      "delta_each_seed": [
+        0.40746114146266654,
+        0.3819527506225551,
+        0.4285856797926579,
+        0.3963254344383658,
+        0.4091140538293007
+      ],
+      "acquisition_batch_interval": [
+        0.3825166464690268,
+        0.4267868363172161
+      ],
+      "depth_stratified_interval": [
+        0.3875360285402583,
+        0.4220582546181236
+      ]
+    },
+    {
+      "candidate": "iLTM",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.4309201150798747,
+      "delta_each_seed": [
+        0.43369344451343206,
+        0.40818505367332064,
+        0.4548179828434234,
+        0.42255773748913145,
+        0.43534635688006623
+      ],
+      "acquisition_batch_interval": [
+        0.4065437434625246,
+        0.4551592327306746
+      ],
+      "depth_stratified_interval": [
+        0.4116728073798312,
+        0.4502716741684697
+      ]
+    },
+    {
+      "candidate": "KumoTabular",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.05678219602808953,
+      "delta_each_seed": [
+        -0.05678219602808953
+      ],
+      "acquisition_batch_interval": [
+        -0.06914644313445009,
+        -0.04729350188637171
+      ],
+      "depth_stratified_interval": [
+        -0.062472898218672766,
+        -0.051441932323485845
+      ]
+    },
+    {
+      "candidate": "KumoTabular",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.038011265547771275,
+      "delta_each_seed": [
+        -0.038011265547771275
+      ],
+      "acquisition_batch_interval": [
+        -0.04379937960714441,
+        -0.033236812011096684
+      ],
+      "depth_stratified_interval": [
+        -0.04210204899843222,
+        -0.03404751162793531
+      ]
+    },
+    {
+      "candidate": "KumoTabular",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.10953849838899342,
+      "delta_each_seed": [
+        -0.10953849838899342
+      ],
+      "acquisition_batch_interval": [
+        -0.12159019455517538,
+        -0.09973277922967921
+      ],
+      "depth_stratified_interval": [
+        -0.11514850316866582,
+        -0.10392691286224058
+      ]
+    },
+    {
+      "candidate": "KumoTabular",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.1622031968721541,
+      "delta_each_seed": [
+        -0.1622031968721541
+      ],
+      "acquisition_batch_interval": [
+        -0.17225742828800353,
+        -0.15332698191870134
+      ],
+      "depth_stratified_interval": [
+        -0.16824222608231829,
+        -0.15631038155951454
+      ]
+    },
+    {
+      "candidate": "KumoTabular",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": -0.1359708938213885,
+      "delta_each_seed": [
+        -0.1359708938213885
+      ],
+      "acquisition_batch_interval": [
+        -0.1469995147389133,
+        -0.12682496084396705
+      ],
+      "depth_stratified_interval": [
+        -0.1418833490767645,
+        -0.13033831493527756
+      ]
+    },
+    {
+      "candidate": "TabDPT 1.3",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.02544550105252067,
+      "delta_each_seed": [
+        0.02344266522856003,
+        0.025684965826999237,
+        0.023019370950247565,
+        0.03273820230106866,
+        0.022342300955727853
+      ],
+      "acquisition_batch_interval": [
+        0.017908619111758006,
+        0.03177239406845304
+      ],
+      "depth_stratified_interval": [
+        0.02125468480520767,
+        0.029738612434135177
+      ]
+    },
+    {
+      "candidate": "TabDPT 1.3",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": 0.04332774835016317,
+      "delta_each_seed": [
+        0.04221359570887829,
+        0.03927789871196479,
+        0.04445097555080409,
+        0.052622544926608505,
+        0.03807372685256016
+      ],
+      "acquisition_batch_interval": [
+        0.03738267264967582,
+        0.04863782256535537
+      ],
+      "depth_stratified_interval": [
+        0.039017210290350005,
+        0.04772504029069322
+      ]
+    },
+    {
+      "candidate": "TabDPT 1.3",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.028889911905473985,
+      "delta_each_seed": [
+        -0.029313637132343865,
+        -0.027559344062232562,
+        -0.029385984185253837,
+        -0.02191316987646251,
+        -0.036277424271077156
+      ],
+      "acquisition_batch_interval": [
+        -0.037878945939334406,
+        -0.02096963667444637
+      ],
+      "depth_stratified_interval": [
+        -0.03404119178527801,
+        -0.023781644828860832
+      ]
+    },
+    {
+      "candidate": "TabDPT 1.3",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.08134419806205147,
+      "delta_each_seed": [
+        -0.08197833561550451,
+        -0.07979037039843419,
+        -0.08209843096191022,
+        -0.07415682096393036,
+        -0.08869703237047805
+      ],
+      "acquisition_batch_interval": [
+        -0.0890020342814569,
+        -0.07414769365460211
+      ],
+      "depth_stratified_interval": [
+        -0.08690403972661492,
+        -0.07578124371930951
+      ]
+    },
+    {
+      "candidate": "TabDPT 1.3",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.055111895011285904,
+      "delta_each_seed": [
+        -0.05574603256473895,
+        -0.05355806734766863,
+        -0.055866127911144654,
+        -0.04792451791316481,
+        -0.06246472931971248
+      ],
+      "acquisition_batch_interval": [
+        -0.06413701325344756,
+        -0.0466675316108346
+      ],
+      "depth_stratified_interval": [
+        -0.06130548577597576,
+        -0.048991733233531926
+      ]
+    },
+    {
+      "candidate": "TabICLv2/descriptors_only",
+      "comparator": "TabICLv2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.06774988956242638,
+      "delta_each_seed": [
+        0.06774988956242638
+      ],
+      "acquisition_batch_interval": [
+        0.054724647595561005,
+        0.0799180269193266
+      ],
+      "depth_stratified_interval": [
+        0.05937932915772922,
+        0.07649630694080803
+      ]
+    },
+    {
+      "candidate": "TabICLv2/measurements_only",
+      "comparator": "TabICLv2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.03686158972181138,
+      "delta_each_seed": [
+        0.03686158972181138
+      ],
+      "acquisition_batch_interval": [
+        0.032161486827162154,
+        0.04193130332157769
+      ],
+      "depth_stratified_interval": [
+        0.03307782196226819,
+        0.040801272898048864
+      ]
+    },
+    {
+      "candidate": "TabICLv2",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.048733442707800285,
+      "delta_each_seed": [
+        -0.051310259726114124,
+        -0.04562740206127678,
+        -0.04926266633600993
+      ],
+      "acquisition_batch_interval": [
+        -0.057851903590315425,
+        -0.0418440554142046
+      ],
+      "depth_stratified_interval": [
+        -0.05277960049559708,
+        -0.04477326952350286
+      ]
+    },
+    {
+      "candidate": "TabICLv2",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.030801620052520167,
+      "delta_each_seed": [
+        -0.03253932924579588,
+        -0.032034469176311225,
+        -0.02783106173545341
+      ],
+      "acquisition_batch_interval": [
+        -0.0336116034616433,
+        -0.02813282262328321
+      ],
+      "depth_stratified_interval": [
+        -0.03350213696939672,
+        -0.02816892709348157
+      ]
+    },
+    {
+      "candidate": "TabICLv2",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.10153543183634597,
+      "delta_each_seed": [
+        -0.10406656208701805,
+        -0.09887171195050858,
+        -0.10166802147151134
+      ],
+      "acquisition_batch_interval": [
+        -0.11053643680604698,
+        -0.09409658925340103
+      ],
+      "depth_stratified_interval": [
+        -0.10630194359292845,
+        -0.09690735475289397
+      ]
+    },
+    {
+      "candidate": "TabICLv2",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.1540714890350189,
+      "delta_each_seed": [
+        -0.15673126057017867,
+        -0.15110273828671023,
+        -0.1543804682481677
+      ],
+      "acquisition_batch_interval": [
+        -0.16170500583238911,
+        -0.1469637262177064
+      ],
+      "depth_stratified_interval": [
+        -0.15927698941421714,
+        -0.14892215850942897
+      ]
+    },
+    {
+      "candidate": "TabICLv2",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2
+      ],
+      "delta": -0.1278391859842533,
+      "delta_each_seed": [
+        -0.13049895751941312,
+        -0.12487043523594464,
+        -0.12814816519740216
+      ],
+      "acquisition_batch_interval": [
+        -0.13624599865921475,
+        -0.1204029097484608
+      ],
+      "depth_stratified_interval": [
+        -0.1328792546069521,
+        -0.12297495650618412
+      ]
+    },
+    {
+      "candidate": "TabICLv2 tuned",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1
+      ],
+      "delta": -0.04844368833793478,
+      "delta_each_seed": [
+        -0.05154997480156984,
+        -0.0453374018742997
+      ],
+      "acquisition_batch_interval": [
+        -0.05757697893589352,
+        -0.04162624397274702
+      ],
+      "depth_stratified_interval": [
+        -0.052482275496929714,
+        -0.04449518310160734
+      ]
+    },
+    {
+      "candidate": "TabICLv2 tuned",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1
+      ],
+      "delta": -0.032261756655292864,
+      "delta_each_seed": [
+        -0.032779044321251595,
+        -0.03174446898933415
+      ],
+      "acquisition_batch_interval": [
+        -0.036000875623452736,
+        -0.028884400002892274
+      ],
+      "depth_stratified_interval": [
+        -0.03530820302680626,
+        -0.029271486580779365
+      ]
+    },
+    {
+      "candidate": "TabICLv2 tuned",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1
+      ],
+      "delta": -0.1014439944630026,
+      "delta_each_seed": [
+        -0.10430627716247373,
+        -0.0985817117635315
+      ],
+      "acquisition_batch_interval": [
+        -0.11115419776436557,
+        -0.0936455110689778
+      ],
+      "depth_stratified_interval": [
+        -0.10622773273592452,
+        -0.09675855995394739
+      ]
+    },
+    {
+      "candidate": "TabICLv2 tuned",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1
+      ],
+      "delta": -0.15389185687268375,
+      "delta_each_seed": [
+        -0.1569709756456344,
+        -0.1508127380997331
+      ],
+      "acquisition_batch_interval": [
+        -0.1619980561723772,
+        -0.14645358571064457
+      ],
+      "depth_stratified_interval": [
+        -0.1591870883075153,
+        -0.14867117548208392
+      ]
+    },
+    {
+      "candidate": "TabICLv2 tuned",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1
+      ],
+      "delta": -0.1276595538219182,
+      "delta_each_seed": [
+        -0.13073867259486882,
+        -0.12458043504896757
+      ],
+      "acquisition_batch_interval": [
+        -0.13651522380797745,
+        -0.11987584167895993
+      ],
+      "depth_stratified_interval": [
+        -0.13285925912276988,
+        -0.1226675855244818
+      ]
+    },
+    {
+      "candidate": "TabICLv2 tuned",
+      "comparator": "TabICLv2",
+      "calibration_seeds": [
+        0,
+        1
+      ],
+      "delta": 2.51425557606842e-05,
+      "delta_each_seed": [
+        -0.0002397150754557077,
+        0.0002900001869770762
+      ],
+      "acquisition_batch_interval": [
+        -0.0002901772194638801,
+        0.0003219242345733503
+      ],
+      "depth_stratified_interval": [
+        -0.00024650849350040834,
+        0.00029367601328865564
+      ]
+    },
+    {
+      "candidate": "TabPFN v2/descriptors_only",
+      "comparator": "TabPFN v2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.06193888516120978,
+      "delta_each_seed": [
+        0.06193888516120978
+      ],
+      "acquisition_batch_interval": [
+        0.04759633926751753,
+        0.07528704353220046
+      ],
+      "depth_stratified_interval": [
+        0.05240274332274097,
+        0.07166407727659893
+      ]
+    },
+    {
+      "candidate": "TabPFN v2/measurements_only",
+      "comparator": "TabPFN v2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.03303472075806894,
+      "delta_each_seed": [
+        0.03303472075806894
+      ],
+      "acquisition_batch_interval": [
+        0.02862782533524553,
+        0.037543866950295574
+      ],
+      "depth_stratified_interval": [
+        0.029192683725321952,
+        0.03703339628257905
+      ]
+    },
+    {
+      "candidate": "TabPFN v2",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.04303197211064879,
+      "delta_each_seed": [
+        -0.044487376592341296,
+        -0.041335181824201,
+        -0.04681411371838529,
+        -0.04394369198624342,
+        -0.03857949643207292
+      ],
+      "acquisition_batch_interval": [
+        -0.04987916440674174,
+        -0.037531987897738116
+      ],
+      "depth_stratified_interval": [
+        -0.04659413497696287,
+        -0.03965356434504586
+      ]
+    },
+    {
+      "candidate": "TabPFN v2",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.025149724813006293,
+      "delta_each_seed": [
+        -0.025716446112023054,
+        -0.027742248939235437,
+        -0.025382509117828776,
+        -0.024059349360703575,
+        -0.022848070535240614
+      ],
+      "acquisition_batch_interval": [
+        -0.027618974749247648,
+        -0.022742014517384005
+      ],
+      "depth_stratified_interval": [
+        -0.027615299798868415,
+        -0.022758918981206255
+      ]
+    },
+    {
+      "candidate": "TabPFN v2",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.09736738506864343,
+      "delta_each_seed": [
+        -0.09724367895324519,
+        -0.09457949171343277,
+        -0.0992194688538867,
+        -0.0985950641637746,
+        -0.09719922165887791
+      ],
+      "acquisition_batch_interval": [
+        -0.10551056003817814,
+        -0.09034712862797854
+      ],
+      "depth_stratified_interval": [
+        -0.10207029980338135,
+        -0.09275972420138753
+      ]
+    },
+    {
+      "candidate": "TabPFN v2",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.14982167122522091,
+      "delta_each_seed": [
+        -0.14990837743640587,
+        -0.14681051804963444,
+        -0.15193191563054306,
+        -0.15083871525124243,
+        -0.14961882975827884
+      ],
+      "acquisition_batch_interval": [
+        -0.15680996361995098,
+        -0.143239331513172
+      ],
+      "depth_stratified_interval": [
+        -0.15507202897628355,
+        -0.14462721141593382
+      ]
+    },
+    {
+      "candidate": "TabPFN v2",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.12358936817445536,
+      "delta_each_seed": [
+        -0.12367607438564028,
+        -0.12057821499886887,
+        -0.12569961257977752,
+        -0.1246064122004769,
+        -0.12338652670751327
+      ],
+      "acquisition_batch_interval": [
+        -0.1312805569031506,
+        -0.11671795931155592
+      ],
+      "depth_stratified_interval": [
+        -0.12867493281599132,
+        -0.11872755320314113
+      ]
+    },
+    {
+      "candidate": "TabPFN v2/shuffle_train_noisy",
+      "comparator": "TabPFN v2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.07303307571028765,
+      "delta_each_seed": [
+        0.07303307571028765
+      ],
+      "acquisition_batch_interval": [
+        0.06050369726843038,
+        0.08517629409284368
+      ],
+      "depth_stratified_interval": [
+        0.06436416836473509,
+        0.08209205391928431
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 random initialization 0",
+      "comparator": "TabPFN v2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.33857599936798455,
+      "delta_each_seed": [
+        0.33857599936798455
+      ],
+      "acquisition_batch_interval": [
+        0.3130506651009972,
+        0.3633197661235932
+      ],
+      "depth_stratified_interval": [
+        0.31893859568503896,
+        0.35825371685600216
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 random initialization 1",
+      "comparator": "TabPFN v2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.34065640352470294,
+      "delta_each_seed": [
+        0.34065640352470294
+      ],
+      "acquisition_batch_interval": [
+        0.31512559062462175,
+        0.3651755669597695
+      ],
+      "depth_stratified_interval": [
+        0.32114247095094106,
+        0.3602833895624198
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 random initialization 2",
+      "comparator": "TabPFN v2",
+      "calibration_seeds": [
+        0
+      ],
+      "delta": 0.340318994277214,
+      "delta_each_seed": [
+        0.340318994277214
+      ],
+      "acquisition_batch_interval": [
+        0.3148095253057946,
+        0.36487390553330584
+      ],
+      "depth_stratified_interval": [
+        0.3207655339828779,
+        0.35992563510413117
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 tuned",
+      "comparator": "Random forest",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.04308671267115128,
+      "delta_each_seed": [
+        -0.04293534697458594,
+        -0.041154389525086446,
+        -0.04658279865183977,
+        -0.04438769257813608,
+        -0.04037333562610815
+      ],
+      "acquisition_batch_interval": [
+        -0.05002087041773165,
+        -0.037477010547649604
+      ],
+      "depth_stratified_interval": [
+        -0.04667527907093502,
+        -0.03965263431761297
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 tuned",
+      "comparator": "Kernel ridge",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.02520446537350878,
+      "delta_each_seed": [
+        -0.024164416494267683,
+        -0.027561456640120892,
+        -0.025151194051283257,
+        -0.02450334995259624,
+        -0.024641909729275845
+      ],
+      "acquisition_batch_interval": [
+        -0.027753763631760235,
+        -0.02275490715925719
+      ],
+      "depth_stratified_interval": [
+        -0.027662709868104502,
+        -0.022823524235665114
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 tuned",
+      "comparator": "Affine",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.09742212562914593,
+      "delta_each_seed": [
+        -0.09569164933548983,
+        -0.09439869941431825,
+        -0.09898815378734116,
+        -0.09903906475566723,
+        -0.09899306085291316
+      ],
+      "acquisition_batch_interval": [
+        -0.10573799015790655,
+        -0.09026979561819634
+      ],
+      "depth_stratified_interval": [
+        -0.10214048077682816,
+        -0.09274219372717869
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 tuned",
+      "comparator": "Hardware",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.1498764117857234,
+      "delta_each_seed": [
+        -0.14835634781865048,
+        -0.14662972575051988,
+        -0.15170060056399756,
+        -0.1512827158431351,
+        -0.15141266895231403
+      ],
+      "acquisition_batch_interval": [
+        -0.15693580503937055,
+        -0.14324426112090022
+      ],
+      "depth_stratified_interval": [
+        -0.15522223157002252,
+        -0.14462545096214477
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 tuned",
+      "comparator": "ZNE",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -0.12364410873495785,
+      "delta_each_seed": [
+        -0.12212404476788492,
+        -0.1203974226997543,
+        -0.125468297513232,
+        -0.12505041279236956,
+        -0.1251803659015485
+      ],
+      "acquisition_batch_interval": [
+        -0.13138988186563164,
+        -0.11674176896582246
+      ],
+      "depth_stratified_interval": [
+        -0.12872407558725737,
+        -0.11874031689190838
+      ]
+    },
+    {
+      "candidate": "TabPFN v2 tuned",
+      "comparator": "TabPFN v2",
+      "calibration_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delta": -5.474056050249018e-05,
+      "delta_each_seed": [
+        0.0015520296177553683,
+        0.00018079229911454657,
+        0.00023131506654552132,
+        -0.00044400059189265767,
+        -0.001793839194035229
+      ],
+      "acquisition_batch_interval": [
+        -0.00046439147951093577,
+        0.0003292121852585029
+      ],
+      "depth_stratified_interval": [
+        -0.0003771614185213626,
+        0.0002742165467257658
+      ]
+    }
+  ]
+}

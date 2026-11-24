@@ -34,8 +34,12 @@ def main():
     parser.add_argument('--output', type=Path, default=ROOT / 'reports')
     parser.add_argument('--clean-seed', type=int, choices=range(5))
     parser.add_argument('--finetune', action='store_true', help='Three epochs of TabICLv2 adaptation on clean calibration data')
+    parser.add_argument('--single-member-pilot', action='store_true',
+                        help='Repeat the published-split TabICLv2 timing pilot in separate output files')
     parser.add_argument('--inputs', choices=['full', 'descriptors_only', 'measurements_only'], default='full')
     args = parser.parse_args()
+    if args.single_member_pilot and (args.model != 'tabicl' or args.clean_seed is not None or args.finetune):
+        parser.error('The timing pilot uses frozen TabICLv2 on the published split')
     if args.inputs != 'full' and args.clean_seed is None:
         parser.error('Omission controls require the clean split')
     if args.finetune and (args.model != 'tabicl' or args.clean_seed is None):
@@ -69,6 +73,9 @@ def main():
             raise ValueError('Expected a disjoint full-budget nonzero-depth split')
         protocol = f'clean_500_seed{args.clean_seed}'
     prefix = f'{args.model}_{protocol}' + ('_tuned' if args.finetune else '')
+    tabicl_members = 1 if args.single_member_pilot else 8
+    if args.single_member_pilot:
+        prefix += '_single_member_pilot_rerun'
     if args.inputs != 'full':
         prefix += f'_{args.inputs}'
         X = X[:, :-4] if args.inputs == 'descriptors_only' else X[:, -4:]
@@ -111,7 +118,7 @@ def main():
             )
         from tabicl import TabICLRegressor
         return TabICLRegressor(model_path=str(path), allow_auto_download=False, device=args.device,
-                               n_estimators=8, batch_size=1, n_jobs=1, kv_cache=True, random_state=0)
+                               n_estimators=tabicl_members, batch_size=1, n_jobs=1, kv_cache=True, random_state=0)
     started = time.monotonic()
     predictions = np.empty((len(test), 4), dtype=float)
     for q in range(4):
@@ -151,12 +158,23 @@ def main():
               'checkpoint_url': f'https://huggingface.co/{repo}/resolve/{revision}/{filename}', 'checkpoint_sha256': weight_hash,
               'device': args.device, 'platform': platform.platform(), 'python': platform.python_version(),
               'versions': {k:version(k) for k in ['torch','synthefy-nori','tabicl','numpy','scikit-learn','scipy']},
-              'seed': 0, 'prediction_chunk_rows': args.chunk, 'ensemble_members': 4 if args.model == 'nori' else 8,
+              'seed': 0, 'prediction_chunk_rows': args.chunk, 'ensemble_members': 4 if args.model == 'nori' else tabicl_members,
               'settings': ('numeric columns, checkpoint preprocessing; high-dimensional projection fit on train only'
                            if args.clean_seed is not None else 'numeric columns, checkpoint preprocessing') if args.model == 'nori' else 'eight default ensemble members, cached context',
               'pooled_rmse': float(np.sqrt(np.mean(err**2))), 'mean_circuit_l2':float(np.mean(np.linalg.norm(err,axis=1))),
               'mean_circuit_l2_by_depth': {int(d):float(np.linalg.norm(err[depth[test]==d],axis=1).mean()) for d in np.unique(depth[test])},
               'runtime_seconds': time.monotonic()-started}
+    if args.single_member_pilot:
+        report['settings'] = 'one ensemble member, cached context'
+        source = ROOT / 'reports/tabicl_single_member_timing_pilot.json'
+        original = json.loads(source.read_bytes())
+        report['pilot_rerun'] = {
+            'original_score_log': str(source.relative_to(ROOT)), 'original_score_log_sha256': digest(source),
+            'provenance': 'Predictions newly generated for this repeat. Original pilot aggregates were retained.',
+            'repeat_minus_original': {key: report[key] - original[key] for key in ('mean_circuit_l2', 'pooled_rmse')},
+            'max_absolute_depth_mean_l2_difference': max(abs(mean - original['mean_circuit_l2_by_depth'][str(d)])
+                                                         for d, mean in report['mean_circuit_l2_by_depth'].items()),
+        }
     if args.finetune:
         report['fine_tuning'] = {'epochs_max': 3, 'fit_rows': 450, 'validation_rows': 50,
                                   'final_context_rows': 500, 'lr': 1e-5, 'episode_cap': 96,

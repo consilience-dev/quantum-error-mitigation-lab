@@ -1,49 +1,33 @@
-# Quantum error mitigation lab
+# Quantum error mitigation with pretrained tabular models
 
-Research question: Can pretrained tabular foundation models improve quantum error mitigation accuracy?
+Can pretrained regressors improve noisy quantum observable estimates when every method gets the same calibration circuits? This repository reproduces the four-qubit IBM Algiers experiment from ML-QEM, compares estimators on the authors' inputs, and checks whether hardware measurements contribute beyond knowing which circuit was run.
 
-This is a new continuation repository created on 2026-11-24. The selected workspace was empty, with no Git history or remote. The previous project package, feature matrix, split IDs, trained models, and experiment outputs were not recovered. Earlier Nori results are conversation reports, not verified results in this repository. Fresh model evaluations use the recovered upstream protocol and explicitly identified splits.
+**[Read the results](reports/RESULTS.md)** · [per-run scores](reports/scores.csv) · [paired comparisons](reports/clean_paired_summary.json) · [model coverage](docs/model-coverage.md)
 
-The reported 18 and 90 calibration circuits were deliberately small few-shot budgets: 2 and 10 circuits at each of nine nonzero Trotter depths, after excluding depth-0 duplicates. Each circuit supplies four target observables; those are not four independent calibration circuits. Those budgets omit the published 500-circuit training setting and should be expanded.
+## Two experiments
 
-See [provenance](docs/provenance.md) and [evaluation protocol](docs/evaluation.md). The upstream measurement files are pinned and checksummed in `data/upstream/manifest.json`; they are not the missing local experiment package.
+- **Published reference.** The released hardware notebook uses 500 calibration rows and 2,500 test rows from ten Trotter depths. Each circuit has 169 input features and four ideal target observables. Five new random-forest fits reproduce the published mean circuit error of approximately 0.1000. Running the authors' encoder on the source circuits produced identical bytes for all 3,000 feature and target rows. [Notebook](https://github.com/qiskit-community/ml-qem/blob/faf3e44ac686d62b2184a983d89e655084759a26/docs/demos/demo2_ising_4q_hardware_plot.ipynb) · [Reproduction](reports/rf_reproduction.json) · [Encoder audit](reports/original_encoder_check.json)
+- **Unique held-out circuits.** The 300 depth-zero rows represent three distinct circuits. The earlier 18- and 90-circuit budgets intentionally used two or ten circuits at each of nine nonzero depths. The expanded study evaluates 18, 45, 90, 180, 270, 450 and 500. Five nested calibration draws share a 900-circuit holdout. At 500, each depth receives 55 or 56 unique calibration circuits. [Split and identity audit](data/clean_split.json) · [Evaluation protocol](docs/evaluation.md)
 
-## Follow-up split planning
+The original local package and its 180 test IDs could not be recovered. This repository reconstructs the experiments from pinned upstream measurements. All reported scores come from new runs. [Provenance](docs/provenance.md)
 
-Use Python 3.9+; split planning and its tests have no external dependencies.
+## Reproduce the data and baseline
 
-```
-python3 -m unittest discover -s tests -v
-python3 scripts/plan_splits.py verified_circuit_manifest.json --output splits.json
-```
+Use Python 3.9 for the upstream Qiskit circuit format. Run from the repository root.
 
-The input is a JSON list of circuit records with `id`, `circuit_hash`, integer `depth`, and `partition` (`calibration` or `test`). Hashes must represent canonical circuit content, not row IDs or target values. Recover or independently build this manifest before planning real runs. All four observables stay together. The tool rejects duplicate IDs, canonical train/test overlap, and repeated calibration circuits. It preserves the supplied test set and fails if any requested budget is unavailable; it never fills shortages by sampling with replacement.
-
-The proposed nonzero-depth curve is 18, 45, 90, 180, 270, 450, and a conditional 500 circuits, with five split seeds. The published 500-row track includes three repeated logical circuits at depth 0. The [frozen clean split](data/clean_split.json) contains all 35 calibration draws and 900 disjoint test circuits. See the [random-forest reproduction](reports/rf_reproduction.json) and [clean learning curve](reports/rf_clean.json).
-
-## Refit the hardware random forest
-
-In a Python 3.9 environment, install `requirements-reproduction.txt`. Run these commands from the repository root.
-
-```
+```sh
+python -m pip install -r requirements-reproduction.txt
 python scripts/fetch_upstream.py
 python scripts/fetch_rf_batches.py
 python scripts/reproduce_rf.py
 python scripts/freeze_clean_split.py
 python scripts/run_clean_rf.py
+python scripts/extract_measurement_basis.py
+python scripts/run_affine_baseline.py
+python scripts/run_kernel_baseline.py
+python scripts/run_physics_control.py
 ```
 
-The published split has 500 training and 2,500 test rows. Five fresh forest fits obtained pooled RMSE of 0.07453–0.07461. The notebook saved 0.07471. On the fresh nonzero-depth split the mean circuit error for the full forest at 500 was 0.10996 across five calibration draws. The clean split's [protocol](docs/evaluation.md) and the [model comparison](docs/model-comparison.md) describe the different uses of the two splits.
+To independently check the saved features against the authors' encoder, install `torch==2.5.1` into the reproduction environment and run `python scripts/verify_original_encoder.py`. The older numeric-only audit can also be reproduced with `requirements-audit.txt` and `scripts/audit_measurements.py`. Large upstream files and pretrained weights are cached locally. Source paths, revisions and checksums are recorded in the repository.
 
-## Reproduce the upstream numeric audit
-
-```
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-audit.txt
-.venv/bin/python scripts/fetch_upstream.py
-.venv/bin/python scripts/audit_measurements.py
-```
-
-The fetch script verifies every file against the committed checksum before use. Large upstream files are downloaded locally and excluded from Git. The audit uses the published row split, not the missing former local test split. It reconstructs 500 training and 2,500 test rows from 3,000 measured circuits, each with four targets. All measurement values are finite. It does not load the circuit objects or establish canonical circuit independence.
-
-The recorded [numeric audit](reports/upstream_measurement_audit.json) gives unmitigated pooled RMSE **0.117135** and ZNE pooled RMSE **0.104507** on the upstream test rows. ZNE's 63 out-of-range observable estimates are retained without clipping. These are baseline calculations, not trained-model results or a replication of earlier Nori runs.
+See the [model settings and execution commands](docs/running-models.md) and [comparisons and external validation design](docs/model-comparison.md). Run the split-planning tests with `python -m unittest discover -s tests -v`.
