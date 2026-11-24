@@ -108,7 +108,7 @@ Six compiled circuit identities shared with training account for all 100 depth-z
 
 ## Comparison with the published Figure 3 predictions
 
-The paper also releases test predictions for FakeLima Ising circuits. We matched the four noisy and four ideal values for **every row** in the Figure 3 no-readout-error condition at depths 0–14. We used the same 4,500 training rows as the OLS tutorial, and scored the 4,500 `val_extra` test rows. Frozen TabPFN v2 received the 58 tabular features, with one regressor per observable. The published model predictions below were rescored from the archive. The forest, MLP, OLS and GNN retain their original model-specific representations. QEMScore separately reports a mean absolute error (MAE) on this subset. We reproduced all six of its reference values to six decimal places. [ML-QEM, Figure 3](https://arxiv.org/html/2309.17368v2#S2.F3) · [QEMScore reanalysis](https://github.com/yzhao062/QEMScore/blob/4b95b3e91b44bbfa75d70279ac5d68f05d148ce2/reanalysis/mlqem/README.md)
+The paper also releases test predictions for FakeLima Ising circuits. We matched the four noisy and four ideal values for **every row** in the Figure 3 no-readout-error condition at depths 0–14. We used the same 4,500 training rows as the OLS tutorial, and scored the 4,500 `val_extra` test rows. Frozen Nori 1.5, TabICLv2 and TabPFN v2 received the 58 tabular features and all 4,500 training rows, with one regressor per observable. The published model predictions below were rescored from the archive. The forest, MLP, OLS and GNN retain their original model-specific representations. QEMScore separately reports a mean absolute error (MAE) on this subset. We reproduced all six of its reference values to six decimal places. [ML-QEM, Figure 3](https://arxiv.org/html/2309.17368v2#S2.F3) · [QEMScore reanalysis](https://github.com/yzhao062/QEMScore/blob/4b95b3e91b44bbfa75d70279ac5d68f05d148ce2/reanalysis/mlqem/README.md)
 
 | Method | Mean circuit L2, 4,500 rows | MAE, 4,500 rows | MAE, 4,200 unique circuits absent from training |
 |---|---:|---:|---:|
@@ -118,7 +118,11 @@ The paper also releases test predictions for FakeLima Ising circuits. We matched
 | Random forest | 0.037336 | 0.015510 | 0.016031 |
 | MLP | 0.052709 | 0.022274 | 0.023061 |
 | GNN | 0.126836 | 0.051041 | 0.051403 |
-| Frozen TabPFN v2, our run | **0.028171** | **0.011863** | **0.012114** |
+| Frozen Nori 1.5 | 0.027161 | 0.011466 | 0.011727 |
+| Frozen TabICLv2 | 0.027231 | 0.011467 | 0.011727 |
+| Frozen TabPFN v2 | 0.028171 | 0.011863 | 0.012114 |
+
+Nori and TabICLv2 gave similar scores, each reducing mean circuit L2 by about 27% compared with the archived forest. Both used their complete training contexts. [Nori run](simulation/fig3/nori.json) · [TabICLv2 run](simulation/fig3/tabicl.json)
 
 TabPFN reduced MAE by 23.5% relative to the archived forest on the 4,500 test rows. On the 4,200 unique nonzero-depth circuits, the paired MAE difference was −0.00392 (nominal 95% interval −0.00417 to −0.00367, resampling circuits within depth). TabPFN had lower MAE at each of depths 1–14 and the forest had lower MAE at depth 0. This interval conditions on the training set and simulated noise setting. The same six training identities cover all 300 depth-zero test rows. The 4,200 remaining circuits are unique and absent from both training and the OLS tutorial validation set under compiled circuit identity. This covers interpolation over held-out circuits at familiar depths, one simulated noise condition and one fixed training set. The archive also has predictions for depths 15–29, but its corresponding `val_extra` circuit files for that condition end at depth 14 in the pinned release. A full-feature comparison at those extrapolation depths requires the missing circuit descriptors. [Matched sources and row predictions](simulation/fig3/reference.json) · [Checkpoint and per-depth results](simulation/fig3/tabpfn_v2.json) · [Paired uncertainty](simulation/fig3/paired_rf.json)
 

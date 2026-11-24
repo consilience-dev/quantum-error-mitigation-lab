@@ -1,0 +1,122 @@
+{
+  "model": "nori",
+  "seed": 0,
+  "frozen": true,
+  "device": "mps",
+  "requested_ensemble_members": 4,
+  "checkpoint_url": "https://huggingface.co/Synthefy/Nori-1-5/resolve/79afc5a65b2775d0c62977211a63620ce87846c7/nori.pt",
+  "checkpoint_sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+  "versions": {
+    "synthefy-nori": "0.22.0",
+    "torch": "2.13.0",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1"
+  },
+  "train_rows": 4500,
+  "test_rows": 4500,
+  "inputs": 58,
+  "n_test_without_training_identity": 4200,
+  "full_context_verified_each_query_batch": true,
+  "ensemble_members": 4,
+  "one_scalar_regressor_per_observable": true,
+  "preprocessing": "Released Nori configuration with training-only high-dimensional projection.",
+  "reference_artifact_sha256": "279787d00b3caa6bc0046d80039d820b65e512b36ce5d97ee5e49f3e25837790",
+  "query_chunk_rows": 4500,
+  "predictions_sha256": "8a4057c946e4a466a152eeb34bf8b20d600490d03bc59eae9868c82df133afec",
+  "seconds": 90.5397473750636,
+  "scores": {
+    "official": {
+      "mean_circuit_mae": 0.011466146274990542,
+      "mean_circuit_l2": 0.02716108828546143,
+      "pooled_rmse": 0.015843383042513096
+    },
+    "without_train_identity": {
+      "mean_circuit_mae": 0.01172709924293082,
+      "mean_circuit_l2": 0.027779559407796944,
+      "pooled_rmse": 0.016182240162989695
+    },
+    "by_depth": {
+      "0": {
+        "mean_circuit_mae": 0.007812804723826658,
+        "mean_circuit_l2": 0.01850249257276416,
+        "pooled_rmse": 0.009954056448473669
+      },
+      "1": {
+        "mean_circuit_mae": 0.008341277367864611,
+        "mean_circuit_l2": 0.01973975892011126,
+        "pooled_rmse": 0.010567775790009875
+      },
+      "2": {
+        "mean_circuit_mae": 0.008798752955077467,
+        "mean_circuit_l2": 0.020757777309990868,
+        "pooled_rmse": 0.011235785726903555
+      },
+      "3": {
+        "mean_circuit_mae": 0.008708397074207775,
+        "mean_circuit_l2": 0.020817087424152947,
+        "pooled_rmse": 0.011261281129215742
+      },
+      "4": {
+        "mean_circuit_mae": 0.010115569449250668,
+        "mean_circuit_l2": 0.023596354280472662,
+        "pooled_rmse": 0.012784576156413655
+      },
+      "5": {
+        "mean_circuit_mae": 0.01033860212084014,
+        "mean_circuit_l2": 0.02427474407930855,
+        "pooled_rmse": 0.013104934230765147
+      },
+      "6": {
+        "mean_circuit_mae": 0.010459447072866314,
+        "mean_circuit_l2": 0.024711801749586582,
+        "pooled_rmse": 0.01351878672237861
+      },
+      "7": {
+        "mean_circuit_mae": 0.010652153129716343,
+        "mean_circuit_l2": 0.024739753799222046,
+        "pooled_rmse": 0.013390475641570344
+      },
+      "8": {
+        "mean_circuit_mae": 0.012099864759255317,
+        "mean_circuit_l2": 0.028677978894297643,
+        "pooled_rmse": 0.016079368565416644
+      },
+      "9": {
+        "mean_circuit_mae": 0.0122900379110844,
+        "mean_circuit_l2": 0.029248648751569788,
+        "pooled_rmse": 0.01633058385449909
+      },
+      "10": {
+        "mean_circuit_mae": 0.012917309515510287,
+        "mean_circuit_l2": 0.030700975584768423,
+        "pooled_rmse": 0.017354884658300977
+      },
+      "11": {
+        "mean_circuit_mae": 0.013599850860208077,
+        "mean_circuit_l2": 0.032291874123605256,
+        "pooled_rmse": 0.01877981632459595
+      },
+      "12": {
+        "mean_circuit_mae": 0.01449578032988044,
+        "mean_circuit_l2": 0.03409957602767052,
+        "pooled_rmse": 0.019898775125447483
+      },
+      "13": {
+        "mean_circuit_mae": 0.01473180065685221,
+        "mean_circuit_l2": 0.034980340102185106,
+        "pooled_rmse": 0.020537882239883946
+      },
+      "14": {
+        "mean_circuit_mae": 0.016630546198417435,
+        "mean_circuit_l2": 0.04027716066221558,
+        "pooled_rmse": 0.024642458691467264
+      }
+    }
+  },
+  "query_batch_sensitivity": {
+    "observable": 0,
+    "prefix_rows": 250,
+    "maximum_absolute_prediction_difference": 0.0,
+    "mean_absolute_prediction_difference": 0.0
+  }
+}

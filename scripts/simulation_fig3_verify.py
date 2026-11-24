@@ -39,6 +39,20 @@ def check_scores(actual, expected):
             np.testing.assert_allclose(value,expected[key],rtol=1e-12,atol=1e-14)
 
 
+def verify_additional_models(target, depth, novel, ids, reference_hash):
+    for name in ('nori', 'tabicl'):
+        report = json.loads((OUT / f'{name}.json').read_bytes())
+        if (report['reference_artifact_sha256'] != reference_hash or report['train_rows'] != 4500
+                or report['test_rows'] != len(ids) or report['inputs'] != 58
+                or not report['full_context_verified_each_query_batch']):
+            raise ValueError(f'Unexpected original-split configuration for {name}')
+        rows = load_rows(f'{name}.csv.gz', report['predictions_sha256'])
+        if [(r['row_id'], int(r['paper_row_id'])) for r in rows] != ids:
+            raise ValueError(f'Misaligned prediction rows for {name}')
+        recomputed = metrics(matrix(rows, 'pred'), target, depth, novel)
+        check_scores(json.loads(json.dumps(recomputed)), report['scores'])
+
+
 def workbook_check(path, ref):
     if hashlib.sha256(path.read_bytes()).hexdigest() != WORKBOOK_SHA256:
         raise ValueError('Unexpected upstream workbook')
@@ -84,6 +98,7 @@ def main():
         actual = metrics(matrix(a,k),y,depth,novel)
         check_scores(json.loads(json.dumps(actual)),ref['scores'][k])
     check_scores(json.loads(json.dumps(metrics(tab,y,depth,novel))),pfn['scores'])
+    verify_additional_models(y, depth, novel, ids, pfn['reference_artifact_sha256'])
     # Keep the paired loss differences together when resampling a circuit.
     ae = np.abs(tab-y).mean(axis=1)-np.abs(rf-y).mean(axis=1)
     l2 = np.linalg.norm(tab-y,axis=1)-np.linalg.norm(rf-y,axis=1)
@@ -122,7 +137,7 @@ def main():
             raise ValueError('Paired comparison metadata changed')
     else:
         path.write_text(json.dumps(result,indent=2)+'\n')
-    print('Verified all seven score series and the paired comparison.',flush=True)
+    print('Verified six original methods, three frozen models and the paired TabPFN–RF comparison.',flush=True)
 
 
 if __name__ == '__main__':
