@@ -1,0 +1,686 @@
+{
+  "registry_commit": "5c014e2aaf48da4c6b9dfda1f5364dfb04d4776e",
+  "candidates": [
+    {
+      "name": "Causilo",
+      "repository": "nums-ai/causilo",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference",
+        "peft"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://huggingface.co/nums-ai/causilo",
+      "file_sizes": {
+        "classifier/model.safetensors": 144385448,
+        "regressor/model.safetensors": 148417316
+      },
+      "repo_revision": "f5006e165aa83569205b25d900de94f25621fd85",
+      "gated": false,
+      "files": [
+        "classifier/model.safetensors",
+        "regressor/model.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "ContextTab",
+      "repository": "SAP/sap-rpt-1-oss",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2506.10707",
+      "file_sizes": {
+        "2025-11-04_sap-rpt-one-oss.pt": 64580423,
+        "l2/base.pt": 64580423
+      },
+      "repo_revision": "bc2c99cc541eeac9d1e10ae79da192d38b9fb27b",
+      "gated": "auto",
+      "files": [
+        "2025-11-04_sap-rpt-one-oss.pt",
+        "l2/base.pt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "EXAONETabular",
+      "repository": "LG-AI-Research/EXAONE-Tabular",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": 100,
+      "source": "https://github.com/LGAI-Research/EXAONE-Tabular",
+      "file_sizes": {
+        "exaone-tabular-classifier-v1_6d8a2bd54580.safetensors": 83286800,
+        "exaone-tabular-classifier-v1_78a8263a9b8d.safetensors": 83286800,
+        "exaone-tabular-classifier-v1_default.safetensors": 83286800,
+        "exaone-tabular-regressor-v1_3eedbae97394.safetensors": 84502360,
+        "exaone-tabular-regressor-v1_45f9e04ea0fc.safetensors": 84502368,
+        "exaone-tabular-regressor-v1_511b873f561e.safetensors": 84502360,
+        "exaone-tabular-regressor-v1_8bd9bf482585.safetensors": 84502376,
+        "exaone-tabular-regressor-v1_aad9e74d4f2e.safetensors": 84502360,
+        "exaone-tabular-regressor-v1_ae491112a58e.safetensors": 84502360,
+        "exaone-tabular-regressor-v1_d5c5c527ac37.safetensors": 84502360,
+        "exaone-tabular-regressor-v1_default.safetensors": 84502160
+      },
+      "repo_revision": "093ad1c2613e1e95d26df8610451d2e02ed53cbe",
+      "gated": false,
+      "files": [
+        "exaone-tabular-classifier-v1_6d8a2bd54580.safetensors",
+        "exaone-tabular-classifier-v1_78a8263a9b8d.safetensors",
+        "exaone-tabular-classifier-v1_default.safetensors",
+        "exaone-tabular-regressor-v1_3eedbae97394.safetensors",
+        "exaone-tabular-regressor-v1_45f9e04ea0fc.safetensors",
+        "exaone-tabular-regressor-v1_511b873f561e.safetensors",
+        "exaone-tabular-regressor-v1_8bd9bf482585.safetensors",
+        "exaone-tabular-regressor-v1_aad9e74d4f2e.safetensors",
+        "exaone-tabular-regressor-v1_ae491112a58e.safetensors",
+        "exaone-tabular-regressor-v1_d5c5c527ac37.safetensors",
+        "exaone-tabular-regressor-v1_default.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "ILTM",
+      "repository": "dbonet/iLTM",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2511.15941",
+      "file_sizes": {
+        "catb.pth": 2188605116,
+        "cbrconcat.pth": 2188605576,
+        "r128bn.pth": 306936952,
+        "rnobn.pth": 2188605072,
+        "rtr.pth": 2188603352,
+        "rtrcb.pth": 2188603462,
+        "xgb.pth": 2188604918,
+        "xgbrconcat.pth": 2188605510
+      },
+      "repo_revision": "ef783ec2a246686ad4bd43f35b590c196e70a1ba",
+      "gated": false,
+      "files": [
+        "catb.pth",
+        "cbrconcat.pth",
+        "r128bn.pth",
+        "rnobn.pth",
+        "rtr.pth",
+        "rtrcb.pth",
+        "xgb.pth",
+        "xgbrconcat.pth"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "KumoTabular",
+      "repository": "nvidia/Kumo-Tabular",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference",
+        "peft"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "file_sizes": {
+        "large/classifier.pt": 854850034,
+        "large/regressor.pt": 862909259,
+        "medium/classifier.pt": 246117940,
+        "medium/regressor.pt": 250144651,
+        "small/classifier.pt": 109936978,
+        "small/regressor.pt": 113968523
+      },
+      "repo_revision": "c5893d418e162b9f841ae179dc767afefff73831",
+      "gated": false,
+      "files": [
+        "large/classifier.pt",
+        "large/regressor.pt",
+        "medium/classifier.pt",
+        "medium/regressor.pt",
+        "small/classifier.pt",
+        "small/regressor.pt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "LimiXv2",
+      "repository": "stable-ai/LimiX-2",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference",
+        "peft"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2609.17488",
+      "file_sizes": {
+        "LimiX-2.ckpt": 1625774719
+      },
+      "repo_revision": "de07b679e74a41b50b9de18251a8fa245e537440",
+      "gated": false,
+      "files": [
+        "LimiX-2.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "Limix",
+      "repository": "stable-ai/LimiX-16M",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2509.03505",
+      "file_sizes": {
+        "LimiX-16M.ckpt": 66177586
+      },
+      "repo_revision": "55a7699eb81c78db2a1ed1d5bc80c8391c0ee051",
+      "gated": false,
+      "files": [
+        "LimiX-16M.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "Mitra",
+      "repository": "autogluon/mitra-regressor",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2510.21204",
+      "file_sizes": {
+        "model.safetensors": 302683140
+      },
+      "repo_revision": "5f277aa8f69042d39d6ac3612aed18bb9279bd95",
+      "gated": false,
+      "files": [
+        "model.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "MitraV2",
+      "repository": "autogluon/mitra-regressor-2",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2510.21204",
+      "file_sizes": {
+        "model.safetensors": 306776952
+      },
+      "repo_revision": "246c7d310fff04296a2388df5f448e3ffe809283",
+      "gated": false,
+      "files": [
+        "model.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "OrionBix",
+      "repository": "Lexsi-Labs/OrionBix",
+      "registry_regression_strategies": [],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2512.00181",
+      "screen": "no regression path in registry"
+    },
+    {
+      "name": "OrionMSP",
+      "repository": "Lexsi-Labs/OrionMSP",
+      "registry_regression_strategies": [],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2511.02818",
+      "screen": "no regression path in registry"
+    },
+    {
+      "name": "OrionMSPv1.5",
+      "repository": "Lexsi-Labs/OrionMSP",
+      "registry_regression_strategies": [],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2511.02818",
+      "screen": "no regression path in registry"
+    },
+    {
+      "name": "TabAbax",
+      "repository": "tababax-ai/TabAbax",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference",
+        "peft"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2611.00562",
+      "file_sizes": {
+        "tababax-classifier.ckpt": 231152189,
+        "tababax-regressor.ckpt": 239033019
+      },
+      "repo_revision": "6ce3f6350d67f5f3584df2e612666373c27e29f5",
+      "gated": false,
+      "files": [
+        "tababax-classifier.ckpt",
+        "tababax-regressor.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabDPT",
+      "repository": "Layer6/TabDPT",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2410.18164",
+      "file_sizes": {
+        "tabdpt1_1.safetensors": 307497212,
+        "tabdpt1_2.safetensors": 254098072,
+        "tabdpt1_3.safetensors": 252233296
+      },
+      "repo_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+      "gated": false,
+      "files": [
+        "tabdpt1_1.safetensors",
+        "tabdpt1_2.safetensors",
+        "tabdpt1_3.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabFM",
+      "repository": "google/tabfm-1.0.0-pytorch",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": 500,
+      "source": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
+      "file_sizes": {
+        "classification/model.safetensors": 6557888408,
+        "regression/model.safetensors": 6591243724
+      },
+      "repo_revision": "77cb9cc1b4fd3a9c77fbb9552c218200bb4dab83",
+      "gated": false,
+      "files": [
+        "classification/model.safetensors",
+        "regression/model.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabICL",
+      "repository": "soda-inria/tabicl",
+      "registry_regression_strategies": [],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2502.05564",
+      "screen": "no regression path in registry"
+    },
+    {
+      "name": "TabICLv2",
+      "repository": "jingang/TabICL",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": 2000,
+      "source": "https://arxiv.org/abs/2602.11139",
+      "file_sizes": {
+        "tabicl-classifier-v1-20250208.ckpt": 108317991,
+        "tabicl-classifier-v1.1-20250506.ckpt": 108318621,
+        "tabicl-classifier-v2-20260212.ckpt": 110368038,
+        "tabicl-regressor-v2-20260212.ckpt": 114324594
+      },
+      "repo_revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+      "gated": false,
+      "files": [
+        "tabicl-classifier-v1-20250208.ckpt",
+        "tabicl-classifier-v1.1-20250506.ckpt",
+        "tabicl-classifier-v2-20260212.ckpt",
+        "tabicl-regressor-v2-20260212.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabLDM",
+      "repository": "occams/Xiaomi-TabLDM",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference",
+        "peft"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2609.03880",
+      "file_sizes": {
+        "checkpoints/clf_default.ckpt": 561075091,
+        "checkpoints/reg_default.ckpt": 569137336
+      },
+      "repo_revision": "712e5635be9fd8728084cd5ae105ddecb31dc03c",
+      "gated": false,
+      "files": [
+        "checkpoints/clf_default.ckpt",
+        "checkpoints/reg_default.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabPFN",
+      "repository": "Prior-Labs/TabPFN-v2-reg",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": 500,
+      "source": "https://doi.org/10.1038/s41586-024-08328-6",
+      "file_sizes": {
+        "tabpfn-v2-regressor-09gpqh39.ckpt": 44398487,
+        "tabpfn-v2-regressor-2noar4o2.ckpt": 44398487,
+        "tabpfn-v2-regressor-5wof9ojf.ckpt": 23988347,
+        "tabpfn-v2-regressor-v2_default.ckpt": 44390977,
+        "tabpfn-v2-regressor-wyl4o83o.ckpt": 23198551,
+        "tabpfn-v2-regressor.ckpt": 44390977
+      },
+      "repo_revision": "02a44705ff7790b50cded404bc59adb94da456a1",
+      "gated": false,
+      "files": [
+        "tabpfn-v2-regressor-09gpqh39.ckpt",
+        "tabpfn-v2-regressor-2noar4o2.ckpt",
+        "tabpfn-v2-regressor-5wof9ojf.ckpt",
+        "tabpfn-v2-regressor-v2_default.ckpt",
+        "tabpfn-v2-regressor-wyl4o83o.ckpt",
+        "tabpfn-v2-regressor.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabPFNv26",
+      "repository": "Prior-Labs/tabpfn_2_5",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": 500,
+      "source": "https://arxiv.org/abs/2511.08667",
+      "file_sizes": {
+        "tabpfn-v2.5-classifier-v2.5_default-2.ckpt": 42929867,
+        "tabpfn-v2.5-classifier-v2.5_default.ckpt": 42935499,
+        "tabpfn-v2.5-classifier-v2.5_large-features-L.ckpt": 42932971,
+        "tabpfn-v2.5-classifier-v2.5_large-features-XL.ckpt": 42933131,
+        "tabpfn-v2.5-classifier-v2.5_large-samples.ckpt": 42932491,
+        "tabpfn-v2.5-classifier-v2.5_real-large-features.ckpt": 42933451,
+        "tabpfn-v2.5-classifier-v2.5_real-large-samples-and-features.ckpt": 42935499,
+        "tabpfn-v2.5-classifier-v2.5_real.ckpt": 42929707,
+        "tabpfn-v2.5-classifier-v2.5_variant.ckpt": 42931531,
+        "tabpfn-v2.5-regressor-v2.5_default.ckpt": 40831995,
+        "tabpfn-v2.5-regressor-v2.5_low-skew.ckpt": 40833329,
+        "tabpfn-v2.5-regressor-v2.5_quantiles.ckpt": 40833456,
+        "tabpfn-v2.5-regressor-v2.5_real-variant.ckpt": 40833901,
+        "tabpfn-v2.5-regressor-v2.5_real.ckpt": 40831868,
+        "tabpfn-v2.5-regressor-v2.5_small-samples.ckpt": 40834092,
+        "tabpfn-v2.5-regressor-v2.5_variant.ckpt": 40833138
+      },
+      "repo_revision": "6c45f3a6d0d07c6c5f62572e04a0c2929de91b8b",
+      "gated": false,
+      "files": [
+        "tabpfn-v2.5-classifier-v2.5_default-2.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_default.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_large-features-L.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_large-features-XL.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_large-samples.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_real-large-features.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_real-large-samples-and-features.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_real.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_variant.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_default.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_low-skew.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_quantiles.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_real-variant.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_real.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_small-samples.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_variant.ckpt"
+      ],
+      "screen": "Registry adapter points to v2.5 weights. Count v2.6 separately only with an independently verified checkpoint identity."
+    },
+    {
+      "name": "TabPFNv3",
+      "repository": "Prior-Labs/tabpfn_3",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": 20000,
+      "source": "https://arxiv.org/abs/2605.13986",
+      "file_sizes": {
+        "tabpfn-v3-classifier-v3_20260417_binary.ckpt": 212804803,
+        "tabpfn-v3-classifier-v3_20260417_multiclass.ckpt": 212804803,
+        "tabpfn-v3-classifier-v3_20260506_ood.ckpt": 212815699,
+        "tabpfn-v3-classifier-v3_default.ckpt": 212804803,
+        "tabpfn-v3-regressor-v3_20260417_mediumdata.ckpt": 233289807,
+        "tabpfn-v3-regressor-v3_20260506_ood.ckpt": 233300137,
+        "tabpfn-v3-regressor-v3_20260506_timeseries.ckpt": 233289807,
+        "tabpfn-v3-regressor-v3_default.ckpt": 233289807
+      },
+      "repo_revision": "24a16a89d245878b846555110985634aa2e656d7",
+      "gated": false,
+      "files": [
+        "tabpfn-v3-classifier-v3_20260417_binary.ckpt",
+        "tabpfn-v3-classifier-v3_20260417_multiclass.ckpt",
+        "tabpfn-v3-classifier-v3_20260506_ood.ckpt",
+        "tabpfn-v3-classifier-v3_default.ckpt",
+        "tabpfn-v3-regressor-v3_20260417_mediumdata.ckpt",
+        "tabpfn-v3-regressor-v3_20260506_ood.ckpt",
+        "tabpfn-v3-regressor-v3_20260506_timeseries.ckpt",
+        "tabpfn-v3-regressor-v3_default.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabPFNv35",
+      "repository": "Prior-Labs/tabpfn_3_5",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://docs.priorlabs.ai/models",
+      "file_sizes": {
+        "tabpfn-v3.5-20260909.safetensors": 876027932,
+        "tabpfn-v3.5-20260909_multiclass.safetensors": 876028348,
+        "tabpfn-v3.5-fast-20260909.safetensors": 334181708
+      },
+      "repo_revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+      "gated": false,
+      "files": [
+        "tabpfn-v3.5-20260909.safetensors",
+        "tabpfn-v3.5-20260909_multiclass.safetensors",
+        "tabpfn-v3.5-fast-20260909.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabPFNv35Fast",
+      "repository": "Prior-Labs/tabpfn_3_5",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://docs.priorlabs.ai/models",
+      "file_sizes": {
+        "tabpfn-v3.5-20260909.safetensors": 876027932,
+        "tabpfn-v3.5-20260909_multiclass.safetensors": 876028348,
+        "tabpfn-v3.5-fast-20260909.safetensors": 334181708
+      },
+      "repo_revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+      "gated": false,
+      "files": [
+        "tabpfn-v3.5-20260909.safetensors",
+        "tabpfn-v3.5-20260909_multiclass.safetensors",
+        "tabpfn-v3.5-fast-20260909.safetensors"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "XRFM",
+      "repository": "(none - trained from scratch)",
+      "registry_regression_strategies": [
+        "finetune",
+        "inference"
+      ],
+      "registry_recommended_feature_limit": null,
+      "source": "https://arxiv.org/abs/2508.10053",
+      "screen": "trained from scratch"
+    },
+    {
+      "name": "Nori 1.5",
+      "repository": "Synthefy/Nori-1-5",
+      "registry_regression_strategies": null,
+      "registry_recommended_feature_limit": null,
+      "source": "supplementary discovery",
+      "file_sizes": {
+        "nori.pt": 83176401
+      },
+      "repo_revision": "79afc5a65b2775d0c62977211a63620ce87846c7",
+      "gated": false,
+      "files": [
+        "nori.pt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "Nori 6M",
+      "repository": "Synthefy/Nori",
+      "registry_regression_strategies": null,
+      "registry_recommended_feature_limit": null,
+      "source": "supplementary discovery",
+      "file_sizes": {
+        "nori.pt": 47314219
+      },
+      "repo_revision": "1aca005143362552bb56c62e110ab77767cf4f77",
+      "gated": false,
+      "files": [
+        "nori.pt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "Nori 30M",
+      "repository": "Synthefy/Nori-30M",
+      "registry_regression_strategies": null,
+      "registry_recommended_feature_limit": null,
+      "source": "supplementary discovery",
+      "file_sizes": {
+        "nori.pt": 117093952
+      },
+      "repo_revision": "63c9f7facf9fb32c37ce3fc2fba331d524696318",
+      "gated": false,
+      "files": [
+        "nori.pt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "Nori 100M",
+      "repository": "Synthefy/Nori-100M",
+      "registry_regression_strategies": null,
+      "registry_recommended_feature_limit": null,
+      "source": "supplementary discovery",
+      "file_sizes": {
+        "nori.pt": 395172838
+      },
+      "repo_revision": "467ae9704fb0ab328c0d2f850602c27123928b48",
+      "gated": false,
+      "files": [
+        "nori.pt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabPFN 2.5",
+      "repository": "Prior-Labs/tabpfn_2_5",
+      "registry_regression_strategies": null,
+      "registry_recommended_feature_limit": null,
+      "source": "supplementary discovery",
+      "file_sizes": {
+        "tabpfn-v2.5-classifier-v2.5_default-2.ckpt": 42929867,
+        "tabpfn-v2.5-classifier-v2.5_default.ckpt": 42935499,
+        "tabpfn-v2.5-classifier-v2.5_large-features-L.ckpt": 42932971,
+        "tabpfn-v2.5-classifier-v2.5_large-features-XL.ckpt": 42933131,
+        "tabpfn-v2.5-classifier-v2.5_large-samples.ckpt": 42932491,
+        "tabpfn-v2.5-classifier-v2.5_real-large-features.ckpt": 42933451,
+        "tabpfn-v2.5-classifier-v2.5_real-large-samples-and-features.ckpt": 42935499,
+        "tabpfn-v2.5-classifier-v2.5_real.ckpt": 42929707,
+        "tabpfn-v2.5-classifier-v2.5_variant.ckpt": 42931531,
+        "tabpfn-v2.5-regressor-v2.5_default.ckpt": 40831995,
+        "tabpfn-v2.5-regressor-v2.5_low-skew.ckpt": 40833329,
+        "tabpfn-v2.5-regressor-v2.5_quantiles.ckpt": 40833456,
+        "tabpfn-v2.5-regressor-v2.5_real-variant.ckpt": 40833901,
+        "tabpfn-v2.5-regressor-v2.5_real.ckpt": 40831868,
+        "tabpfn-v2.5-regressor-v2.5_small-samples.ckpt": 40834092,
+        "tabpfn-v2.5-regressor-v2.5_variant.ckpt": 40833138
+      },
+      "repo_revision": "6c45f3a6d0d07c6c5f62572e04a0c2929de91b8b",
+      "gated": false,
+      "files": [
+        "tabpfn-v2.5-classifier-v2.5_default-2.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_default.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_large-features-L.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_large-features-XL.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_large-samples.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_real-large-features.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_real-large-samples-and-features.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_real.ckpt",
+        "tabpfn-v2.5-classifier-v2.5_variant.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_default.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_low-skew.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_quantiles.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_real-variant.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_real.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_small-samples.ckpt",
+        "tabpfn-v2.5-regressor-v2.5_variant.ckpt"
+      ],
+      "screen": "candidate; implementation and effective context require verification"
+    },
+    {
+      "name": "TabSTAR",
+      "repository": "alana89/TabSTAR",
+      "registry_regression_strategies": null,
+      "registry_recommended_feature_limit": null,
+      "source": "supplementary discovery",
+      "file_sizes": {
+        "model.safetensors": 189091544
+      },
+      "repo_revision": "73560fb23d34307f4b6fa849f38f8299a8980a4a",
+      "gated": false,
+      "files": [
+        "model.safetensors"
+      ],
+      "screen": "Downstream fine-tuning path. Track in weight-adaptation study."
+    }
+  ],
+  "as_of": "2026-11-24",
+  "catalog": "https://github.com/Lexsi-Labs/TabTune/tree/5c014e2aaf48da4c6b9dfda1f5364dfb04d4776e",
+  "screening_unit": "registry model/version, plus supplementary families and selected variants; not an exhaustive historical checkpoint catalog",
+  "additional_sources": [
+    {
+      "model": "TabPTM",
+      "url": "https://github.com/LAMDA-Tabular/TALENT",
+      "status": "Regression checkpoint distributed by authors. Additional candidate."
+    },
+    {
+      "model": "TabH2O",
+      "url": "https://h2o.ai/products/tabh2o",
+      "status": "Hosted or licensed service. Weights unavailable for local reproduction."
+    },
+    {
+      "model": "TabSTAR v1.1",
+      "url": "https://pypi.org/project/tabstar/",
+      "status": "Task-specific adaptation. Track under the fine-tuned comparison."
+    }
+  ]
+}
