@@ -1,0 +1,330 @@
+{
+  "citation": "Strikis et al., Learning-Based Quantum Error Mitigation, PRX Quantum 2, 040330 (2021), Figure 10.",
+  "doi": "https://doi.org/10.1103/PRXQuantum.2.040330",
+  "journal_pdf": {
+    "url": "https://harvest.aps.org/v2/journals/articles/10.1103/PRXQuantum.2.040330/fulltext",
+    "sha256": "72c58d8e8034cad3e043d0fa20d99432551eeec8b237c0c2da48811dc5c3ae38",
+    "page": 12
+  },
+  "preprint_source": {
+    "url": "https://arxiv.org/src/2005.07601v2",
+    "sha256": "0f1c68f8f419c535e487631a3415dfbf5c0ecd72c341d5ce007ef299ee5f0ca9",
+    "files": [
+      "4qCirc2.pdf",
+      "8qCircuits2.pdf",
+      "8qOldCircuit.pdf",
+      "CtestFin2.pdf",
+      "IBMq2.pdf",
+      "QVA_figure3.pdf",
+      "SevOptF.pdf",
+      "SpatialF8q.pdf",
+      "TemporalF8q.pdf",
+      "VQEcircuits.pdf",
+      "circuit2q.pdf",
+      "circuits.pdf",
+      "energy_surface.pdf",
+      "learning-based_QEM.tex",
+      "loss_pf.pdf",
+      "model.pdf",
+      "rescaling.pdf",
+      "tensors.pdf",
+      "tt3.pdf",
+      "unitary_test_combined.pdf"
+    ],
+    "figure": "IBMq2.pdf",
+    "figure_sha256": "c1e1425a86c1c23f17dbe00ca32ce735edd0980788f580de5cdc10e9b2ed2b64"
+  },
+  "observable": "Upper-qubit Z expectation for the two-qubit DQCp circuit at θ = 2πm/10. The ideal equals cos(θ).",
+  "derivation": "Marker centers from the journal's blue circles (raw) and orange squares (mitigated), scaled by the labeled y-axis ticks. Both series are plotted final estimates. Values are approximate. MAE is our equal-weight descriptive summary.",
+  "verification": {
+    "max_marker_difference_journal_vs_preprint": 2.53e-05,
+    "max_ideal_curve_error_journal": 0.00011949,
+    "max_ideal_curve_error_preprint": 9.822e-05
+  },
+  "protocol": {
+    "devices": [
+      "ibmq_5_yorktown",
+      "ibmq_ourense",
+      "ibmq_santiago"
+    ],
+    "training_clifford_circuits_per_device": 24,
+    "test_phase_settings_per_device": 10,
+    "pauli_insertions_per_phase": [
+      "I",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "shots_per_measured_circuit": 8192,
+    "data_available_in_figure": "I-insertion test estimates and learned quasiprobability outputs.",
+    "still_required": "Identified Clifford calibration means and the X/Y/Z insertion test measurements. Figure coordinates do not supply those inputs."
+  },
+  "scores_by_device": {
+    "ibmq_5_yorktown": {
+      "device_phase_settings": 10,
+      "raw_mae": 0.102331,
+      "mitigated_mae": 0.015256,
+      "settings_with_smaller_absolute_error": 8
+    },
+    "ibmq_ourense": {
+      "device_phase_settings": 10,
+      "raw_mae": 0.046216,
+      "mitigated_mae": 0.021949,
+      "settings_with_smaller_absolute_error": 7
+    },
+    "ibmq_santiago": {
+      "device_phase_settings": 10,
+      "raw_mae": 0.039299,
+      "mitigated_mae": 0.011336,
+      "settings_with_smaller_absolute_error": 9
+    }
+  },
+  "across_devices": {
+    "device_phase_settings": 30,
+    "raw_mae": 0.062616,
+    "mitigated_mae": 0.01618,
+    "settings_with_smaller_absolute_error": 24
+  },
+  "device_phase_estimates": [
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 0,
+      "theta_over_pi": 0.0,
+      "ideal": 1.0,
+      "raw": 0.96830322,
+      "mitigated": 0.9855494
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 1,
+      "theta_over_pi": 0.2,
+      "ideal": 0.809016994,
+      "raw": 0.80687585,
+      "mitigated": 0.80501841
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 2,
+      "theta_over_pi": 0.4,
+      "ideal": 0.309016994,
+      "raw": 0.39065627,
+      "mitigated": 0.30187194
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 3,
+      "theta_over_pi": 0.6,
+      "ideal": -0.309016994,
+      "raw": -0.15133544,
+      "mitigated": -0.29714062
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 4,
+      "theta_over_pi": 0.8,
+      "ideal": -0.809016994,
+      "raw": -0.59568483,
+      "mitigated": -0.80162109
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 5,
+      "theta_over_pi": 1.0,
+      "ideal": -1.0,
+      "raw": -0.78709799,
+      "mitigated": -1.00866514
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 6,
+      "theta_over_pi": 1.2,
+      "ideal": -0.809016994,
+      "raw": -0.64914596,
+      "mitigated": -0.81994896
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 7,
+      "theta_over_pi": 1.4,
+      "ideal": -0.309016994,
+      "raw": -0.20849404,
+      "mitigated": -0.32384943
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 8,
+      "theta_over_pi": 1.6,
+      "ideal": 0.309016994,
+      "raw": 0.31083432,
+      "mitigated": 0.27443813
+    },
+    {
+      "device": "ibmq_5_yorktown",
+      "phase_index": 9,
+      "theta_over_pi": 1.8,
+      "ideal": 0.809016994,
+      "raw": 0.74731027,
+      "mitigated": 0.77033466
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 0,
+      "theta_over_pi": 0.0,
+      "ideal": 1.0,
+      "raw": 0.98023664,
+      "mitigated": 0.99691732
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 1,
+      "theta_over_pi": 0.2,
+      "ideal": 0.809016994,
+      "raw": 0.7707711,
+      "mitigated": 0.81279761
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 2,
+      "theta_over_pi": 0.4,
+      "ideal": 0.309016994,
+      "raw": 0.33230867,
+      "mitigated": 0.33385871
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 3,
+      "theta_over_pi": 0.6,
+      "ideal": -0.309016994,
+      "raw": -0.23241887,
+      "mitigated": -0.27298379
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 4,
+      "theta_over_pi": 0.8,
+      "ideal": -0.809016994,
+      "raw": -0.71310501,
+      "mitigated": -0.78080068
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 5,
+      "theta_over_pi": 1.0,
+      "ideal": -1.0,
+      "raw": -0.90966563,
+      "mitigated": -1.00125569
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 6,
+      "theta_over_pi": 1.2,
+      "ideal": -0.809016994,
+      "raw": -0.75366122,
+      "mitigated": -0.82435693
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 7,
+      "theta_over_pi": 1.4,
+      "ideal": -0.309016994,
+      "raw": -0.3002784,
+      "mitigated": -0.34430879
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 8,
+      "theta_over_pi": 1.6,
+      "ideal": 0.309016994,
+      "raw": 0.30955833,
+      "mitigated": 0.28160108
+    },
+    {
+      "device": "ibmq_ourense",
+      "phase_index": 9,
+      "theta_over_pi": 1.8,
+      "ideal": 0.809016994,
+      "raw": 0.75563321,
+      "mitigated": 0.85324508
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 0,
+      "theta_over_pi": 0.0,
+      "ideal": 1.0,
+      "raw": 0.97607517,
+      "mitigated": 1.00636401
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 1,
+      "theta_over_pi": 0.2,
+      "ideal": 0.809016994,
+      "raw": 0.75389322,
+      "mitigated": 0.79092451
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 2,
+      "theta_over_pi": 0.4,
+      "ideal": 0.309016994,
+      "raw": 0.26443465,
+      "mitigated": 0.28995302
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 3,
+      "theta_over_pi": 0.6,
+      "ideal": -0.309016994,
+      "raw": -0.3139663,
+      "mitigated": -0.30131659
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 4,
+      "theta_over_pi": 0.8,
+      "ideal": -0.809016994,
+      "raw": -0.77584607,
+      "mitigated": -0.81158252
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 5,
+      "theta_over_pi": 1.0,
+      "ideal": -1.0,
+      "raw": -0.93576545,
+      "mitigated": -0.99602123
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 6,
+      "theta_over_pi": 1.2,
+      "ideal": -0.809016994,
+      "raw": -0.75461822,
+      "mitigated": -0.7857872
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 7,
+      "theta_over_pi": 1.4,
+      "ideal": -0.309016994,
+      "raw": -0.28219702,
+      "mitigated": -0.30238958
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 8,
+      "theta_over_pi": 1.6,
+      "ideal": 0.309016994,
+      "raw": 0.28466201,
+      "mitigated": 0.32371023
+    },
+    {
+      "device": "ibmq_santiago",
+      "phase_index": 9,
+      "theta_over_pi": 1.8,
+      "ideal": 0.809016994,
+      "raw": 0.74758577,
+      "mitigated": 0.79797291
+    }
+  ]
+}
