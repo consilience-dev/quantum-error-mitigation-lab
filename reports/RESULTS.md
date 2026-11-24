@@ -1,8 +1,8 @@
 # What the benchmark comparisons establish
 
-With 18 unique calibration circuits on IBM Algiers, a per-observable affine correction had lower mean error than frozen Nori 1.5 and TabPFN v2. At 90 and 500, both pretrained models had lower error on every calibration draw. Nori also beat the authors’ forest on their original 500-row split. A control using only known Ising parameters and calibration labels performed better still. This hardware experiment measures predictive accuracy and how much noisy measurements add to circuit descriptors.
+On ML-QEM’s published Algiers hardware split of 500 training and 2,500 test rows, frozen Nori 1.5 scored 0.05318 mean circuit error, compared with 0.10004 for the authors’ random forest and 0.18682 for ZNE. A control using the known Ising parameters and calibration labels performed better still. The four-qubit FakeLima simulation also favored full-feature pretrained models at familiar depths. The separate few-shot study examines how those rankings change as labels become scarce.
 
-On the authors’ FakeLima simulation, full-feature TabPFN v2 improved on the archived forest at familiar depths. When restricted to the four noisy measurements, TabPFN beat affine across the 15 deeper test depths and trailed the circuit-aware forest overall. These experiments cover one tractable four-qubit circuit family. On Qermit’s independently generated random and Pauli-gadget circuits, affine CDR had lower mean absolute error than the three tested pretrained models. Transfer to independent hardware remains open.
+Qermit asks how to correct a single target using 20 related calibration runs. On 680 unmirrored depolarizing simulator targets, affine CDR improved the median error ratio over raw in all 68 circuit groups in our acquisition-era replay. The three frozen regressors did so in 46–52 groups. Each frequently beat CDR on the median for Pauli gadgets, while CDR had lower mean absolute error in both families. [Qermit comparison](#qermit-with-20-calibration-runs-per-target)
 
 ## Reproducing the published experiment
 
@@ -177,6 +177,10 @@ All three frozen models improved the median relative error over CDR for most Pau
 The archived simulation supplies an independent reference on these circuit IDs. The authors’ ZNE improved the median over raw in all 34 groups of each family. Archived CDR did so in 34 Pauli-gadget and 33 random groups. Fresh CDR reproduced the Pauli-gadget count but reached only 19 random groups. On random circuits, mean absolute error was 0.06001 for archived CDR and 0.11670 in the replay. On Pauli gadgets both round to 0.01218. Only the fresh estimators share identical calibration measurements. The historical hardware archive supplies final method outputs without the corresponding per-target CDR inputs. [Published scores](qermit_reference_cells.csv) · [Calibration diagnostics](qermit_cdr_simulation/full_unmirrored/context_diagnostics.json)
 
 Within the fresh random-circuit replay, 132 of 340 target queries fell within their 20 auxiliaries’ noise-affected expectation range before shot sampling. Replacing every sampled value in the CDR fit and query with its simulator expectation reduced MAE from 0.11670 to 0.11275. Finite-shot sampling alone therefore cannot account for the gap from the archived 0.06001. The historical compilation and the authors’ auxiliary circuits and seeds are unknown. [Shot-free and sampled diagnostics](qermit_cdr_simulation/full_unmirrored/summary.json)
+
+### Mirrored simulator control
+
+The other 940 targets in the published depolarizing simulator form 94 mirrored circuit groups. The circuit construction fixes the ideal observable at +1. Predicting +1 for every target gives mean absolute error about 2 × 10⁻¹⁵ against the stored numerical labels. In the modern replay, mean absolute error was 0.52275 for raw, 0.34748 for CDR, 0.46890 for Nori, 0.51468 for TabICL and 0.45478 for TabPFN. The unmirrored circuits above test performance when the ideal output varies. [Mirror scores and constant control](qermit_cdr_simulation/full_mirrored/summary.json)
 
 ## Limits and next independent test
 

@@ -1,0 +1,110 @@
+{
+  "dataset": "New depolarising simulation on original Qermit targets. No hardware was run.",
+  "source": "https://doi.org/10.5281/zenodo.6472281",
+  "historical_code": "https://github.com/Quantinuum/Qermit/tree/aa25c21a9a17aa5b46d03c4152d2d61387356d21/qermit/clifford_noise_characterisation",
+  "generator_code": "https://github.com/Quantinuum/Qermit/blob/fba795b895d109b844583d0749334c4951e10ddf/qermit/clifford_noise_characterisation/ccl.py",
+  "notebook_sha256": "dbd91fa4a506bae5ca648b215dfe37511506620580c7e89a28d35f36b0ac517c",
+  "source_digests": {
+    "circuits.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/circuits.csv/content",
+      "md5": "bdb5df44879a8e27b6361705729dfbb3",
+      "sha256": "4555cfbd11a66f6de78e3c7d09c22b30f8c9212d13c2fceb74dbb85045f78f42"
+    },
+    "circuits.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/circuits.zip/content",
+      "md5": "633aab94b407c93bb4674bf24b5b727f",
+      "sha256": "3860b1441eb4f7bfdd0cf5b8afdcbfda943eeef83c3b2167591467c081fe6914"
+    },
+    "device_experiments.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/device_experiments.csv/content",
+      "md5": "0bb58916894410280ce32c53a3e9d513",
+      "sha256": "22303262fe5b72eee3a11b808e05b56a7494808997075498e00ef72267b0798f"
+    },
+    "experiments.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/experiments.csv/content",
+      "md5": "a34aca2f21d196ffca1e0aa4392e2a81",
+      "sha256": "6a223bfa9c927a178abb718ec89ef928966ac19daa9501c303b73115d3442faf"
+    },
+    "observables.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/observables.zip/content",
+      "md5": "982459a252630dff94527214bebdf44a",
+      "sha256": "a9513c0cd1466ee39a8909a93f1b4b51b2fbef8f2dcc277fd4f07ddaf568e97f"
+    },
+    "results.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/results.csv/content",
+      "md5": "427fc66a8caa305c9c1ef4e9ed6cbcf8",
+      "sha256": "7ce5de11d49e5bc2848eccfd9e5f437e6bb9d9169e56fcea6bac76be4785712a"
+    },
+    "results.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/results.zip/content",
+      "md5": "b3c392d25bae0597f0e7aed489799480",
+      "sha256": "c99eb711981dfd7781c30908d8b2479ef067860111355c2f4ebee31018d330bb"
+    }
+  },
+  "input": "One noisy all-Z estimate per target-local surrogate; one independently sampled label from its noiseless simulator.",
+  "n_context": 20,
+  "nonclifford_limit": 10,
+  "n_pairs": 3,
+  "max_attempts": 10,
+  "tolerance": 0.01,
+  "distance_tolerance": 0.1,
+  "calibration_fraction": 0.75,
+  "selection": "Retry when all ideal context means are within 0.01 of first; warning-only at final attempt or poor noisy-context support. Retain all 20 contexts; no fallback or clipping.",
+  "sampling": "One independent binomial draw per measured Pauli expectation from its exact all-Z distribution under Qiskit Aer density-matrix noise or ideal statevector.",
+  "noise": "7-qubit fully connected, local depolarization e1=.001 for H/Rx/Rz/U, e2=.01 for CX, no readout noise.",
+  "shots_per_context_or_cdr_target": 23809,
+  "shots_per_fresh_raw": 100000,
+  "noisy_shots_per_cdr_estimate": 499989,
+  "ideal_simulated_shots_per_context": 23809,
+  "seed": 20261124,
+  "versions": {
+    "qermit": "0.9.3",
+    "pytket": "2.18.5",
+    "pytket-qiskit": "0.77.0",
+    "qiskit": "2.6.2",
+    "qiskit-aer": "0.18.4",
+    "numpy": "2.5.5"
+  },
+  "differences": "Seeded fresh draws, modern pytket rebase/compiler/backend and Tree synthesis for legacy PauliExpBox JSON, and equivalent parity sampling. The original individual surrogate circuits, calibration pairs and random seeds are unavailable. Archived outputs use separate realizations.",
+  "widths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "depths": [
+    2,
+    4,
+    6,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "include_mirrors": true,
+  "mirrors_only": true,
+  "n_targets": 940,
+  "n_quality_warnings": 434,
+  "n_low_ideal_spread": 60,
+  "surrogate_count_distribution": {
+    "1": 10,
+    "2": 50,
+    "3": 21,
+    "4": 26,
+    "5": 27,
+    "6": 31,
+    "7": 35,
+    "8": 22,
+    "9": 15,
+    "10": 3,
+    "19": 2,
+    "20": 698
+  },
+  "seconds": 3217.018,
+  "contexts_sha256": "39e9021c97859277ea12a4e2ec36f873b4d4901e04ced6db478b6cf3bfeeaa9a",
+  "released_example": "https://zenodo.org/records/6472281/files/example_experiment.ipynb",
+  "chronology": "Deposited CDR timestamps span 2022-02-03 through 2022-02-06 for the depolarising simulator. The February source is contemporaneous. The later example notebook documents the setup, and the exact acquisition environment is unavailable."
+}

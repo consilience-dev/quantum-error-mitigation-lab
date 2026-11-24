@@ -14,6 +14,7 @@ jobs:
       - run: python scripts/summarize_paired.py --check
       - run: python scripts/simulation_verify.py
       - run: python scripts/summarize_qermit_panel.py --check
+      - run: python scripts/summarize_qermit_panel.py --folder reports/qermit_cdr_simulation/full_mirrored --check
       - run: python scripts/summarize_qermit_panel.py --folder reports/qermit_cdr_simulation/acquisition_era/full_unmirrored --check
       - run: python scripts/bootstrap_qermit_acquisition.py --check
       - name: Verify scores against the ML-QEM source workbook

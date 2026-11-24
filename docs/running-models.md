@@ -100,3 +100,5 @@ python scripts/summarize_qermit_panel.py --folder PATH --check
 ```
 
 For the acquisition-era run, follow the [February software instructions](../reports/qermit_cdr_simulation/acquisition_era/README.md). Its generator runs the historical Qermit correction graph and saves the 20 actual calibration pairs passed to its affine fitter. Supply `reports/qermit_cdr_simulation/acquisition_era/full_unmirrored/contexts.npz` to each of the three frozen model commands.
+
+To reproduce all 940 mirrored targets under the modern compiler, run `python scripts/run_qermit_cdr_simulator.py /tmp/qermit --mirrors-only --workers 8 --work /tmp/qermit-mirror-work`. Run each model with `--contexts reports/qermit_cdr_simulation/full_mirrored/contexts.npz`. The summary checker verifies every published circuit ID and includes the constant +1 prediction dictated by the mirror construction.
