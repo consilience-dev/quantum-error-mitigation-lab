@@ -13,6 +13,7 @@ jobs:
       - run: python scripts/fetch_upstream.py
       - run: python scripts/summarize_paired.py --check
       - run: python scripts/simulation_verify.py
+      - run: python scripts/summarize_qermit_panel.py --check
       - name: Verify scores against the ML-QEM source workbook
         run: |
           curl --fail --location --silent --show-error --retry 3 \

@@ -1,4 +1,4 @@
-# What the ML-QEM comparisons establish
+# What the benchmark comparisons establish
 
 With 18 unique calibration circuits on IBM Algiers, a per-observable affine correction had lower mean error than frozen Nori 1.5 and TabPFN v2. At 90 and 500, both pretrained models had lower error on every calibration draw. Nori also beat the authors’ forest on their original 500-row split. A control using only known Ising parameters and calibration labels performed better still. This hardware experiment measures predictive accuracy and how much noisy measurements add to circuit descriptors.
 
@@ -141,6 +141,22 @@ The Figure 3 archive retains the four noisy observables, ideal targets and predi
 | Authors’ circuit-aware RF | 0.015510 | 0.093013 | 0.222042 |
 
 Four-input TabPFN had lower MAE than both affine corrections and ZNE at all 15 deeper depths. The authors’ forest had lower MAE than four-input TabPFN at 13 of those depths and lower overall error. At depths 0–14, supplying all 58 features to TabPFN reduced MAE from 0.018126 to 0.011863. The corresponding full-feature TabPFN score and compiled-circuit identity audit at depths 15–29 remain unavailable because the circuit objects are missing. These are results for extrapolation in depth on the same simulator and circuit family. [Scores, coefficients, checkpoint and source hashes](simulation/depth_transfer/scores.json) · [Row-level predictions](simulation/depth_transfer/predictions.csv.gz)
+
+## Qermit with 20 calibration runs per target
+
+Qermit fits one affine CDR correction to 20 near-Clifford calibration runs for each individual target. On the released depolarizing simulator’s 680 unmirrored targets, we generated fresh calibrations and gave the same 20 pairs and noisy query to CDR and three frozen regressors. Each of the 68 published family, width and depth groups contains ten targets. For each target the paper divides absolute prediction error by the absolute error of its separate raw measurement, then reports the median and worst ratio within each group. The counts below give each group one vote. [Paper](https://quantum-journal.org/papers/q-2023-07-13-1059/) · [Settings and paired inputs](qermit_cdr_simulation/full_unmirrored/README.md) · [All group scores](qermit_cdr_simulation/full_unmirrored/summary.json)
+
+| Fresh estimator | Lower median error ratio than raw, out of 68 | Lower worst error ratio than raw, out of 68 | Pauli-gadget groups with lower median ratio than CDR, out of 34 | Random groups with lower median ratio than CDR, out of 34 | Mean absolute error across 680 targets |
+|---|---:|---:|---:|---:|---:|
+| Raw | — | — | 0 | 15 | 0.09643 |
+| Affine CDR | 53 | 31 | — | — | 0.06444 |
+| Frozen Nori 1.5 | 44 | 25 | 27 | 10 | 0.10454 |
+| Frozen TabICLv2 | 38 | 22 | 26 | 8 | 0.13351 |
+| Frozen TabPFN v2 | 39 | 22 | 27 | 7 | 0.11575 |
+
+All three frozen models improved the median relative error over CDR for most Pauli-gadget groups. Large errors on individual targets reversed that ranking on mean absolute error within the same family. CDR had lower mean absolute error than every frozen model in both families. This is one calibration draw and shot realization per target. [Per-family median, worst and pooled results](qermit_cdr_simulation/full_unmirrored/summary.json)
+
+The archived simulation supplies an independent reference on these circuit IDs. The authors’ ZNE improved the median over raw in all 34 groups of each family. Archived CDR did so in 34 Pauli-gadget and 33 random groups. Fresh CDR reproduced the Pauli-gadget count but reached only 19 random groups. On random circuits, mean absolute error was 0.06001 for archived CDR and 0.11670 in the replay. On Pauli gadgets both round to 0.01218. New calibrations, shot draws and compilation can change this comparison. Only the fresh estimators share identical calibration measurements. The historical hardware archive supplies final method outputs without the corresponding per-target CDR inputs. [Published scores](qermit_reference_cells.csv) · [Calibration diagnostics](qermit_cdr_simulation/full_unmirrored/context_diagnostics.json)
 
 ## Limits and next independent test
 

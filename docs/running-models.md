@@ -78,3 +78,18 @@ python scripts/simulation_depth_transfer.py verify
 ## Reproduce Qermit’s published comparisons
 
 Install Pillow and run `python scripts/reproduce_qermit.py /tmp/qermit --download --check`. This verifies the pinned Zenodo files and the arXiv v3 source before checking all hardware and simulator figure cells and the printed hardware tables. The [Qermit protocol](mitigation-benchmarks.md#qermit-benchmark-reproduction) identifies the calibration records needed for a matched pretrained hardware fit.
+
+### Fit frozen regressors with Qermit’s per-target calibration sets
+
+For the fresh depolarising simulation, install the package versions recorded in `reports/qermit_cdr_simulation/full_unmirrored/protocol.json` in an isolated environment. Use the original Qermit target circuit files, measurement operators and notebook. The simulator uses the release’s gate-local noise model and shot counts. The compiler and random draws are new. Each estimator fits the same 20 noisy/ideal auxiliary measurements from the target at hand. The target ideal is only used to evaluate predictions.
+
+```sh
+python scripts/audit_qermit.py /tmp/qermit --download --check
+python scripts/run_qermit_cdr_simulator.py /tmp/qermit --workers 6 --work /tmp/qermit-cdr-work
+python scripts/run_qermit_cdr_simulator.py /tmp/qermit --check
+python scripts/qermit_context_models.py tabpfn_v2 --weights weights --device cpu
+python scripts/qermit_context_models.py nori --weights weights --device cpu
+python scripts/qermit_context_models.py tabicl --weights weights --device cpu
+```
+
+Use the existing TabPFN environment for the TabPFN command and the Nori/TabICL environment for the other two. In the NumPy audit environment, `python scripts/qermit_context_models.py MODEL --check` verifies the saved predictions and per-cell scores. The primary simulation files cover all 680 unmirrored targets from the two published circuit families.

@@ -1,0 +1,46 @@
+{
+  "source_npz_sha256": "76cadbe2f84e30b39a30e3c3ee7ac1f0a6affac39b6efa0f42384d75a52edee1",
+  "interpretation": "Each target has twenty separately sampled noisy and ideal calibration estimates. Distinct hashes count different serialized gate sequences. Repeated surrogate circuits are retained with independent shots. Hardware measurements are absent from these simulation summaries.",
+  "raw_comparison": "The archive and fresh simulation are different measurement realizations. Only new estimators trained on these same per-target pairs can be paired directly with the fresh CDR fit at the same query and shot budget.",
+  "families": {
+    "Pauli-gadget": {
+      "n_targets": 340,
+      "mean_absolute_error": {
+        "archived_raw": 0.09063735018366972,
+        "raw_noisy": 0.0856711737130815,
+        "archived_cdr": 0.012176495256039522,
+        "cdr_prediction": 0.012182753312124208,
+        "archived_zne": 0.004798997155481365
+      },
+      "with_quality_warning": 65,
+      "with_low_spread_at_final_attempt": 7,
+      "distinct_surrogate_hash_counts": {
+        "1": 2,
+        "2": 70,
+        "3": 53,
+        "4": 44,
+        "5": 58,
+        "6": 49,
+        "7": 37,
+        "8": 19,
+        "9": 7,
+        "10": 1
+      }
+    },
+    "Random": {
+      "n_targets": 340,
+      "mean_absolute_error": {
+        "archived_raw": 0.10738950264059348,
+        "raw_noisy": 0.10718162028765232,
+        "archived_cdr": 0.06001083334066235,
+        "cdr_prediction": 0.11669816113575134,
+        "archived_zne": 0.005836609864326366
+      },
+      "with_quality_warning": 330,
+      "with_low_spread_at_final_attempt": 0,
+      "distinct_surrogate_hash_counts": {
+        "20": 340
+      }
+    }
+  }
+}
