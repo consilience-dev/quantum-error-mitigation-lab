@@ -1,0 +1,41 @@
+{
+  "contexts_sha256": "7a690f910cc3ef21fb38e826c551d1f02a138180f572f0c62adfcf761e7e61d6",
+  "modern_sha256": "76cadbe2f84e30b39a30e3c3ee7ac1f0a6affac39b6efa0f42384d75a52edee1",
+  "n_targets": 680,
+  "n_cells": 68,
+  "families": {
+    "Pauli-gadget": {
+      "target_count": 340,
+      "mae": {
+        "archived_raw": 0.09063735018366972,
+        "archived_cdr": 0.012176495256039522,
+        "archived_zne": 0.004798997155481365,
+        "raw_noisy": 0.0902591029476848,
+        "cdr_prediction": 0.015459021347305403,
+        "modern_cdr": 0.012182753312124208
+      }
+    },
+    "Random": {
+      "target_count": 340,
+      "mae": {
+        "archived_raw": 0.10738950264059348,
+        "archived_cdr": 0.06001083334066235,
+        "archived_zne": 0.005836609864326366,
+        "raw_noisy": 0.10716773793471113,
+        "cdr_prediction": 0.05347876082401034,
+        "modern_cdr": 0.11669816113575134
+      }
+    }
+  },
+  "largest_absolute_shot_error": {
+    "context_noisy": 0.025155699020080413,
+    "context_ideal": 0.022302490654794616,
+    "query_noisy": 0.018860438352386932,
+    "raw_noisy": 0.010152393411421823
+  },
+  "bitstring_pilot": {
+    "source_sha256": "87359b969fd2e3f39eb88c42174dce7f5b35c81769a1ccaad6fd961774d74fc2",
+    "targets": 20,
+    "exact_measured_count_agreement": true
+  }
+}

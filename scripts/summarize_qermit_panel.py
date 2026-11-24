@@ -33,6 +33,35 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def acquisition_description(z, protocol):
+    shot_counts = {
+        'n_context': 20, 'shots_per_context_or_cdr_target': 23_809,
+        'shots_per_fresh_raw': 100_000, 'ideal_simulated_shots_per_context': 23_809,
+        'noisy_shots_per_cdr_estimate': 499_989,
+    }
+    if any(protocol.get(key) != val for key, val in shot_counts.items()):
+        raise ValueError('Different allocation of simulator shots to target or auxiliary measurements')
+    if 'acquisition_code' in protocol:
+        fingerprints = {
+            'acquisition_code': 'aa25c21a9a17aa5b46d03c4152d2d61387356d21',
+            'generator_sha256': 'd89e243d42805a84562ed82792be04d09a99c8a588293fd70ec3e520474110e5',
+            'fitter_sha256': '4c633304a83d58024263dd0e4ebdca6af7e069b0770b96acd6f1db363237d860',
+        }
+        if (any(protocol.get(key) != val for key, val in fingerprints.items())
+                or protocol['versions']['pytket'] != '0.19.2' or protocol['versions']['pytket-qiskit'] != '0.22.1'
+                or protocol['resource_mode'] not in ('count histograms', 'bitstring memory')
+                or 'initial_seed' not in z or 'generation_seed' in z):
+            raise ValueError('Unrecognized acquisition-period simulator input')
+        return ('February 2022 Qermit task graph with pytket 0.19.2 and pytket-qiskit 0.22.1. '
+                f"Aer returned {protocol['resource_mode']}. The captured native fit inputs are finite-shot "
+                'expectations. Channel-mean diagnostics use a separate density calculation.')
+    if (protocol['versions']['qermit'] != '0.9.3' or 'generation_seed' not in z
+            or 'initial_seed' in z):
+        raise ValueError('Unrecognized modern simulator input')
+    return ('Modern Qermit 0.9.3 simulator replay. A binomial draw from the noiseless or noisy '
+            'channel parity distribution supplies each observed expectation.')
+
+
 def check_source(z, protocol):
     reference = json.loads((ROOT / 'reports/qermit_reference.json').read_bytes())
     actual = {name: entry['sha256'] for name, entry in protocol['source_digests'].items()}
@@ -102,8 +131,6 @@ def channel_diagnostic(z, indices):
 
 
 def check_contexts(z, protocol):
-    if protocol['shots_per_context_or_cdr_target'] != 500000 // 21 or protocol['shots_per_fresh_raw'] != 100000:
-        raise ValueError('The simulator shot allocation differs from the published notebook')
     for k in ('context_noisy', 'context_ideal', 'context_channel', 'context_exact', 'surrogate_hashes'):
         if z[k].shape != (len(z['experiment_ids']), 20):
             raise ValueError(f'Expected twenty observations per target in {k}')
@@ -240,6 +267,7 @@ def main():
         raise ValueError('Contexts checksum differs from protocol')
     with np.load(folder/'contexts.npz', allow_pickle=False) as data:
         z = {k:data[k] for k in data.files}
+    acquisition = acquisition_description(z, p)
     mirrored = check_source(z, p)
     targets = len(z['experiment_ids'])
     diagnostics = check_contexts(z, p)
@@ -262,7 +290,7 @@ def main():
     scope = 'mirrored' if mirrored else 'non-mirrored'
     report = dict(scope=f'Fresh depolarising simulation on all {targets} {scope} Qermit targets, one fixed '
                         'acquisition per target. The archived raw, ZNE and CDR estimates come from a separate acquisition.',
-                  mirrored=mirrored,
+                  mirrored=mirrored, acquisition=acquisition,
                   estimand='Within each family, width and depth cell, compute each target’s absolute error divided '
                            'by the fresh raw absolute error, then take the median and maximum. Count strict '
                            'improvements over the baseline cell statistic. Count undefined cells separately.',

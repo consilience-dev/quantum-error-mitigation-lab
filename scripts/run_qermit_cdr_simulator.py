@@ -252,6 +252,11 @@ def context_diagnostics(path):
 def verify(cache, out):
     """Validate target identities, conditional finite-shot draws and the local linear fits."""
     metadata = json.loads((out / 'protocol.json').read_text())
+    recorded_numpy = metadata['versions']['numpy']
+    if np.__version__ != recorded_numpy:
+        raise RuntimeError(
+            f"Exact replay of the recorded binomial draws requires NumPy {recorded_numpy}. "
+            f"This environment has {np.__version__}.")
     path = out / 'contexts.npz'
     if hashlib.sha256(path.read_bytes()).hexdigest() != metadata['contexts_sha256']:
         raise ValueError('Context checksum mismatch')
@@ -311,15 +316,26 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('cache',type=Path)
     parser.add_argument('--widths',type=int,nargs='+',default=list(range(2,8)))
-    parser.add_argument('--depths',type=int,nargs='+',default=list(range(2,8)))
+    parser.add_argument('--depths', type=int, nargs='+', help='All native depths for the selected mirror condition by default')
     parser.add_argument('--workers', type=int, choices=range(1,9), default=1)
     parser.add_argument('--work', type=Path, help='Optional external per-target cache for resuming simulation')
     views = parser.add_mutually_exclusive_group()
     views.add_argument('--include-mirrors', action='store_true')
     views.add_argument('--mirrors-only', action='store_true')
-    parser.add_argument('--out',type=Path,default=OUT)
+    parser.add_argument('--out', type=Path, help='Defaults to a separate directory for each mirror condition')
     parser.add_argument('--check', action='store_true', help='Verify saved contexts using only NumPy and pinned archive files')
     args = parser.parse_args()
+    mirrored_depths = [2, 4, 6, 8, 16, 32, 64, 128]
+    if args.depths is None:
+        args.depths = mirrored_depths if args.mirrors_only else list(range(2, 8))
+        if args.include_mirrors:
+            args.depths = sorted(set(args.depths + mirrored_depths))
+    if args.out is None:
+        args.out = OUT
+        if args.mirrors_only:
+            args.out = OUT.parent / 'full_mirrored'
+        elif args.include_mirrors:
+            args.out = OUT.parent / 'all_targets'
     if args.check:
         verify(args.cache, args.out)
         recorded = args.out / 'context_diagnostics.json'

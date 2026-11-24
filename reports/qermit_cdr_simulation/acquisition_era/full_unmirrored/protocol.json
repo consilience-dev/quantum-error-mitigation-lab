@@ -1,0 +1,83 @@
+{
+  "dataset": "Fresh per-target CDR on the original unmirrored depolarising targets.",
+  "acquisition_code": "aa25c21a9a17aa5b46d03c4152d2d61387356d21",
+  "generator_sha256": "d89e243d42805a84562ed82792be04d09a99c8a588293fd70ec3e520474110e5",
+  "fitter_sha256": "4c633304a83d58024263dd0e4ebdca6af7e069b0770b96acd6f1db363237d860",
+  "versions": {
+    "pytket": "0.19.2",
+    "pytket-qiskit": "0.22.1",
+    "qiskit": "0.34.2",
+    "qiskit-aer": "0.10.3",
+    "numpy": "1.26.4"
+  },
+  "seed": 20261124,
+  "shots_per_context_or_cdr_target": 23809,
+  "shots_per_fresh_raw": 100000,
+  "noisy_shots_per_cdr_estimate": 499989,
+  "ideal_simulated_shots_per_context": 23809,
+  "n_context": 20,
+  "n_targets": 680,
+  "widths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "depths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "include_mirrors": false,
+  "mirrors_only": false,
+  "selection": "Native Qermit state generation, exact diversity test and up to ten attempts, warning-only proximity test, all 20 retained.",
+  "experiment": "Native gen_CDR_MitEx. Actual Aer shot counts used by all fits; exact channel means calculated independently on the same compiled circuits.",
+  "resource_mode": "count histograms",
+  "differences": "Public acquisition-era implementation and a tested dependency range. Original installed software, random seeds and auxiliary measurements are unavailable.",
+  "n_quality_warnings": 396,
+  "n_low_ideal_spread": 7,
+  "source_digests": {
+    "circuits.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/circuits.csv/content",
+      "md5": "bdb5df44879a8e27b6361705729dfbb3",
+      "sha256": "4555cfbd11a66f6de78e3c7d09c22b30f8c9212d13c2fceb74dbb85045f78f42"
+    },
+    "circuits.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/circuits.zip/content",
+      "md5": "633aab94b407c93bb4674bf24b5b727f",
+      "sha256": "3860b1441eb4f7bfdd0cf5b8afdcbfda943eeef83c3b2167591467c081fe6914"
+    },
+    "device_experiments.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/device_experiments.csv/content",
+      "md5": "0bb58916894410280ce32c53a3e9d513",
+      "sha256": "22303262fe5b72eee3a11b808e05b56a7494808997075498e00ef72267b0798f"
+    },
+    "experiments.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/experiments.csv/content",
+      "md5": "a34aca2f21d196ffca1e0aa4392e2a81",
+      "sha256": "6a223bfa9c927a178abb718ec89ef928966ac19daa9501c303b73115d3442faf"
+    },
+    "observables.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/observables.zip/content",
+      "md5": "982459a252630dff94527214bebdf44a",
+      "sha256": "a9513c0cd1466ee39a8909a93f1b4b51b2fbef8f2dcc277fd4f07ddaf568e97f"
+    },
+    "results.csv": {
+      "url": "https://zenodo.org/api/records/6472281/files/results.csv/content",
+      "md5": "427fc66a8caa305c9c1ef4e9ed6cbcf8",
+      "sha256": "7ce5de11d49e5bc2848eccfd9e5f437e6bb9d9169e56fcea6bac76be4785712a"
+    },
+    "results.zip": {
+      "url": "https://zenodo.org/api/records/6472281/files/results.zip/content",
+      "md5": "b3c392d25bae0597f0e7aed489799480",
+      "sha256": "c99eb711981dfd7781c30908d8b2479ef067860111355c2f4ebee31018d330bb"
+    }
+  },
+  "seconds": 570.057,
+  "contexts_sha256": "7a690f910cc3ef21fb38e826c551d1f02a138180f572f0c62adfcf761e7e61d6"
+}

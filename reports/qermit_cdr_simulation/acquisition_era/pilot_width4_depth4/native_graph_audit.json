@@ -1,0 +1,36 @@
+{
+  "contexts_sha256": "87359b969fd2e3f39eb88c42174dce7f5b35c81769a1ccaad6fd961774d74fc2",
+  "modern_sha256": "76cadbe2f84e30b39a30e3c3ee7ac1f0a6affac39b6efa0f42384d75a52edee1",
+  "n_targets": 20,
+  "n_cells": 2,
+  "families": {
+    "Pauli-gadget": {
+      "target_count": 10,
+      "mae": {
+        "archived_raw": 0.0848866023475979,
+        "archived_cdr": 0.01594867713864303,
+        "archived_zne": 0.0021977594988143944,
+        "raw_noisy": 0.0855626023475979,
+        "cdr_prediction": 0.010978767465648059,
+        "modern_cdr": 0.012907382013634661
+      }
+    },
+    "Random": {
+      "target_count": 10,
+      "mae": {
+        "archived_raw": 0.11307177024582353,
+        "archived_cdr": 0.044948793371180594,
+        "archived_zne": 0.005117499833140193,
+        "raw_noisy": 0.11254977024582354,
+        "cdr_prediction": 0.04414978103679362,
+        "modern_cdr": 0.11464204341747317
+      }
+    }
+  },
+  "largest_absolute_shot_error": {
+    "context_noisy": 0.019174507847730636,
+    "context_ideal": 0.017020825272631435,
+    "query_noisy": 0.008875379826595031,
+    "raw_noisy": 0.009123925298488489
+  }
+}

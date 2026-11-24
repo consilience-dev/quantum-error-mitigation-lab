@@ -92,4 +92,11 @@ python scripts/qermit_context_models.py nori --weights weights --device cpu
 python scripts/qermit_context_models.py tabicl --weights weights --device cpu
 ```
 
-Use the existing TabPFN environment for the TabPFN command and the Nori/TabICL environment for the other two. In the NumPy audit environment, `python scripts/qermit_context_models.py MODEL --check` verifies the saved predictions and per-cell scores. The primary simulation files cover all 680 unmirrored targets from the two published circuit families.
+Use the existing TabPFN environment for the TabPFN command and the Nori/TabICL environment for the other two. The default input covers all 680 unmirrored targets, with 340 circuits per family, in the modern depolarizing simulation. For another acquisition, pass its `contexts.npz` through `--contexts` to each fit. For a constant training target, TabPFN v2 returns its native constant prediction and reports zero checkpoint ensemble members. In the NumPy audit environment, verify the saved predictions and native group scores with the same input path.
+
+```sh
+python scripts/qermit_context_models.py MODEL --contexts PATH/contexts.npz --check
+python scripts/summarize_qermit_panel.py --folder PATH --check
+```
+
+For the acquisition-era run, follow the [February software instructions](../reports/qermit_cdr_simulation/acquisition_era/README.md). Its generator runs the historical Qermit correction graph and saves the 20 actual calibration pairs passed to its affine fitter. Supply `reports/qermit_cdr_simulation/acquisition_era/full_unmirrored/contexts.npz` to each of the three frozen model commands.

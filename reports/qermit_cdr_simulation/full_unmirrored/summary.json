@@ -1,6 +1,7 @@
 {
   "scope": "Fresh depolarising simulation on all 680 non-mirrored Qermit targets, one fixed acquisition per target. The archived raw, ZNE and CDR estimates come from a separate acquisition.",
   "mirrored": false,
+  "acquisition": "Modern Qermit 0.9.3 simulator replay. A binomial draw from the noiseless or noisy channel parity distribution supplies each observed expectation.",
   "estimand": "Within each family, width and depth cell, compute each target\u2019s absolute error divided by the fresh raw absolute error, then take the median and maximum. Count strict improvements over the baseline cell statistic. Count undefined cells separately.",
   "source_rows_sha256": "2b8782ee6579b2b10982f666624e7f98a5a3a94e0871044522387398216b534d",
   "source_reference_cells_sha256": "d51dd3963b0db559715b5e01f0bfe01edcefb541fb728cf699bf8baf8cffc86f",
