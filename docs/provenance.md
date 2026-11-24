@@ -4,7 +4,7 @@
 
 On 2026-11-24, `/Users/parm/Documents/ChatGPT/quantum-error-mitigation-lab` contained no files, `.git`, or remote. Searches of local Documents, Desktop, Downloads, and user paths did not locate a QEM project package. No predecessor commits are claimed.
 
-Read-only conversation evidence: “Quantum Error Mitigation Data Sets”, conversation `6b049964-db78-83ea-91d2-70a8ee895a7c`. It reports IBM ML-QEM 4-qubit hardware data, 169 features, four targets, 180 test circuits, and calibration budgets 18/90. Those local data-processing and result claims remain unverified. “Identify Experiment Dataset” also records the absence of the experiment repository in its workspace. Conversation text is not a substitute for saved arrays, split IDs, or executable code.
+Read-only conversation evidence: “Quantum Error Mitigation Data Sets”, conversation `6b049964-db78-83ea-91d2-70a8ee895a7c`. It reports IBM ML-QEM 4-qubit hardware data, 169 features, four targets, 180 test circuits, and calibration budgets 18/90. The accessible project chats supply no numeric pilot affine score, fitted coefficients, or test-row manifest. The pilot ranking cannot be recreated from those messages. The affine scores in this repository come from fresh calibration fits on the explicit upstream and deduplicated splits. “Identify Experiment Dataset” also records the absence of the experiment repository in its workspace. Conversation text is not a substitute for saved arrays, split IDs, or executable code.
 
 ## Independently retrieved upstream evidence
 

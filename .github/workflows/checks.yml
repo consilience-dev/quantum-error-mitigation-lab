@@ -11,4 +11,5 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: pip install -r requirements-audit.txt
       - run: python scripts/fetch_upstream.py
+      - run: python scripts/verify_figure4.py --check
       - run: python scripts/summarize_paired.py --check

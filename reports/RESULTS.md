@@ -6,15 +6,19 @@ Several frozen tabular checkpoints reduced four-observable error relative to the
 
 ML-QEM supplies real noisy measurements, ideal simulation targets, ZNE outputs, the circuits themselves, and a model reference. The authors' hardware notebook selects 50 training and 250 test rows at each depth 0–9. We used the same 169 inputs, ideal targets, row IDs and four independent scalar predictions per circuit. Running the upstream encoder on all 3,000 rows gave byte-identical features and targets. Five fresh fits of the four 100-tree forests gave mean circuit error **0.09977–0.10032**, compared with **0.10004** in the Figure 4 workbook. Pooled RMSE was **0.07453–0.07461**, close to the notebook's **0.07471**. Its model seed was unspecified. This reproduces the four-qubit hardware reference. Other architectures in the paper were studied in other settings. [Notebook](https://github.com/qiskit-community/ml-qem/blob/faf3e44ac686d62b2184a983d89e655084759a26/docs/demos/demo2_ising_4q_hardware_plot.ipynb) · [Forest refits](rf_reproduction.json) · [Encoder check](original_encoder_check.json) · [Workbook check](figure4_reference_check.json)
 
+**Author-reported anchors.** Equal-weighting the ten published depth means yields **0.2097070** for unmitigated hardware, **0.1868189** for ZNE and **0.1000394** for RF. Our frozen Nori 1.5 score on those same 2,500 test rows is **0.0531771**. That is a 46.84% reduction relative to the published RF aggregate. The workbook provides per-depth aggregates. Our separate forest refits supply paired circuit predictions. Figure 4 has no affine entry. Scores for OLS, MLP and GNN in the paper's simulated experiments use different test circuits. [Upstream Figure 4 data](https://github.com/qiskit-community/ml-qem/blob/faf3e44ac686d62b2184a983d89e655084759a26/docs/paper_figures/ML-QEM%20Source%20data.xlsx) · [Source verification](figure4_reference_check.json)
+
 ## Original and fresh 500-circuit comparisons
 
 The primary error is the mean Euclidean distance between each predicted four-observable vector and its ideal vector. Lower is better. Pooled RMSE weights observable entries equally and can rank configurations differently. The original split has 500 training rows representing 453 distinct circuits and 2,500 test rows. It shares three depth-zero circuit identities across partitions. The fresh split uses 500 **unique** calibration circuits and 900 other unique circuits, balanced over depths 1–9. Every model within a draw receives the same circuit IDs. All draws use the same 900 test circuits. [Split manifest](../data/clean_split.json)
 
-| Method | Published mean error | Published RMSE | Fresh mean error | Fresh calibration draws |
+| Method | Our mean error on authors’ split | Our RMSE on authors’ split | Fresh mean error | Fresh calibration draws |
 |---|---:|---:|---:|---:|
 | Unmitigated hardware | 0.2097 | 0.1171 | 0.2167 | fixed |
 | ZNE | 0.1868 | 0.1045 | 0.1905 | fixed |
-| Affine | 0.1702 | 0.0994 | 0.1643 | 5 |
+| Per-observable affine | 0.1702 | 0.0994 | 0.1643 | 5 |
+| Four-input affine | 0.1437 | 0.0872 | 0.1409 | 5 |
+| Full-feature linear ridge | 0.1430 | 0.0879 | 0.1554 | 5 |
 | Random forest | 0.1000 | 0.0746 | 0.1100 | 5 |
 | CatBoost | 0.1043 | 0.0714 | 0.1106 | 5 |
 | Kernel ridge | 0.0956 | 0.0660 | 0.0921 | 5 |
@@ -29,6 +33,8 @@ The primary error is the mean Euclidean distance between each predicted four-obs
 | TabDPT 1.3 | 0.1332 | 0.0881 | 0.1354 | 5 |
 | iLTM r128bn (query-batch normalization) | 0.6492 | 0.3855 | 0.6214 | 5 |
 
+The **per-observable affine** model fits one slope and one intercept per observable. The **four-input affine** predicts each output from all four noisy measurements and an intercept. The **full-feature linear ridge** model uses the same 169 inputs as the full pretrained runs and selects its regularization strength within grouped calibration folds. These three entries are local fits. A separate exploratory residual correction in the Ising section uses the exact coupling and serves a different purpose. [Affine coefficients](affine.json) · [Linear models and validation](linear_comparators.json)
+
 A preliminary one-member TabICLv2 timing run gave published mean error 0.06025. Its original row predictions were overwritten. A separately archived repeat matched its two original scores and all ten depth means exactly. The table uses the eight-member default with its complete prediction file. [Timing pilot](tabicl_single_member_timing_pilot.json) · [Repeat and checksum](tabicl_published_single_member_pilot_rerun.json)
 
 The published forest entry averages its five refits. Other published model entries represent one specified configuration. Fresh entries average the completed draws shown. Dashes indicate an unscored configuration. Hardware and ZNE use fixed acquired values for each test circuit. No test-based model selection or post-hoc clipping was applied by the benchmark runner. The models have different inference defaults and compute costs. The additional frozen checkpoints use one ensemble member where supported. Nori uses the released inference configuration on the published split and training-only high-dimensional projection on the fresh split. The compact iLTM engine uses unlabeled query-batch statistics when scaling outputs. It also failed a noiseless linear-regression sanity check (RMSE 0.7000 versus 0.4445 for a constant prediction). Its score is a diagnostic sensitivity result for this adapter and checkpoint. [iLTM audit](iltm_prediction_audit.json) These measurements characterize the tested configurations. [Coverage and deferrals](../docs/model-coverage.md) · [Settings and reproduction commands](../docs/running-models.md)
@@ -39,21 +45,25 @@ An additional simultaneous 95% sensitivity analysis covers eight contrasts. It i
 
 ## How far do the few-shot budgets go?
 
-The original 18 and 90 budgets were deliberately balanced at two and ten examples per nonzero depth. They missed the authors' 500 training rows. The expanded curve gives the same five calibration seeds at each budget with nested draws and four targets kept together. At 500, five depths receive 56 circuits and four receive 55. The ranges below describe variability with calibration selection on a shared test set.
+The pilot’s 18 and 90 calibration circuits gave two or ten examples at each of the nine nonzero depths, after excluding depth-zero duplicates. That pilot used 180 test circuits and omitted the paper’s 500-row calibration budget. Its numeric affine result and exact test IDs could not be recovered. The table below reports new experiments on the 900-circuit holdout. Within each of five draws, the larger budgets contain the smaller budgets’ circuits. At 500, five depths receive 56 circuits and four receive 55. [Pilot provenance](../docs/provenance.md) · [Frozen circuit IDs](../data/clean_split.json)
 
-| Unique calibration circuits | Forest, mean | TabPFN v2, mean | TabPFN v2, range over draws |
-|---:|---:|---:|---:|
-| 18 | 0.2771 | 0.2064 | 0.1746–0.2638 |
-| 45 | 0.1830 | 0.1480 | 0.1327–0.1630 |
-| 90 | 0.1507 | 0.1230 | 0.1191–0.1269 |
-| 180 | 0.1314 | 0.0982 | 0.0934–0.1051 |
-| 270 | 0.1218 | 0.0848 | 0.0822–0.0872 |
-| 450 | 0.1120 | 0.0685 | 0.0652–0.0713 |
-| 500 | 0.1100 | 0.0669 | 0.0648–0.0699 |
+| Unique calibration circuits | Per-observable affine | Four-input affine | Nori, four inputs | Forest, full inputs | TabPFN v2, full inputs | Nori, full inputs |
+|---:|---:|---:|---:|---:|---:|---:|
+| 18 | 0.1876 | 0.1994 | 0.2348 | 0.2771 | 0.2064 | 0.2152 |
+| 45 | 0.1692 | 0.1582 | — | 0.1830 | 0.1480 | — |
+| 90 | 0.1653 | 0.1459 | 0.1247 | 0.1507 | 0.1230 | 0.1134 |
+| 180 | 0.1650 | 0.1433 | — | 0.1314 | 0.0982 | — |
+| 270 | 0.1647 | 0.1412 | — | 0.1218 | 0.0848 | — |
+| 450 | 0.1643 | 0.1409 | — | 0.1120 | 0.0685 | — |
+| 500 | 0.1643 | 0.1409 | 0.0989 | 0.1100 | 0.0669 | 0.0552 |
 
-![Learning curves for the random forest and TabPFN, with shaded ranges across five draws](learning_curve.png)
+Each cell is mean circuit L2 across the five calibration draws. Dashes mark budgets at which Nori was not run. At 18 circuits, the per-observable affine correction had the lowest mean error in the table. It beat both full-input pretrained models in four of the five draws. At 90 and 500, both full-input models beat it on every draw. Using all 169 inputs, linear ridge scored 0.3994, 0.2474 and 0.1554 at 18, 90 and 500 respectively.
 
-Shading spans the five calibration draws. Horizontal lines show the fixed raw and ZNE means. These calibration counts track ideal circuit labels. Comparing total hardware cost would also require shot counts and the extra noise-scaled circuits used by ZNE.
+Giving Nori and four-input affine **the same four noisy measurements** isolates a comparison of the two estimators. Nori minus affine was **+0.0354** at 18 circuits (higher error in four draws), **−0.0211** at 90 and **−0.0420** at 500 (lower error in every draw at both budgets). Nominal 95% intervals from paired resampling of the 60 acquisition batches were [0.0304, 0.0401], [−0.0240, −0.0181] and [−0.0481, −0.0368]. These exploratory intervals condition on the five observed calibration draws and one hardware campaign. [Per-draw scores](scores.csv) · [Paired differences and intervals](clean_paired_summary.json)
+
+![Mean circuit error by calibration budget, with separate panels for full inputs and measurement-only affine and Nori models](learning_curve.png)
+
+Markers show evaluated budgets. Shading spans the five calibration draws. Horizontal lines show raw hardware and ZNE. Calibration counts track ideal circuit labels. A total hardware-cost comparison would also require shot counts and the extra noise-scaled circuits used by ZNE.
 
 ## What did the noisy measurements add?
 

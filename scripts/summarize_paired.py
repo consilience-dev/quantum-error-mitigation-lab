@@ -74,6 +74,15 @@ def main():
             assert not (set(train) & set(ids['clean'])) and counts[0] == 0 and np.ptp(counts[1:]) <= 1
             previous = set(train)
     records = []
+    affine_budgets = (18, 90, 500)
+    affine_pairs = [
+        (('Nori 1.5', 'full'), ('Affine', 'full')),
+        (('TabPFN v2', 'full'), ('Affine', 'full')),
+        (('Nori 1.5', 'measurements_only'), ('Multivariate affine', 'full')),
+        (('Nori 1.5', 'full'), ('Full-feature linear ridge', 'full')),
+    ]
+    affine_arms = {arm for pair in affine_pairs for arm in pair}
+    affine_losses = defaultdict(dict)
     losses = defaultdict(dict)
 
     def add(model, split, seed, budget, arm, pred, reference=None):
@@ -91,6 +100,11 @@ def main():
         for d in np.unique(depth):
             row[f'mean_l2_depth_{d}'] = l2[depth == d].mean()
         records.append(row)
+        if split == 'clean' and budget in affine_budgets and (model, arm) in affine_arms:
+            group = affine_losses[budget, model, arm]
+            if seed in group:
+                raise ValueError(f'Duplicate affine comparison entry for {(budget, model, arm, seed)}')
+            group[seed] = l2
         if split == 'clean' and budget == 500:
             key = model if arm == 'full' else model + '/' + arm
             if seed in losses[key]:
@@ -101,10 +115,39 @@ def main():
         for name, array in [('Hardware', 'noisy'), ('ZNE', 'zne')]:
             add(name, split, None, 0, 'measurement', data[array][indices])
 
+    published_train = np.concatenate([np.flatnonzero(depth == d)[:50] for d in range(10)])
+    def calibration_rows(row):
+        return published_train if row['split'] == 'published' else pool_runs[row['seed'], row['budget']]
+
     for r in read_json(REPORTS / 'affine.json')['runs']:
         split = r['split']
+        train = calibration_rows(r)
+        x, y = data['noisy'][train], data['ideal'][train]
+        centered = x - x.mean(axis=0)
+        slope = (centered * (y-y.mean(axis=0))).sum(axis=0) / (centered**2).sum(axis=0)
+        np.testing.assert_allclose(slope, r['scales'], atol=1e-10, rtol=0)
+        np.testing.assert_allclose(y.mean(axis=0)-slope*x.mean(axis=0), r['offsets'], atol=1e-10, rtol=0)
         p = data['noisy'][ids[split]] * r['scales'] + r['offsets']
         add('Affine', split, r['seed'], r['budget'], 'full', p, r)
+
+    linear = read_json(REPORTS / 'linear_comparators.json')
+    path = REPORTS / 'linear_comparators.csv.gz'
+    assert linear['clean_split_sha256'] == manifest_sha
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == linear['predictions_sha256']
+    tables = prediction_groups(path, ('split','seed','budget','model'))
+    design = np.column_stack([data['noisy'], np.ones(len(depth))])
+    for r in linear['runs']:
+        split, seed, budget, model = r['split'], r['seed'], r['budget'], r['model']
+        key = (split, '' if seed is None else str(seed), str(budget), model)
+        pred = align(tables.pop(key), ids[split])
+        if model == 'Multivariate affine':
+            train = calibration_rows(r)
+            coef, _, rank, _ = np.linalg.lstsq(design[train], data['ideal'][train], rcond=None)
+            assert rank == design.shape[1]
+            np.testing.assert_allclose(coef, r['weights_and_intercepts'], atol=1e-10, rtol=0)
+            np.testing.assert_allclose(np.einsum('ij,jk->ik', design[ids[split]], coef), pred, atol=1e-10, rtol=0)
+        add(model, split, seed, budget, 'full', pred, r)
+    assert not tables
 
     for name, key in [('CatBoost', 'boosted'), ('Kernel ridge', 'kernel'), ('Ising interpolation', 'physics_control')]:
         tables = prediction_groups(REPORTS / (key + '_predictions.csv.gz'), ('split','seed'))
@@ -143,7 +186,9 @@ def main():
     labels = {'nori':'Nori 1.5', 'tabicl':'TabICLv2', 'causilo':'Causilo', 'tababax':'TabAbax',
               'tabdpt_v1_3':'TabDPT 1.3', 'tabpfn_v2':'TabPFN v2', 'tabpfn_v2_5':'TabPFN v2.5',
               'tabpfn_v2_6':'TabPFN v2.6', 'ILTM':'iLTM'}
-    for path in sorted(REPORTS.rglob('*_predictions.csv*')):
+    # Other benchmark directories use independent test IDs, targets and metrics.
+    hardware_paths = list(REPORTS.glob('*_predictions.csv*')) + list((REPORTS/'registry').glob('*_predictions.csv*'))
+    for path in sorted(hardware_paths):
         stem = path.name.split('_predictions.csv')[0]
         if stem in combined:
             continue
@@ -234,6 +279,20 @@ def main():
     result = dict(test_circuits=len(clean), acquisition_batches=len(count), bootstrap_draws=len(draws),
                   budget=500, interpretation='Candidate minus comparator mean circuit L2. Nominal exploratory 95% intervals conditional on the calibration draws. Test circuits and acquisition batches are shared across draws.',
                   comparisons=paired)
+    affine_contrasts = []
+    for budget in affine_budgets:
+        for (a, arm_a), (b, arm_b) in affine_pairs:
+            left = affine_losses[budget,a,arm_a]
+            right = affine_losses[budget,b,arm_b]
+            if set(left) != set(range(5)) or set(right) != set(range(5)):
+                raise ValueError(f'Incomplete five-draw comparison at {budget}: {a}/{arm_a} vs {b}/{arm_b}')
+            delta = np.stack([left[i]-right[i] for i in range(5)])
+            sums = np.bincount(batch,weights=delta.mean(axis=0))
+            boots = sums[draws].sum(axis=1) / count[draws].sum(axis=1)
+            affine_contrasts.append(dict(budget=budget, model=a, model_arm=arm_a, baseline=b,
+                                         delta=float(delta.mean()), delta_each_seed=delta.mean(axis=1).tolist(),
+                                         acquisition_batch_interval=np.quantile(boots,[.025,.975]).tolist()))
+    result['affine_learning_curve_contrasts'] = affine_contrasts
     if joint.keys() == joint_family:
         theta = np.array([x[0] for x in joint.values()])
         replicates = np.stack([x[1] for x in joint.values()], axis=1)
@@ -255,6 +314,12 @@ def main():
                     assert value == expected[field]
                 else:
                     np.testing.assert_allclose(value, expected[field], atol=1e-9, rtol=0)
+        assert len(prior['affine_learning_curve_contrasts']) == len(affine_contrasts)
+        for row, expected in zip(affine_contrasts, prior['affine_learning_curve_contrasts']):
+            for field in ('budget','model','model_arm','baseline'):
+                assert row[field] == expected[field]
+            for field in ('delta','delta_each_seed','acquisition_batch_interval'):
+                np.testing.assert_allclose(row[field], expected[field], atol=1e-9, rtol=0)
         if 'simultaneous_95pct' in prior or 'simultaneous_95pct' in result:
             expected = prior['simultaneous_95pct']['comparisons']
             values = result['simultaneous_95pct']['comparisons']

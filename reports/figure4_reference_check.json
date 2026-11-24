@@ -5,10 +5,6 @@
   "git_blob_sha1": "d2dafa3c421b8b3e4c8d6c1e9c18919a1cda715e",
   "bytes": 18127,
   "sheet": "Figure 4",
-  "header": "A13",
-  "range": "A14:A23",
-  "series_label": "Name: L2_rfr_list, dtype: float64",
-  "series_label_cell": "A24",
   "depths": [
     0,
     1,
@@ -21,6 +17,10 @@
     8,
     9
   ],
+  "header": "A13",
+  "range": "A14:A23",
+  "series_label": "Name: L2_rfr_list, dtype: float64",
+  "series_label_cell": "A24",
   "mean_circuit_l2_per_depth_6dp": [
     0.008884,
     0.053985,
@@ -34,5 +34,88 @@
     0.151538
   ],
   "equal_depth_mean_of_printed_values": 0.1000394,
-  "matches_committed_rf_reference": true
+  "matches_committed_rf_reference": true,
+  "series": {
+    "raw": {
+      "header": "A1",
+      "range": "A2:A11",
+      "series_label": "Name: L2_noisy, dtype: float64",
+      "series_label_cell": "A12",
+      "mean_circuit_l2_per_depth_6dp": [
+        0.143743,
+        0.175321,
+        0.222085,
+        0.219112,
+        0.225672,
+        0.193042,
+        0.217714,
+        0.232615,
+        0.230549,
+        0.237217
+      ],
+      "equal_depth_mean_of_printed_values": 0.209707
+    },
+    "rf": {
+      "header": "A13",
+      "range": "A14:A23",
+      "series_label": "Name: L2_rfr_list, dtype: float64",
+      "series_label_cell": "A24",
+      "mean_circuit_l2_per_depth_6dp": [
+        0.008884,
+        0.053985,
+        0.080179,
+        0.09181,
+        0.1146,
+        0.119991,
+        0.125018,
+        0.137034,
+        0.117355,
+        0.151538
+      ],
+      "equal_depth_mean_of_printed_values": 0.1000394
+    },
+    "zne": {
+      "header": "A25",
+      "range": "A26:A35",
+      "series_label": "Name: L2_zne, dtype: float64",
+      "series_label_cell": "A36",
+      "mean_circuit_l2_per_depth_6dp": [
+        0.143702,
+        0.169557,
+        0.18391,
+        0.177614,
+        0.184633,
+        0.16936,
+        0.183535,
+        0.204955,
+        0.22232,
+        0.228603
+      ],
+      "equal_depth_mean_of_printed_values": 0.1868189
+    }
+  },
+  "upstream_notebook": {
+    "source": "https://raw.githubusercontent.com/qiskit-community/ml-qem/faf3e44ac686d62b2184a983d89e655084759a26/docs/demos/demo2_ising_4q_hardware_plot.ipynb",
+    "sha256": "41ea77b4e08ea87a76f2834c61fc4a21a6b2bae11d918b824cfbd7e74342a1f2",
+    "printed_pooled_rmse": {
+      "raw": 0.11713456496421219,
+      "rf": 0.07470740975445114
+    }
+  },
+  "separate_simulation_benchmark": {
+    "sheet": "Figure 2",
+    "range": "A1:B6",
+    "dataset": "Four-qubit random circuits, FakeLima simulation",
+    "training_circuits": 5000,
+    "test_circuits": 2000,
+    "mean_circuit_l2": {
+      "Unmitigated": 0.166085756272471,
+      "ZNE": 0.117947861525612,
+      "OLS": 0.100149337422356,
+      "RF": 0.0766146369382313,
+      "MLP": 0.0834898704276976,
+      "GNN": 0.116285431091317
+    },
+    "protocol": "https://arxiv.org/html/2309.17368v2#S2.SS1.SSS1"
+  }
 }

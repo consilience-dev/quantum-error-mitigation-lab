@@ -33,11 +33,14 @@ def main():
     parser.add_argument('--chunk', type=int, default=250)
     parser.add_argument('--output', type=Path, default=ROOT / 'reports')
     parser.add_argument('--clean-seed', type=int, choices=range(5))
+    parser.add_argument('--clean-budget', type=int, choices=[18, 45, 90, 180, 270, 450, 500], default=500)
     parser.add_argument('--finetune', action='store_true', help='Three epochs of TabICLv2 adaptation on clean calibration data')
     parser.add_argument('--single-member-pilot', action='store_true',
                         help='Repeat the published-split TabICLv2 timing pilot in separate output files')
     parser.add_argument('--inputs', choices=['full', 'descriptors_only', 'measurements_only'], default='full')
     args = parser.parse_args()
+    if args.clean_budget != 500 and (args.clean_seed is None or args.finetune):
+        parser.error('Smaller calibration budgets require a frozen clean run')
     if args.single_member_pilot and (args.model != 'tabicl' or args.clean_seed is not None or args.finetune):
         parser.error('The timing pilot uses frozen TabICLv2 on the published split')
     if args.inputs != 'full' and args.clean_seed is None:
@@ -65,13 +68,13 @@ def main():
         split_path = ROOT / 'data/clean_split.json'
         split_hash = digest(split_path)
         split = json.loads(split_path.read_bytes())
-        run, = (r for r in split['runs'] if r['seed'] == args.clean_seed and r['budget'] == 500)
+        run, = (r for r in split['runs'] if r['seed'] == args.clean_seed and r['budget'] == args.clean_budget)
         train = np.asarray(run['calibration_ids'], dtype=int)
         test = np.asarray(split['test_ids'], dtype=int)
-        if (len(train) != 500 or len(test) != 900 or np.intersect1d(train, test).size
-                or np.unique(train).size != 500 or np.unique(test).size != 900 or 0 in depth[np.r_[train, test]]):
-            raise ValueError('Expected a disjoint full-budget nonzero-depth split')
-        protocol = f'clean_500_seed{args.clean_seed}'
+        if (len(train) != args.clean_budget or len(test) != 900 or np.intersect1d(train, test).size
+                or np.unique(train).size != args.clean_budget or np.unique(test).size != 900 or 0 in depth[np.r_[train, test]]):
+            raise ValueError('Expected a disjoint nonzero-depth split at the requested budget')
+        protocol = f'clean_{args.clean_budget}_seed{args.clean_seed}'
     prefix = f'{args.model}_{protocol}' + ('_tuned' if args.finetune else '')
     tabicl_members = 1 if args.single_member_pilot else 8
     if args.single_member_pilot:
