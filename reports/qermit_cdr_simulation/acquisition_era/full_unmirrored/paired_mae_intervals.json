@@ -1,0 +1,70 @@
+{
+  "estimand": "Secondary mean paired target absolute-error difference, model minus affine CDR. A negative value favors the frozen model.",
+  "scope": "Exploratory uncertainty conditional on this one acquisition and the 34 fixed width/depth groups of each family. The intervals describe within-group circuit resampling. Additional devices, software versions, calibration and shot draws would introduce other variation.",
+  "sampling": "Within each fixed group, sample ten of its ten circuits with replacement. Keep all three checkpoint losses and the CDR loss paired on each draw. Average over all 340 drawn targets per family. Families are analysed separately.",
+  "interval": "Bonferroni-adjusted percentile bootstrap intervals for six comparisons, with approximate simultaneous 95% coverage conditional on circuit resampling.",
+  "resamples": 50000,
+  "generator": "NumPy PCG64",
+  "seed": 20261124,
+  "quantiles": [
+    0.004166666666666667,
+    0.9958333333333333
+  ],
+  "contrast_family_size": 6,
+  "group_order": "family, width, depth, experiment ID",
+  "contexts_sha256": "7a690f910cc3ef21fb38e826c551d1f02a138180f572f0c62adfcf761e7e61d6",
+  "protocol_sha256": "5ea8fb995d9c400c372279ee9fc20ab47d647b971c1d30e0c2b84690ddac18fa",
+  "predictions_sha256": {
+    "nori": "51b043bcafeed8f7143cb56abbe063fbeb6fc33450b77c388144fa916432aa88",
+    "tabicl": "52e8a552babe8fe6a513b2b1abfc8765e6fb5923953bc7b47666ec7bb042e66f",
+    "tabpfn_v2": "fb26dcb7f0457a49531b11267ae0257b149c0f2ffc16a0cbf86509a086ba6c2c"
+  },
+  "results": {
+    "Pauli-gadget": {
+      "nori": {
+        "mean_absolute_error_difference": 0.006035575727,
+        "adjusted_percentile_interval": [
+          0.002217388454,
+          0.010504393775
+        ]
+      },
+      "tabicl": {
+        "mean_absolute_error_difference": 0.043632103029,
+        "adjusted_percentile_interval": [
+          0.032790127679,
+          0.054528408682
+        ]
+      },
+      "tabpfn_v2": {
+        "mean_absolute_error_difference": 0.025728041501,
+        "adjusted_percentile_interval": [
+          0.016299014447,
+          0.035581866766
+        ]
+      }
+    },
+    "Random": {
+      "nori": {
+        "mean_absolute_error_difference": 0.113897428904,
+        "adjusted_percentile_interval": [
+          0.092138269747,
+          0.136400271614
+        ]
+      },
+      "tabicl": {
+        "mean_absolute_error_difference": 0.133829365176,
+        "adjusted_percentile_interval": [
+          0.11056653714,
+          0.15794401291
+        ]
+      },
+      "tabpfn_v2": {
+        "mean_absolute_error_difference": 0.102476487809,
+        "adjusted_percentile_interval": [
+          0.084243893332,
+          0.121654706963
+        ]
+      }
+    }
+  }
+}

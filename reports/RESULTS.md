@@ -2,7 +2,7 @@
 
 With 18 unique calibration circuits on IBM Algiers, a per-observable affine correction had lower mean error than frozen Nori 1.5 and TabPFN v2. At 90 and 500, both pretrained models had lower error on every calibration draw. Nori also beat the authors’ forest on their original 500-row split. A control using only known Ising parameters and calibration labels performed better still. This hardware experiment measures predictive accuracy and how much noisy measurements add to circuit descriptors.
 
-On the authors’ FakeLima simulation, full-feature TabPFN v2 improved on the archived forest at familiar depths. When restricted to the four noisy measurements, TabPFN beat affine across the 15 deeper test depths and trailed the circuit-aware forest overall. These experiments cover one tractable four-qubit circuit family. Transfer across devices and circuit families remains open.
+On the authors’ FakeLima simulation, full-feature TabPFN v2 improved on the archived forest at familiar depths. When restricted to the four noisy measurements, TabPFN beat affine across the 15 deeper test depths and trailed the circuit-aware forest overall. These experiments cover one tractable four-qubit circuit family. On Qermit’s independently generated random and Pauli-gadget circuits, affine CDR had lower mean absolute error than the three tested pretrained models. Transfer to independent hardware remains open.
 
 ## Reproducing the published experiment
 
@@ -144,7 +144,25 @@ Four-input TabPFN had lower MAE than both affine corrections and ZNE at all 15 d
 
 ## Qermit with 20 calibration runs per target
 
-Qermit fits one affine CDR correction to 20 near-Clifford calibration runs for each individual target. On the released depolarizing simulator’s 680 unmirrored targets, we generated fresh calibrations and gave the same 20 pairs and noisy query to CDR and three frozen regressors. Each of the 68 published family, width and depth groups contains ten targets. For each target the paper divides absolute prediction error by the absolute error of its separate raw measurement, then reports the median and worst ratio within each group. The counts below give each group one vote. [Paper](https://quantum-journal.org/papers/q-2023-07-13-1059/) · [Settings and paired inputs](qermit_cdr_simulation/full_unmirrored/README.md) · [All group scores](qermit_cdr_simulation/full_unmirrored/summary.json)
+Qermit fits one affine CDR correction to 20 near-Clifford calibration runs for each target. Its depolarizing simulator has 680 unmirrored targets. Each of the 68 published circuit-family, width and depth groups contains ten targets. For each target, divide absolute prediction error by the absolute error of its separate raw measurement. Report the median and worst ratio within each group. The counts below give each group one vote. Each frozen regressor used precisely the 20 noisy/ideal pairs and the noisy query passed to the affine CDR fit. [Paper](https://quantum-journal.org/papers/q-2023-07-13-1059/) · [Released results](qermit_reference_cells.csv)
+
+### Acquisition-era software
+
+Using the February 2022 Qermit source and February dependency releases, affine CDR improved the median relative error over raw in all 34 Pauli-gadget and all 34 random groups. Archived CDR did so in 34 and 33. CDR mean absolute error in our replay was 0.01546 on Pauli gadgets and 0.05348 on random circuits, compared with 0.01218 and 0.06001 in the archive. We used fresh random seeds. The exact installed versions and calibration measurements from the original acquisition are unavailable. [Source, settings and direct graph validation](qermit_cdr_simulation/acquisition_era/README.md) · [Complete circuit audit](qermit_cdr_simulation/acquisition_era/full_unmirrored/native_graph_audit.json)
+
+| Estimator on the same calibration inputs | Lower median ratio than raw, out of 68 | Lower worst ratio than raw, out of 68 | Pauli-gadget groups with lower median ratio than CDR, out of 34 | Random groups with lower median ratio than CDR, out of 34 | Mean absolute error across 680 targets |
+|---|---:|---:|---:|---:|---:|
+| Raw | — | — | 0 | 0 | 0.09871 |
+| Affine CDR | 68 | 51 | — | — | 0.03447 |
+| Frozen Nori 1.5 | 52 | 29 | 27 | 6 | 0.09444 |
+| Frozen TabICLv2 | 46 | 24 | 26 | 8 | 0.12320 |
+| Frozen TabPFN v2 | 47 | 27 | 27 | 6 | 0.09857 |
+
+The three frozen models frequently lowered the median relative error on Pauli gadgets. Their larger errors on some targets raised mean absolute error above affine CDR for every model in both families. For Nori, mean absolute error minus CDR was +0.00603 on Pauli gadgets and +0.11390 on random circuits. Exploratory paired bootstrap intervals adjusted across six comparisons were [0.00222, 0.01050] and [0.09214, 0.13640], respectively. All six intervals lie above zero, conditional on these circuit groups and this simulated acquisition. [Native group scores](qermit_cdr_simulation/acquisition_era/full_unmirrored/summary.json) · [Paired analysis and all six intervals](qermit_cdr_simulation/acquisition_era/full_unmirrored/paired_mae_intervals.json)
+
+### Modern software sensitivity
+
+We also replayed the same unmirrored target IDs with the current generator and compiler. All estimators in this table share the same fresh calibration draws, shot allocations and queries from that run. [Settings and paired inputs](qermit_cdr_simulation/full_unmirrored/README.md) · [All group scores](qermit_cdr_simulation/full_unmirrored/summary.json)
 
 | Fresh estimator | Lower median error ratio than raw, out of 68 | Lower worst error ratio than raw, out of 68 | Pauli-gadget groups with lower median ratio than CDR, out of 34 | Random groups with lower median ratio than CDR, out of 34 | Mean absolute error across 680 targets |
 |---|---:|---:|---:|---:|---:|
